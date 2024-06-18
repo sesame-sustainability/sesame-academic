@@ -1,0 +1,33 @@
+﻿Cost Type,Turbine,Source,turbine_config,year,value,unit,refsize,unit,source ,,,,,,,
+OCC,Steam Turbine new,NREL,,2018,3603,$/KW,650,MW,https://www.eia.gov/outlooks/aeo/assumptions/pdf/electricity.pdf,,,,,,,Steam Turbine new
+FOM,Steam Turbine new,NREL,,2018,40,$/KW-year,,,,,,,,,,Steam Turbine new
+VOM,Steam Turbine new,NREL,,2018,4,$/MWh,,,,,,,,,,Steam Turbine new
+lifetime,Steam Turbine new,NREL,,2018,30,years,,,,,,,,,,Steam Turbine new
+OCC,IGCC - Integrated Gasification Combined Cycle,NREL,,2018,4116,$/KW,650,MW,https://www.eia.gov/outlooks/aeo/assumptions/pdf/electricity.pdf,,,,,,,Steam Turbine IGCC
+FOM,IGCC - Integrated Gasification Combined Cycle,NREL,,2018,56,$/KW-year,,,,,,,,,,Steam Turbine IGCC
+VOM,IGCC - Integrated Gasification Combined Cycle,NREL,,2018,8,$/MWh,,,,,,,,,,Steam Turbine IGCC
+lifetime,IGCC - Integrated Gasification Combined Cycle,NREL,,2018,30,years,,,,,,,,,,Steam Turbine IGCC
+OCC,Steam Turbine -CCS,NREL,30%,2018,4601,$/kW,650,MW,https://www.eia.gov/outlooks/aeo/assumptions/pdf/electricity.pdf,,,,,,,Steam Turbine -CCS
+FOM,Steam Turbine -CCS,NREL,30%,2018,53,$/kW-year,,,,,,,,,,Steam Turbine -CCS
+VOM,Steam Turbine -CCS,NREL,30%,2018,7,$/MWh,,,,,,,,,,Steam Turbine -CCS
+lifetime,Steam Turbine -CCS,NREL,30%,2018,30,years,,,,,,,,,,Steam Turbine -CCS
+OCC,Steam Turbine -CCS,NREL,90%,2018,5931,$/kW,650,MW,https://www.eia.gov/outlooks/aeo/assumptions/pdf/electricity.pdf,,,,,,,Steam Turbine -CCS
+FOM,Steam Turbine -CCS,NREL,90%,2018,58,$/kW-year,,,,,,,,,,Steam Turbine -CCS
+VOM,Steam Turbine -CCS,NREL,90%,2018,11,$/MWh,,,,,,,,,,Steam Turbine -CCS
+lifetime,Steam Turbine -CCS,NREL,90%,2018,30,years,,,,,,,,,,Steam Turbine -CCS
+OCC,Boiler (~99% of US coal turbines),EIA,Ultra Supercritical,2018,3676,$/KW,650,MW,https://atb.nrel.gov/electricity/2020/index.php?t=ei,,,,,,,Steam Turbine
+FOM,Boiler (~99% of US coal turbines),EIA,Ultra Supercritical,2018,40.58,$/KW-year,,,,,,,,,,Steam Turbine
+VOM,Boiler (~99% of US coal turbines),EIA,Ultra Supercritical,2018,4.5,$/MWh,,,,,,,,,,Steam Turbine
+lifetime,Boiler (~99% of US coal turbines),EIA,Ultra Supercritical,2018,40,years,,,,,,,,,,Steam Turbine
+OCC,Steam Turbine -CCS,EIA,30% Ultra Supercritical,2018,698.13,$/KW,650,MW,https://atb.nrel.gov/electricity/2020/index.php?t=ei,,,,,,,Steam Turbine -CCS
+FOM,Steam Turbine -CCS,EIA,30% Ultra Supercritical,2018,6.85,$/KW-year,,,,,,,,,,Steam Turbine -CCS
+VOM,Steam Turbine -CCS,EIA,30% Ultra Supercritical,2018,4.41,$/MWh,,,,,,,,,,Steam Turbine -CCS
+lifetime,Steam Turbine -CCS,EIA,30% Ultra Supercritical,2018,40,years,,,,,,,,,,Steam Turbine -CCS
+OCC,Steam Turbine -CCS,EIA,30% Ultra Supercritical,2018,4558,$/KW,650,MW,https://atb.nrel.gov/electricity/2020/index.php?t=ei,,,,,,,Steam Turbine -CCS
+FOM,Steam Turbine -CCS,EIA,30% Ultra Supercritical,2018,54.3,$/KW-year,,,,,,,,,,Steam Turbine -CCS
+VOM,Steam Turbine -CCS,EIA,30% Ultra Supercritical,2018,7.08,$/MWh,,,,,,,,,,Steam Turbine -CCS
+lifetime,Steam Turbine -CCS,EIA,30% Ultra Supercritical,2018,40,years,,,,,,,,,,Steam Turbine -CCS
+OCC,Steam Turbine -CCS,EIA,90% Ultra Supercritical,2018,5876,$/KW,650,MW,https://atb.nrel.gov/electricity/2020/index.php?t=ei,,,,,,,Steam Turbine -CCS
+FOM,Steam Turbine -CCS,EIA,90% Ultra Supercritical,2018,59.54,$/KW-year,,,,,,,,,,Steam Turbine -CCS
+VOM,Steam Turbine -CCS,EIA,90% Ultra Supercritical,2018,10.98,$/MWh,,,,,,,,,,Steam Turbine -CCS
+lifetime,Steam Turbine -CCS,EIA,90% Ultra Supercritical,2018,40,years,,,,,,,,,,Steam Turbine -CCS

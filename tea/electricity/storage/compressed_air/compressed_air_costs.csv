@@ -1,0 +1,25 @@
+Technology,Variable,Value,Units,Source,Cost Scenario,Comment
+Compressed Air Energy Storage,Charging Capital Cost,452,$/kW_e,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Discharging Capital Cost,617,$/kW_e,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Energy Capital Cost,53.2,$/kWh_ch,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Efficiency up,0.737,kWh_ch/kWh_e,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Efficiency down,0.795,kWh_e/kWh_ch,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Capital Recovery Period,30,yrs,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,FOM discharge,8.7,$/kW_e-yr,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,FOM charge,0,$/kW_e-yr,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,FOM storage,0,$/kWh_e-yr,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,VOM,0,$/MWh_e,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Self-discharge,0,fraction per hour,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Min duration,0.25,hrs,MIT estimate,2020,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Charging Capital Cost,418,$/kW_e,MIT estimate,2050,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Discharging Capital Cost,570,$/kW_e,MIT estimate,2050,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Energy Capital Cost,38,$/kWh_ch,MIT estimate,2050,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Efficiency up,0.737,kWh_ch/kWh_e,MIT estimate,2050,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Efficiency down,0.795,kWh_e/kWh_ch,MIT estimate,2050,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Capital Recovery Period,30,yrs,MIT estimate,2050,Manuscript will be published by June 2021
+Compressed Air Energy Storage,FOM discharge,8.7,$/kW_e-yr,MIT estimate,2050,Manuscript will be published by June 2021
+Compressed Air Energy Storage,FOM charge,0,$/kW_e-yr,MIT estimate,2050,Manuscript will be published by June 2021
+Compressed Air Energy Storage,FOM storage,0,$/kWh_e-yr,MIT estimate,2050,Manuscript will be published by June 2021
+Compressed Air Energy Storage,VOM,0,$/MWh_e,MIT estimate,2050,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Self-discharge,0,fraction per hour,MIT estimate,2050,Manuscript will be published by June 2021
+Compressed Air Energy Storage,Min duration,0.25,hrs,MIT estimate,2050,Manuscript will be published by June 2021

@@ -1,0 +1,19 @@
+﻿Term,Abbr,Source,value,year
+Inflation Rate,ir,EIA,0.025,2018
+Interest Rate,i,EIA,0.01388922,2018
+Interest During Construction,ic,EIA,0.01388922,2018
+Rate of Return on Equity,rre,EIA,0.069150098,2018
+Debt Fraction,df,EIA,0.6,2018
+Tax Rate (Federal and State),tr,EIA,0.26,2018
+Inflation Rate,ir,ReEDS,0.025,2018
+Interest Rate,i,ReEDS,0.054,2018
+Interest During Construction,ic,ReEDS,0.053658537,2018
+Rate of Return on Equity,rre,ReEDS,0.102439024,2018
+Debt Fraction,df,ReEDS,0.6,2018
+Tax Rate (Federal and State),tr,ReEDS,0.4,2018
+Inflation Rate,ir,ATB,0.025,2018
+Interest Rate,i,ATB,0.024390244,2018
+Interest During Construction,ic,ATB,0.009756098,2018
+Rate of Return on Equity,rre,ATB,0.073170732,2018
+Debt Fraction,df,ATB,0.67,2018
+Tax Rate (Federal and State),tr,ATB,0.2574,2018

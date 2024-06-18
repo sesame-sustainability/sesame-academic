@@ -1,0 +1,13 @@
+coal rank,characteristic,value,unit,source,comments
+Bituminous,energy density,22639319.98,btu/ton,GREET Fuel_Specs,LHV
+Lignite,energy density,10805182.82,btu/ton,GREET Fuel_Specs,LHV
+Mix,energy density,19474169.22,btu/ton,GREET Fuel_Specs,LHV
+Subbituminous,energy density,16085444.01,btu/ton,GREET Fuel_Specs,LHV
+Bituminous,sulfur content,15352.09272,ppm,GREET Fuel_Specs,
+Lignite,sulfur content,9064.234716,ppm,GREET Fuel_Specs,
+Mix,sulfur content,10455.98834,ppm,GREET Fuel_Specs,
+Subbituminous,sulfur content,3568.253688,ppm,GREET Fuel_Specs,
+Bituminous,carbon content,61.2,% by wt,GREET Fuel_Specs,
+Lignite,carbon content,49.1,% by wt,GREET Fuel_Specs,
+Mix,carbon content,58.57110988,% by wt,GREET Fuel_Specs,
+Subbituminous,carbon content,53.7,% by wt,GREET Fuel_Specs,

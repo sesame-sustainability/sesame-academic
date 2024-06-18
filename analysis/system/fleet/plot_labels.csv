@@ -1,0 +1,21 @@
+Axis,Variable,Label
+Left,sales,Sales
+Left,stocks_plot,Stock
+Left,fuels_plot,Fuel
+Left,emissions,Emissions
+Right,population,population
+Right,sales_per_pop,Sales/Person
+Right,lib['In Use'],LIBs in fleet
+Right,lib['Sold'],LIBs in sales
+Right,lib['Retired'],"LIBs retired, annual"
+Right,fuel_per_dist,Fuel/Distance
+Right,fuel_per_car,Fuel/Car
+Right,emissions_per_dist,Emissions/Distance
+Right,emissions_per_car,Emissions/Car
+Right,dist_per_car,Distance/Car
+Right,F_LT,Light Truck Sales Share
+Right,lib['Retired_2019'],LIBs retired since 2019
+Right,I_grid, Grid Emissions
+Right,CPE,Car Production Emissions
+Right,CPE_OE,car prod. GHGs / op. GHG
+Right,e_cum_op,"Emissions since 2019, operating"

@@ -1,0 +1,21 @@
+prime_mover,loading_fraction,status,type
+CT,0.2,start or stop,combined cycle
+CC,0.2,start or stop,combined cycle
+CS,0.2,start or stop,combined cycle
+CT,0.75,partial load,combined cycle
+CC,0.75,partial load,combined cycle
+CS,0.75,partial load,combined cycle
+CT,0.9,nearly full load,combined cycle
+CC,0.9,nearly full load,combined cycle
+CS,0.9,nearly full load,combined cycle
+CT,1,full load,combined cycle
+CC,1,full load,combined cycle
+CS,1,full load,combined cycle
+GT,0.4,start or stop,gas turbine
+GT,0.75,partial load,gas turbine
+GT,0.9,nearly full load,gas turbine
+GT,1,full load,gas turbine
+ST,0.2,start or stop,steam turbine
+ST,0.75,partial load,steam turbine
+ST,0.9,nearly full load,steam turbine
+ST,1,full load,steam turbine

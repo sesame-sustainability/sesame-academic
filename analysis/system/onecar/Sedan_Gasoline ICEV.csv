@@ -1,0 +1,178 @@
+Vehicle Model,MPG_city,MPG_hw
+'Representative Vehicle-TOYOTA Camry 2.5 4 SemiAuto-8 2WD MPG(29 city/41 hw)',29,41
+'ACURA RLX 3.5 6 AMS-7 4WD MPG(28 city/29 hw)',28,29
+'ACURA RLX 3.5 6 SemiAuto-10 2WD MPG(20 city/29 hw)',20,29
+'ALFA ROMEO Giulia 2 4 Auto-8 2WD MPG(24 city/33 hw)',24,33
+'ALFA ROMEO Giulia 2.9 6 Auto-8 2WD MPG(17 city/24 hw)',17,24
+'ALFA ROMEO Giulia AWD 2 4 Auto-8 4WD MPG(23 city/31 hw)',23,31
+'AUDI A5 Sportback quattro 2 4 AMS-7 4WD MPG(23 city/34 hw)',23,34
+'AUDI A6 2 4 AMS-7 4WD MPG(24 city/32 hw)',24,32
+'AUDI A6 3 6 AMS-7 4WD MPG(22 city/29 hw)',22,29
+'AUDI A7 3 6 AMS-7 4WD MPG(22 city/29 hw)',22,29
+'AUDI RS 5 Sportback 2.9 6 SemiAuto-8 4WD MPG(17 city/26 hw)',17,26
+'AUDI S5 Sportback 3 6 SemiAuto-8 4WD MPG(21 city/30 hw)',21,30
+'BENTLEY Mulsanne 6.8 8 SemiAuto-8 2WD MPG(10 city/16 hw)',10,16
+'BMW 530i 2 4 SemiAuto-8 2WD MPG(24 city/34 hw)',24,34
+'BMW 530i 2 4 SemiAuto-8 4WD MPG(23 city/33 hw)',23,33
+'BMW 540i 3 6 SemiAuto-8 2WD MPG(21 city/29 hw)',21,29
+'BMW 540i 3 6 SemiAuto-8 4WD MPG(21 city/29 hw)',21,29
+'BMW M5 4.4 8 SemiAuto-8 4WD MPG(15 city/21 hw)',15,21
+'BMW M5 Competition 4.4 8 SemiAuto-8 4WD MPG(15 city/21 hw)',15,21
+'BMW M550i 4.4 8 SemiAuto-8 4WD MPG(18 city/25 hw)',18,25
+'BMW X2 M35i 2 4 SemiAuto-8 4WD MPG(23 city/29 hw)',23,29
+'BMW X2 sDrive28i 2 4 SemiAuto-8 2WD MPG(23 city/32 hw)',23,32
+'BMW X2 xDrive28i 2 4 SemiAuto-8 4WD MPG(21 city/31 hw)',21,31
+'BUICK Lacrosse 2.5 4 SemiAuto-6 2WD MPG(25 city/35 hw)',25,35
+'BUICK Lacrosse 3.6 6 SemiAuto-9 2WD MPG(20 city/30 hw)',20,30
+'BUICK Lacrosse 3.6 6 SemiAuto-9 4WD MPG(20 city/29 hw)',20,29
+'BUICK Regal 2 4 SemiAuto-8 4WD MPG(21 city/29 hw)',21,29
+'BUICK Regal 2 4 SemiAuto-9 2WD MPG(22 city/32 hw)',22,32
+'BUICK Regal 3.6 6 SemiAuto-9 4WD MPG(19 city/27 hw)',19,27
+'CADILLAC CTS 2 4 SemiAuto-8 2WD MPG(22 city/30 hw)',22,30
+'CADILLAC CTS 2 4 SemiAuto-8 4WD MPG(21 city/29 hw)',21,29
+'CADILLAC CTS 3.6 6 SemiAuto-8 2WD MPG(16 city/24 hw)',16,24
+'CADILLAC CTS 3.6 6 SemiAuto-8 2WD MPG(19 city/29 hw)',19,29
+'CADILLAC CTS 3.6 6 SemiAuto-8 4WD MPG(18 city/26 hw)',18,26
+'CADILLAC CTS-V 6.2 8 SemiAuto-8 2WD MPG(14 city/21 hw)',14,21
+'CHEVROLET Cruze Hatchback 1.4 4 SemiAuto-6 2WD MPG(28 city/38 hw)',28,38
+'CHEVROLET Cruze Premier Hatchback 1.4 4 SemiAuto-6 2WD MPG(28 city/37 hw)',28,37
+'CHEVROLET Malibu 1.5 4 CVT 2WD MPG(29 city/36 hw)',29,36
+'CHEVROLET Malibu 1.8 4 CVT 2WD MPG(49 city/43 hw)',49,43
+'CHEVROLET Malibu 2 4 Auto-9 2WD MPG(22 city/32 hw)',22,32
+'DODGE Challenger 3.6 6 Auto-8 2WD MPG(19 city/30 hw)',19,30
+'DODGE Challenger 5.7 8 Auto-8 2WD MPG(16 city/25 hw)',16,25
+'DODGE Challenger 5.7 8 Man-6 2WD MPG(15 city/23 hw)',15,23
+'DODGE Challenger 6.4 8 Auto-8 2WD MPG(15 city/24 hw)',15,24
+'DODGE Challenger 6.4 8 Man-6 2WD MPG(14 city/23 hw)',14,23
+'DODGE Challenger GT 3.6 6 Auto-8 4WD MPG(18 city/27 hw)',18,27
+'DODGE Challenger SRT 6.2 8 Auto-8 2WD MPG(13 city/22 hw)',13,22
+'DODGE Challenger SRT 6.2 8 Man-6 2WD MPG(13 city/21 hw)',13,21
+'FORD Fusion 1.5 4 SemiAuto-6 2WD MPG(23 city/34 hw)',23,34
+'FORD Fusion 2 4 SemiAuto-6 2WD MPG(21 city/31 hw)',21,31
+'FORD Fusion 2 4 SemiAuto-6 4WD MPG(20 city/29 hw)',20,29
+'FORD Fusion 2.5 4 Auto-6 2WD MPG(21 city/31 hw)',21,31
+'FORD Fusion 2.7 6 SemiAuto-6 4WD MPG(17 city/26 hw)',17,26
+'HONDA Accord 2.0T Sport/Touring 2 4 Auto-10 2WD MPG(22 city/32 hw)',22,32
+'HONDA Civic 4Dr 1.5 4 CVT 2WD MPG(32 city/42 hw)',32,42
+'HONDA Civic 4Dr 1.5 4 Man-6 2WD MPG(28 city/38 hw)',28,38
+'HONDA Civic 4Dr 1.5 4 SCV-7 2WD MPG(30 city/38 hw)',30,38
+'HONDA Civic 4Dr 2 4 CVT 2WD MPG(30 city/38 hw)',30,38
+'HONDA Civic 4Dr 2 4 Man-6 2WD MPG(25 city/36 hw)',25,36
+'HONDA Civic 4Dr 2 4 SCV-7 2WD MPG(29 city/37 hw)',29,37
+'HONDA Insight 1.5 4 CVT 2WD MPG(55 city/49 hw)',55,49
+'HONDA Insight Touring 1.5 4 CVT 2WD MPG(51 city/45 hw)',51,45
+'HYUNDAI Elantra 1.4 4 AutoMan-7 2WD MPG(32 city/40 hw)',32,40
+'HYUNDAI Elantra 1.6 4 AutoMan-7 2WD MPG(26 city/33 hw)',26,33
+'HYUNDAI Elantra 1.6 4 Man-6 2WD MPG(22 city/30 hw)',22,30
+'HYUNDAI Elantra 2 4 Man-6 2WD MPG(26 city/36 hw)',26,36
+'HYUNDAI Elantra 2 4 SemiAuto-6 2WD MPG(28 city/37 hw)',28,37
+'HYUNDAI Elantra SE 2 4 SemiAuto-6 2WD MPG(29 city/38 hw)',29,38
+'INFINITI Q50 2 4 SemiAuto-7 2WD MPG(23 city/30 hw)',23,30
+'INFINITI Q50 2 4 SemiAuto-7 4WD MPG(22 city/28 hw)',22,28
+'INFINITI Q50 3 6 SemiAuto-7 2WD MPG(20 city/29 hw)',20,29
+'INFINITI Q50 3 6 SemiAuto-7 4WD MPG(19 city/27 hw)',19,27
+'INFINITI Q50 Red Sport 3 6 SemiAuto-7 2WD MPG(20 city/26 hw)',20,26
+'INFINITI Q50 Red Sport 3 6 SemiAuto-7 4WD MPG(19 city/26 hw)',19,26
+'INFINITI Q70 3.7 6 SemiAuto-7 2WD MPG(18 city/25 hw)',18,25
+'INFINITI Q70 3.7 6 SemiAuto-7 4WD MPG(18 city/24 hw)',18,24
+'INFINITI Q70 5.6 8 SemiAuto-7 2WD MPG(16 city/24 hw)',16,24
+'INFINITI Q70 5.6 8 SemiAuto-7 4WD MPG(16 city/23 hw)',16,23
+'JAGUAR XF 2 4 SemiAuto-8 2WD MPG(25 city/34 hw)',25,34
+'JAGUAR XF 2 4 SemiAuto-8 4WD MPG(23 city/33 hw)',23,33
+'JAGUAR XF 3 6 SemiAuto-8 2WD MPG(20 city/29 hw)',20,29
+'JAGUAR XF 3 6 SemiAuto-8 4WD MPG(20 city/28 hw)',20,28
+'KIA Forte 2 4 CVT 2WD MPG(30 city/40 hw)',30,40
+'KIA Forte 2 4 Man-6 2WD MPG(27 city/37 hw)',27,37
+'KIA Forte FE 2 4 CVT 2WD MPG(31 city/41 hw)',31,41
+'KIA Stinger 2 4 SemiAuto-8 2WD MPG(22 city/29 hw)',22,29
+'KIA Stinger 2 4 SemiAuto-8 4WD MPG(21 city/29 hw)',21,29
+'KIA Stinger 3.3 6 SemiAuto-8 2WD MPG(17 city/25 hw)',17,25
+'KIA Stinger 3.3 6 SemiAuto-8 4WD MPG(17 city/25 hw)',17,25
+'LEXUS ES 300h 2.5 4 SCV-6 2WD MPG(43 city/45 hw)',43,45
+'LEXUS ES 350 3.5 6 SemiAuto-8 2WD MPG(22 city/33 hw)',22,33
+'LEXUS ES 350 F Sport 3.5 6 SemiAuto-8 2WD MPG(22 city/31 hw)',22,31
+'LEXUS GS 300 2 4 SemiAuto-8 2WD MPG(22 city/32 hw)',22,32
+'LEXUS GS 300 F Sport 2 4 SemiAuto-8 2WD MPG(21 city/30 hw)',21,30
+'LEXUS GS 350 3.5 6 SemiAuto-6 4WD MPG(19 city/26 hw)',19,26
+'LEXUS GS 350 3.5 6 SemiAuto-8 2WD MPG(20 city/28 hw)',20,28
+'LEXUS GS 350 F Sport 3.5 6 SemiAuto-8 2WD MPG(19 city/27 hw)',19,27
+'LEXUS LS 500 3.4 6 SemiAuto-10 2WD MPG(19 city/30 hw)',19,30
+'LEXUS LS 500 3.4 6 SemiAuto-10 4WD MPG(18 city/27 hw)',18,27
+'LEXUS LS 500h 3.5 6 SCV-10 2WD MPG(25 city/33 hw)',25,33
+'LEXUS LS 500h 3.5 6 SCV-10 4WD MPG(23 city/31 hw)',23,31
+'LEXUS UX 200 2 4 SCV-10 2WD MPG(29 city/37 hw)',29,37
+'LINCOLN MKZ 2 4 SemiAuto-6 2WD MPG(20 city/31 hw)',20,31
+'LINCOLN MKZ 2 4 SemiAuto-6 4WD MPG(20 city/29 hw)',20,29
+'LINCOLN MKZ 3 6 SemiAuto-6 2WD MPG(18 city/27 hw)',18,27
+'LINCOLN MKZ 3 6 SemiAuto-6 4WD MPG(17 city/26 hw)',17,26
+'MASERATI Ghibli 3 6 Auto-8 2WD MPG(17 city/24 hw)',17,24
+'MASERATI Ghibli S 3 6 Auto-8 2WD MPG(16 city/24 hw)',16,24
+'MASERATI Ghibli S Q4 3 6 Auto-8 4WD MPG(16 city/24 hw)',16,24
+'MAZDA 6 2.5 4 Man-6 2WD MPG(24 city/33 hw)',24,33
+'MAZDA 6 2.5 4 SemiAuto-6 2WD MPG(26 city/35 hw)',26,35
+'MAZDA 6 2.5 4 SemiAuto-6 2WD MPG(23 city/31 hw)',23,31
+'MAZDA Mazda3 2.5 4 Man-6 2WD MPG(25 city/35 hw)',25,35
+'MAZDA Mazda3 2.5 4 SemiAuto-6 2WD MPG(26 city/35 hw)',26,35
+'MAZDA Mazda3 2.5 4 SemiAuto-6 4WD MPG(24 city/32 hw)',24,32
+'MERCEDES-BENZ AMG E53 4Matic+ 3 6 Auto-9 4WD MPG(21 city/28 hw)',21,28
+'MERCEDES-BENZ AMG E63 S 4Matic 4 8 Auto-9 4WD MPG(15 city/23 hw)',15,23
+'MERCEDES-BENZ E300 2 4 Auto-9 2WD MPG(21 city/30 hw)',21,30
+'MERCEDES-BENZ E300 4Matic 2 4 Auto-9 4WD MPG(21 city/29 hw)',21,29
+'MERCEDES-BENZ E450 4Matic 3 6 Auto-9 4WD MPG(20 city/28 hw)',20,28
+'MINI Cooper Clubman 1.5 3 Man-6 2WD MPG(24 city/33 hw)',24,33
+'MINI Cooper Clubman 1.5 3 SemiAuto-6 2WD MPG(24 city/32 hw)',24,32
+'MINI Cooper Clubman All4 1.5 3 Man-6 4WD MPG(22 city/32 hw)',22,32
+'MINI Cooper Clubman All4 1.5 3 SemiAuto-8 4WD MPG(23 city/31 hw)',23,31
+'MINI Cooper Countryman 1.5 3 Man-6 2WD MPG(24 city/33 hw)',24,33
+'MINI Cooper Countryman 1.5 3 SemiAuto-6 2WD MPG(24 city/32 hw)',24,32
+'MINI Cooper Countryman All4 1.5 3 Man-6 4WD MPG(22 city/32 hw)',22,32
+'MINI Cooper Countryman All4 1.5 3 SemiAuto-8 4WD MPG(23 city/30 hw)',23,30
+'MINI Cooper S Clubman 2 4 Man-6 2WD MPG(22 city/31 hw)',22,31
+'MINI Cooper S Clubman 2 4 SemiAuto-8 2WD MPG(23 city/32 hw)',23,32
+'MINI Cooper S Clubman All4 2 4 Man-6 4WD MPG(21 city/30 hw)',21,30
+'MINI Cooper S Clubman All4 2 4 SemiAuto-8 4WD MPG(23 city/31 hw)',23,31
+'MINI Cooper S Countryman 2 4 SemiAuto-8 2WD MPG(23 city/32 hw)',23,32
+'MINI Cooper S Countryman All4 2 4 Man-6 4WD MPG(21 city/30 hw)',21,30
+'MINI Cooper S Countryman All4 2 4 SemiAuto-8 4WD MPG(22 city/31 hw)',22,31
+'MINI JCW Countryman All4 2 4 Man-6 4WD MPG(21 city/30 hw)',21,30
+'MINI JCW Countryman All4 2 4 SemiAuto-8 4WD MPG(22 city/30 hw)',22,30
+'MINI John Cooper Works Clubman All4 2 4 Man-6 4WD MPG(21 city/30 hw)',21,30
+'MINI John Cooper Works Clubman All4 2 4 SemiAuto-8 4WD MPG(23 city/31 hw)',23,31
+'NISSAN Altima 2.5 4 CVT 2WD MPG(28 city/39 hw)',28,39
+'NISSAN Altima 2.5 4 CVT 4WD MPG(26 city/36 hw)',26,36
+'NISSAN Altima SR/Platinum 2 4 CVT 2WD MPG(25 city/34 hw)',25,34
+'NISSAN Altima SR/Platinum 2.5 4 CVT 2WD MPG(27 city/37 hw)',27,37
+'NISSAN Altima SR/Platinum 2.5 4 CVT 4WD MPG(25 city/35 hw)',25,35
+'NISSAN Kicks 1.6 4 CVT 2WD MPG(31 city/36 hw)',31,36
+'NISSAN Maxima 3.5 6 SCV-7 2WD MPG(20 city/30 hw)',20,30
+'NISSAN Sentra 1.6 4 SCV-7 2WD MPG(27 city/33 hw)',27,33
+'NISSAN Sentra 1.8 4 CVT 2WD MPG(29 city/37 hw)',29,37
+'NISSAN Sentra 1.8 4 Man-6 2WD MPG(27 city/35 hw)',27,35
+'NISSAN Sentra Nismo 1.6 4 Man-6 2WD MPG(25 city/31 hw)',25,31
+'NISSAN Sentra Nismo 1.6 4 SCV-7 2WD MPG(25 city/30 hw)',25,30
+'ROLLS-ROYCE Wraith 6.6 12 SemiAuto-8 2WD MPG(12 city/18 hw)',12,18
+'SUBARU Impreza 2 4 Man-5 4WD MPG(24 city/32 hw)',24,32
+'SUBARU Impreza 2 4 SCV-7 4WD MPG(28 city/38 hw)',28,38
+'SUBARU Impreza 4-Door Sport 2 4 Man-5 4WD MPG(23 city/31 hw)',23,31
+'SUBARU Impreza 4-Door Sport 2 4 SCV-7 4WD MPG(27 city/36 hw)',27,36
+'SUBARU Legacy 2.5 4 SCV-7 4WD MPG(25 city/34 hw)',25,34
+'SUBARU Legacy 3.6 6 SCV-6 4WD MPG(20 city/28 hw)',20,28
+'TOYOTA Avalon 3.5 6 SemiAuto-8 2WD MPG(22 city/31 hw)',22,31
+'TOYOTA Avalon XLE 3.5 6 SemiAuto-8 2WD MPG(22 city/32 hw)',22,32
+'TOYOTA Camry 2.5 4 SemiAuto-8 2WD MPG(29 city/41 hw)',29,41
+'TOYOTA Camry 3.5 6 SemiAuto-8 2WD MPG(22 city/33 hw)',22,33
+'TOYOTA Camry LE/SE 2.5 4 SemiAuto-8 2WD MPG(28 city/39 hw)',28,39
+'TOYOTA Camry XLE/XSE 2.5 4 SemiAuto-8 2WD MPG(28 city/39 hw)',28,39
+'TOYOTA Camry XSE 3.5 6 SemiAuto-8 2WD MPG(22 city/32 hw)',22,32
+'TOYOTA Corolla 1.8 4 CVT 2WD MPG(28 city/36 hw)',28,36
+'TOYOTA Corolla 1.8 4 Man-6 2WD MPG(27 city/35 hw)',27,35
+'TOYOTA Corolla 1.8 4 SCV-7 2WD MPG(28 city/35 hw)',28,35
+'TOYOTA Corolla LE Eco 1.8 4 CVT 2WD MPG(29 city/38 hw)',29,38
+'TOYOTA Corolla LE Eco 1.8 4 CVT 2WD MPG(30 city/40 hw)',30,40
+'TOYOTA Prius 1.8 4 CVT 2WD MPG(54 city/50 hw)',54,50
+'TOYOTA Prius 1.8 4 CVT 4WD MPG(52 city/48 hw)',52,48
+'TOYOTA Prius Eco 1.8 4 CVT 2WD MPG(58 city/53 hw)',58,53
+'VOLKSWAGEN Passat 2 4 SemiAuto-6 2WD MPG(25 city/36 hw)',25,36
+'VOLVO S90 2 4 SemiAuto-8 2WD MPG(23 city/35 hw)',23,35
+'VOLVO S90 2 4 SemiAuto-8 4WD MPG(21 city/31 hw)',21,31
+'VOLVO S90 2 4 SemiAuto-8 4WD MPG(22 city/31 hw)',22,31

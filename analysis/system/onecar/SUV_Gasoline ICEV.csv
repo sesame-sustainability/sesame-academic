@@ -1,0 +1,323 @@
+Vehicle Model,MPG_city,MPG_hw
+'Representative Vehicle MPG(20 city/26 hw)',20,26
+'AUDI Q7 2 4 SemiAuto-8 4WD MPG(19 city/25 hw)',19,25
+'AUDI Q7 3 6 SemiAuto-8 4WD MPG(19 city/25 hw)',19,25
+'AUDI Q8 3 6 SemiAuto-8 4WD MPG(17 city/22 hw)',17,22
+'BENTLEY Bentayga 4 8 SemiAuto-8 4WD MPG(14 city/23 hw)',14,23
+'BMW X5 xDrive40i 3 6 SemiAuto-8 4WD MPG(20 city/26 hw)',20,26
+'BMW X5 xDrive50i 4.4 8 SemiAuto-8 4WD MPG(17 city/22 hw)',17,22
+'BMW X6 M 4.4 8 SemiAuto-8 4WD MPG(14 city/19 hw)',14,19
+'BMW X6 sDrive35i 3 6 SemiAuto-8 2WD MPG(18 city/24 hw)',18,24
+'BMW X6 xDrive35i 3 6 SemiAuto-8 4WD MPG(18 city/24 hw)',18,24
+'BMW X6 xDrive50i 4.4 8 SemiAuto-8 4WD MPG(17 city/22 hw)',17,22
+'BMW X7 xDrive40i 3 6 SemiAuto-8 4WD MPG(20 city/25 hw)',20,25
+'BMW X7 xDrive50i 4.4 8 SemiAuto-8 4WD MPG(15 city/21 hw)',15,21
+'BUICK Enclave 3.6 6 Auto-9 2WD MPG(18 city/26 hw)',18,26
+'BUICK Enclave 3.6 6 Auto-9 4WD MPG(17 city/25 hw)',17,25
+'CADILLAC Escalade 6.2 8 Auto-10 2WD MPG(14 city/23 hw)',14,23
+'CADILLAC Escalade 6.2 8 Auto-10 4WD MPG(14 city/21 hw)',14,21
+'CHEVROLET Suburban 1500 5.3 8 Auto-6 2WD MPG(15 city/22 hw)',15,22
+'CHEVROLET Suburban 1500 5.3 8 Auto-6 4WD MPG(14 city/21 hw)',14,21
+'CHEVROLET Suburban 1500 6.2 8 Auto-10 2WD MPG(14 city/23 hw)',14,23
+'CHEVROLET Suburban 1500 6.2 8 Auto-10 4WD MPG(14 city/20 hw)',14,20
+'CHEVROLET Tahoe 1500 5.3 8 Auto-6 2WD MPG(15 city/22 hw)',15,22
+'CHEVROLET Tahoe 1500 5.3 8 Auto-6 4WD MPG(15 city/21 hw)',15,21
+'CHEVROLET Tahoe 1500 6.2 8 Auto-10 2WD MPG(14 city/23 hw)',14,23
+'CHEVROLET Tahoe 1500 6.2 8 Auto-10 4WD MPG(14 city/22 hw)',14,22
+'CHEVROLET Traverse 2 4 Auto-9 2WD MPG(20 city/26 hw)',20,26
+'CHEVROLET Traverse 3.6 6 Auto-9 2WD MPG(18 city/27 hw)',18,27
+'CHEVROLET Traverse 3.6 6 Auto-9 4WD MPG(17 city/25 hw)',17,25
+'DODGE Durango 3.6 6 Auto-8 2WD MPG(19 city/26 hw)',19,26
+'DODGE Durango 3.6 6 Auto-8 4WD MPG(18 city/25 hw)',18,25
+'DODGE Durango 5.7 8 Auto-8 2WD MPG(14 city/22 hw)',14,22
+'DODGE Durango 5.7 8 Auto-8 4WD MPG(14 city/22 hw)',14,22
+'DODGE Durango  SRT 6.4 8 Auto-8 4WD MPG(13 city/19 hw)',13,19
+'FORD Expedition 3.5 6 SemiAuto-10 2WD MPG(17 city/24 hw)',17,24
+'FORD Expedition 3.5 6 SemiAuto-10 4WD MPG(17 city/22 hw)',17,22
+'FORD Expedition MAX 3.5 6 SemiAuto-10 2WD MPG(17 city/23 hw)',17,23
+'FORD Expedition MAX 3.5 6 SemiAuto-10 4WD MPG(16 city/21 hw)',16,21
+'FORD Explorer 2.3 4 SemiAuto-6 2WD MPG(19 city/27 hw)',19,27
+'FORD Explorer 2.3 4 SemiAuto-6 4WD MPG(18 city/25 hw)',18,25
+'FORD Explorer 3.5 6 SemiAuto-6 2WD MPG(17 city/24 hw)',17,24
+'FORD Explorer 3.5 6 SemiAuto-6 4WD MPG(16 city/22 hw)',16,22
+'FORD Flex 3.5 6 SemiAuto-6 2WD MPG(16 city/23 hw)',16,23
+'FORD Flex 3.5 6 SemiAuto-6 4WD MPG(15 city/21 hw)',15,21
+'FORD Flex 3.5 6 SemiAuto-6 4WD MPG(16 city/22 hw)',16,22
+'GMC Acadia 2.5 4 Auto-6 2WD MPG(21 city/26 hw)',21,26
+'GMC Acadia 2.5 4 Auto-6 4WD MPG(21 city/25 hw)',21,25
+'GMC Acadia 3.6 6 Auto-6 2WD MPG(18 city/25 hw)',18,25
+'GMC Acadia 3.6 6 Auto-6 4WD MPG(17 city/25 hw)',17,25
+'GMC Yukon 1500 5.3 8 Auto-6 2WD MPG(15 city/22 hw)',15,22
+'GMC Yukon 1500 5.3 8 Auto-6 4WD MPG(15 city/21 hw)',15,21
+'GMC Yukon 1500 6.2 8 Auto-10 2WD MPG(14 city/23 hw)',14,23
+'GMC Yukon 1500 6.2 8 Auto-10 4WD MPG(14 city/22 hw)',14,22
+'GMC Yukon 1500 XL 5.3 8 Auto-6 2WD MPG(15 city/22 hw)',15,22
+'GMC Yukon 1500 XL 5.3 8 Auto-6 4WD MPG(14 city/21 hw)',14,21
+'GMC Yukon 1500 XL 6.2 8 Auto-10 2WD MPG(14 city/23 hw)',14,23
+'GMC Yukon 1500 XL 6.2 8 Auto-10 4WD MPG(14 city/20 hw)',14,20
+'INFINITI QX80 5.6 8 SemiAuto-7 2WD MPG(14 city/20 hw)',14,20
+'INFINITI QX80 5.6 8 SemiAuto-7 4WD MPG(13 city/19 hw)',13,19
+'JEEP Grand Cherokee 3.6 6 Auto-8 2WD MPG(19 city/26 hw)',19,26
+'JEEP Grand Cherokee 3.6 6 Auto-8 4WD MPG(18 city/25 hw)',18,25
+'JEEP Grand Cherokee 5.7 8 Auto-8 4WD MPG(14 city/22 hw)',14,22
+'JEEP Grand Cherokee SRT 6.4 8 Auto-8 4WD MPG(13 city/19 hw)',13,19
+'JEEP Grand Cherokee Trackhawk 6.2 8 Auto-8 4WD MPG(11 city/17 hw)',11,17
+'LAMBORGHINI Urus 4 8 SemiAuto-8 4WD MPG(12 city/17 hw)',12,17
+'LAND ROVER Discovery 3 6 SemiAuto-8 4WD MPG(16 city/21 hw)',16,21
+'LAND ROVER Range Rover 5 8 SemiAuto-8 4WD MPG(16 city/21 hw)',16,21
+'LAND ROVER Range Rover LWB 5 8 SemiAuto-8 4WD MPG(16 city/21 hw)',16,21
+'LAND ROVER Range Rover LWB SVA 5 8 SemiAuto-8 4WD MPG(13 city/19 hw)',13,19
+'LAND ROVER Range Rover SV 5 8 SemiAuto-8 4WD MPG(14 city/19 hw)',14,19
+'LAND ROVER Range Rover SVA 3 6 SemiAuto-8 4WD MPG(17 city/23 hw)',17,23
+'LAND ROVER Range Rover SVA 5 8 SemiAuto-8 4WD MPG(14 city/19 hw)',14,19
+'LAND ROVER Range Rover Sport 3 6 SemiAuto-8 4WD MPG(17 city/23 hw)',17,23
+'LAND ROVER Range Rover Sport 5 8 SemiAuto-8 4WD MPG(17 city/22 hw)',17,22
+'LAND ROVER Range Rover Sport MHEV 3 6 SemiAuto-8 4WD MPG(19 city/25 hw)',19,25
+'LAND ROVER Range Rover Sport SVR 5 8 SemiAuto-8 4WD MPG(15 city/20 hw)',15,20
+'LEXUS GX 460 4.6 8 SemiAuto-6 4WD MPG(15 city/18 hw)',15,18
+'LEXUS LX 570 5.7 8 SemiAuto-8 4WD MPG(13 city/18 hw)',13,18
+'LEXUS RX 450h 3.5 6 SCV-6 4WD MPG(31 city/28 hw)',31,28
+'LEXUS RX 450h L 3.5 6 SCV-6 4WD MPG(29 city/28 hw)',29,28
+'LINCOLN MKT 3.5 6 SemiAuto-6 4WD MPG(15 city/21 hw)',15,21
+'LINCOLN MKT 3.7 6 SemiAuto-6 2WD MPG(16 city/24 hw)',16,24
+'LINCOLN Navigator 3.5 6 SemiAuto-10 2WD MPG(16 city/23 hw)',16,23
+'LINCOLN Navigator 3.5 6 SemiAuto-10 4WD MPG(16 city/21 hw)',16,21
+'LINCOLN Navigator L 3.5 6 SemiAuto-10 2WD MPG(16 city/22 hw)',16,22
+'MASERATI Levante 3 6 Auto-8 4WD MPG(15 city/21 hw)',15,21
+'MASERATI Levante GTS 3.8 8 Auto-8 4WD MPG(14 city/18 hw)',14,18
+'MASERATI Levante S 3 6 Auto-8 4WD MPG(15 city/21 hw)',15,21
+'MASERATI Levante Trofeo 3.8 8 Auto-8 4WD MPG(14 city/18 hw)',14,18
+'MERCEDES-BENZ AMG G63 4 8 Auto-9 4WD MPG(13 city/15 hw)',13,15
+'MERCEDES-BENZ AMG GLE 43 4Matic 3 6 Auto-9 4WD MPG(17 city/22 hw)',17,22
+'MERCEDES-BENZ AMG GLE63 5.5 8 Auto-7 4WD MPG(12 city/18 hw)',12,18
+'MERCEDES-BENZ AMG GLE63 S 5.5 8 Auto-7 4WD MPG(14 city/18 hw)',14,18
+'MERCEDES-BENZ AMG GLS63 5.5 8 Auto-7 4WD MPG(13 city/18 hw)',13,18
+'MERCEDES-BENZ G550 4 8 Auto-9 4WD MPG(13 city/17 hw)',13,17
+'MERCEDES-BENZ GLE400 4Matic 3 6 Auto-9 4WD MPG(17 city/23 hw)',17,23
+'MERCEDES-BENZ GLS450 4Matic 3 6 Auto-9 4WD MPG(16 city/22 hw)',16,22
+'MERCEDES-BENZ GLS550 4Matic 4.7 8 Auto-9 4WD MPG(14 city/19 hw)',14,19
+'NISSAN Armada 5.6 8 SemiAuto-7 2WD MPG(14 city/19 hw)',14,19
+'NISSAN Armada 5.6 8 SemiAuto-7 4WD MPG(13 city/18 hw)',13,18
+'PORSCHE Cayenne 3 6 SemiAuto-8 4WD MPG(19 city/23 hw)',19,23
+'PORSCHE Cayenne S 2.9 6 SemiAuto-8 4WD MPG(18 city/23 hw)',18,23
+'PORSCHE Cayenne Turbo 4 8 SemiAuto-8 4WD MPG(15 city/19 hw)',15,19
+'SUBARU Ascent 2.4 4 SCV-8 4WD MPG(21 city/27 hw)',21,27
+'SUBARU Ascent Limited/Touring 2.4 4 SCV-8 4WD MPG(20 city/26 hw)',20,26
+'TOYOTA 4Runner 4 6 SemiAuto-5 2WD MPG(17 city/21 hw)',17,21
+'TOYOTA 4Runner 4 6 SemiAuto-5 4WD MPG(17 city/20 hw)',17,20
+'TOYOTA Highlander 3.5 6 SemiAuto-8 4WD MPG(19 city/26 hw)',19,26
+'TOYOTA Highlander 3.5 6 SemiAuto-8 4WD MPG(20 city/26 hw)',20,26
+'TOYOTA Highlander AWD LE 3.5 6 SemiAuto-8 4WD MPG(20 city/27 hw)',20,27
+'TOYOTA Highlander Hybrid 3.5 6 SCV-6 4WD MPG(29 city/27 hw)',29,27
+'TOYOTA Highlander Hybrid LE 3.5 6 SCV-6 4WD MPG(30 city/28 hw)',30,28
+'TOYOTA Land Cruiser 5.7 8 SemiAuto-8 4WD MPG(13 city/18 hw)',13,18
+'TOYOTA Sequoia 5.7 8 SemiAuto-6 2WD MPG(13 city/17 hw)',13,17
+'TOYOTA Sequoia 5.7 8 SemiAuto-6 4WD MPG(13 city/17 hw)',13,17
+'VOLKSWAGEN Atlas 4Motion 3.6 6 SemiAuto-8 4WD MPG(17 city/23 hw)',17,23
+'VOLVO XC90 2 4 SemiAuto-8 2WD MPG(21 city/29 hw)',21,29
+'VOLVO XC90 2 4 SemiAuto-8 4WD MPG(19 city/26 hw)',19,26
+'VOLVO XC90 2 4 SemiAuto-8 4WD MPG(20 city/27 hw)',20,27
+'ACURA MDX 3 6 AMS-7 4WD MPG(26 city/27 hw)',26,27
+'ACURA MDX 3.5 6 SemiAuto-9 2WD MPG(20 city/27 hw)',20,27
+'ACURA MDX 3.5 6 SemiAuto-9 4WD MPG(19 city/26 hw)',19,26
+'ACURA MDX A-spec 3.5 6 SemiAuto-9 4WD MPG(19 city/25 hw)',19,25
+'ACURA RDX 2 4 SemiAuto-10 2WD MPG(22 city/28 hw)',22,28
+'ACURA RDX 2 4 SemiAuto-10 4WD MPG(21 city/27 hw)',21,27
+'ACURA RDX A-SPEC 2 4 SemiAuto-10 2WD MPG(22 city/27 hw)',22,27
+'ACURA RDX A-SPEC 2 4 SemiAuto-10 4WD MPG(21 city/26 hw)',21,26
+'ALFA ROMEO Stelvio 2 4 Auto-8 2WD MPG(22 city/29 hw)',22,29
+'ALFA ROMEO Stelvio AWD 2 4 Auto-8 4WD MPG(22 city/28 hw)',22,28
+'ALFA ROMEO Stelvio AWD 2.9 6 Auto-8 4WD MPG(17 city/23 hw)',17,23
+'AUDI Q5 2 4 SemiAuto-7 4WD MPG(22 city/27 hw)',22,27
+'AUDI SQ5 3 6 SemiAuto-8 4WD MPG(19 city/24 hw)',19,24
+'BMW X3 M40i 3 6 SemiAuto-8 4WD MPG(20 city/27 hw)',20,27
+'BMW X3 sDrive30i 2 4 SemiAuto-8 2WD MPG(23 city/30 hw)',23,30
+'BMW X3 xDrive30i 2 4 SemiAuto-8 4WD MPG(22 city/29 hw)',22,29
+'BMW X4 M40i 3 6 SemiAuto-8 4WD MPG(20 city/27 hw)',20,27
+'BMW X4 xDrive30i 2 4 SemiAuto-8 4WD MPG(22 city/29 hw)',22,29
+'BUICK Encore 1.4 4 SemiAuto-6 2WD MPG(26 city/31 hw)',26,31
+'BUICK Encore 1.4 4 SemiAuto-6 2WD MPG(25 city/30 hw)',25,30
+'BUICK Encore 1.4 4 SemiAuto-6 4WD MPG(25 city/30 hw)',25,30
+'BUICK Encore 1.4 4 SemiAuto-6 4WD MPG(24 city/29 hw)',24,29
+'BUICK Envision 2 4 Auto-9 4WD MPG(20 city/25 hw)',20,25
+'BUICK Envision 2.5 4 Auto-6 2WD MPG(22 city/29 hw)',22,29
+'BUICK Envision 2.5 4 Auto-6 4WD MPG(21 city/27 hw)',21,27
+'CADILLAC XT4 2 4 SemiAuto-9 2WD MPG(24 city/30 hw)',24,30
+'CADILLAC XT4 2 4 SemiAuto-9 4WD MPG(22 city/29 hw)',22,29
+'CADILLAC XT5 3.6 6 SemiAuto-8 2WD MPG(19 city/26 hw)',19,26
+'CADILLAC XT5 3.6 6 SemiAuto-8 4WD MPG(18 city/25 hw)',18,25
+'CHEVROLET Blazer 2.5 4 Auto-9 2WD MPG(22 city/27 hw)',22,27
+'CHEVROLET Blazer 3.6 6 Auto-9 2WD MPG(20 city/26 hw)',20,26
+'CHEVROLET Blazer 3.6 6 Auto-9 4WD MPG(18 city/25 hw)',18,25
+'CHEVROLET Equinox 1.5 4 Auto-6 2WD MPG(26 city/32 hw)',26,32
+'CHEVROLET Equinox 1.5 4 Auto-6 4WD MPG(25 city/30 hw)',25,30
+'CHEVROLET Equinox 2 4 Auto-9 2WD MPG(22 city/29 hw)',22,29
+'CHEVROLET Equinox 2 4 Auto-9 4WD MPG(22 city/28 hw)',22,28
+'CHEVROLET Trax 1.4 4 SemiAuto-6 2WD MPG(26 city/31 hw)',26,31
+'CHEVROLET Trax 1.4 4 SemiAuto-6 4WD MPG(24 city/29 hw)',24,29
+'DODGE Journey 2.4 4 Auto-4 2WD MPG(19 city/25 hw)',19,25
+'DODGE Journey 3.6 6 Auto-6 4WD MPG(16 city/24 hw)',16,24
+'FIAT 500X 1.3 4 Auto-9 4WD MPG(24 city/30 hw)',24,30
+'FORD EcoSport 1 3 SemiAuto-6 2WD MPG(27 city/29 hw)',27,29
+'FORD EcoSport 2 4 SemiAuto-6 4WD MPG(23 city/29 hw)',23,29
+'FORD Edge 2 4 SemiAuto-8 2WD MPG(22 city/29 hw)',22,29
+'FORD Edge 2 4 SemiAuto-8 4WD MPG(21 city/28 hw)',21,28
+'FORD Edge 2.7 6 SemiAuto-8 4WD MPG(19 city/26 hw)',19,26
+'FORD Escape 1.5 4 SemiAuto-6 2WD MPG(23 city/30 hw)',23,30
+'FORD Escape 1.5 4 SemiAuto-6 4WD MPG(22 city/28 hw)',22,28
+'FORD Escape 2 4 SemiAuto-6 2WD MPG(22 city/29 hw)',22,29
+'FORD Escape 2 4 SemiAuto-6 4WD MPG(21 city/27 hw)',21,27
+'FORD Escape 2.5 4 SemiAuto-6 2WD MPG(21 city/29 hw)',21,29
+'GMC Terrain 1.5 4 Auto-9 2WD MPG(26 city/30 hw)',26,30
+'GMC Terrain 1.5 4 Auto-9 4WD MPG(24 city/28 hw)',24,28
+'GMC Terrain 2 4 Auto-9 2WD MPG(22 city/28 hw)',22,28
+'GMC Terrain 2 4 Auto-9 4WD MPG(21 city/26 hw)',21,26
+'HONDA CR-V 1.5 4 CVT 2WD MPG(28 city/34 hw)',28,34
+'HONDA CR-V 1.5 4 CVT 4WD MPG(27 city/33 hw)',27,33
+'HONDA CR-V 2.4 4 CVT 2WD MPG(26 city/32 hw)',26,32
+'HONDA CR-V 2.4 4 CVT 4WD MPG(25 city/31 hw)',25,31
+'HONDA Passport 3.5 6 SemiAuto-9 2WD MPG(20 city/25 hw)',20,25
+'HONDA Passport 3.5 6 SemiAuto-9 4WD MPG(19 city/24 hw)',19,24
+'HONDA Pilot 3.5 6 Auto-6 2WD MPG(19 city/27 hw)',19,27
+'HONDA Pilot 3.5 6 Auto-6 4WD MPG(18 city/26 hw)',18,26
+'HONDA Pilot 3.5 6 SemiAuto-9 2WD MPG(20 city/27 hw)',20,27
+'HONDA Pilot 3.5 6 SemiAuto-9 4WD MPG(19 city/26 hw)',19,26
+'HYUNDAI Kona 1.6 4 AutoMan-7 2WD MPG(28 city/32 hw)',28,32
+'HYUNDAI Kona 1.6 4 AutoMan-7 4WD MPG(26 city/29 hw)',26,29
+'HYUNDAI Kona 2 4 SemiAuto-6 2WD MPG(27 city/33 hw)',27,33
+'HYUNDAI Kona 2 4 SemiAuto-6 4WD MPG(25 city/30 hw)',25,30
+'HYUNDAI Santa Fe 2 4 SemiAuto-8 2WD MPG(20 city/25 hw)',20,25
+'HYUNDAI Santa Fe 2 4 SemiAuto-8 4WD MPG(19 city/24 hw)',19,24
+'HYUNDAI Santa Fe 2.4 4 SemiAuto-8 2WD MPG(22 city/29 hw)',22,29
+'HYUNDAI Santa Fe 2.4 4 SemiAuto-8 4WD MPG(21 city/27 hw)',21,27
+'HYUNDAI Santa Fe XL 3.3 6 SemiAuto-6 2WD MPG(18 city/25 hw)',18,25
+'HYUNDAI Santa Fe XL 3.3 6 SemiAuto-6 4WD MPG(18 city/24 hw)',18,24
+'HYUNDAI Santa Fe XL Ultimate 3.3 6 SemiAuto-6 2WD MPG(18 city/23 hw)',18,23
+'HYUNDAI Santa Fe XL Ultimate 3.3 6 SemiAuto-6 4WD MPG(17 city/22 hw)',17,22
+'HYUNDAI Tuscon 2 4 SemiAuto-6 2WD MPG(23 city/30 hw)',23,30
+'HYUNDAI Tuscon 2 4 SemiAuto-6 4WD MPG(22 city/25 hw)',22,25
+'HYUNDAI Tuscon 2.4 4 SemiAuto-6 2WD MPG(22 city/28 hw)',22,28
+'HYUNDAI Tuscon 2.4 4 SemiAuto-6 4WD MPG(21 city/26 hw)',21,26
+'INFINITI QX50 2 4 SCV-8 2WD MPG(24 city/31 hw)',24,31
+'INFINITI QX50 2 4 SCV-8 4WD MPG(24 city/30 hw)',24,30
+'INFINITI QX60 3.5 6 SCV-7 2WD MPG(20 city/27 hw)',20,27
+'INFINITI QX60 3.5 6 SCV-7 4WD MPG(19 city/26 hw)',19,26
+'JAGUAR E-Pace P250 2 4 SemiAuto-9 4WD MPG(21 city/28 hw)',21,28
+'JAGUAR E-Pace P300 2 4 SemiAuto-9 4WD MPG(21 city/27 hw)',21,27
+'JAGUAR F-Pace 2 4 SemiAuto-8 4WD MPG(22 city/27 hw)',22,27
+'JAGUAR F-Pace 3 6 SemiAuto-8 4WD MPG(18 city/23 hw)',18,23
+'JAGUAR F-Pace 5 8 SemiAuto-8 4WD MPG(16 city/21 hw)',16,21
+'JEEP Cherokee 2 4 Auto-9 2WD MPG(23 city/31 hw)',23,31
+'JEEP Cherokee 2 4 Auto-9 4WD MPG(21 city/29 hw)',21,29
+'JEEP Cherokee 2.4 4 Auto-9 2WD MPG(22 city/31 hw)',22,31
+'JEEP Cherokee 2.4 4 Auto-9 4WD MPG(21 city/29 hw)',21,29
+'JEEP Cherokee 3.2 6 Auto-9 2WD MPG(20 city/29 hw)',20,29
+'JEEP Cherokee 3.2 6 Auto-9 4WD MPG(19 city/27 hw)',19,27
+'JEEP Cherokee 4x4 Active Drive II 2 4 Auto-9 4WD MPG(20 city/27 hw)',20,27
+'JEEP Cherokee 4x4 Active Drive II 3.2 6 Auto-9 4WD MPG(18 city/26 hw)',18,26
+'JEEP Cherokee Trailhawk 2 4 Auto-9 4WD MPG(20 city/26 hw)',20,26
+'JEEP Cherokee Trailhawk 3.2 6 Auto-9 4WD MPG(18 city/24 hw)',18,24
+'JEEP Compass 2.4 4 Auto-6 2WD MPG(22 city/31 hw)',22,31
+'JEEP Compass 2.4 4 Auto-9 4WD MPG(22 city/30 hw)',22,30
+'JEEP Compass 2.4 4 Man-6 2WD MPG(23 city/32 hw)',23,32
+'JEEP Compass 2.4 4 Man-6 4WD MPG(22 city/31 hw)',22,31
+'JEEP Renegade 1.3 4 Auto-9 2WD MPG(24 city/32 hw)',24,32
+'JEEP Renegade 1.3 4 Auto-9 4WD MPG(23 city/29 hw)',23,29
+'JEEP Renegade 2.4 4 Auto-9 2WD MPG(22 city/30 hw)',22,30
+'JEEP Renegade 2.4 4 Auto-9 4WD MPG(21 city/29 hw)',21,29
+'JEEP Renegade Trailhawk 1.3 4 Auto-9 4WD MPG(22 city/27 hw)',22,27
+'JEEP Wrangler 2 4 Auto-8 4WD MPG(23 city/25 hw)',23,25
+'JEEP Wrangler 3.6 6 Auto-8 4WD MPG(18 city/23 hw)',18,23
+'JEEP Wrangler 3.6 6 Man-6 4WD MPG(17 city/25 hw)',17,25
+'JEEP Wrangler Unlimited 2 4 Auto-8 4WD MPG(22 city/24 hw)',22,24
+'JEEP Wrangler Unlimited 3.6 6 Auto-8 4WD MPG(18 city/23 hw)',18,23
+'JEEP Wrangler Unlimited 3.6 6 Man-6 4WD MPG(17 city/23 hw)',17,23
+'KIA Sorento 2.4 4 SemiAuto-6 2WD MPG(22 city/29 hw)',22,29
+'KIA Sorento 2.4 4 SemiAuto-6 4WD MPG(21 city/26 hw)',21,26
+'KIA Sorento 3.3 6 SemiAuto-8 2WD MPG(19 city/26 hw)',19,26
+'KIA Sorento 3.3 6 SemiAuto-8 4WD MPG(19 city/24 hw)',19,24
+'KIA Sportage 2 4 SemiAuto-6 2WD MPG(21 city/26 hw)',21,26
+'KIA Sportage 2 4 SemiAuto-6 4WD MPG(20 city/23 hw)',20,23
+'KIA Sportage 2.4 4 SemiAuto-6 2WD MPG(22 city/29 hw)',22,29
+'KIA Sportage 2.4 4 SemiAuto-6 4WD MPG(21 city/25 hw)',21,25
+'KIA Sportage FE 2.4 4 SemiAuto-6 2WD MPG(23 city/30 hw)',23,30
+'KIA Sportage FE 2.4 4 SemiAuto-6 4WD MPG(21 city/25 hw)',21,25
+'LAND ROVER Discovery Sport 2 4 SemiAuto-9 4WD MPG(21 city/25 hw)',21,25
+'LAND ROVER Discovery Sport Si4 2 4 SemiAuto-9 4WD MPG(20 city/25 hw)',20,25
+'LAND ROVER Range Rover Evoque 237HP 2 4 SemiAuto-9 4WD MPG(22 city/29 hw)',22,29
+'LAND ROVER Range Rover Evoque 286HP 2 4 SemiAuto-9 4WD MPG(21 city/29 hw)',21,29
+'LAND ROVER Range Rover Evoque Cabriolet 2 4 SemiAuto-9 4WD MPG(21 city/29 hw)',21,29
+'LAND ROVER Range Rover Velar 2 4 SemiAuto-8 4WD MPG(21 city/27 hw)',21,27
+'LAND ROVER Range Rover Velar 3 6 SemiAuto-8 4WD MPG(18 city/24 hw)',18,24
+'LEXUS NX 300 2 4 SemiAuto-6 2WD MPG(22 city/28 hw)',22,28
+'LEXUS NX 300 2 4 SemiAuto-6 4WD MPG(22 city/28 hw)',22,28
+'LEXUS NX 300 F Sport 2 4 SemiAuto-6 4WD MPG(22 city/27 hw)',22,27
+'LEXUS NX 300h 2.5 4 SCV-6 4WD MPG(33 city/30 hw)',33,30
+'LEXUS RX 350 3.5 6 SemiAuto-8 2WD MPG(20 city/27 hw)',20,27
+'LEXUS RX 350 3.5 6 SemiAuto-8 4WD MPG(19 city/26 hw)',19,26
+'LEXUS RX 350 L 3.5 6 SemiAuto-8 2WD MPG(19 city/26 hw)',19,26
+'LEXUS RX 350 L 3.5 6 SemiAuto-8 4WD MPG(18 city/25 hw)',18,25
+'LINCOLN MKC 2 4 SemiAuto-6 2WD MPG(20 city/27 hw)',20,27
+'LINCOLN MKC 2 4 SemiAuto-6 4WD MPG(19 city/25 hw)',19,25
+'LINCOLN MKC 2.3 4 SemiAuto-6 4WD MPG(18 city/25 hw)',18,25
+'LINCOLN Nautilus 2 4 SemiAuto-8 4WD MPG(20 city/25 hw)',20,25
+'LINCOLN Nautilus 2.7 6 SemiAuto-8 4WD MPG(19 city/26 hw)',19,26
+'LINCOLN Nuatilus 2 4 SemiAuto-8 2WD MPG(21 city/26 hw)',21,26
+'LINCOLN Nuatilus 2.7 6 SemiAuto-8 2WD MPG(20 city/27 hw)',20,27
+'MAZDA CX-5 2WD 2.5 4 SemiAuto-6 2WD MPG(25 city/31 hw)',25,31
+'MAZDA CX-5 2WD 2.5 4 SemiAuto-6 2WD MPG(23 city/28 hw)',23,28
+'MAZDA CX-5 4WD 2.5 4 SemiAuto-6 4WD MPG(24 city/30 hw)',24,30
+'MAZDA CX-5 4WD 2.5 4 SemiAuto-6 4WD MPG(22 city/27 hw)',22,27
+'MAZDA CX-9 2.5 4 SemiAuto-6 2WD MPG(22 city/28 hw)',22,28
+'MAZDA CX-9 2.5 4 SemiAuto-6 4WD MPG(20 city/26 hw)',20,26
+'MERCEDES-BENZ AMG GLC43 4Matic 3 6 Auto-9 4WD MPG(19 city/24 hw)',19,24
+'MERCEDES-BENZ AMG GLC43 4Matic 3 6 Auto-9 4WD MPG(19 city/25 hw)',19,25
+'MERCEDES-BENZ AMG GLC63 4Matic 4 8 Auto-9 4WD MPG(16 city/22 hw)',16,22
+'MERCEDES-BENZ AMG GLC63 S 4Matic 4 8 Auto-9 4WD MPG(16 city/22 hw)',16,22
+'MERCEDES-BENZ GLA 250 2 4 AutoMan-7 2WD MPG(24 city/33 hw)',24,33
+'MERCEDES-BENZ GLA250 4Matic 2 4 AutoMan-7 4WD MPG(23 city/31 hw)',23,31
+'MERCEDES-BENZ GLC 300 2 4 Auto-9 2WD MPG(22 city/27 hw)',22,27
+'MERCEDES-BENZ GLC 300 4Matic 2 4 Auto-9 4WD MPG(21 city/27 hw)',21,27
+'MERCEDES-BENZ GLC 300 4Matic 2 4 Auto-9 4WD MPG(22 city/27 hw)',22,27
+'MITSUBISHI Eclipse Cross 1.5 4 SCV-8 2WD MPG(25 city/28 hw)',25,28
+'MITSUBISHI Eclipse Cross 1.5 4 SCV-8 4WD MPG(25 city/26 hw)',25,26
+'MITSUBISHI Eclipse Cross ES 1.5 4 SCV-8 2WD MPG(26 city/29 hw)',26,29
+'MITSUBISHI Eclipse Cross ES 1.5 4 SCV-8 4WD MPG(25 city/28 hw)',25,28
+'MITSUBISHI Outlander 2.4 4 SCV-6 2WD MPG(25 city/30 hw)',25,30
+'MITSUBISHI Outlander 2.4 4 SCV-6 4WD MPG(24 city/29 hw)',24,29
+'MITSUBISHI Outlander 3 6 SemiAuto-6 4WD MPG(20 city/27 hw)',20,27
+'MITSUBISHI Outlander Sport 2 4 Man-5 2WD MPG(23 city/29 hw)',23,29
+'MITSUBISHI Outlander Sport 2 4 SCV-6 2WD MPG(24 city/30 hw)',24,30
+'MITSUBISHI Outlander Sport 2 4 SCV-6 4WD MPG(23 city/29 hw)',23,29
+'MITSUBISHI Outlander Sport 2.4 4 SCV-6 2WD MPG(23 city/29 hw)',23,29
+'MITSUBISHI Outlander Sport 2.4 4 SCV-6 4WD MPG(23 city/28 hw)',23,28
+'NISSAN Pathfinder 3.5 6 CVT 2WD MPG(20 city/27 hw)',20,27
+'NISSAN Pathfinder 3.5 6 CVT 4WD MPG(19 city/26 hw)',19,26
+'NISSAN Pathfinder 4WD Platinum 3.5 6 CVT 4WD MPG(19 city/26 hw)',19,26
+'NISSAN Rogue 2.5 4 CVT 2WD MPG(26 city/33 hw)',26,33
+'NISSAN Rogue 2.5 4 CVT 4WD MPG(25 city/32 hw)',25,32
+'NISSAN Rogue Hybrid 2 4 SCV-7 2WD MPG(33 city/35 hw)',33,35
+'NISSAN Rogue Hybrid 2 4 SCV-7 4WD MPG(31 city/34 hw)',31,34
+'PORSCHE Macan 2 4 AMS-7 4WD MPG(19 city/23 hw)',19,23
+'PORSCHE Macan S 3 6 AMS-7 4WD MPG(18 city/23 hw)',18,23
+'SUBARU Crosstrek 2 4 Man-6 4WD MPG(23 city/29 hw)',23,29
+'SUBARU Crosstrek 2 4 SCV-7 4WD MPG(27 city/33 hw)',27,33
+'SUBARU Forester 2.5 4 SCV-7 4WD MPG(26 city/33 hw)',26,33
+'SUBARU Outback AWD 2.5 4 SCV-7 4WD MPG(25 city/32 hw)',25,32
+'SUBARU Outback AWD 3.6 6 SCV-6 4WD MPG(20 city/27 hw)',20,27
+'TOYOTA Highlander 2.7 4 SemiAuto-6 2WD MPG(20 city/24 hw)',20,24
+'TOYOTA Highlander 3.5 6 SemiAuto-8 2WD MPG(20 city/27 hw)',20,27
+'TOYOTA Highlander LE/XLE/SE/LTD 3.5 6 SemiAuto-8 2WD MPG(21 city/27 hw)',21,27
+'TOYOTA RAV4 2.5 4 SemiAuto-8 2WD MPG(26 city/35 hw)',26,35
+'TOYOTA RAV4 2.5 4 SemiAuto-8 4WD MPG(25 city/33 hw)',25,33
+'TOYOTA RAV4 2.5 4 SemiAuto-8 4WD MPG(27 city/34 hw)',27,34
+'TOYOTA RAV4 Hybrid 2.5 4 SCV-6 4WD MPG(41 city/38 hw)',41,38
+'VOLKSWAGEN Atlas 2 4 SemiAuto-8 2WD MPG(20 city/26 hw)',20,26
+'VOLKSWAGEN Atlas 3.6 6 SemiAuto-8 2WD MPG(17 city/24 hw)',17,24
+'VOLKSWAGEN Tiguan 2 4 SemiAuto-8 2WD MPG(22 city/29 hw)',22,29
+'VOLKSWAGEN Tiguan 4Motion 2 4 SemiAuto-8 4WD MPG(21 city/29 hw)',21,29
+'VOLVO XC40 2 4 SemiAuto-8 2WD MPG(23 city/33 hw)',23,33
+'VOLVO XC40 2 4 SemiAuto-8 4WD MPG(23 city/31 hw)',23,31
+'VOLVO XC60 2 4 SemiAuto-8 2WD MPG(22 city/29 hw)',22,29
+'VOLVO XC60 2 4 SemiAuto-8 4WD MPG(19 city/27 hw)',19,27
+'VOLVO XC60 2 4 SemiAuto-8 4WD MPG(20 city/27 hw)',20,27

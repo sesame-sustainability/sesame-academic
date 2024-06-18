@@ -1,0 +1,113 @@
+Type,Item,Source,% cost
+onshore,Tower,IRENA,18.0944
+onshore,Rotor Blades,IRENA,15.2736
+onshore,Rotor hub,IRENA,0.94256
+onshore,Rotor bearings,IRENA,0.83936
+onshore,Main shaft,IRENA,1.31408
+onshore,Main frame,IRENA,1.9264
+onshore,Gearbox,IRENA,8.88208
+onshore,Generator,IRENA,2.36672
+onshore,Yaw system,IRENA,0.86
+onshore,Pitch system,IRENA,1.83008
+onshore,Power coverter,IRENA,3.44688
+onshore,Transformer,IRENA,2.46992
+onshore,Brake system,IRENA,0.90816
+onshore,Nacelle housing,IRENA,0.9288
+onshore,Cables,IRENA,0.66048
+onshore,Screws,IRENA,0.71552
+onshore,Misc,IRENA,7.34096
+onshore,Development,NREL,1.1
+onshore,Engineering Management,NREL,1.3
+onshore,Foundation,NREL,4.1
+onshore,Site Access and Staging,NREL,3
+onshore,Assembly and Installation,NREL,3.1
+onshore,Electrical Infrastructure,NREL,10.1
+onshore,Contingency,NREL,6
+onshore,Construction Finance,NREL,2.6
+offshore fixed,Tower,IRENA,7.7059
+offshore fixed,Rotor Blades,IRENA,6.5046
+offshore fixed,Rotor hub,IRENA,0.40141
+offshore fixed,Rotor bearings,IRENA,0.35746
+offshore fixed,Main shaft,IRENA,0.55963
+offshore fixed,Main frame,IRENA,0.8204
+offshore fixed,Gearbox,IRENA,3.78263
+offshore fixed,Generator,IRENA,1.00792
+offshore fixed,Yaw system,IRENA,0.36625
+offshore fixed,Pitch system,IRENA,0.77938
+offshore fixed,Power coverter,IRENA,1.46793
+offshore fixed,Transformer,IRENA,1.05187
+offshore fixed,Brake system,IRENA,0.38676
+offshore fixed,Nacelle housing,IRENA,0.39555
+offshore fixed,Cables,IRENA,0.28128
+offshore fixed,Screws,IRENA,0.30472
+offshore fixed,Misc,IRENA,3.12631
+offshore fixed,Development,NREL,3.1
+offshore fixed,Engineering Management,NREL,1.6
+offshore fixed,Substructure & Foundation,NREL,15.2
+offshore fixed,"Port and Staging, Logistics, Transportation",NREL,1.3
+offshore fixed,Electrical Infrastructure,NREL,25.4
+offshore fixed,Assembly and Installation,NREL,7.6
+offshore fixed,Lease Price,NREL,2
+offshore fixed,Plant Commissioning,NREL,1
+offshore fixed,Decommissioning,NREL,1.3
+offshore fixed,Contingency,NREL,7.1
+offshore fixed,Construction Finance,NREL,4.1
+offshore fixed,Insurance During Construction,NREL,1
+offshore floating,Tower,IRENA,6.3909
+offshore floating,Rotor Blades,IRENA,5.3946
+offshore floating,Rotor hub,IRENA,0.33291
+offshore floating,Rotor bearings,IRENA,0.29646
+offshore floating,Main shaft,IRENA,0.46413
+offshore floating,Main frame,IRENA,0.6804
+offshore floating,Gearbox,IRENA,3.13713
+offshore floating,Generator,IRENA,0.83592
+offshore floating,Yaw system,IRENA,0.30375
+offshore floating,Pitch system,IRENA,0.64638
+offshore floating,Power coverter,IRENA,1.21743
+offshore floating,Transformer,IRENA,0.87237
+offshore floating,Brake system,IRENA,0.32076
+offshore floating,Nacelle housing,IRENA,0.32805
+offshore floating,Cables,IRENA,0.23328
+offshore floating,Screws,IRENA,0.25272
+offshore floating,Misc,IRENA,2.59281
+offshore floating,Development,NREL,3.1
+offshore floating,Engineering Management,NREL,1.6
+offshore floating,Substructure & Foundation,NREL,26.9
+offshore floating,"Port and Staging, Logistics, Transportation",NREL,0.8
+offshore floating,Electrical Infrastructure,NREL,18.7
+offshore floating,Assembly and Installation,NREL,8.2
+offshore floating,Lease Price,NREL,1.6
+offshore floating,Plant Commissioning,NREL,1
+offshore floating,Decommissioning,NREL,1.4
+offshore floating,Contingency,NREL,7.3
+offshore floating,Construction Finance,NREL,4.1
+offshore floating,Insurance During Construction,NREL,1
+offshore,Tower,Average,7.0484
+offshore,Rotor Blades,Average,5.9496
+offshore,Rotor hub,Average,0.36716
+offshore,Rotor bearings,Average,0.32696
+offshore,Main shaft,Average,0.51188
+offshore,Main frame,Average,0.7504
+offshore,Gearbox,Average,3.45988
+offshore,Generator,Average,0.92192
+offshore,Yaw system,Average,0.335
+offshore,Pitch system,Average,0.71288
+offshore,Power coverter,Average,1.34268
+offshore,Transformer,Average,0.96212
+offshore,Brake system,Average,0.35376
+offshore,Nacelle housing,Average,0.3618
+offshore,Cables,Average,0.25728
+offshore,Screws,Average,0.27872
+offshore,Misc,Average,2.85956
+offshore,Development,Average,3.1
+offshore,Engineering Management,Average,1.6
+offshore,Substructure & Foundation,Average,21.05
+offshore,"Port and Staging, Logistics, Transportation",Average,1.05
+offshore,Electrical Infrastructure,Average,22.05
+offshore,Assembly and Installation,Average,7.9
+offshore,Lease Price,Average,1.8
+offshore,Plant Commissioning,Average,1
+offshore,Decommissioning,Average,1.35
+offshore,Contingency,Average,7.2
+offshore,Construction Finance,Average,4.1
+offshore,Insurance During Construction,Average,1

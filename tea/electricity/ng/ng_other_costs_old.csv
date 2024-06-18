@@ -1,0 +1,37 @@
+﻿Cost Type,Source,Turbine,turbine_config,fuel_type,year,value,unit,refsize,unit,source 
+OCC,NREL,Gas Turbine,,Natural Gas,2018,943,$/KW,750,MW,https://atb.nrel.gov/electricity/2020/index.php?t=ei
+FOM,NREL,Gas Turbine,,Natural Gas,2018,11,$/KW-year,,,
+VOM,NREL,Gas Turbine,,Natural Gas,2018,4,$/MWh,,,
+lifetime,NREL,Gas Turbine,,Natural Gas,2018,30,years,,,
+OCC,NREL,Combined Cycle,,Natural Gas,2018,1044,$/KW,750,MW,https://atb.nrel.gov/electricity/2020/index.php?t=ei
+FOM,NREL,Combined Cycle,,Natural Gas,2018,13,$/KW-year,,,
+VOM,NREL,Combined Cycle,,Natural Gas,2018,2,$/MWh,,,
+lifetime,NREL,Combined Cycle,,Natural Gas,2018,30,years,,,
+OCC,NREL,Combined Cycle CCS,,Natural Gas,2018,2666,$/kW,750,MW,https://atb.nrel.gov/electricity/2020/index.php?t=ei
+FOM,NREL,Combined Cycle CCS,,Natural Gas,2018,27,$/kW-year,,,
+VOM,NREL,Combined Cycle CCS,,Natural Gas,2018,6,$/MWh,,,
+lifetime,NREL,Combined Cycle CCS,,Natural Gas,2018,30,years,,,
+OCC,EIA,Internal Combustion Engines,,Natural Gas,2021,1813,$/kW,21,MW,https://www.eia.gov/outlooks/aeo/assumptions/pdf/electricity.pdf
+FOM,EIA,Internal Combustion Engines,,Natural Gas,2018,35.16,$/kW-year,,,
+VOM,EIA,Internal Combustion Engines,,Natural Gas,2018,5.69,$/MWh,,,
+lifetime,EIA,Internal Combustion Engines,,Natural Gas,2018,30,years,,,
+OCC,EIA,Gas Turbine,Aeroderivative,Natural Gas,2021,1169,$/KW,105,MW,https://www.eia.gov/outlooks/aeo/assumptions/pdf/electricity.pdf
+FOM,EIA,Gas Turbine,Aeroderivative,Natural Gas,2018,15.96,$/KW-year,,,
+VOM,EIA,Gas Turbine,Aeroderivative,Natural Gas,2018,4.62,$/MWh,,,
+lifetime,EIA,Gas Turbine,Aeroderivative,Natural Gas,2018,40,years,,,
+OCC,EIA,Gas Turbine,Industrial Frame,Natural Gas,2021,709,$/KW,237,MW,https://www.eia.gov/outlooks/aeo/assumptions/pdf/electricity.pdf
+FOM,EIA,Gas Turbine,Industrial Frame,Natural Gas,2018,6.85,$/KW-year,,,
+VOM,EIA,Gas Turbine,Industrial Frame,Natural Gas,2018,4.41,$/MWh,,,
+lifetime,EIA,Gas Turbine,Industrial Frame,Natural Gas,2018,40,years,,,
+OCC,EIA,Combined Cycle,Single Shaft,Natural Gas,2021,1082,$/KW,418,MW,https://www.eia.gov/outlooks/aeo/assumptions/pdf/electricity.pdf
+FOM,EIA,Combined Cycle,Single Shaft,Natural Gas,2018,13.81,$/KW-year,,,
+VOM,EIA,Combined Cycle,Single Shaft,Natural Gas,2018,2.5,$/MWh,,,
+lifetime,EIA,Combined Cycle,Single Shaft,Natural Gas,2018,40,years,,,
+OCC,EIA,Combined Cycle,Multi Shift,Natural Gas,2021,957,$/KW,1083,MW,https://www.eia.gov/outlooks/aeo/assumptions/pdf/electricity.pdf
+FOM,EIA,Combined Cycle,Multi Shift,Natural Gas,2018,11.95,$/KW-year,,,
+VOM,EIA,Combined Cycle,Multi Shift,Natural Gas,2018,1.83,$/MWh,,,
+lifetime,EIA,Combined Cycle,Multi Shift,Natural Gas,2018,40,years,,,
+OCC,EIA,Combined Cycle CCS,,Natural Gas,2021,2526.06,$/KW,2570,MW,https://www.eia.gov/outlooks/aeo/assumptions/pdf/electricity.pdf
+FOM,EIA,Combined Cycle CCS,,Natural Gas,2018,27.02,$/KW-year,,,
+VOM,EIA,Combined Cycle CCS,,Natural Gas,2018,5.72,$/MWh,,,
+lifetime,EIA,Combined Cycle CCS,,Natural Gas,2018,30,years,,,

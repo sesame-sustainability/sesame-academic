@@ -1,0 +1,14 @@
+Vehicle Model,MPG_city,MPG_hw
+'Avg Vehicle MPG(25 city/32 hw)',25,32
+'JEEP Grand Cherokee 3 6 Auto-8 4WD MPG(21 city/28 hw)',21,28
+'LAND ROVER Discovery 3 6 SemiAuto-8 4WD MPG(21 city/26 hw)',21,26
+'LAND ROVER Range Rover SVA 3 6 SemiAuto-8 4WD MPG(22 city/28 hw)',22,28
+'LAND ROVER Range Rover Sport 3 6 SemiAuto-8 4WD MPG(22 city/28 hw)',22,28
+'CHEVROLET Equinox 1.6 4 Auto-6 2WD MPG(28 city/39 hw)',28,39
+'CHEVROLET Equinox 1.6 4 Auto-6 4WD MPG(28 city/38 hw)',28,38
+'GMC Terrain 1.6 4 Auto-6 2WD MPG(28 city/39 hw)',28,39
+'GMC Terrain 1.6 4 Auto-6 4WD MPG(28 city/38 hw)',28,38
+'JAGUAR F-Pace 2 4 SemiAuto-8 4WD MPG(26 city/33 hw)',26,33
+'LAND ROVER Range Rover Velar 2 4 SemiAuto-8 4WD MPG(26 city/30 hw)',26,30
+'MAZDA CX-5 2WD 2.2 4 SemiAuto-6 2WD MPG(28 city/31 hw)',28,31
+'MAZDA CX-5 4WD 2.2 4 SemiAuto-6 4WD MPG(27 city/30 hw)',27,30

@@ -1,0 +1,52 @@
+flow_source,flows,value,unit,direction,type,source,data location,comment
+,petroleum,1.0008,MJ/MJ,input,energy,GREET,Petroleum tab Row 84 for diesel,"""Primary variable"" to be passed to midstream stage"
+,crude oil / sco,0,MJ/MJ,input,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,residual oil,0.031057673,MJ/MJ,input,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,diesel fuel,0,MJ/MJ,input,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,gasoline,0,MJ/MJ,input,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,natural gas,0.051881783,MJ/MJ,input,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,coal,0,MJ/MJ,input,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,liquefied petroleum gas,0,MJ/MJ,input,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,electricity,0.003212863,MJ/MJ,input,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,hydrogen,0.012910948,MJ/MJ,input,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,petcoke,0.009233462,MJ/MJ,intermediate,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,butane,9.91624E-05,MJ/MJ,intermediate,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,blendstock,0,MJ/MJ,intermediate,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,gtl,0,MJ/MJ,intermediate,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,produced gas,0,MJ/MJ,intermediate,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,refinery still gas,0.0580685,MJ/MJ,intermediate,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,diluent flared,0,MJ/MJ,intermediate,energy,GREET,Petroleum tab Row 106-122 for diesel,
+,natural gas flared,0,MJ/MJ,intermediate,energy,GREET,Petroleum tab Row 106-122 for diesel,
+electricity,voc,4.58149E-08,kg/MJ,output,mass,GREET,"See ""co2 from electricity"" flow",
+electricity,co,1.45173E-07,kg/MJ,output,mass,GREET,"See ""co2 from electricity"" flow",
+electricity,nox,2.84373E-07,kg/MJ,output,mass,GREET,"See ""co2 from electricity"" flow",
+electricity,pm10,5.10782E-08,kg/MJ,output,mass,GREET,"See ""co2 from electricity"" flow",
+electricity,pm2.5,2.21312E-08,kg/MJ,output,mass,GREET,"See ""co2 from electricity"" flow",
+electricity,sox,6.99396E-07,kg/MJ,output,mass,GREET,"See ""co2 from electricity"" flow",
+electricity,bc,1.8176E-09,kg/MJ,output,mass,GREET,"See ""co2 from electricity"" flow",
+electricity,oc,4.29046E-09,kg/MJ,output,mass,GREET,"See ""co2 from electricity"" flow",
+electricity,ch4,8.03841E-07,kg/MJ,output,mass,GREET,"See ""co2 from electricity"" flow",
+electricity,n2o,6.35102E-09,kg/MJ,output,mass,GREET,"See ""co2 from electricity"" flow",
+electricity,co2,0.000405278,kg/MJ,output,mass,GREET,Petroleum tab Row 113 for diesel and Electric tab B220 and C220,
+h2,voc,1.26456E-07,kg/MJ,output,mass,GREET,"See ""co2 from h2"" flow",
+h2,co,2.07385E-07,kg/MJ,output,mass,GREET,"See ""co2 from h2"" flow",
+h2,nox,3.11898E-07,kg/MJ,output,mass,GREET,"See ""co2 from h2"" flow",
+h2,pm10,3.59079E-08,kg/MJ,output,mass,GREET,"See ""co2 from h2"" flow",
+h2,pm2.5,3.3836E-08,kg/MJ,output,mass,GREET,"See ""co2 from h2"" flow",
+h2,sox,1.86312E-07,kg/MJ,output,mass,GREET,"See ""co2 from h2"" flow",
+h2,bc,4.58854E-09,kg/MJ,output,mass,GREET,"See ""co2 from h2"" flow",
+h2,oc,9.17544E-09,kg/MJ,output,mass,GREET,"See ""co2 from h2"" flow",
+h2,ch4,2.49105E-06,kg/MJ,output,mass,GREET,"See ""co2 from h2"" flow",
+h2,n2o,7.15143E-09,kg/MJ,output,mass,GREET,"See ""co2 from h2"" flow",
+h2,co2,0.000959445,kg/MJ,output,mass,GREET,Petroleum tab Row 114 for diesel and Hydrogen tab BV272:BW272,
+total,voc,2.41815E-06,kg/MJ,output,mass,GREET,"See ""co2"" flow",Total from process
+total,co,3.68857E-06,kg/MJ,output,mass,GREET,"See ""co2"" flow",Total from process
+total,nox,5.35251E-06,kg/MJ,output,mass,GREET,"See ""co2"" flow",Total from process
+total,pm10,6.69245E-07,kg/MJ,output,mass,GREET,"See ""co2"" flow",Total from process
+total,pm2.5,5.58807E-07,kg/MJ,output,mass,GREET,"See ""co2"" flow",Total from process
+total,sox,2.44501E-06,kg/MJ,output,mass,GREET,"See ""co2"" flow",Total from process
+total,bc,7.80822E-08,kg/MJ,output,mass,GREET,"See ""co2"" flow",Total from process
+total,oc,1.0253E-07,kg/MJ,output,mass,GREET,"See ""co2"" flow",Total from process
+total,ch4,1.7292E-05,kg/MJ,output,mass,GREET,"See ""co2"" flow",Total from process
+total,n2o,1.27262E-07,kg/MJ,output,mass,GREET,"See ""co2"" flow",Total from process
+total,co2,0.007050042,kg/MJ,output,mass,GREET,Petroleum tab Row 141 for diesel (sum non-transportation/distribution/storage cells),Total from process

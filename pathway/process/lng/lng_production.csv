@@ -1,0 +1,57 @@
+Methane Fugitive Parameter,activity,flow_source,flows,flow_breakdown,value,unit,direction,type,Source,comment,data location
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,Misc. Items,,0.000103333,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,Misc. Items,,0.000103333,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,electricity,bc,,1.12E-09,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,bc,,2.25E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,electricity,bc,,1.12E-09,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,bc,,2.25E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,ch4,leakage,2.07E-05,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,ch4,leakage,2.07E-05,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,electricity,ch4,combustion,4.95E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,ch4,combustion,1.56E-05,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,electricity,ch4,combustion,4.95E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,ch4,combustion,2.37E-05,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,electricity,co,,8.94E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,co,,5.73E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,electricity,co,,8.94E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,co,,5.73E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,electricity,co2,,0.000249512,kg/MJ,output,mass,GREET,,NG tab Row 47 for LNG-Transportation Fuel and Electric tab B220 and C220
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,co2,,0.006220087,kg/MJ,output,mass,GREET,,NG tab Row 66 for LNG-Transportation Fuel 
+EDF 2019,NG Liquefaction: As a Transportation Fuel,electricity,co2,,0.000249512,kg/MJ,output,mass,GREET,,NG tab Row 47 for LNG-Transportation Fuel and Electric tab B220 and C220
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,co2,,0.006220121,kg/MJ,output,mass,GREET,,NG tab Row 66 for LNG-Transportation Fuel 
+EPA 2019,NG Liquefaction: As a Transportation Fuel,,electricity,,0.001978022,MJ/MJ,input,energy,GREET,,NG tab Row 47 for LNG-Transportation Fuel
+EDF 2019,NG Liquefaction: As a Transportation Fuel,,electricity,,0.001978022,MJ/MJ,input,energy,GREET,,NG tab Row 47 for LNG-Transportation Fuel
+EPA 2019,NG Liquefaction: As a Transportation Fuel,,Feedstock loss,,0.001005025,MJ/MJ,input,energy,GREET,,NG tab Row 48 for LNG-Transportation Fuel
+EDF 2019,NG Liquefaction: As a Transportation Fuel,,Feedstock loss,,0.001005025,MJ/MJ,input,energy,GREET,,NG tab Row 48 for LNG-Transportation Fuel
+EPA 2019,NG Liquefaction: As a Transportation Fuel,electricity,n2o,,3.91E-09,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,n2o,,2.64E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,electricity,n2o,,3.91E-09,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,n2o,,2.64E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,,natural gas,,1.001005025,MJ/MJ,input,energy,GREET,Primary variable to be passed to midstream stage,NG tab Row 25 for LNG
+EDF 2019,NG Liquefaction: As a Transportation Fuel,,natural gas,,1.001005025,MJ/MJ,input,energy,GREET,Primary variable to be passed to midstream stage,NG tab Row 25 for LNG
+EPA 2019,NG Liquefaction: As a Transportation Fuel,,Natural gas: process fuel,,0.096923077,MJ/MJ,input,energy,GREET,,NG tab Row 41 for LNG-Transportation Fuel
+EDF 2019,NG Liquefaction: As a Transportation Fuel,,Natural gas: process fuel,,0.096923077,MJ/MJ,input,energy,GREET,,NG tab Row 41 for LNG-Transportation Fuel
+EPA 2019,NG Liquefaction: As a Transportation Fuel,electricity,nox,,1.75E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,nox,,4.89E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,electricity,nox,,1.75E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,nox,,4.89E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,electricity,oc,,2.64E-09,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,oc,,2.40E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,electricity,oc,,2.64E-09,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,oc,,2.40E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,electricity,pm10,,3.14E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,pm10,,4.51E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,electricity,pm10,,3.14E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,pm10,,4.51E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,electricity,pm2.5,,1.36E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,pm2.5,,4.02E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,electricity,pm2.5,,1.36E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,pm2.5,,4.02E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,electricity,sox,,4.31E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,sox,,1.77E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,electricity,sox,,4.31E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,sox,,1.77E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,electricity,voc,,2.82E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EPA 2019,NG Liquefaction: As a Transportation Fuel,total,voc,,8.27E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,electricity,voc,,2.82E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+EDF 2019,NG Liquefaction: As a Transportation Fuel,total,voc,,8.27E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"

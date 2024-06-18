@@ -1,0 +1,2 @@
+flow_source,flows,value,unit,direction,type,source,data location,comment
+total,co2,0.071747325,kg/MJ,output,mass,attached excel model based on a combination GREET& USDA etc models & data,Results Summary!H91,The flow is actually total ghg because source model doesn't distinguish among co2 ch4 n2o_naming flows as co2 to avoid changes to sesame lca.py file for now

@@ -1,0 +1,11 @@
+﻿Emissions Source,Emission Year,Value,Unit,Data Table,Data Link
+Turbines,2019,2477695.588,kg-CO2,Table 6 and Appendix 1 Table S1,https://doi.org/10.1016/j.energy.2018.12.183
+Compressors,2019,8116722.944,kg-CO2,Table 6 and Appendix 1 Table S1,https://doi.org/10.1016/j.energy.2018.12.183
+Motor/Generator,2019,802348.934,kg-CO2,Table 6 and Appendix 1 Table S1,https://doi.org/10.1016/j.energy.2018.12.183
+Cavern,2019,2147610.507,kg-CO2,Table 6 and Appendix 1 Table S1,https://doi.org/10.1016/j.energy.2018.12.183
+Dowtherm T storage tank,2019,792624.334,kg-CO2,Table 6 and Appendix 1 Table S1,https://doi.org/10.1016/j.energy.2018.12.183
+Heat Exchangers,2019,1058996.884,kg-CO2,Table 6 and Appendix 1 Table S1,https://doi.org/10.1016/j.energy.2018.12.183
+Transportation,2019,89422.665,kg-CO2,Table 6 and Appendix 1 Table S1,https://doi.org/10.1016/j.energy.2018.12.183
+Total,2019,15485421.86,kg-CO2,Table 6 and Appendix 1 Table S1,https://doi.org/10.1016/j.energy.2018.12.183
+Total_Power,2019,12528109.62,kg-CO2,Table 6 and Appendix 1 Table S1,https://doi.org/10.1016/j.energy.2018.12.183
+Total_Energy,2019,2957312.241,kg-CO2,Table 6 and Appendix 1 Table S1,https://doi.org/10.1016/j.energy.2018.12.183

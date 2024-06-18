@@ -1,0 +1,49 @@
+Turbine,State_abbr,State,Sub Fuel Type,heat_rate,cf,fuel_type,year,source
+Steam Turbine,AL,Alabama,Bituminous,10.382071,0.737455178,Coal,2018,arp
+Steam Turbine,AL,Alabama,Bituminous,10.61095355,0.7321345,Coal,2020,arp
+Steam Turbine,AL,Alabama,Sub-bituminous,9.926861656,0.820623094,Coal,2018,arp
+Steam Turbine,AL,Alabama,Sub-bituminous,9.926861656,0.836190043,Coal,2020,arp
+Steam Turbine,AR,Arkansas,Sub-bituminous,10.01103158,0.724585251,Coal,2018,arp
+Steam Turbine,AR,Arkansas,Sub-bituminous,10.01103158,0.72541423,Coal,2019,arp
+Steam Turbine,AR,Arkansas,Sub-bituminous,9.968731607,0.742662781,Coal,2020,arp
+Steam Turbine,AZ,Arizona,Bituminous,10.38927535,0.742268922,Coal,2018,arp
+Steam Turbine,AZ,Arizona,Bituminous,10.38927535,0.744417432,Coal,2019,arp
+Steam Turbine,AZ,Arizona,Sub-bituminous,9.802057696,0.705045349,Coal,2018,arp
+Steam Turbine,AZ,Arizona,Sub-bituminous,9.802057696,0.710996497,Coal,2019,arp
+Steam Turbine,AZ,Arizona,Sub-bituminous,9.802057696,0.71111814,Coal,2020,arp
+Steam Turbine,CO,Colorado,Bituminous,10.36279867,0.68712844,Coal,2018,arp
+Steam Turbine,CO,Colorado,Bituminous,10.36279867,0.686488419,Coal,2019,arp
+Steam Turbine,CO,Colorado,Bituminous,10.2540147,0.683529588,Coal,2020,arp
+Steam Turbine,CO,Colorado,Sub-bituminous,9.828953897,0.757270986,Coal,2018,arp
+Steam Turbine,CO,Colorado,Sub-bituminous,9.828953897,0.759181566,Coal,2019,arp
+Steam Turbine,CO,Colorado,Sub-bituminous,9.828953897,0.760921673,Coal,2020,arp
+Steam Turbine,DE,Delaware,Bituminous,8.99757648,0.582081234,Coal,2018,arp
+Steam Turbine,DE,Delaware,Bituminous,8.99757648,0.584041103,Coal,2019,arp
+Steam Turbine,FL,Florida,Bituminous,9.914657072,0.668436314,Coal,2018,arp
+Steam Turbine,FL,Florida,Bituminous,9.885298842,0.68162481,Coal,2019,arp
+Steam Turbine,FL,Florida,Bituminous,9.755977456,0.696577831,Coal,2020,arp
+Steam Turbine,GA,Georgia,Bituminous,9.830312096,0.662428764,Coal,2018,arp
+Steam Turbine,GA,Georgia,Bituminous,9.828322362,0.662967701,Coal,2019,arp
+Steam Turbine,GA,Georgia,Bituminous,9.736523889,0.711795148,Coal,2020,arp
+Steam Turbine,GA,Georgia,Sub-bituminous,10.29752395,0.577773487,Coal,2018,arp
+Steam Turbine,GA,Georgia,Sub-bituminous,10.29752395,0.578754109,Coal,2019,arp
+Steam Turbine,GA,Georgia,Sub-bituminous,10.31405671,0.579717769,Coal,2020,arp
+Steam Turbine,IA,Iowa,Sub-bituminous,10.1809461,0.66811902,Coal,2020,arp
+Steam Turbine,IL,Illinois,Sub-bituminous,9.767139731,0.619187125,Coal,2020,arp
+Steam Turbine,IN,Indiana,Bituminous,10.0993738,0.6064239,Coal,2020,arp
+Steam Turbine,IN,Indiana,Sub-bituminous,10.66303418,0.580362954,Coal,2020,arp
+Steam Turbine,KS,Kansas,Sub-bituminous,9.920256492,0.579591321,Coal,2020,arp
+Steam Turbine,KY,Kentucky,Bituminous,9.371473067,0.704392897,Coal,2020,arp
+Steam Turbine,KY,Kentucky,Sub-bituminous,10.95514789,0.453326014,Coal,2020,arp
+Steam Turbine,MD,Maryland,Bituminous,9.806274837,0.504897414,Coal,2020,arp
+Steam Turbine,MI,Michigan,Bituminous,9.24207864,0.460627385,Coal,2020,arp
+Steam Turbine,MI,Michigan,Sub-bituminous,9.705384296,0.687787404,Coal,2020,arp
+Steam Turbine,MN,Minnesota,Sub-bituminous,10.22543081,0.567522202,Coal,2020,arp
+Steam Turbine,MO,Missouri,Sub-bituminous,9.097165442,0.825827828,Coal,2020,arp
+Steam Turbine,MT,Montana,Sub-bituminous,9.870406524,0.831168843,Coal,2020,arp
+Steam Turbine,NC,North Carolina,Bituminous,8.743875991,0.659262309,Coal,2020,arp
+Steam Turbine,NE,Nebraska,Sub-bituminous,9.877054933,0.704272264,Coal,2020,arp
+Steam Turbine,NH,New Hampshire,Bituminous,10.03176162,0.665573615,Coal,2020,arp
+Steam Turbine,NM,New Mexico,Sub-bituminous,9.791160299,0.770201028,Coal,2020,arp
+Steam Turbine,NV,Nevada,Sub-bituminous,9.660650676,0.444971631,Coal,2020,arp
+Steam Turbine,NY,New York,Bituminous,10.59163192,0.410941923,Coal,2020,arp

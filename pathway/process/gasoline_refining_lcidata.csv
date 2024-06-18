@@ -1,0 +1,61 @@
+Type,API,Location,Refinery Complexity Index,Sulphur Content,Source,Comments,flows,value,unit,direction,type,data location
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,ch4,3.51E-05,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,n2o,2.00E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,sox,4.59E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,petroleum,0.063127665,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,water consumption,41.75936845,liter/MJ,input,mass,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,bc,1.50E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,oc,2.05E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,pm10,1.35E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,co2,0.011611074,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,nox,1.07E-05,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,natural gas,0.100995694,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,co,6.66E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,pm2.5,1.14E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,coal,0.005492229,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,ch4,3.51E-05,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,n2o,2.00E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,sox,4.59E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,petroleum,0.063127665,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,water consumption,41.75936845,liter/MJ,input,mass,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,bc,1.50E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,oc,2.05E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,pm10,1.35E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,co2,0.011611074,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,nox,1.07E-05,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,natural gas,0.100995694,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,co,6.66E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,pm2.5,1.14E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,coal,0.005492229,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,ch4,3.51E-05,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,n2o,2.00E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,sox,4.59E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,petroleum,0.063127665,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,water consumption,41.75936845,liter/MJ,input,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,bc,1.50E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,oc,2.05E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,pm10,1.35E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,co2,0.011611074,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,nox,1.07E-05,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,natural gas,0.100995694,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,co,6.66E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,pm2.5,1.14E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,coal,0.005492229,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,ch4,3.51E-05,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,n2o,2.00E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,sox,4.59E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,petroleum,0.063127665,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,water consumption,41.75936845,liter/MJ,input,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,bc,1.50E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,oc,2.05E-07,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,pm10,1.35E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,co2,0.011611074,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,nox,1.07E-05,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,natural gas,0.100995694,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,co,6.66E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,pm2.5,1.14E-06,kg/MJ,output,mass,Petroleum tab-A81:AP144
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,coal,0.005492229,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Mid,US,11,2.5,GREET,Efficiency - 88.6%,crude oil,1.16E+00,MJ/MJ,input,energy,Petroleum tab-A81:AP144
+Conventional,Low,US,14,1,GREET,Efficiency - 86.2%,crude oil,1.16E+00,MJ/MJ,input,energy,Petroleum tab-A81:AP145
+Conventional,Average,US,10.8,1.7,GREET,Efficiency - 88.6%,crude oil,1.16E+00,MJ/MJ,input,energy,Petroleum tab-A81:AP146
+Conventional,Low,US,13,3.5,GREET,Efficiency - 86.2%,crude oil,1.16E+00,MJ/MJ,input,energy,Petroleum tab-A81:AP147

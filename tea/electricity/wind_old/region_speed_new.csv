@@ -1,0 +1,243 @@
+Group By,Region,Installation Type,wind_speed_range,min_wind_speed,max_wind_speed,avg_wind_speed,unit,cap_fac,has a shore & thus offshore is option?,state has speeds of 9-10 m/s in some onshore places at 100m hub ht,is given speed possible onshore at 100m hub ht?,is given speed possible offshore at 100m hub ht or lower?,Source
+State,California,offshore,10.0 - 10.5,10,10.5,10.3,m/s,0.6,yes,yes,impossible,possible,NREL
+State,California,offshore,10.5 - 11.0,10.5,11,10.8,m/s,0.6,yes,yes,impossible,possible,NREL
+State,Hawaii,offshore,9.5 - 10.0,9.5,10,9.8,m/s,0.6,yes,no,impossible,possible,NREL
+State,Hawaii,offshore,9.0 - 9.5,9,9.5,9.3,m/s,0.6,yes,no,impossible,possible,NREL
+State,Maine,offshore,9.0 - 9.5,9,9.5,9.3,m/s,0.6,yes,no,impossible,possible,NREL
+State,Maine,offshore,9.5 - 10.0,9.5,10,9.8,m/s,0.6,yes,no,impossible,possible,NREL
+State,Maine,offshore,10.0 - 10.5,10,10.5,10.3,m/s,0.6,yes,no,impossible,possible,NREL
+State,Massachusetts,offshore,9.0 - 9.5,9,9.5,9.3,m/s,0.6,yes,no,impossible,possible,NREL
+State,Massachusetts,offshore,9.5 - 10.0,9.5,10,9.8,m/s,0.6,yes,no,impossible,possible,NREL
+State,New Jersey,offshore,9.0 - 9.5,9,9.5,9.3,m/s,0.6,yes,no,impossible,possible,NREL
+State,New York,offshore,9.0 - 9.5,9,9.5,9.3,m/s,0.6,yes,no,impossible,possible,NREL
+State,New York,offshore,9.5 - 10.0,9.5,10,9.8,m/s,0.6,yes,no,impossible,possible,NREL
+State,Oregon,offshore,10.0 - 10.5,10,10.5,10.3,m/s,0.6,yes,no,impossible,possible,NREL
+State,Oregon,offshore,10.5 - 11.0,10.5,11,10.8,m/s,0.6,yes,no,impossible,possible,NREL
+State,Oregon,offshore,9.5 - 10.0,9.5,10,9.8,m/s,0.6,yes,no,impossible,possible,NREL
+State,Oregon,offshore,9.0 - 9.5,9,9.5,9.3,m/s,0.6,yes,no,impossible,possible,NREL
+State,Rhode Island,offshore,9.0 - 9.5,9,9.5,9.3,m/s,0.6,yes,no,impossible,possible,NREL
+State,Rhode Island,offshore,9.5 - 10.0,9.5,10,9.8,m/s,0.6,yes,no,impossible,possible,NREL
+State,Washington,offshore,9.0 - 9.5,9,9.5,9.3,m/s,0.6,yes,no,impossible,possible,NREL
+State,Alabama,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Alabama,offshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,California,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,yes,possible,possible,NREL
+State,California,offshore,9.5 - 10.0,9.5,10,9.8,m/s,0.6,yes,yes,possible,possible,NREL
+State,California,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,yes,possible,possible,NREL
+State,California,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,yes,possible,possible,NREL
+State,California,offshore,9.0 - 9.5,9,9.5,9.3,m/s,0.6,yes,yes,possible,possible,NREL
+State,California,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,yes,possible,possible,NREL
+State,California,offshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,yes,possible,possible,NREL
+State,Connecticut,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Connecticut,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Connecticut,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Delaware,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Delaware,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Delaware,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Florida,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Florida,offshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Florida,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Georgia,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Georgia,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Georgia,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Hawaii,offshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Hawaii,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Hawaii,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Hawaii,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Hawaii,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Hawaii,offshore,6.0 - 6.5,6,6.5,6.3,m/s,0.35,yes,no,possible,possible,NREL
+State,Illinois,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Illinois,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Illinois,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Illinois,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Indiana,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Indiana,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Indiana,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Louisiana,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Louisiana,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Louisiana,offshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Maine,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Maine,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Maine,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Maine,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Maryland,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Maryland,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Maryland,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Massachusetts,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Massachusetts,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Massachusetts,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Michigan,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Michigan,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Michigan,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Michigan,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Michigan,offshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Minnesota,offshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Mississippi,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Mississippi,offshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,New Hampshire,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,New Hampshire,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,New Hampshire,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,New Jersey,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,New Jersey,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,New Jersey,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,New Jersey,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,New York,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,New York,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,New York,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,New York,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,North Carolina,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,North Carolina,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,North Carolina,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Ohio,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Ohio,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Ohio,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Ohio,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Oregon,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Oregon,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Oregon,offshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Oregon,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Pennsylvania,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Rhode Island,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Rhode Island,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,South Carolina,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,South Carolina,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,South Carolina,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,South Carolina,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Texas,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,yes,possible,possible,NREL
+State,Texas,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,yes,possible,possible,NREL
+State,Texas,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,yes,possible,possible,NREL
+State,Texas,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,yes,possible,possible,NREL
+State,Virginia,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Virginia,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Virginia,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Washington,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Washington,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Washington,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Washington,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Washington,offshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Wisconsin,offshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Wisconsin,offshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Wisconsin,offshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Wisconsin,offshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Wisconsin,offshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Alabama,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Alabama,onshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,California,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,yes,possible,possible,NREL
+State,California,onshore,9.5 - 10.0,9.5,10,9.8,m/s,0.6,yes,yes,possible,possible,NREL
+State,California,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,yes,possible,possible,NREL
+State,California,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,yes,possible,possible,NREL
+State,California,onshore,9.0 - 9.5,9,9.5,9.3,m/s,0.6,yes,yes,possible,possible,NREL
+State,California,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,yes,possible,possible,NREL
+State,California,onshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,yes,possible,possible,NREL
+State,Connecticut,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Connecticut,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Connecticut,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Delaware,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Delaware,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Delaware,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Florida,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Florida,onshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Florida,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Georgia,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Georgia,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Georgia,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Hawaii,onshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Hawaii,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Hawaii,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Hawaii,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Hawaii,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Hawaii,onshore,6.0 - 6.5,6,6.5,6.3,m/s,0.35,yes,no,possible,possible,NREL
+State,Illinois,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Illinois,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Illinois,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Illinois,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Indiana,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Indiana,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Indiana,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Louisiana,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Louisiana,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Louisiana,onshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Maine,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Maine,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Maine,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Maine,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Maryland,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Maryland,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Maryland,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Massachusetts,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Massachusetts,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Massachusetts,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Michigan,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Michigan,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Michigan,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Michigan,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Michigan,onshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Minnesota,onshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Mississippi,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Mississippi,onshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,New Hampshire,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,New Hampshire,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,New Hampshire,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,New Jersey,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,New Jersey,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,New Jersey,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,New Jersey,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,New York,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,New York,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,New York,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,New York,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,North Carolina,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,North Carolina,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,North Carolina,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Ohio,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Ohio,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Ohio,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Ohio,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Oregon,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Oregon,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Oregon,onshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Oregon,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Pennsylvania,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Rhode Island,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Rhode Island,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,South Carolina,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,South Carolina,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,South Carolina,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,South Carolina,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Texas,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,yes,possible,possible,NREL
+State,Texas,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,yes,possible,possible,NREL
+State,Texas,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,yes,possible,possible,NREL
+State,Texas,onshore,9.0 - 9.5,9,9.5,9.3,m/s,0.6,yes,yes,possible,impossible,NREL
+State,Texas,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,yes,possible,possible,NREL
+State,Virginia,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Virginia,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Virginia,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Washington,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Washington,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Washington,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Washington,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Washington,onshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+State,Wisconsin,onshore,7.5 - 8.0,7.5,8,7.8,m/s,0.43,yes,no,possible,possible,NREL
+State,Wisconsin,onshore,8.0 - 8.5,8,8.5,8.3,m/s,0.45,yes,no,possible,possible,NREL
+State,Wisconsin,onshore,7.0 - 7.5,7,7.5,7.3,m/s,0.4,yes,no,possible,possible,NREL
+State,Wisconsin,onshore,8.5 - 9.0,8.5,9,8.8,m/s,0.6,yes,no,possible,possible,NREL
+State,Wisconsin,onshore,6.5 - 7.0,6.5,7,6.8,m/s,0.35,yes,no,possible,possible,NREL
+Techno-Resource Group,TRG1,onshore,8.2 - 13.5,8.2,13.5,8.7,m/s,0.48,,,,,NREL
+Techno-Resource Group,TRG2,onshore,8 - 10.9,8,10.9,8.4,m/s,0.45,,,,,NREL
+Techno-Resource Group,TRG3,onshore,7.7 - 11.1,7.7,11.1,8.2,m/s,0.44,,,,,NREL
+Techno-Resource Group,TRG4,onshore,7.5 - 13.1,7.5,13.1,7.9,m/s,0.43,,,,,NREL
+Techno-Resource Group,TRG5,onshore,6.9 - 11.1,6.9,11.1,7.5,m/s,0.4,,,,,NREL
+Techno-Resource Group,TRG6,onshore,6.1 - 9.4,6.1,9.4,6.9,m/s,0.35,,,,,NREL
+Techno-Resource Group,TRG7,onshore,5.4 - 8.3,5.4,8.3,6.2,m/s,0.29,,,,,NREL
+Techno-Resource Group,TRG8,onshore,4.7 - 6.9,4.7,6.9,5.5,m/s,0.23,,,,,NREL
+Techno-Resource Group,TRG9,onshore,4 - 6,4,6,4.8,m/s,0.17,,,,,NREL
+Techno-Resource Group,TRG10,onshore,1 - 5.3,1,5.3,4,m/s,0.1,,,,,NREL
+Techno-Resource Group,TRG1,offshore,8.2 - 13.5,8.2,13.5,8.7,m/s,0.48,,,,,NREL
+Techno-Resource Group,TRG2,offshore,8 - 10.9,8,10.9,8.4,m/s,0.45,,,,,NREL
+Techno-Resource Group,TRG3,offshore,7.7 - 11.1,7.7,11.1,8.2,m/s,0.44,,,,,NREL
+Techno-Resource Group,TRG4,offshore,7.5 - 13.1,7.5,13.1,7.9,m/s,0.43,,,,,NREL
+Techno-Resource Group,TRG5,offshore,6.9 - 11.1,6.9,11.1,7.5,m/s,0.4,,,,,NREL
+Techno-Resource Group,TRG6,offshore,6.1 - 9.4,6.1,9.4,6.9,m/s,0.35,,,,,NREL
+Techno-Resource Group,TRG7,offshore,5.4 - 8.3,5.4,8.3,6.2,m/s,0.29,,,,,NREL
+Techno-Resource Group,TRG8,offshore,4.7 - 6.9,4.7,6.9,5.5,m/s,0.23,,,,,NREL
+Techno-Resource Group,TRG9,offshore,4 - 6,4,6,4.8,m/s,0.17,,,,,NREL
+Techno-Resource Group,TRG10,offshore,1 - 5.3,1,5.3,4,m/s,0.1,,,,,NREL

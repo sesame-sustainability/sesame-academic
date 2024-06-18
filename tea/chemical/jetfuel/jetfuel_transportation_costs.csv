@@ -1,0 +1,9 @@
+product,type,transportation method,value,unit,source
+jet fuel,cost,truck,5.07E-09,$/btu-mile,GREET
+jet fuel,cost,rail,1.14E-09,$/btu-mile,GREET
+jet fuel,cost,marine,7.92E-10,$/btu-mile,GREET
+jet fuel,cost,pipeline,7.97E-10,$/btu-mile,GREET
+jet fuel,distance,truck,30,miles,GREET
+jet fuel,distance,rail,490,miles,GREET
+jet fuel,distance,marine,200,miles,GREET
+jet fuel,distance,pipeline,110,miles,GREET

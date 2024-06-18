@@ -1,0 +1,8 @@
+fuel,I_TP,I_CFP,I_TP source,I_CFP source
+ICEG,264.168,68.4,stoichiometry,"MIT Insights into Future Mobility, assumes US average crude & refinery"
+HEV,264.168,68.4,stoichiometry,"MIT Insights into Future Mobility, assumes US average crude & refinery"
+ICED,263.7,68.4,stoichiometry,"MIT Insights into Future Mobility, assumes US average crude & refinery"
+FCEV_SMR,0,408.4,,"MIT Insights into Future Mobility, includes emissions from SMR location and compression"
+FCEV_SMR_CC,0,171.2,,"MIT Insights into Future Mobility, includes emissions from SMR location (90% of non-CC emissions captured) and compression"
+FCEV_elect,0,144.7,,"MIT Insights into Future Mobility, includes emissions from compression. Electricity used is gren, i.e., has ~zero operating emissions (e.g. wind, solar, hydro, nuclear)."
+PHEVf,264.168,68.4,stoichiometry,"MIT Insights into Future Mobility, assumes US average crude & refinery"

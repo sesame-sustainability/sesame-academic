@@ -1,0 +1,31 @@
+API,Location,Refinery Complexity index,Sulphur Content,Source,Efficiency,Comments,flows,value,unit,direction,type,data location
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,coal,0.003889784,MJ/MJ,input,energy,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,bc,9.76E-08,kg/MJ,output,mass,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,pm10,1.22E-06,kg/MJ,output,mass,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,co,5.83E-06,kg/MJ,output,mass,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,pm2.5,1.04E-06,kg/MJ,output,mass,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,sox,4.30E-06,kg/MJ,output,mass,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,petroleum,0.04854999,MJ/MJ,input,energy,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,crude oil,1.111111111,MJ/MJ,input,energy,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,natural gas,0.070137722,MJ/MJ,input,energy,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,co2,0.009335823,kg/MJ,output,mass,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,water consumption,0.033419043,kg/MJ,input,mass,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,n2o,1.42E-07,kg/MJ,output,mass,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,ch4,2.67E-05,kg/MJ,output,mass,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,nox,7.52E-06,kg/MJ,output,mass,Petroleum tab-A81:BD144
+32,US,10.8,1.4,GREET,0.9,Conventional Crude as Feedstock in GREET,oc,1.17E-07,kg/MJ,output,mass,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,coal,0.004057983,MJ/MJ,input,energy,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,bc,9.91E-08,kg/MJ,output,mass,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,pm10,1.23E-06,kg/MJ,output,mass,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,co,5.97E-06,kg/MJ,output,mass,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,pm2.5,1.04E-06,kg/MJ,output,mass,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,sox,4.38E-06,kg/MJ,output,mass,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,petroleum,0.05566933,MJ/MJ,input,energy,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,crude oil,1.111111111,MJ/MJ,input,energy,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,natural gas,0.073261765,MJ/MJ,input,energy,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,co2,0.009444303,kg/MJ,output,mass,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,water consumption,0.034177799,kg/MJ,input,mass,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,n2o,1.46E-07,kg/MJ,output,mass,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,ch4,2.78E-05,kg/MJ,output,mass,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,nox,7.73E-06,kg/MJ,output,mass,Petroleum tab-A81:BD144
+30,US,10.8,1.7,GREET,0.9,Conventional Crude as Feedstock in GREET,oc,1.19E-07,kg/MJ,output,mass,Petroleum tab-A81:BD144

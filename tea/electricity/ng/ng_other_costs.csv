@@ -1,0 +1,13 @@
+Cost Type,Source,Turbine,turbine_config,fuel_type,year,value,unit,refsize,unit,source 
+OCC,NREL,Gas Turbine,,Natural Gas,2018,943,$/KW,750,MW,https://atb.nrel.gov/electricity/2020/index.php?t=ei
+FOM,NREL,Gas Turbine,,Natural Gas,2018,11,$/KW-year,,,
+VOM,NREL,Gas Turbine,,Natural Gas,2018,4,$/MWh,,,
+lifetime,NREL,Gas Turbine,,Natural Gas,2018,30,years,,,
+OCC,NREL,Combined Cycle,,Natural Gas,2018,1044,$/KW,750,MW,https://atb.nrel.gov/electricity/2020/index.php?t=ei
+FOM,NREL,Combined Cycle,,Natural Gas,2018,13,$/KW-year,,,
+VOM,NREL,Combined Cycle,,Natural Gas,2018,2,$/MWh,,,
+lifetime,NREL,Combined Cycle,,Natural Gas,2018,30,years,,,
+OCC,NREL,Combined Cycle CCS,,Natural Gas,2018,2666,$/kW,750,MW,https://atb.nrel.gov/electricity/2020/index.php?t=ei
+FOM,NREL,Combined Cycle CCS,,Natural Gas,2018,27,$/kW-year,,,
+VOM,NREL,Combined Cycle CCS,,Natural Gas,2018,6,$/MWh,,,
+lifetime,NREL,Combined Cycle CCS,,Natural Gas,2018,30,years,,,

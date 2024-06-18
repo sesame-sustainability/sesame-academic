@@ -1,0 +1,13 @@
+Vehicle Model,MPG_city,MPG_hw
+Representative Vehicle MPG( 90 city/ 87 hw)',90,87
+'AUDI e-tron Auto-1 4WD MPG( 74 city/ 73 hw)',74,73
+'TESLA Model X 100D Auto-1 4WD MPG( 86 city/ 89 hw)',86,89
+'TESLA Model X 75D Auto-1 4WD MPG( 91 city/ 95 hw)',91,95
+'TESLA Model X Long Range Auto-1 4WD MPG( 99 city/ 93 hw)',99,93
+'TESLA Model X P100D Auto-1 4WD MPG( 83 city/ 89 hw)',83,89
+"'TESLA Model X Performance (20"") Auto-1 4WD MPG( 90 city/ 89 hw)'",90,89
+"'TESLA Model X Performance (22"") Auto-1 4WD MPG( 80 city/ 77 hw)'",80,77
+'TESLA Model X Standard Range Auto-1 4WD MPG(105 city/ 98 hw)',105,98
+'BYD e6 Auto-1 2WD MPG( 73 city/ 71 hw)',73,71
+'HYUNDAI Kona Electric Auto-1 2WD MPG(132 city/108 hw)',132,108
+'JAGUAR I-PACE  Auto-1 4WD MPG( 80 city/ 72 hw)',80,72

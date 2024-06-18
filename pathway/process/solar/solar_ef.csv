@@ -1,0 +1,198 @@
+index,category,input,unit,"Ecoinvent reference.
+(either Ecoinvent URL or Ecospold ID)",Title in Simapro software (To find using Simpro. simply paste text below into Simapro search),values
+1,energy & fuel,electricity. medium voltage. at grid,kWh,See columns on links.,See columns on links.,6.60E-01
+2,energy & fuel,heat. at cogen 1MWe lean burn. allocation by exergy,MJ,Ecospold ID: cc147f58-abd5-4ef9-a3d3-ab3034ccdb3e_1125e767-7b5d-442e-81d6-9b0d3e1919ac.spold,Heat. district or industrial. natural gas {Europe without Switzerland}| heat and power co-generation. natural gas. 1MW electrical. lean burn | Alloc Def. S,0.0291
+3,energy & fuel. reducing agent,petroleum coke. at refinery,kg,Ecospold ID: 8de26cf1-bfde-4a6b-a907-02395d96c281_71e2f1db-a2c5-44d0-8337-dfff15be974d.spold,Heat. district or industrial. other than natural gas {RoW}| heat production. at coal coke industrial furnace 1-10MW | Alloc Def. S,0.159
+4,energy & fuel. reducing agent,hard coal coke. at plant,MJ,Ecospold ID: 8de26cf1-bfde-4a6b-a907-02395d96c281_71e2f1db-a2c5-44d0-8337-dfff15be974d.spold,Heat. district or industrial. other than natural gas {RoW}| heat production. at coal coke industrial furnace 1-10MW | Alloc Def. S,0.159
+5,energy & fuel. reducing agent,charcoal. at plant,kg,See notes column,See notes column,0.3
+6,energy & fuel. reducing agent,wood chips. mixed. u=120%. at forest,kg,Ecospold ID: 277accdd-09c7-4db4-9faf-61536a31661b_dd80f0f2-f4d5-40f0-9035-09c1a7f3f07b.spold,Heat. central or small-scale. other than natural gas {RoW}| heat production. hardwood chips from forest. at furnace 50kW | Alloc Def. S,0.0106
+7,energy & fuel,natural gas. burned in industrial furnace low-Nox >100kW,MJ,Ecospold ID: 7ee26746-3832-42c9-9a41-8a996151d802_1125e767-7b5d-442e-81d6-9b0d3e1919ac.spold,Heat. district or industrial. natural gas {Europe without Switzerland}| heat production. natural gas. at industrial furnace low-NOx >100kW | Alloc Def. S,0.0802
+8,energy & fuel,light fuel oil. burned in industrial furnace 1MW. non-modulating,MJ,Ecospold ID: 8d2a309d-7733-431a-a131-e60731c37aa6_71e2f1db-a2c5-44d0-8337-dfff15be974d.spold,Heat. district or industrial. other than natural gas {Europe without Switzerland}| heat production. light fuel oil. at industrial furnace 1MW | Alloc Def. S,0.0923
+9,energy & fuel,diesel. burned in building machine,MJ,https://v33.ecoquery.ecoinvent.org/Details/PDF/11F54C48-C507-4FA5-939D-95130C182E58/06590A66-662A-4885-8494-AD0CF410F956,Diesel. burned in building machine {GLO}| market for | Alloc Def. S,0.0924
+10,water,water. cooling. unspecified natural origin,m3,See notes column,See notes column,0
+11,water,water. deionized. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/93C11F4F-C30B-4C5B-B879-657C1CD17FDF/06590A66-662A-4885-8494-AD0CF410F956,Water. deionised. from tap water. at user {CH}| market for water. deionised. from tap water. at user | Alloc Def. S,0.000541
+12,water,water. tap. at user,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/B93EF81A-11D9-4091-B684-E08FD1EFE48F/06590A66-662A-4885-8494-AD0CF410F956,Tap water {RER}| market group for | Alloc Def. S,0.000377
+13,metal,steel. low-alloyed. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1154&displaymode=LCIA,,1.7556
+14,metal,steel. chromium steel 18/8. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1072&displaymode=LCIA,,4.5321
+15,metal,steel. reinforcing steel. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1141&displaymode=LCIA,,1.4821
+16,metal,copper. at regional storage,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1074&displaymode=LCIA,,1.8943
+17,metal,aluminum alloy. AlMg3. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1045&displaymode=LCIA,,5.9338
+18,metal,aluminum. production mix. wrought alloy. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1058&displaymode=LCIA,,11.188
+19,metal,brass. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1066&displaymode=LCIA,,2.4614
+20,metal,zinc. primary. at regional storage,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1156&displaymode=LCIA,,3.383
+21,metal,zinc coating. pieces,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1181&displaymode=LCIA,,6.209
+22,metal,zinc coating. coils,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1180&displaymode=LCIA,,4.4493
+23,metal,tin. at regional storage,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1155&displaymode=LCIA,,17.154
+24,metal,lead. at regional storage,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1155&displaymode=LCIA,,1.0603
+25,process,section bar rolling. steel,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/DB3FB553-1081-4453-B555-DC1370E69F6C/06590A66-662A-4885-8494-AD0CF410F956,Section bar rolling. steel {GLO}| market for | Alloc Def. S,0.169
+26,process,wire drawing. steel,kg,Section bar rolling. steel {GLO}| market for | Alloc Def. S,Wire drawing. steel {GLO}| market for | Alloc Def. S,0.337
+27,process,sheet rolling. steel,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/AA79286D-327C-4003-81F1-67B719AF93A6/06590A66-662A-4885-8494-AD0CF410F956,Sheet rolling. steel {GLO}| market for | Alloc Def. S,0.388
+28,process,wire drawing. copper,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/7C08D2EF-1770-4C5C-AD11-0DA0F0A16862/06590A66-662A-4885-8494-AD0CF410F956,Wire drawing. copper {GLO}| market for | Alloc Def. S,0.76
+29,process,section bar extrusion. aluminum,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/9763F90D-BEE4-45DD-B650-65CAEA76B60E/06590A66-662A-4885-8494-AD0CF410F956,Section bar extrusion. aluminium {GLO}| market for | Alloc Def. S,1.03
+30,infrastructure,silicone plant,unit,https://v33.ecoquery.ecoinvent.org/Details/PDF/E1E759A6-F841-4C60-931A-3617F60931D3/06590A66-662A-4885-8494-AD0CF410F956,Silicone factory {GLO}| market for | Alloc Def. S,1.38E+09
+31,infrastructure,wafer factory,unit,https://v33.ecoquery.ecoinvent.org/Details/PDF/ADB58740-F240-427E-9A74-A333C7E3EB9F/06590A66-662A-4885-8494-AD0CF410F956,Wafer factory {GLO}| market for | Alloc Def. S,1.04E+05
+32,infrastructure,photovoltaic cell factory,unit,https://v33.ecoquery.ecoinvent.org/Details/PDF/C20D86B2-7257-47AA-AB59-ADC0E3187E17/06590A66-662A-4885-8494-AD0CF410F956,Photovoltaic cell factory {GLO}| market for | Alloc Def. S,1.03E+06
+33,infrastructure,photovoltaic panel factory,unit,https://v33.ecoquery.ecoinvent.org/Details/PDF/02830C25-BA0D-491F-870C-5D43C3F28AB0/06590A66-662A-4885-8494-AD0CF410F956,Photovoltaic panel factory {GLO}| market for | Alloc Def. S,3.50E+05
+34,infrastructure,metal working factory,unit,https://v33.ecoquery.ecoinvent.org/Details/PDF/36397735-AF11-4ED2-89CB-372C1FE0E03B/06590A66-662A-4885-8494-AD0CF410F956,Metal working factory {GLO}| market for | Alloc Def. S,1.37E+08
+35,transport,lorry>16t. fleet average,tkm,https://v33.ecoquery.ecoinvent.org/Details/PDF/768EFBBE-92C8-43BA-BF94-B2C9C54B71F8/06590A66-662A-4885-8494-AD0CF410F956,Transport. freight. lorry 16-32 metric ton. EURO3 {GLO}| market for | Alloc Def. S,0.167
+36,transport,freight. rail,tkm,https://v33.ecoquery.ecoinvent.org/Details/PDF/8394BE2F-7171-4AC3-965A-D34E211A9F13/06590A66-662A-4885-8494-AD0CF410F956,Transport. freight train {Europe without Switzerland}| market for | Alloc Def. S,5.03E-02
+37,transport,transoceanic freight ship,tkm,https://v33.ecoquery.ecoinvent.org/Details/PDF/49740B01-0977-4816-AAE5-19362D767E77/06590A66-662A-4885-8494-AD0CF410F956,Transport. freight. sea. transoceanic ship {GLO}| market for | Alloc Def. S,0.0115
+38,transport,van <3.5t,tkm,https://v33.ecoquery.ecoinvent.org/Details/PDF/F7310D21-8C34-4B4F-9CD6-2A97669D1B77/06590A66-662A-4885-8494-AD0CF410F956,Transport. freight. light commercial vehicle {GLO}| market for | Alloc Def. S,1.95
+39,input from prior stage in life cycle,"silica sand acquisition, single crystal Si NA, multi crystal Si China, multi crystal Si Europe,",,See columns on links.,See columns on links.,0.00E+00
+40,input from prior stage in life cycle,"MG-Si production, single crystal Si NA, multi crystal Si Europe,",,See columns on links.,See columns on links.,0.00E+00
+40.5,input from prior stage in life cycle,"Chinese MG-Si production, multi crystal Si China,",,See columns on links.,See columns on links.,0.00E+00
+41,input from prior stage in life cycle,"SG-Si production, single crystal Si NA,  multi crystal Si Europe,",,See columns on links.,See columns on links.,0.00E+00
+41.5,input from prior stage in life cycle,"Chinese SG-Si production, multi crystal Si China,",,See columns on links.,See columns on links.,0.00E+00
+42,input from prior stage in life cycle,"sc-crystallization, single crystal Si NA",,See columns on links.,See columns on links.,0.00E+00
+43,input from prior stage in life cycle,"mc-casting, multi crystal Si Europe",,See columns on links.,See columns on links.,0.00E+00
+44,input from prior stage in life cycle,"wafer production, sc, single crystal Si NA",,See columns on links.,See columns on links.,0.00E+00
+45,input from prior stage in life cycle,"wafer production, mc, multi crystal Si Europe ",,See columns on links.,See columns on links.,0.00E+00
+45.5,input from prior stage in life cycle,"Chinese mc-casting and wafer production, mc, multi crystal Si China,",,See columns on links.,See columns on links.,0.00E+00
+46,input from prior stage in life cycle,"cell production, sc, single crystal Si NA",,See columns on links.,See columns on links.,0.00E+00
+47,input from prior stage in life cycle,"cell production, mc, multi crystal Si Europe",,See columns on links.,See columns on links.,0.00E+00
+47.5,input from prior stage in life cycle,"Chinese cell production, mc, multi crystal Si China,",,See columns on links.,See columns on links.,0.00E+00
+48,input from prior stage in life cycle,"panel production, sc, single crystal Si NA",,See columns on links.,See columns on links.,0.00E+00
+49,input from prior stage in life cycle,"panel production, mc, multi crystal Si Europe",,See columns on links.,See columns on links.,0.00E+00
+49,input from prior stage in life cycle,"Chinese panel production, mc, per m2, multi crystal Si China,",,See columns on links.,See columns on links.,0.00E+00
+50,input from prior stage in life cycle,"laminate production, CdTe, Malaysia, CdTe NA",,See columns on links.,See columns on links.,0.00E+00
+51,input from prior stage in life cycle,"laminate production, CIGS, CIGS NA",,See columns on links.,See columns on links.,0.00E+00
+52,input from prior stage in life cycle,"panel production, CIGS, CIGS NA",,See columns on links.,See columns on links.,0.00E+00
+53,input from prior stage in life cycle,"inverter, 2,5kW,  rootop, typical tilt,  rooftop, optimal tilt",,See columns on links.,See columns on links.,0.00E+00
+54,input from prior stage in life cycle,"inverter, 500kW, utility, fixed tilt, utility, 1-axis tracking",,See columns on links.,See columns on links.,0.00E+00
+55,input from prior stage in life cycle,"electric installation, 3kWp plant,  rootop, typical tilt,  rooftop, optimal tilt",,See columns on links.,See columns on links.,0.00E+00
+56,input from prior stage in life cycle,"electric installation, 570kWp plant, utility, fixed tilt",,See columns on links.,See columns on links.,0.00E+00
+56.5,input from prior stage in life cycle,"electric installation, 570kWp plant, tracking, utility, 1-axis tracking",,See columns on links.,See columns on links.,0.00E+00
+57,input from prior stage in life cycle,"slanted-roof construction, mounted, on roof,  rootop, typical tilt,  rooftop, optimal tilt",,See columns on links.,See columns on links.,0.00E+00
+58,input from prior stage in life cycle,"mounting, open ground, fixed-tilt, utility, fixed tilt",,See columns on links.,See columns on links.,0.00E+00
+58.5,input from prior stage in life cycle,"mounting, open ground, tracking, utility, 1-axis tracking",,See columns on links.,See columns on links.,0.00E+00
+59,input from prior stage in life cycle,"installation,rooftop, 3kWp,  rootop, typical tilt,  rooftop, optimal tilt",,See columns on links.,See columns on links.,0.00E+00
+60,input from prior stage in life cycle,"installation,open ground, 570kWp, utility, fixed tilt, utility, 1-axis tracking",,See columns on links.,See columns on links.,0.00E+00
+61,waste management,disposal. slag to landfill. 0% water,kg,find,Slag from metallurgical grade silicon production {RoW}| treatment of. inert material landfill | Alloc Def. S,0.00536
+62,waste management,disposal. waste. Si waferprod.. inorg. 9.4% water. to residual material landfill,kg,Ecospold ID: e2bfc5ac-8aa1-42eb-9efb-d0e93927bd98_3f524de5-f167-4d4f-bd15-5283160f67ac.spold,Waste. from silicon wafer production. inorganic {CH}| treatment of. residual material landfill | Alloc Def. S,0.293
+63,waste management,disposal. waste. silicon wafer production. 0% water. to underground deposit,kg,Ecospold ID: 2e15f1b2-c0ce-4c93-b9d1-23485a90833b_01246895-e90d-43e4-9e35-ff4031c458f7.spold,Waste. from silicon wafer production {DE}| treatment of. underground deposit | Alloc Def. S,0.0953
+64,waste management,treatment. PV cell production effluent. to wastewater treatment.class 3,m3,Ecospold ID: 30b94658-3aab-4f9c-9659-5e977fc7c296_42d2fd94-f9c8-4903-ac72-a4fe5af22233.spold,Wastewater from PV cell production {CH}| treatment of wastewater from PV cell production. capacity 5E9l/year | Alloc Def. S,1.68
+65,waste management,disposal.solvents mixture. 16.5% water. to hazardous waste incineration,kg,Ecospold ID: a6e7c5c3-a8d0-4d6e-bfb7-1c0ad9df1985_cfa1d213-eeff-41a8-8744-7907cc7c4c7b.spold,Spent solvent mixture {CH}| treatment of. hazardous waste incineration | Alloc Def. S,1.94
+66,waste management,disposal. municipal solid waste. 22.9% water. to municipal incineration,kg,Ecospold ID: 10d7d6f3-2950-42d6-92b2-af8610fe60a8_27da8130-82ba-485c-a800-b89efdcb0491.spold,Municipal solid waste {CH}| market for | Alloc Def. S,0.529
+67,waste management,disposal. polyvinylfluoride. 0.2% water. to municipal incineration,kg,Ecospold ID: e8281cd9-1241-46d0-b843-95d3c5bcfc8f_b6abeedb-cebf-4b0d-943a-2980192bfc07.spold,Waste polyvinylfluoride {CH}| treatment of. municipal incineration | Alloc Def. S,2.19
+68,waste management,disposal. plastics . mixture. 15.3% water. to municipal incineration,kg,Ecospold ID: 3d8de2b2-91f4-4db3-bc9c-19ff58e969a4_88afd721-07ec-4910-a004-fa3fecb6bf70.spold,Waste plastic. mixture {CH}| treatment of. municipal incineration | Alloc Def. S,2.35
+69,waste management,disposal. used mineral oil. 10% water. to hazardous waste incineration,kg,Ecospold ID: 938b1843-3733-4f2d-9189-f3ef9f68bb23_1b30b018-ac39-41f4-a9e0-92057eef8bb8.spold,Waste mineral oil {CH}| treatment of. hazardous waste incineration | Alloc Def. S,2.84
+70,waste management,disposal. packaging cardboard. 19.6% water. to municipal incineration,kg,Ecospold ID: da7861f9-6ce1-4eee-80a8-b40a875d6283_42baed81-24d1-4aed-a120-cc7d35ddac10.spold,Waste paperboard {CH}| treatment of. municipal incineration | Alloc Def. S,0.0229
+71,waste management,disposal. building. polyethylene/polypropylene productions. to final disposal,kg,Ecospold ID: bda767e1-1787-4e91-913e-8a05d4535648_5bf224ae-3af5-4eb2-9493-330c16472ca2.spold,Waste polyethylene/polypropylene product {CH}| market for waste polyethylene/polypropylene product | Alloc Def. S,3.02
+72,waste management,disposal. building. polystyrene isolation. flame retardant. to final disposal,kg,Ecospold ID: 36de7391-2dd6-4b79-ace4-ae0dab040846_5c4faf46-9460-4f23-8811-4d8e06712030.spold,Waste polystyrene isolation. flame-retardant {CH}| market for waste polystyrene isolation. flame-retardant | Alloc Def. S,3.18
+73,waste management,treatment. sewage. from residence. to wastewater treatment. class 2,m3,Ecospold ID: e1ca8dba-6cea-40e1-9d1d-f720216c127c_f33b4dc5-f3af-4ca8-aeff-3deeb7159ec1.spold,Wastewater. from residence {CH}| treatment of. capacity 1.1E10l/year | Alloc Def. S,0.402
+74,waste management,disposal. polystyrene. .2% water. to municipal incineration,kg,Ecospold ID: 5ba0c4aa-aee0-457f-95c9-57ba6791c56c_b0176c67-5bc0-462a-8466-4f372f446f7c.spold,Waste polystyrene {CH}| treatment of. municipal incineration | Alloc Def. S,3.16
+75,waste management,disposal. polyethylene. 0.4% water. to municipal incineration,kg,Ecospold ID: 2a27df7a-36c1-48f1-bbb1-33ccd3ac3779_7ee0ddc3-924d-4339-b9bf-7856af6a698f.spold,Waste polyethylene {CH}| treatment of. municipal incineration | Alloc Def. S,2.99
+76,waste management,disposal. plastic. industr. Electronics. 15.3% water. to municipal incineration,kg,Ecospold ID: 3bddace4-7cba-48b6-8a7c-156750c110b6_db3559ad-a065-425f-9d03-551068d5548e.spold,Waste plastic. industrial electronics {CH}| treatment of. municipal incineration | Alloc Def. S,2.97
+77,waste management,disposal. building. electric wiring. to final disposal,kg,Ecospold ID: 9d2c00df-17ab-412b-b765-d3b813a03e9d_6aefd086-1942-403e-8fdf-576f32c7cd87.spold,Waste electric wiring {GLO}| market for | Alloc Def. S,1.66
+78,waste management,disposal. treatment of printed wiring boards,kg,Ecospold ID: 95fdc09d-b16c-49bb-88e5-5feb5b787a11_382471d0-afca-4f0d-bec6-f0bfe2c28225.spold,Used printed wiring boards {GLO}| market for | Alloc Def. S,0.598
+79,land use,transformation. from pasture and meadow,m2,,,0
+80,land use,transformation. to industrial area. built up,m2,,,0
+81,land use,transformation. to industrial area. vegetation,m2,,,0
+82,land use,occupation. industrial area. built up,m2,,,0
+83,land use,occupation. industrial area. vegetation,m2,,,0
+84,other,sand,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/23D6F842-A747-4076-986C-92DC7184FC59/06590A66-662A-4885-8494-AD0CF410F956,Sand {GLO}|market for|Alloc Def. S,0.012
+85,other,flat glass. uncoated. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=806&displaymode=LCIA,,0.97985
+86,other,tempering. flat glass,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=813&displaymode=LCIA,,0.23457
+87,other,solar glass. low-iron. at regional storage,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=812&displaymode=LCIA,,1.0945
+88,other,concrete. normal. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=504&displaymode=LCIA,,261.56
+89,other,graphite. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=281&displaymode=LCIA,,0.028129
+90,other,oxygen. liquid. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=301&displaymode=LCIA,,0.40915
+91,other,hydrochloric acid. 30% in H20. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=282&displaymode=LCIA,,0.85325
+92,other,hydrogen. liquid. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=286&displaymode=LCIA,,1.6658
+93,other,sodium hydroxide. 50% in H2O. proudction mix. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=336&displaymode=LCIA,,1.0975
+94,other,argon. liquid. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=252&displaymode=LCIA,,0.31337
+95,other,HF. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=283&displaymode=LCIA,,2.6867
+96,other,nitric acid. 50% in H2O. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=299&displaymode=LCIA,,3.1745
+97,other,acetic acid. 98% in H2O. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=360&displaymode=LCIA,,1.5566
+98,other,acetone. liquid. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/BCB144C9-53A2-4DD7-87AF-F49385A40B01/06590A66-662A-4885-8494-AD0CF410F956,Acetone. liquid {GLO}| market for | Alloc Def. S,2.37
+99,other,ceramic tiles. at regional storage,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=512&displaymode=LCIA,,0.78206
+100,other,lime. hydrated. packed. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=487&displaymode=LCIA,,0.76383
+101,other,helium. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=7218&displaymode=LCIA,,0.93226
+102,other,nitrogen. liquid. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=300&displaymode=LCIA,,0.43363
+103,other,silicon carbide. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=321&displaymode=LCIA,,7.1825
+104,other,silicon carbide. recycling. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=6873&displaymode=LCIA,,0.71946
+105,other,triethylene glycol. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=454&displaymode=LCIA,,3.0533
+106,other,triethylene glycol. recycling. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=6875&displaymode=LCIA,,0.71946
+107,other,dipropylene glycol monomethyl ether. at plant ,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=7211&displaymode=LCIA,,4.3595
+108,other,alkylbenzene sulfonate. linear. petrochemical. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1998&displaymode=LCIA,,1.6335
+109,other,acrylic binder. 34% in H2O. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1666&displaymode=LCIA,,1.4624
+110,other,metallization paste. front side. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=6863&displaymode=LCIA,,85.143
+111,other,metallization paste. back side. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=6862&displaymode=LCIA,,69.11
+112,other,metallization paste. back side aluminum. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=6861&displaymode=LCIA,,10.562
+113,other,ammonia. liquid. at regional storehouse,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=246&displaymode=LCIA,,2.0976
+114,other,phosphoric acid. fertiliser grade. 70% in H2O. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=308&displaymode=LCIA,,0.92156
+115,other,phosphoryl chloride. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=7212&displaymode=LCIA,,3.4751
+116,other,isopropanol. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=413&displaymode=LCIA,,1.8487
+117,other,solvents. organic. unspecified. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=443&displaymode=LCIA,,2.4394
+118,other,calcium chloride. CaCl2. at regional storage,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=260&displaymode=LCIA,,0.89851
+119,other,hydrogen peroxide. 50% in H2O. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=284&displaymode=LCIA,,1.1249
+120,other,sulphuric acid. liquid. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=350&displaymode=LCIA,,0.12406
+121,other,refrigerant R134a. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=6017&displaymode=LCIA,,103.31
+122,other,potassium hydroxide.atregional storage ,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=6122&displaymode=LCIA,,1.9063
+123,other,ammonium sulphate. as N. at regional storehouse ,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=41&displaymode=LCIA,,2.6941
+124,other,silicon tetrahydride. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=7210&displaymode=LCIA,,61.464
+125,other,diode. unspecified. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=7111&displaymode=LCIA,,229.69
+126,other,polyethylene. HDPE. granulate. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1829&displaymode=LCIA,,1.9485
+127,other,glass fibre reinforced plastic. polyamide. injection moulding. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1815&displaymode=LCIA,,8.8053
+128,other,ethylvinylacetate. foil. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1819&displaymode=LCIA,,2.7063
+129,other,polyvinylflouride film. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=6844&displaymode=LCIA,,22.744
+130,other,polystyrene. high impact. HIPS. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1837&displaymode=LCIA,,3.504
+131,other,polyethylene terphthalate. granulate. amorphous. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1827&displaymode=LCIA,,2.7029
+132,other,silicone product. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=324&displaymode=LCIA,,2.7107
+133,other,corrugated board. mixed fibre. single wall. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1689&displaymode=LCIA,,0.94051
+134,other,1-propanol. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=6656&displaymode=LCIA,,3.8134
+135,other,EUR-flat pallet,unit,https://db.ecoinvent.org/processdetail.php?area=2&pid=2526&displaymode=LCIA,,6.1605
+136,other,soap. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=2003&displaymode=LCIA,,1.7108
+137,other,acrylonitrile-butadiene-styrene copolymer. ABS. at plant,kg ,See notes column,See notes column,0
+138,other,polycarbonate. at plant,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=1826&displaymode=LCIA,,7.7876
+139,other,styrene-acrylonitrile copolymer. SAN. at plant,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=1846&displaymode=LCIA,,4.0629
+140,other,polyvinylchloride. at regional storage,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=1840&displaymode=LCIA,,2.0083
+141,other,polyvinylchloride. bulk polymerised. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1841&displaymode=LCIA,,1.987
+142,other,printed wiring board. through-hole. at plant,m2,https://db.ecoinvent.org/processdetail.php?area=2&pid=7007&displaymode=LCIA,,103.23
+143,other,connector. clamp connection. at plant,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=7082&displaymode=LCIA,,8.6897
+144,other,inductor. ring core choke type. at plant,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=7067&displaymode=LCIA,,42.091
+145,other,integrated circuit. IC. logic type. at plant,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=7016&displaymode=LCIA,,1013.3
+146,other,transistor. wired. small size. through-hole mounting. at plant,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=7079&displaymode=LCIA,,144.21
+147,other,diode. glass-. through-hole mounting. at plant,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=7076&displaymode=LCIA,,229.58
+148,other,capacitor. film. through-hole mounting. at plant,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=7009&displaymode=LCIA,,47.053
+149,other,capacitor. electrolyte type. >2cm height. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=7012&displaymode=LCIA,,46.725
+150,other,capacitor. tantalum-. through-hole mounting,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=7013&displaymode=LCIA,,189.44
+151,other,resistor. metal film type. through-hole mounting. at plant,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=7069&displaymode=LCIA,,30.776
+152,other,polystyrene foam slab. at plant,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=998&displaymode=LCIA,,4.2121
+153,other,fleece. polyethylene. at plant,kg ,https://db.ecoinvent.org/processdetail.php?area=2&pid=1820&displaymode=LCIA,,2.8841
+154,other,lubricating oil. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=416&displaymode=LCIA,,1.0508
+155,other,glass fibre reinforced plastic. polyester resin. hand lay-up. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1816&displaymode=LCIA,,4.8811
+156,other,injection moulding,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1853&displaymode=LCIA,,1.3342
+157,other,nylon 6. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1821&displaymode=LCIA,,9.2846
+158,other,epoxy resin. liquid. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1802&displaymode=LCIA,,6.7304
+159,other,cadmium telluride. semiconductor-grade. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/B1D98690-51D7-4BEB-8C74-43EEDF256055/06590A66-662A-4885-8494-AD0CF410F956,Cadmium telluride. semiconductor-grade {GLO}| market for | Alloc Def. S,16.2
+160,other,cadmium sulphide. semiconductor-grade. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/5FDBBFC0-9A06-4249-B7B2-E61037112E91/06590A66-662A-4885-8494-AD0CF410F956,Cadmium sulfide. semiconductor-grade {GLO}| market for | Alloc Def. S,4.35
+161,other,silica sand. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/9CD05FAA-366D-4219-919B-935E6E67B606/06590A66-662A-4885-8494-AD0CF410F956,Silica sand {GLO}| market for | Alloc Def. S,0.0458
+162,other,sodium chloride. powder. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/797857D9-2A88-4E67-B8BF-A274AB4A6FFC/06590A66-662A-4885-8494-AD0CF410F956,Sodium chloride. powder {GLO}| market for | Alloc Def. S,0.286
+163,other,chemicals inorganic. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/1265E171-1424-44A4-B062-1F8ED2607B47/06590A66-662A-4885-8494-AD0CF410F956,Chemical. inorganic {GLO}| market for chemicals. inorganic | Alloc Def. S,2.15
+164,other,chemicals organic. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/52A0EAC8-BC10-4E57-BE81-8FAE7475598A/06590A66-662A-4885-8494-AD0CF410F956,Chemical. organic {GLO}| market for | Alloc Def. S,2.06
+165,other,molybdenum. at regional storage,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/4DEF59AD-707E-4D06-AD6D-02111A9F3A24/06590A66-662A-4885-8494-AD0CF410F956,Molybdenum {GLO}| market for | Alloc Def. S,77.6
+166,other,indium. at regional storage,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/C99B2E89-1B7E-4611-ADAB-653C086C05D1/06590A66-662A-4885-8494-AD0CF410F956,Indium {GLO}| market for | Alloc Def. S,218
+167,other,gallium. semiconductor-grade. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/5A5FC8FE-6AC9-4925-96C1-EB6F8460E327/06590A66-662A-4885-8494-AD0CF410F956,Gallium. semiconductor-grade {GLO}| market for | Alloc Def. S,149
+168,other,selenium. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/29C64176-49A5-4341-8C84-682FBF98F4F9/06590A66-662A-4885-8494-AD0CF410F956,Selenium {GLO}| market for | Alloc Def. S,3.38
+169,other,flux. wave soldering. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/9C54E3DD-E942-4682-984B-D9A7770FAFE2/06590A66-662A-4885-8494-AD0CF410F956,Flux. for wave soldering {GLO}| market for | Alloc Def. S,2.15
+170,other,zinc oxide. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/64D659FC-F1A2-445A-87C6-CA1CAF09755C/06590A66-662A-4885-8494-AD0CF410F956,Zinc oxide {GLO}| market for | Alloc Def. S,1.77
+171,other,polyvinylbutyral foil,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/B5E2832D-5625-4648-AB7A-D9F032D77833/06590A66-662A-4885-8494-AD0CF410F956,Ethylvinylacetate. foil {GLO}| market for | Alloc Def. S,2.97
+172,other,polyphenylene sulfide. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/F3DA1F20-366F-4767-BCE2-F94D9222E8AD/06590A66-662A-4885-8494-AD0CF410F956,Polyphenylene sulfide {GLO}| market for | Alloc Def. S,7.34
+173,other,butyl acrylate. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/2CC8D866-0CE4-4303-8455-A3BB92328D81/06590A66-662A-4885-8494-AD0CF410F956,Butyl acrylate {GLO}| market for | Alloc Def. S,4.34
+174,other,diborane. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/EBAA541E-6DED-413A-905D-380B3582F568/06590A66-662A-4885-8494-AD0CF410F956,Diborane {GLO}| market for | Alloc Def. S,20.9
+175,other,hydrogen sulfide. H2S. at plant,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/C3C5F789-77A5-46C6-B86F-CF2F889EAAE6/06590A66-662A-4885-8494-AD0CF410F956,Hydrogen sulfide {GLO}| market for | Alloc Def. S,0.482
+176,other,urea. as N. at regional storehouse,kg,https://v33.ecoquery.ecoinvent.org/Details/PDF/3509046C-4B14-4695-AEA7-996A05538ECC/06590A66-662A-4885-8494-AD0CF410F956,Urea. as N {GLO}| market for | Alloc Def. S,3.33
+177,other,disposal. inert waste. 5% water. to inert material landfill,kg,Ecospold ID: 91a2c50e-d3db-4417-96f2-dc5f26ae04b1_240c1a3c-1aba-4528-afc3-3f27f56583be.spold,Inert waste. for final disposal {CH}| market for inert waste. for final disposal | Alloc Def. S,0.00777
+178,other,disposal. waste glass {Europe without Switzerland}| treatment of waste glass. municipal incineration | Alloc Def. S,kg,Ecospold ID: c85c5217-59ac-44e4-bd18-57530dd0d0f2_dae141a8-7daa-4f03-a649-b85b718ac65b.spold,Waste glass {Europe without Switzerland}| treatment of waste glass. municipal incineration | Alloc Def. S,0.0289
+179,emission to air,heat. waste,MJ,See notes column,See notes column,0
+180,emission to air,CO?. fossil,kg,See notes column,See notes column,0
+181,emission to air,CO?. biogenic,kg,See notes column,See notes column,0
+182,emission to air,other emissions not tabulated (yet),kg,See notes column,See notes column,0
+183,to sort later,chlorine. liquid. production mix. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=269&displaymode=LCIA,,1.0581
+184,to sort later,limestone. milled. packed. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=529&displaymode=LCIA,,0.0193
+185,to sort later,steam. for chemical processes. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1988&displaymode=LCIA,,0.23442
+186,to sort later,potassium nitrate. as N. at regional storehouse,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=52&displaymode=LCIA,,15.975
+187,to sort later,steel. converter. unalloyed. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=1151&displaymode=LCIA,,1.6585
+188,to sort later,acrylic acid. at plant,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=365&displaymode=LCIA,,2.2612
+189,to sort later,silver. at regional storage,kg,https://db.ecoinvent.org/processdetail.php?area=2&pid=10153&displaymode=LCIA,,100.96

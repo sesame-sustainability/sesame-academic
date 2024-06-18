@@ -1,0 +1,19 @@
+Inputs,Type,Outputs,Cell type,Installation type,Roof type,Inverter type,Installers,Transformer upgrade?,Re-roofing?,Smaller system?,Main panel upgrade?,Commercial install location,Tilt?,Location of Installation
+Cell type,dropdown,cell,CdTe,Residential,New construction,String,National integrator,Yes,Yes,Yes,Yes,Flat roof,fixed,US NE (Boston)
+Installation type,dropdown,location,CIGS,Commercial,Retrofit,Power optimizer,Small installer,No,No,No,No,Ground,1-axis,US SE (Miami)
+Roof type,dropdown,roof,multi crystal Si,Utility,,Microinverter,Unknown,,,,,,,US N (Minneapolis)
+Inverter type,dropdown,inverter,single crystal Si,,,Unknown,,,,,,,,US NW (Seattle)
+Installers,dropdown,installers,,,,,,,,,,,,US W (San Francisco)
+Transformer upgrade?,dropdown,transformer,,,,,,,,,,,,US SW (Phoenix)
+Re-roofing?,dropdown,re-roofing,,,,,,,,,,,,China NE (Beijing)
+Smaller system?,dropdown,smaller,,,,,,,,,,,,China (Lhasa)
+Main panel upgrade?,dropdown,panel upgrade,,,,,,,,,,,,India (Mumbai)
+Commercial install location,dropdown,commercial location,,,,,,,,,,,,Germany (Berlin)
+Size (MW),number,size,,,,,,,,,,,,Saudi Arabia (Riyadh)
+Tilt?,dropdown,tilt,,,,,,,,,,,,Russia (Moscow)
+Location of Installation,dropdown,city,,,,,,,,,,,,Singapore
+Percent shading losses,number,shading,,,,,,,,,,,,Spain (Madrid)
+Lifetime (yr),number,lifetime,,,,,,,,,,,,Colombia (Bogota)
+"Percent efficiency, STC rated",number,efficiency,,,,,,,,,,,,Australia (Sydney)
+Degradation rate (% /yr),number,degradation,,,,,,,,,,,,US SW (Tucson)
+Inverter loading ratio,number,ILR,,,,,,,,,,,,

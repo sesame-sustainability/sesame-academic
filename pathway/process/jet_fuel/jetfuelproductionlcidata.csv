@@ -1,0 +1,13 @@
+Grid Mix,NG Feedstock for H2 Production,Location,Source,Comments,flows,value,unit,direction,type,data location
+U.S. Mix,North American NG,US,GREET ,,ch4,7.31E-06,kg/MJ,output,mass,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions
+U.S. Mix,North American NG,US,GREET ,,ch4 from electricity,4.00E-07,kg/MJ,output,mass,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions
+U.S. Mix,North American NG,US,GREET ,,ch4 from hydrogen,8.27E-07,kg/MJ,output,mass,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions
+U.S. Mix,North American NG,US,GREET ,,co2,0.003104535,kg/MJ,output,mass,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions
+U.S. Mix,North American NG,US,GREET ,,co2 from electricity,0.000201553,kg/MJ,output,mass,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions
+U.S. Mix,North American NG,US,GREET ,,co2 from hydrogen,0.00031842,kg/MJ,output,mass,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions
+U.S. Mix,North American NG,US,GREET ,,electricity,0.00159791,MJ/MJ,input,energy,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions
+U.S. Mix,North American NG,US,GREET ,,hydrogen,0.004285122,MJ/MJ,input,energy,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions
+U.S. Mix,North American NG,US,GREET ,,n2o,5.94E-08,kg/MJ,output,mass,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions
+U.S. Mix,North American NG,US,GREET ,,n2o from electricity,3.16E-09,kg/MJ,output,mass,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions
+U.S. Mix,North American NG,US,GREET ,,n2o from hydrogen,2.37E-09,kg/MJ,output,mass,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions
+U.S. Mix,North American NG,US,GREET ,,petroleum,1.0089,MJ/MJ,input,energy,JetFuel tab - A249:H266 for inputs & A432:C453 for GREET Emissions

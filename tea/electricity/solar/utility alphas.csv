@@ -1,0 +1,12 @@
+,a - fixed,b - fixed,a - 1-axis,b - 1-axis
+EPC/Developer Profit,-0.037,0.9269,-0.029,0.9241
+Contingency,0,1,0,1
+Developer Overhead,0.0393,0.2631,-0.007,0.4287
+"Transmissions Line, Interconnection Fee, Land Acquisition",0.1154,0.3249,0.3782,-0.8498
+Sales Tax,0,1,-0.027,1.0713
+APC Overhead,0.0202,0.769,-0.06,1.1362
+Install Labor & Equipment,-0.026,1.0606,-0.024,1.0555
+Electrical BOS,0.0212,0.7211,-0.037,0.9745
+Structural BOS,-0.032,1.0741,-0.03,1.0731
+Inverter,0,1,0,1
+Module,0,1,0,1

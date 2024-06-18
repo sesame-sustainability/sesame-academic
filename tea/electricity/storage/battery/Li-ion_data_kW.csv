@@ -1,0 +1,13 @@
+﻿Technology,Cost Scenario,Variable,Value,Units,Source,Comment
+Li-ion battery,Today,Charging Capital Cost,0,$/kW_e,MIT - 2020 estimate,Manuscript will be published by June 2021
+Li-ion battery,Today,Discharging Capital Cost,298,$/kW_e,MIT - 2020 estimate,Manuscript will be published by June 2021
+Li-ion battery,Today,Energy Capital Cost,237,$/kWh_ch,MIT - 2020 estimate,Manuscript will be published by June 2021
+Li-ion battery,Today,Efficiency up,0.92,kWh_ch/kWh_e,MIT - 2020 estimate,Manuscript will be published by June 2021
+Li-ion battery,Today,Efficiency down,0.92,kWh_e/kWh_ch,MIT - 2020 estimate,Manuscript will be published by June 2021
+Li-ion battery,Today,Capital Recovery Period,20,yrs,MIT - 2020 estimate,Manuscript will be published by June 2021
+Li-ion battery,Today,FOM discharge,7.45,$/kW_e-yr,MIT - 2020 estimate,Manuscript will be published by June 2021
+Li-ion battery,Today,FOM charge,0,$/kW_e-yr,MIT - 2020 estimate,Manuscript will be published by June 2021
+Li-ion battery,Today,FOM storage,5.92,$/kWh_e-yr,MIT - 2020 estimate,Manuscript will be published by June 2021
+Li-ion battery,Today,VOM,0.03,$/MWh_e,MIT - 2020 estimate,Manuscript will be published by June 2021
+Li-ion battery,Today,Self-discharge,0.002,fraction per hour,MIT - 2020 estimate,Manuscript will be published by June 2021
+Li-ion battery,Today,Min duration,0.25,hrs,MIT - 2020 estimate,Manuscript will be published by June 2021

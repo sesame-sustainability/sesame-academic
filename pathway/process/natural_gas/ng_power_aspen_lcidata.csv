@@ -1,0 +1,141 @@
+﻿Generator Type,Turbine Model,Efficiency,Loading,flows,value,unit,direction,type,source,comments
+Gas Turbine,GE5371,0.28299662,1,co2,0.6546102,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.270336245,0.9,co2,0.685266876,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.25767587,0.8,co2,0.718936058,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.242781311,0.7,co2,0.763042564,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.230120936,0.6,co2,0.805022252,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.213736921,0.5,co2,0.866731275,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.193629266,0.4,co2,0.956737985,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.28299662,1,natural gas,12.721,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.270336245,0.9,natural gas,13.31674931,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.25767587,0.8,natural gas,13.97104046,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.242781311,0.7,natural gas,14.82815951,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.230120936,0.6,natural gas,15.64394822,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.213736921,0.5,natural gas,16.84313589,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE5371,0.193629266,0.4,natural gas,18.59223077,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.34201026,1,co2,0.5856987,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.302143172,0.9,co2,0.613128116,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.287993217,0.8,co2,0.643252908,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.27134621,0.7,co2,0.682716276,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.257196254,0.6,co2,0.720276718,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.238884547,0.5,co2,0.775489568,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.216411088,0.4,co2,0.856021177,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.34201026,1,natural gas,10.526,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.302143172,0.9,natural gas,11.91488119,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.287993217,0.8,natural gas,12.50029443,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.27134621,0.7,natural gas,13.26718366,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.257196254,0.6,natural gas,13.99709344,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.238884547,0.5,natural gas,15.07004137,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6101,0.216411088,0.4,natural gas,16.6350072,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6581,0.320769848,1,co2,0.6216233,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6581,0.284681837,0.9,co2,0.650735135,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6581,0.320769848,1,natural gas,11.223,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6581,0.284681837,0.9,natural gas,12.6456961,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6582,0.27134963,0.8,co2,0.682707671,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6582,0.27134963,0.8,natural gas,13.26701643,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6583,0.25566468,0.7,co2,0.724591577,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6583,0.25566468,0.7,natural gas,14.08094382,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6584,0.242332473,0.6,co2,0.764455838,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6584,0.242332473,0.6,natural gas,14.85562357,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6585,0.225079028,0.5,co2,0.82305524,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6585,0.225079028,0.5,natural gas,15.99438217,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE6586,0.203904346,0.4,co2,0.908526362,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE6586,0.203904346,0.4,natural gas,17.65533725,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.325673964,1,co2,0.6155672,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.287482607,0.9,co2,0.644395416,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.274019234,0.8,co2,0.676056462,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.258179972,0.7,co2,0.717532319,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.244716599,0.6,co2,0.757008207,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.227293411,0.5,co2,0.815036711,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.205910407,0.4,co2,0.899675138,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.325673964,1,natural gas,11.054,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.287482607,0.9,natural gas,12.52249673,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.274019234,0.8,natural gas,13.13776391,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.258179972,0.7,natural gas,13.94376169,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.244716599,0.6,natural gas,14.71089421,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.227293411,0.5,natural gas,15.83855858,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7121,0.205910407,0.4,natural gas,17.48333197,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.364630811,1,co2,0.5492021,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.322221753,0.9,co2,0.574922309,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.307131478,0.8,co2,0.603169936,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.289378213,0.7,co2,0.640174227,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.274287938,0.6,co2,0.675394168,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.254759347,0.5,co2,0.727166544,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.23079244,0.4,co2,0.802679992,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.364630811,1,natural gas,9.873,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.322221753,0.9,natural gas,11.17243008,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.307131478,0.8,natural gas,11.7213645,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.289378213,0.7,natural gas,12.44046662,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.274287938,0.6,natural gas,13.12489359,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.254759347,0.5,natural gas,14.13098299,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7241,0.23079244,0.4,natural gas,15.59843122,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.369155045,1,co2,0.5423514,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.32629189,0.9,co2,0.567750777,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.311011002,0.8,co2,0.595646046,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.293033488,0.7,co2,0.632188748,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.2777526,0.6,co2,0.666969359,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.257977334,0.5,co2,0.71809593,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.23370769,0.4,co2,0.792667431,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.369155045,1,natural gas,9.752,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.32629189,0.9,natural gas,11.03306614,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.311011002,0.8,natural gas,11.5751532,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.293033488,0.7,natural gas,12.2852853,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.2777526,0.6,natural gas,12.96117479,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.257977334,0.5,natural gas,13.95471432,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE7251,0.23370769,0.4,natural gas,15.40385773,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.33657442,1,co2,0.5955221,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.297159187,0.9,co2,0.623411565,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.283242641,0.8,co2,0.654041613,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.266870234,0.7,co2,0.694166865,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.252953688,0.6,co2,0.732357275,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.234944041,0.5,co2,0.78849616,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.212841291,0.4,co2,0.870378454,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.33657442,1,natural gas,10.696,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.297159187,0.9,natural gas,12.11471883,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.283242641,0.8,natural gas,12.70995068,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.266870234,0.7,natural gas,13.48970225,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.252953688,0.6,natural gas,14.23185416,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.234944041,0.5,natural gas,15.32279768,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9171,0.212841291,0.4,natural gas,16.91401129,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.349344978,1,co2,0.5735849,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.333609734,0.9,co2,0.600447003,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.317986138,0.8,co2,0.629948734,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.299605436,0.7,co2,0.668595896,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.28398184,0.6,co2,0.705379489,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.263763068,0.5,co2,0.75945039,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.238949121,0.4,co2,0.838316392,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.349344978,1,natural gas,10.305,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.333609734,0.9,natural gas,10.79105204,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.317986138,0.8,natural gas,11.32124824,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.299605436,0.7,natural gas,12.01580334,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.28398184,0.6,natural gas,12.67686696,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.263763068,0.5,natural gas,13.64861286,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9231,0.238949121,0.4,natural gas,15.06596881,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.368965871,1,co2,0.5426966,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.326084341,0.9,co2,0.568112143,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.310813174,0.8,co2,0.596025168,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.292847094,0.7,co2,0.632591129,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.277575927,0.6,co2,0.667393877,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.257813239,0.5,co2,0.71855299,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.233559032,0.4,co2,0.793171954,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.368965871,1,natural gas,9.757,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.326084341,0.9,natural gas,11.04008855,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.310813174,0.8,natural gas,11.58252065,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.292847094,0.7,natural gas,12.29310474,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.277575927,0.6,natural gas,12.96942441,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.257813239,0.5,natural gas,13.96359632,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Gas Turbine,GE9351,0.233559032,0.4,natural gas,15.41366209,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.616911644,1,co2,0.36291,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.602196321,0.9,co2,0.371778102,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.586349049,0.8,co2,0.381826158,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.572765674,0.7,co2,0.390881324,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.560314246,0.6,co2,0.399567576,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.550126714,0.5,co2,0.406966975,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.535411391,0.4,co2,0.418152114,kg/kWh,output,mass,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.616911644,1,natural gas,5.835519612,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.602196321,0.9,natural gas,5.978116895,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.586349049,0.8,natural gas,6.139687622,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.572765674,0.7,natural gas,6.285292862,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.560314246,0.6,natural gas,6.424966037,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.550126714,0.5,natural gas,6.543946889,MJ/kWh,input,energy,aspen,Pressure ratio 10.6
+Combined Cycle,GECC,0.535411391,0.4,natural gas,6.723801667,MJ/kWh,input,energy,aspen,Pressure ratio 10.6

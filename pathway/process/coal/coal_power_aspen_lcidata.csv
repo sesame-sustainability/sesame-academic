@@ -1,0 +1,10 @@
+﻿Generator Type,Region,Efficiency,Loading,flows,value,unit,type,direction,additional data
+"Boiler, Sub-Critical",US,0.405,1,co2,0.807,kg/kWh,mass,output,DOE NETL
+"Boiler, Sub-Critical",US,0.405,1,nox,0.506,kg/kWh,mass,output,DOE NETL
+"Boiler, Super-Critical",US,0.422,1,co2,0.774,kg/kWh,mass,output,DOE NETL
+"Boiler, Super-Critical",China,0.239,1,co2,1.439,kg/kWh,mass,output,"Treyer and Bauer, Int J Life Cycle Assess, 2016"
+"Boiler, Sub-Critical",India,0.357,1,co2,0.96,kg/kWh,mass,output,"Treyer and Bauer, Int J Life Cycle Assess, 2017"
+"Boiler, Sub-Critical",US,0.405,1,coal,8.888888889,MJ/kWh,energy,input,DOE NETL
+"Boiler, Super-Critical",US,0.422,1,coal,8.530805687,MJ/kWh,energy,input,DOE NETL
+"Boiler, Super-Critical",China,0.239,1,coal,15.06276151,MJ/kWh,energy,input,"Treyer and Bauer, Int J Life Cycle Assess, 2016"
+"Boiler, Sub-Critical",India,0.357,1,coal,10.08403361,MJ/kWh,energy,input,"Treyer and Bauer, Int J Life Cycle Assess, 2017"

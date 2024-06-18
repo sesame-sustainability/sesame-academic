@@ -1,0 +1,2 @@
+flows,value,unit,direction,type
+co2,0,kg/MJ,output,mass
