@@ -1,0 +1,13 @@
+Class,Item,Percentage,Source,Comment,Link
+NSD 4,Direct - Civil,0.466,EIA,,https://www.eia.gov/analysis/studies/powerplants/capitalcost/pdf/capital_cost_AEO2020.pdf
+NSD 4,Direct - Mechanical,0.139,EIA,,
+NSD 4,Direct - Electrical,0.047,EIA,,
+NSD 4,Indirect,0.107,EIA,,
+NSD 4,EPC Fee,0.076,EIA,,
+NSD 4,Owner's cost,0.074,EIA,,
+NSD 4,Project Contingency,0.091,EIA,,
+,Civil works,0.45,IRENA,Table 5.1. Does not add up to 100%,https://www.irena.org/publications/2020/Jun/Renewable-Power-Costs-in-2019
+,Mechanical,0.33,IRENA,,
+,Planning and other,0.16,IRENA,,
+,Grid Connection,0.06,IRENA,,
+,Cost of Land,0.03,IRENA,,

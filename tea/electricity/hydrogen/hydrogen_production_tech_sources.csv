@@ -1,0 +1,37 @@
+﻿,,,Case,FOM,CapEx,H2_Flow,Water_Consumption,Efficiency,power_efficiency,Non-fuel_VOM
+,,,,[A],[B],[C],[D],[E],[F],[G]
+,1,[1],Alk,55,1214,60,1.7,5.2,0,0
+,2,[2],PEM,75,1771,300,1.4,5.2,0,0
+,3,[3],SMR,23,678,100000,0,0.76,0.025,0.25
+,4,[4],SMR_CCS,27,1102,100000,0,0.69,0.00098,0.24
+,,,,,,,,,,
+,,,,,,,,,,
+,,Sources:,,,,,,,,
+1,A,[1] x [A],Koj et al (2017) - Economic Analysis of Improved Alkaline Water Electrolysis - table 4 - FOM equals 5% of total depreciable cost,,,,,,,
+1,B,[1] x [B],"Average of the following sources with 30% cost adder included. Sarl & Element. 2014. ""Study on development of water electrolysis in the EU -- Final Report""; Schmidt, O, et al. 2017. ""Future cost and performance of water electrolysis"" An expert elicitation study."" International Journal of Hydrogen Energy; International Energy Agency (IEA). 2019. ""IEA G20 Hydrogen report: Assumptions""; IRENA. 2019. ""Hydrogen: A Renewable Energy Perspective""",,,,,,,
+1,C,[1] x [C],"Hydrogenics. 2018. ""Renewable Hydrogen Solutions."" URL: http://www.hydrogenics.com/wp-content/uploads/Renewable-Hydrogen-Brochure.pdf?utm_campaign=Renewable%20Hydrogen%20Solutions&utm_medium=email&_hsenc=p2ANqtz--OYGnf0s7gCZk_he-IEDKWyrDvjD6rS4gx6XCQWaBTEIq4oLm6zzjqtYvdPkcsoSf2xRYvdYNmaaWb0VrxPZnkPOfWTg&_hsmi=49692264&utm_source=hs_automation&utm_content=49692264&hsCtaTracking=c64066a0-d1ee-4deb-98e9-da6edcb953cc%7Cdc0f932a-2b3a-48d8-abf5-3be57312a9bb",,,,,,,
+1,D,[1] x [D],"Hydrogenics. 2018. ""Renewable Hydrogen Solutions."" URL: http://www.hydrogenics.com/wp-content/uploads/Renewable-Hydrogen-Brochure.pdf?utm_campaign=Renewable%20Hydrogen%20Solutions&utm_medium=email&_hsenc=p2ANqtz--OYGnf0s7gCZk_he-IEDKWyrDvjD6rS4gx6XCQWaBTEIq4oLm6zzjqtYvdPkcsoSf2xRYvdYNmaaWb0VrxPZnkPOfWTg&_hsmi=49692264&utm_source=hs_automation&utm_content=49692264&hsCtaTracking=c64066a0-d1ee-4deb-98e9-da6edcb953cc%7Cdc0f932a-2b3a-48d8-abf5-3be57312a9bb",,,,,,,
+1,E,[1] x [E],"Hydrogenics. 2018. ""Renewable Hydrogen Solutions."" URL: http://www.hydrogenics.com/wp-content/uploads/Renewable-Hydrogen-Brochure.pdf?utm_campaign=Renewable%20Hydrogen%20Solutions&utm_medium=email&_hsenc=p2ANqtz--OYGnf0s7gCZk_he-IEDKWyrDvjD6rS4gx6XCQWaBTEIq4oLm6zzjqtYvdPkcsoSf2xRYvdYNmaaWb0VrxPZnkPOfWTg&_hsmi=49692264&utm_source=hs_automation&utm_content=49692264&hsCtaTracking=c64066a0-d1ee-4deb-98e9-da6edcb953cc%7Cdc0f932a-2b3a-48d8-abf5-3be57312a9bb",,,,,,,
+1,F,[1] x [F],N/A,,,,,,,
+1,G,[1] x [G],N/A,,,,,,,
+2,A,[2] x [A],"NREL. 2018. ""Competitive Electrolysis-Based Hydrogen Under Current U.S. Electric Utility Rates.""",,,,,,,
+2,B,[2] x [B],"Mean of PEM CapEx estimates - cost estimates include rectifier and other relevant power electronics and cost adder; Sarl & Element. 2014. ""Study on development of water electrolysis in the EU -- Final Report""; Schmidt, O, et al. 2017. ""Future cost and performance of water electrolysis"" An expert elicitation study."" International Journal of Hydrogen Energy; ITM Power. 2019. ""AGM Presentation -- October 2019""; NREL. 2019. ""Energy Storage: Days of Service Sensitivity Analysis""",,,,,,,
+2,C,[2] x [C],"Hydrogenics. 2018. ""Renewable Hydrogen Solutions."" URL: http://www.hydrogenics.com/wp-content/uploads/Renewable-Hydrogen-Brochure.pdf?utm_campaign=Renewable%20Hydrogen%20Solutions&utm_medium=email&_hsenc=p2ANqtz--OYGnf0s7gCZk_he-IEDKWyrDvjD6rS4gx6XCQWaBTEIq4oLm6zzjqtYvdPkcsoSf2xRYvdYNmaaWb0VrxPZnkPOfWTg&_hsmi=49692264&utm_source=hs_automation&utm_content=49692264&hsCtaTracking=c64066a0-d1ee-4deb-98e9-da6edcb953cc%7Cdc0f932a-2b3a-48d8-abf5-3be57312a9bb",,,,,,,
+2,D,[2] x [D],"Hydrogenics. 2018. ""Renewable Hydrogen Solutions."" URL: http://www.hydrogenics.com/wp-content/uploads/Renewable-Hydrogen-Brochure.pdf?utm_campaign=Renewable%20Hydrogen%20Solutions&utm_medium=email&_hsenc=p2ANqtz--OYGnf0s7gCZk_he-IEDKWyrDvjD6rS4gx6XCQWaBTEIq4oLm6zzjqtYvdPkcsoSf2xRYvdYNmaaWb0VrxPZnkPOfWTg&_hsmi=49692264&utm_source=hs_automation&utm_content=49692264&hsCtaTracking=c64066a0-d1ee-4deb-98e9-da6edcb953cc%7Cdc0f932a-2b3a-48d8-abf5-3be57312a9bb",,,,,,,
+2,E,[2] x [E],"Hydrogenics. 2018. ""Renewable Hydrogen Solutions."" URL: http://www.hydrogenics.com/wp-content/uploads/Renewable-Hydrogen-Brochure.pdf?utm_campaign=Renewable%20Hydrogen%20Solutions&utm_medium=email&_hsenc=p2ANqtz--OYGnf0s7gCZk_he-IEDKWyrDvjD6rS4gx6XCQWaBTEIq4oLm6zzjqtYvdPkcsoSf2xRYvdYNmaaWb0VrxPZnkPOfWTg&_hsmi=49692264&utm_source=hs_automation&utm_content=49692264&hsCtaTracking=c64066a0-d1ee-4deb-98e9-da6edcb953cc%7Cdc0f932a-2b3a-48d8-abf5-3be57312a9bb",,,,,,,
+2,F,[2] x [F],N/A,,,,,,,
+2,G,[2] x [G],N/A,,,,,,,
+3,A,[3] x [A],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,
+3,B,[3] x [B],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,
+3,C,[3] x [C],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,
+3,D,[3] x [D],N/A,,,,,,,
+3,E,[3] x [E],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,
+3,F,[3] x [F],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,
+3,G,[3] x [G],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,
+4,A,[4] x [A],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,
+4,B,[4] x [B],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,
+4,C,[4] x [C],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,
+4,D,[4] x [D],N/A,,,,,,,
+4,E,[4] x [E],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,
+4,F,[4] x [F],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,
+4,G,[4] x [G],"IEA. 2017. ""Techno-Economic Valuation of SMR Based Standalone (Merchant) Hydrogen Plant with CCS.""",,,,,,,

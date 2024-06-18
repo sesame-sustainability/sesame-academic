@@ -1,0 +1,13 @@
+type,transportation method,value,unit,source
+cost,truck,6.15E-04,$/gal-mile,GREET
+cost,rail,1.38E-04,$/gal-mile,GREET
+cost,marine,9.61E-05,$/gal-mile,GREET
+cost,pipeline,9.67E-05,$/gal-mile,GREET
+distance,truck,110,miles,GREET
+distance,rail,800,miles,GREET
+distance,marine,520,miles,GREET
+distance,pipeline,600,miles,GREET
+fraction,truck,1.08,fraction of transportation,GREET
+fraction,rail,0.789,fraction of transportation,GREET
+fraction,marine,0.132,fraction of transportation,GREET
+fraction,pipeline,0,fraction of transportation,GREET

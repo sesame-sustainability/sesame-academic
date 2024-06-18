@@ -1,0 +1,6 @@
+TEA parameter,Source,Comments,value,unit
+Natural gas boiler capital,IEA & Boilerroom,https://iea-etsap.org/E-TechDS/HIGHLIGHTS%20PDF/I01-ind_boilers-GS-AD-gct%201.pdf; http://www.boilerroom.com/budget.html,13.3,$/(MJ/h)
+Coal boiler capital,EPA,"Report ""Capital and Operating Costs for Industrial Boilers""",42,$/(MJ/h)
+O&M cost,NREL & IEA,https://atb.nrel.gov/electricity/2019/data.html; https://iea-etsap.org/E-TechDS/HIGHLIGHTS%20PDF/I01-ind_boilers-GS-AD-gct%201.pdf,0.333333333,of capital
+Capacity factor,NREL,30 yr lifetime; https://atb.nrel.gov/electricity/2019/data.html,90%,
+CRF,NREL,https://atb.nrel.gov/electricity/2019/data.html,4.90%,

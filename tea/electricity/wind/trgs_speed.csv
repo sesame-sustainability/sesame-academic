@@ -1,0 +1,11 @@
+TRG Zone,wind speed range,min_wind_speed,max_wind_speed,avg_wind_speed,unit,cap_fac,Source
+TRG1,8.2 - 13.5,8.2,13.5,8.7,m/s,0.48,NREL
+TRG2,8 - 10.9,8,10.9,8.4,m/s,0.45,NREL
+TRG3,7.7 - 11.1,7.7,11.1,8.2,m/s,0.44,NREL
+TRG4,7.5 - 13.1,7.5,13.1,7.9,m/s,0.43,NREL
+TRG5,6.9 - 11.1,6.9,11.1,7.5,m/s,0.4,NREL
+TRG6,6.1 - 9.4,6.1,9.4,6.9,m/s,0.35,NREL
+TRG7,5.4 - 8.3,5.4,8.3,6.2,m/s,0.29,NREL
+TRG8,4.7 - 6.9,4.7,6.9,5.5,m/s,0.23,NREL
+TRG9,4 - 6,4,6,4.8,m/s,0.17,NREL
+TRG10,1 - 5.3,1,5.3,4,m/s,0.1,NREL

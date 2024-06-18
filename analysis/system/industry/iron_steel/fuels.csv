@@ -1,0 +1,29 @@
+Fuel type,LB_C (%),UP_C(%),M_C(%),LB_HHV(MJ/kg),UP_HHV(MJ/kg),M_HHV(MJ/kg),source
+Lignite b,25,35,30,11.63,14.6538,13.1419,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X; https://www.eia.gov/kids/energy-sources/coal/
+Lignite a,25,35,30,14.6538,19.3058,16.9798,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X; https://www.eia.gov/kids/energy-sources/coal/
+Sub_bituminous c,35,45,40,19.3058,22.097,20.7014,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X; https://www.eia.gov/kids/energy-sources/coal/
+Sub_bituminous b,35,45,40,22.097,24.423,23.26,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X; https://www.eia.gov/kids/energy-sources/coal/
+Sub_bituminous a,35,45,40,24.423,26.749,25.586,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X; https://www.eia.gov/kids/energy-sources/coal/
+Bituminous high_volatile c,45,69,57,26.749,30.238,28.4935,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X; https://www.eia.gov/kids/energy-sources/coal/
+Bituminous high_volatile b,45,69,57,30.238,32.564,31.401,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X; https://www.eia.gov/kids/energy-sources/coal/
+Bituminous high_volatile a,45,69,57,32.564,36,34.282,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X; https://www.eia.gov/kids/energy-sources/coal/
+Bituminous medium_volatile,69,78,73.5,36,36,36,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X
+Bituminous low_volatile,78,86,82,36,36,36,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X
+Semi_anthracite,86,92,89,36,36,36,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X
+Anthracite,92,98,95,36,36,36,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X
+Meta_anthracite,98,100,99,36,36,36,https://www.uky.edu/KGS/coal/coal-sub.php; https://www.sciencedirect.com/science/article/pii/B978178242378200002X
+Scrap-EAF,,,60.38,,,28.7,"Keys, A., M. Van Hout, and B. Daniels. ""Decarbonisation options for the Dutch steel industry."" PBL Netherlands Environmental Assessment Agency (2019)"
+BF-BOF,,,60.21,,,26.34,"He, Huachun, et al. ""Assessment on the energy flow and carbon emissions of integrated steelmaking plants.""
+Energy Reports 3 (2017): 29-36"
+COREX-BOF,,,71,,,21.1,"Song, Jiayuan, et al. ""Comparison of energy consumption and CO2 emission for three steel production
+routes—Integrated steel plant equipped with blast furnace, oxygen blast furnace or COREX."" Metals 9.3 (2019): 364."
+Hisarna-BOF,,,67.273,,,28.7,"Keys, A., M. Van Hout, and B. Daniels. ""Decarbonisation options for the Dutch steel industry."" PBL Netherlands Environmental Assessment Agency (2019)"
+H-DRI-EAF,,,60.38,,,28.7,"Keys, A., M. Van Hout, and B. Daniels. ""Decarbonisation options for the Dutch steel industry."" PBL Netherlands Environmental Assessment Agency (2019)"
+NG-DRI-EAF,,,60.38,,,28.7,"Keys, A., M. Van Hout, and B. Daniels. ""Decarbonisation options for the Dutch steel industry."" PBL Netherlands Environmental Assessment Agency (2019)"
+Coal-DRI-EAF,,,60.6,,,28.7,"Keys, A., M. Van Hout, and B. Daniels. ""Decarbonisation options for the Dutch steel industry."" PBL Netherlands Environmental Assessment Agency (2019)"
+India-Raniganj Coal,,,60.38,,,17.92,"Nishant R. Dey, Anil K. Prasad, Shravan K. Singh,Energy survey of the coal based sponge iron industry,
+Case Studies in Thermal Engineering,Volume 6,2015,Pages 1-15,ISSN 2214-157X,https://doi.org/10.1016/j.csite.2015.04.001.
+(https://www.sciencedirect.com/science/article/pii/S2214157X15000167)"
+India-West-Bokaro Coal,,,52.38,,,17.158,"Nishant R. Dey, Anil K. Prasad, Shravan K. Singh,Energy survey of the coal based sponge iron industry,
+Case Studies in Thermal Engineering,Volume 6,2015,Pages 1-15,ISSN 2214-157X,https://doi.org/10.1016/j.csite.2015.04.001.
+(https://www.sciencedirect.com/science/article/pii/S2214157X15000167)"

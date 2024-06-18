@@ -1,0 +1,641 @@
+Uranium Use Type,activity,flow_source,flows,value,unit,direction,type,Source,comment,data location
+LWR,Uranium Mining,diesel,diesel,47390.61112,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+LWR,Uranium Mining,gasoline,gasoline,14323.28172,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+LWR,Uranium Mining,natural gas,natural gas,70555.42477,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+LWR,Uranium Mining,electricity,electricity,44561.32091,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+LWR,Uranium Mining,electricity,voc,0.635401474,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Mining,electricity,co,2.013380437,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Mining,electricity,nox,3.943936224,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Mining,electricity,pm10,0.708396671,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Mining,electricity,pm2.5,0.306935044,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Mining,electricity,sox,9.699832479,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Mining,electricity,bc,0.025208,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Mining,electricity,oc,0.059503863,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Mining,electricity,ch4,11.14836788,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Mining,electricity,n2o,0.088081525,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Mining,electricity,co2,5620.74979,kg/kg,output,mass,GREET,,Uranium tab Row 55 and Electric tab B220 and C220
+LWR,Uranium Mining,total,voc,14.76009016,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Mining,total,co,60.14416532,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Mining,total,nox,74.46388832,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Mining,total,pm10,3.254392804,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Mining,total,pm2.5,2.514329455,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Mining,total,sox,11.12509819,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Mining,total,bc,0.861304998,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Mining,total,oc,0.676055032,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Mining,total,ch4,45.73778275,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Mining,total,n2o,0.252391496,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Mining,total,co2,15238.77464,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Ore Transportation,total,voc,0.011942012,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Ore Transportation,total,co,0.035186837,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Ore Transportation,total,nox,0.084122652,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Ore Transportation,total,pm10,0.00321526,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Ore Transportation,total,pm2.5,0.001838763,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Ore Transportation,total,sox,0.004529814,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Ore Transportation,total,bc,0.000206824,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Ore Transportation,total,oc,0.000363604,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Ore Transportation,total,ch4,0.055247394,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Ore Transportation,total,n2o,0.000141755,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Ore Transportation,total,co2,39.37533932,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Enrichment,electricity,electricity,224141.6785,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+LWR,Uranium Enrichment,electricity,voc,3.196044235,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Enrichment,electricity,co,10.12722382,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Enrichment,electricity,nox,19.83784294,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Enrichment,electricity,pm10,3.563207188,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Enrichment,electricity,pm2.5,1.543871111,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Enrichment,electricity,sox,48.78977303,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Enrichment,electricity,bc,0.126795242,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Enrichment,electricity,oc,0.299302074,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Enrichment,electricity,ch4,56.07584871,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Enrichment,electricity,n2o,0.443046582,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Enrichment,electricity,co2,28272.14873,kg/kg,output,mass,GREET,,Uranium tab Row 55 and Electric tab B220 and C220
+LWR,Uranium Enrichment,total,voc,3.196044235,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Enrichment,total,co,10.12722382,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Enrichment,total,nox,19.83784294,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Enrichment,total,pm10,3.563207188,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Enrichment,total,pm2.5,1.543871111,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Enrichment,total,sox,48.78977303,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Enrichment,total,bc,0.126795242,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Enrichment,total,oc,0.299302074,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Enrichment,total,ch4,56.07584871,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Enrichment,total,n2o,0.443046582,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Enrichment,total,co2,28272.14873,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Conversion Fabricatioin and Waste Storage,natural gas,natural gas,42019.46457,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,electricity,22132.38974,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,voc,0.315586539,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,co,0.999991015,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,nox,1.958845291,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,pm10,0.351841258,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,pm2.5,0.152446245,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,sox,4.817641588,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,bc,0.012520125,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,oc,0.029553942,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,ch4,5.537089518,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,n2o,0.043747685,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+LWR,Uranium Conversion Fabricatioin and Waste Storage,electricity,co2,2791.672743,kg/kg,output,mass,GREET,,Uranium tab Row 55 and Electric tab B220 and C220
+LWR,Uranium Conversion Fabricatioin and Waste Storage,total,voc,3.431940389,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Conversion Fabricatioin and Waste Storage,total,co,16.83009819,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Conversion Fabricatioin and Waste Storage,total,nox,20.95628332,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Conversion Fabricatioin and Waste Storage,total,pm10,0.583812566,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Conversion Fabricatioin and Waste Storage,total,pm2.5,0.382371229,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Conversion Fabricatioin and Waste Storage,total,sox,5.288392779,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Conversion Fabricatioin and Waste Storage,total,bc,0.057953082,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Conversion Fabricatioin and Waste Storage,total,oc,0.126804543,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Conversion Fabricatioin and Waste Storage,total,ch4,22.10247207,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Conversion Fabricatioin and Waste Storage,total,n2o,0.109336723,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+LWR,Uranium Conversion Fabricatioin and Waste Storage,total,co2,5346.620648,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Mining,diesel,diesel,49269.15787,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+HTGR,Uranium Mining,gasoline,gasoline,14891.05145,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+HTGR,Uranium Mining,natural gas,natural gas,73352.21638,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+HTGR,Uranium Mining,electricity,electricity,46327.71561,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+HTGR,Uranium Mining,electricity,voc,0.660588559,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Mining,electricity,co,2.093190112,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Mining,electricity,nox,4.100272435,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Mining,electricity,pm10,0.73647726,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Mining,electricity,pm2.5,0.319101839,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Mining,electricity,sox,10.08433034,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Mining,electricity,bc,0.026207236,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Mining,electricity,oc,0.061862575,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Mining,electricity,ch4,11.59028517,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Mining,electricity,n2o,0.091573045,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Mining,electricity,co2,5843.554286,kg/kg,output,mass,GREET,,Uranium tab Row 55 and Electric tab B220 and C220
+HTGR,Uranium Mining,total,voc,15.34517481,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Mining,total,co,62.52825836,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Mining,total,nox,77.41561002,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Mining,total,pm10,3.383395762,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Mining,total,pm2.5,2.613996568,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Mining,total,sox,11.56609308,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Mining,total,bc,0.895446818,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Mining,total,oc,0.70285361,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Mining,total,ch4,47.55081198,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Mining,total,n2o,0.262396204,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Mining,total,co2,15842.83418,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Ore Transportation,total,voc,0.012416244,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Ore Transportation,total,co,0.036584149,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Ore Transportation,total,nox,0.087463262,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Ore Transportation,total,pm10,0.003342942,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Ore Transportation,total,pm2.5,0.001911782,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Ore Transportation,total,sox,0.004709698,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Ore Transportation,total,bc,0.000215037,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Ore Transportation,total,oc,0.000378043,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Ore Transportation,total,ch4,0.057441334,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Ore Transportation,total,n2o,0.000147384,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Ore Transportation,total,co2,40.93898095,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Enrichment,electricity,electricity,4.548035574,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+HTGR,Uranium Enrichment,electricity,voc,4.310689036,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Enrichment,electricity,co,13.65917036,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Enrichment,electricity,nox,26.75644194,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Enrichment,electricity,pm10,4.805902868,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Enrichment,electricity,pm2.5,2.082307935,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Enrichment,electricity,sox,65.80557845,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Enrichment,electricity,bc,0.17101605,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Enrichment,electricity,oc,0.403685955,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Enrichment,electricity,ch4,75.63272859,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Enrichment,electricity,n2o,0.597562457,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Enrichment,electricity,co2,38132.2762,kg/kg,output,mass,GREET,,Uranium tab Row 55 and Electric tab B220 and C220
+HTGR,Uranium Enrichment,total,voc,4.310689036,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Enrichment,total,co,13.65917036,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Enrichment,total,nox,26.75644194,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Enrichment,total,pm10,4.805902868,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Enrichment,total,pm2.5,2.082307935,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Enrichment,total,sox,65.80557845,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Enrichment,total,bc,0.17101605,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Enrichment,total,oc,0.403685955,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Enrichment,total,ch4,75.63272859,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Enrichment,total,n2o,0.597562457,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Enrichment,total,co2,38132.2762,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,natural gas,natural gas,56674.07329,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,electricity,29851.22944,MJ/kg,input,energy,GREET,,Uranium tab Row 50-55
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,voc,0.425649752,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,co,1.348745508,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,nox,2.642007525,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,pm10,0.47454858,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,pm2.5,0.205613035,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,sox,6.497830832,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,bc,0.016886613,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,oc,0.039861105,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,ch4,7.468191714,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,n2o,0.059005024,kg/kg,output,mass,GREET,,"See ""co2 from electricity"" flow"
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,electricity,co2,3765.289902,kg/kg,output,mass,GREET,,Uranium tab Row 55 and Electric tab B220 and C220
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,total,voc,4.628855772,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,total,co,22.69972329,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,total,nox,28.26494694,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,total,pm10,0.787421651,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,total,pm2.5,0.515726111,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,total,sox,7.13276009,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,total,bc,0.078164661,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,total,oc,0.171028594,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,total,ch4,29.81087776,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,total,n2o,0.147468739,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+HTGR,Uranium Conversion Fabricatioin and Waste Storage,total,co2,7211.295373,kg/kg,output,mass,GREET,,Uranium tab Row 64-74
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,

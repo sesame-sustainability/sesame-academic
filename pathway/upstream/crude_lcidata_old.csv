@@ -1,0 +1,57 @@
+Type,Location,Efficiency,Source,Comments,flows,value,unit,direction,type,data location
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,natural gas,0.021057960541825748,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,co,6.547623620939415e-06,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,oc,5.9449528156226394e-08,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,petroleum,0.004259926784878168,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,bc,8.380892016398348e-08,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,sox,1.2273168014136021e-06,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,ch4,8.219100975021519e-05,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,nox,9.501239433262475e-06,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,pm2.5,2.169606657617764e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,co2,0.002616323983424242,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,pm10,2.7469799553116464e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,n2o,3.111560143968841e-08,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,coal,0.0033570464703426514,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,US,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,water consumption,77.21286552914216,liter/MJ,input,mass,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,natural gas,0.04859306830263525,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,co,1.6989086312330976e-05,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,oc,1.5425339383337565e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,petroleum,0.011007918263153707,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,bc,2.1745858663221178e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,sox,3.184448347073955e-06,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,ch4,9.234273959265627e-05,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,nox,2.465281851107069e-05,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,pm2.5,5.629467560138665e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,co2,0.0051516372046991705,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,pm10,7.127575172431325e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,n2o,8.073549567333133e-08,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,coal,0.0087105115408415,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,US,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,water consumption,82.39214558312895,liter/MJ,input,mass,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,natural gas,0.04855298698809735,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,co,1.7017952467549807e-05,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,oc,1.5387098477733062e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,petroleum,0.011083888519487509,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,bc,2.1729120082066642e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,sox,3.1430739915820444e-06,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,ch4,9.234943156486855e-05,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,nox,2.4688165463056185e-05,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,pm2.5,5.605061484436839e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,co2,0.005142596188233603,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,pm10,7.100630106972652e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,n2o,8.066275900073963e-08,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,coal,0.008708499847652608,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,Mexico,95%,GREET ,EIA projection;API - 34.8;S cont- 1.4,water consumption,82.5137895183783,liter/MJ,input,mass,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,natural gas,0.02098471411716365,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,co,6.556715979039078e-06,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,oc,6.280187498841982e-08,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,petroleum,0.004309109763620969,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,bc,8.516171736118681e-08,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,sox,1.300932088026008e-06,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,ch4,8.218030398871845e-05,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,nox,9.610717687487792e-06,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,pm2.5,2.2570487894666872e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,co2,0.002613513782137736,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,pm10,2.841512941450437e-07,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,n2o,3.108632579388652e-08,kg/MJ,output,mass,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,coal,0.0033501410050233533,MJ/MJ,input,energy,Petroleum tab-A81:E144
+Conventional Oil,Middle East,98%,GREET ,EIA projection;API - 34.8;S cont- 1.4,water consumption,77.2551611994515,liter/MJ,input,mass,Petroleum tab-A81:E144

@@ -1,0 +1,9 @@
+product,type,transportation method,value,unit,source
+lpg,cost,truck,4.36E-09,$/btu-mile,GREET
+lpg,cost,rail,9.80E-10,$/btu-mile,GREET
+lpg,cost,marine,6.81E-10,$/btu-mile,GREET
+lpg,cost,pipeline,6.86E-10,$/btu-mile,GREET
+lpg,distance,truck,9,miles,GREET
+lpg,distance,rail,800,miles,GREET
+lpg,distance,marine,2080,miles,GREET
+lpg,distance,pipeline,400,miles,GREET

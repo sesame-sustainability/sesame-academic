@@ -1,0 +1,19 @@
+{
+  "route": "BF-BOF",
+  "bf_bof_country": "India",
+  "bf_bof_co2_tax": 50.0,
+  "bf_bof_f_scrap": 0.1313,
+  "bf_bof_fuel_type": "bf-bof",
+  "bf_bof_f_coke": 0.6,
+  "bf_bof_f_sinter": 0.83,
+  "bf_bof_elec_source": "Captive Power Plant",
+  "bf_bof_cp_fuel": "Waste Gas",
+  "bf_bof_cp_eff": 32.0,
+  "bf_bof_scrap_price": 350.0,
+  "bf_bof_iron_ore_price": 120.0,
+  "bf_bof_limestone_price": 20.0,
+  "bf_bof_dolomite_price": 18.0,
+  "bf_bof_coal_price": 200.0,
+  "bf_bof_electricity_price": 33.0,
+  "bf_bof_ccs": "No"
+}

@@ -1,0 +1,17 @@
+Product,Default Loss Factor,Default Loss in %,data location,Comment
+gasoline,1.001,0.081,GREET Petroleum tab AQ84*AS84*AT84,
+diesel,1,0.004,GREET Petroleum tab BO84*BP84,
+lpg,1,0.006,GREET Petroleum tab BE84*BF84,
+lng,1.013,1.316,GREET NG tab AM25*AN25,Numbers for LNG as intermediate fuel and transportation fuel are similar
+meoh,1,0.025,GREET MeOH_FTD tab G93*H93,
+dme,1,0.004,GREET MeOH_FTD tab AT93*AU93,
+h2 gas,1,0,GREET Hydrogen tab G195*H195,
+h2 liquid,1.006,0.645,GREET Hydrogen tab CH195*CI195,
+jet fuel,1,0.004,GREET JetFuel_WTP tab E230*F230,
+ethanol,1.001,0.05,GREET EtOH tab ER430*ES430,
+electricity,1.049,4.671,GREET Electric tab D101 (104.9/100),
+cement,1,0,GREET Cement_Concrete tab (no loss factor in model thus 1),
+concrete,1,0,GREET Cement_Concrete tab (no loss factor in model thus 1),
+iron (using GREET cement data as dummy),1,0,Using cement and concrete data as dummy,
+steel (using GREET concrete data as dummy),1,0,Using cement and concrete data as dummy,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),1,0,,

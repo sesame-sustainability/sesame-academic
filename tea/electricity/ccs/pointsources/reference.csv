@@ -1,0 +1,11 @@
+plant id,plant type,technology,refsize,unit,co2captured,unit,mincapex,maxcapex,avgcapex,unit,fuel,unit,electricity,unit,fom_capex,source
+1,Natural Gas Processing,none,140,MMCF/D,240000,ton/year,17,28,22.5,MM USD,0,MJ NG/kg CO2 Cap,0.36,MJ elect/kg CO2 Cap,6,https://dualchallenge.npc.org/files/CCUS-Chap_2-060520.pdf
+2,Ethanol Production,none,150,million gal/yr,342000,ton/year,21,36,28.5,MM USD,0,MJ NG/kg CO2 Cap,0.432,MJ elect/kg CO2 Cap,7,https://dualchallenge.npc.org/files/CCUS-Chap_2-060520.pdf
+3,Ammonia Production,none,907000,tonnes/yr,389000,ton/year,24,41,32.5,MM USD,0,MJ NG/kg CO2 Cap,0.36,MJ elect/kg CO2 Cap,5,https://dualchallenge.npc.org/files/CCUS-Chap_2-060520.pdf
+4,Hydrogen Production,amine,87,MMCF/D,340000,ton/year,59,98,78.5,MM USD,2.74,MJ NG/kg CO2 Cap,0.648,MJ elect/kg CO2 Cap,5,https://dualchallenge.npc.org/files/CCUS-Chap_2-060520.pdf
+5,Cement Plants,amine,1000000,tonnes/yr,842000,ton/year,148,247,197.5,MM USD,2.74,MJ NG/kg CO2 Cap,0.576,MJ elect/kg CO2 Cap,7,https://dualchallenge.npc.org/files/CCUS-Chap_2-060520.pdf
+6,Refinery Fluidized Catalytic Cracking (FCC) Plants,amine,60000,barrels/day,374000,ton/year,136,227,181.5,MM USD,2.74,MJ NG/kg CO2 Cap,0.504,MJ elect/kg CO2 Cap,4,https://dualchallenge.npc.org/files/CCUS-Chap_2-060520.pdf
+7,Steel/Iron Plants,amine,2540000,tonnes/yr,3324000,ton/year,804,1342,1073,MM USD,2.74,MJ NG/kg CO2 Cap,0.576,MJ elect/kg CO2 Cap,5,https://dualchallenge.npc.org/files/CCUS-Chap_2-060520.pdf
+8,Coal Power Plants,amine,550,MW net,3089000,ton/year,891,1485,1188,MM USD,2.74,MJ NG/kg CO2 Cap,0.576,MJ elect/kg CO2 Cap,4,https://dualchallenge.npc.org/files/CCUS-Chap_2-060520.pdf
+9,Industrial Furnaces (refining/chemicals),amine,600,MMBTU/hr,220000,ton/year,92,153,122.5,MM USD,2.74,MJ NG/kg CO2 Cap,0.576,MJ elect/kg CO2 Cap,4,https://dualchallenge.npc.org/files/CCUS-Chap_2-060520.pdf
+10,Natural Gas Power Plants,amine,560,MW net,1279000,ton/year,399,666,532.5,MM USD,2.95,MJ NG/kg CO2 Cap,0.576,MJ elect/kg CO2 Cap,5,https://dualchallenge.npc.org/files/CCUS-Chap_2-060520.pdf

@@ -1,0 +1,10 @@
+﻿Year,World,China,US,South Korea,India,OPC,PPC,PSC,Unit,source
+2000,1700000000,576000000,92300000,50000000,95000000,,,,tonne,https://s3-us-west-2.amazonaws.com/prd-wret/assets/palladium/production/mineral-pubs/cement/170301.pdf
+2005,2220000000,1000000000,99100000,50000000,130000000,,,,tonne,https://s3-us-west-2.amazonaws.com/prd-wret/assets/palladium/production/mineral-pubs/cement/cemenmcs06.pdf
+2010,3300000000,1800000000,63500000,46000000,220000000,,,,tonne,https://prd-wret.s3-us-west-2.amazonaws.com/assets/palladium/production/atoms/files/mcs-2011-cemen.pdf
+2015,4100000000,2350000000,83400000,63000000,270000000,,,,tonne,https://prd-wret.s3-us-west-2.amazonaws.com/assets/palladium/production/atoms/files/mcs-2016-cemen.pdf
+2020,4100000000,2200000000,90000000,50000000,340000000,,,,tonne,https://pubs.usgs.gov/periodicals/mcs2021/mcs2021-cement.pdf
+2025,4292000000,0,0,0,415900000,,,,tonne,"MIT EPPA model, Sergey Paltsev paltsev@mit.edu"
+2030,4458000000,0,0,0,561000000,,,,tonne,"MIT EPPA model, Sergey Paltsev paltsev@mit.edu"
+2035,4608000000,0,0,0,733800000,,,,tonne,"MIT EPPA model, Sergey Paltsev paltsev@mit.edu"
+2040,4867000000,0,0,0,914300000,,,,tonne,"MIT EPPA model, Sergey Paltsev paltsev@mit.edu"

@@ -1,0 +1,4 @@
+storage type,c/DPC,c/CPC,c/EC,c/E,eta_c,eta_d
+thermal,43.6865,0.1877,0.333474591,0,0.995,0.5
+lithium ion battery,28.9256,0,22.99959224,0.03,0.92,0.92
+compressed air,43.3748,25.4019,2.989786715,0,0.737,0.795

@@ -1,0 +1,16 @@
+Feed,Default Loss Factor,Default Loss in %,data location,Comment
+crude,1.0001,0.0062,GREET Petroleum tab C84*E84,To US refineries
+oil sands,1.0001,0.0062,GREET Petroleum tab K 84_R84_ Y84_ AF84*L84_S84_Z84_AG84,Average oil sands_difference among options is very small
+shale oil (bakken),1.0001,0.0062,GREET Petroleum tab AI84*AJ84,
+shale oil (eagle ford),1.0001,0.0062,GREET Petroleum tab AL84*AM84,
+ng non-electricity,1.000226,0.0225932,GREET NG tab V25: AC25,non-electricity=avrg lng/lpg/meoh/dme/h2
+ng electricity,1.0011,0.1129,GREET NG tab V25: AC25,
+coal,1,0,GREET Coal tab E24:G24,
+corn,1,0,GREET EtOH tab J430,
+corn stover,1,0,GREET EtOH tab J430,
+uranium,1,0,GREET Uranium tab C40:M40,
+cement,1,0,GREET Cement_Concrete tab (no loss factor in model thus 1),
+concrete,1,0,GREET Cement_Concrete tab (no loss factor in model thus 1),
+iron,1,0,Using cement and concrete data as dummy,
+steel,1,0,Using cement and concrete data as dummy,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),1,0,,

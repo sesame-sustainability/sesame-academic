@@ -1,0 +1,24 @@
+Unit,Parameter description,Parameter Abbreviation,Value,Notes
+kWp,Rated DC capacity of 3 kWp plant,smaller plant capacity,3,
+kWp,Rated DC capacity of 570 kWp plant,larger plant capacity,570,
+kW/m2,I_STC equals the irradiance (also called intensity) value used to rate PV plants ,intensity,1, equals 8760 kWh/yr /m2 equals ~4x the avg irradiance in Arizona
+hr/yr,"conversion factor to convert kW/m2 to kWh/m2/yr ( or more generally, hr/yr)",conversion factor,8760,
+,Multiple by which tracking increases mounting metal mass,increased mounting by tracking,1.54,
+,"Multiple by which tracking increases cabling metal mass, including copper",increased cable by tracking,1.32,
+,Handling loss rate equals H,handling loss,0.01,Fraction of initial PV panels that are lost during installation
+/yr,Replacement rate equals R,replacement rate,0.00067,"Fraction of initial PV panels that need replacing per year due to damage, 2% over 30 yr lifetime"
+,Typical shading loss for rooftop PV,rooftop shading,0.075,
+,Typical shading loss for utility-scale PV,utility shading,0.03,"1.5% from self-shading, 1.5% from other"
+,Default shading loss for all fixed-tilt PV in PVWatts,fixed-tilt shading,0.03,"for PVWatts generation and CF calculations, NOT for its calculation of displayed irradiance"
+,"Default shading loss for 1-axis tracking PV in PVWatts, with Ground Coverage Ratio (GCR) equals 0, i.e. no self-shading",tracking shading,0.03,"for PVWatts generation and CF calculations, NOT for its calculation of displayed irradiance. Do not read anything physical into this. Artifact of how PVWatts accounts for shading, including a self-shading derate for 1-axis tracking but not for fixed-tilt."
+,"Default self-shading loss for 1-axis tracking PV in PVWatts, with Ground Coverage Ratio (GCR) equals 0, i.e. no self-shading",self-shading for tracking,0,"PVWatts displayed irradiance factors in 1-axis self-shading, but NO OTHER shading."
+kWh/m2/yr,Typical tracker energy consumption per panel area,tracker energy,0.4223,
+,Default soiling loss,soiling,0.02,
+,"Tilt for fixed utility PV, and for optimal rooftop PV",optimal rooftop tilt,irradiance maximizing tilt ,"typically 3-8 degrees less than latitude, for latitudes less than 45 degrees. See CFs sheet, columns opt tilt."
+,"Azimuth for fixed utility PV, and for optimal rooftop PV",optimal utility azimuth,equator-facing,
+degrees,Tilt for tracking utility PV,tracking tilt,0,"The vast majority of utility tracking PV uses horizontal single-axis East-West tracking, including 97% of tracking utility PV projects in US."
+,Azimuth for tracking utility PV,utiliy azimuth,equator-facing,
+degrees,Tilt for typical rooftop PV,rootop tilt,28,"This is the median tilt for residential rooftops in the US that are PV-suitable, according to NREL reference. But of course this will vary by region and is only meant to give an approximate sense of why typical rooftop PV has significanty lower CF and PR compared to utility PV, namely its inferior orientation (and in addition shading differences). "
+,Assumed azimuth for typical rooftop PV,rooftop azimuth,45 degrees from equator facing,"SW or SE in Northern hemisphere
+NW or NE in Southern hemisphere. Very approximately based on NREL report showing large fraction of PV-suitable rooftops having non-ideal azimuths, but still searching for better data on this. Assuming a median 180 degrees (East or West) facing is unreasonable, since few to no roofs facing away from equator will have PV."
+kg/m2,areal density of panels,ad,15.5,"Si more like 15, CdTE 16"

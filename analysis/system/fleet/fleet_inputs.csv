@@ -1,0 +1,9 @@
+UIR,Broad,Detailed,Enter Region,Enter Powertrain,Enter Vehicle Size,Market Share Projection Source,Population Projection Source,Sales per Driver Projection Source,Projection Source
+Broad,Enter Region,Enter Region,US,ICEG,sedan,Chosen Size Segment sales as a share of all sales in final year,% Change in population,% Change in sales/driver,User
+Detailed,Enter Powertrain,Enter Powertrain,,ICED,LT,Chosen powertrain sales as a share of sales of chosen size segment,% Change in driving age share of pop,,VISION 19
+,Enter Vehicle Size,Enter Vehicle Size,,HEV,All,,,,
+,Market Share Projection Source,Baseline Year,,PHEV,,,,,
+,,Final Year modelled,,BEV,,,,,
+,,Market Share Projection Source,,FCEV,,,,,
+,,Population Projection Source,,All,,,,,
+,,Sales per Driver Projection Source,,,,,,,

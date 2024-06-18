@@ -1,0 +1,281 @@
+﻿Plant Design Type,Method for Estimating Credits of Co-Products,activity,flow_source,flows,flow_breakdown,value,unit,direction,type,Source,comment,data location
+No co-products,Displacement method,DME Production,electricity,bc,,2.23201E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No co-products,Displacement method,DME Production,total,bc,,2.23201E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production: Non-Combustion Emissions,total,bc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production,electricity,bc,,2.25357E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,steam,bc,,-3.65633E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,total,bc,,2.25357E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production: Non-Combustion Emissions,total,bc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,Production of Displaced Steam,total,bc,,-3.65633E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production,electricity,bc,,2.25357E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,steam,bc,,-3.65633E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,total,bc,,2.15859E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,bc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production,total,bc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production: Non-Combustion Emissions,total,bc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,Generation of Displaced Electricity,total,bc,,-7.10434E-09,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production,total,bc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,bc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production,electricity,ch4,,9.87118E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,electricity,ch4,,9.96654E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,steam,ch4,,-8.72166E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,electricity,ch4,,9.96654E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,steam,ch4,,-8.72166E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No co-products,Displacement method,DME Production,total,ch4,combustion,9.87118E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production: Non-Combustion Emissions,total,ch4,combustion,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production,total,ch4,combustion,9.96654E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production: Non-Combustion Emissions,total,ch4,combustion,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,Production of Displaced Steam,total,ch4,combustion,-8.72166E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production,total,ch4,combustion,9.54649E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,ch4,combustion,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production,total,ch4,combustion,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production: Non-Combustion Emissions,total,ch4,combustion,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,Generation of Displaced Electricity,total,ch4,combustion,-3.14193E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production,total,ch4,combustion,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,ch4,combustion,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production,electricity,co,,1.78272E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No co-products,Displacement method,DME Production,total,co,,1.78272E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production: Non-Combustion Emissions,total,co,,9.83886E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production,electricity,co,,1.79994E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,steam,co,,-1.93834E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,total,co,,1.79994E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production: Non-Combustion Emissions,total,co,,9.83886E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,Production of Displaced Steam,total,co,,-1.93834E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production,electricity,co,,1.79994E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,steam,co,,-1.93834E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,total,co,,1.72408E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,co,,9.02701E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production,total,co,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production: Non-Combustion Emissions,total,co,,9.83886E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,Generation of Displaced Electricity,total,co,,-5.67428E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production,total,co,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,co,,9.58408E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production,electricity,co2,,0.00497682,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 116 and Electric tab B220 and C220
+No co-products,Displacement method,DME Production,total,co2,,0.00497682,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+No co-products,Displacement method,DME Production: Non-Combustion Emissions,total,co2,,0.013466219,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+Steam co-production,Displacement method,DME Production,electricity,co2,,0.0050249,kg/MJ,output,mass,GREET,,MeOH_FTD tab Row 116 for Natural Gas to Dimethyl Ether and Electric tab B220 and C220
+Steam co-production,Displacement method,DME Production,steam,co2,,-0.003332489,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 95 and MeOH_FTD!D135
+Steam co-production,Displacement method,DME Production,total,co2,,0.0050249,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+Steam co-production,Displacement method,DME Production: Non-Combustion Emissions,total,co2,,0.013692542,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+Steam co-production,Displacement method,Production of Displaced Steam,total,co2,,-0.003332489,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+Steam co-production,Btu-based Allocation,DME Production,electricity,co2,,0.0050249,kg/MJ,output,mass,GREET,,MeOH_FTD tab Row 116 for Natural Gas to Dimethyl Ether and Electric tab B220 and C220
+Steam co-production,Btu-based Allocation,DME Production,steam,co2,,-0.003332489,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 95 and MeOH_FTD!D135
+Steam co-production,Btu-based Allocation,DME Production,total,co2,,0.004813122,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+Steam co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,co2,,0.013115593,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+Electricity co-production,Displacement method,DME Production,total,co2,,0,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+Electricity co-production,Displacement method,DME Production: Non-Combustion Emissions,total,co2,,0.015935872,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+Electricity co-production,Displacement method,Generation of Displaced Electricity,total,co2,,-0.001584088,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+Electricity co-production,Btu-based Allocation,DME Production,total,co2,,0,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+Electricity co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,co2,,0.015728224,kg/MJ,output,mass,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 135
+No co-products,Displacement method,DME Production,,electricity,,0.039454,MJ/MJ,input,energy,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 116
+Steam co-production,Displacement method,DME Production,,electricity,,0.039835154,MJ/MJ,input,energy,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 116
+Steam co-production,Btu-based Allocation,DME Production,,electricity,,0.039835154,MJ/MJ,input,energy,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 116
+Electricity co-production,Displacement method,DME Production,,electricity co-generated,,-0.01320444,MJ/MJ,input,energy,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 95
+Electricity co-production,Btu-based Allocation,DME Production,,electricity co-generated,,-0.01320444,MJ/MJ,input,energy,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 95
+No co-products,Displacement method,DME Production,electricity,n2o,,7.79906E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No co-products,Displacement method,DME Production,total,n2o,,7.79906E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production: Non-Combustion Emissions,total,n2o,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production,electricity,n2o,,7.87441E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,steam,n2o,,-5.12115E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,total,n2o,,7.87441E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production: Non-Combustion Emissions,total,n2o,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,Production of Displaced Steam,total,n2o,,-5.12115E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production,electricity,n2o,,7.87441E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,steam,n2o,,-5.12115E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,total,n2o,,7.54254E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,n2o,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production,total,n2o,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production: Non-Combustion Emissions,total,n2o,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,Generation of Displaced Electricity,total,n2o,,-2.48239E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production,total,n2o,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,n2o,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production,,natural gas,,1.416,MJ/MJ,input,energy,GREET,Primary variable to be passed to midstream stage,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 112
+Steam co-production,Displacement method,DME Production,,natural gas,,1.42001886,MJ/MJ,input,energy,GREET,Primary variable to be passed to midstream stage,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 112
+Steam co-production,Btu-based Allocation,DME Production,,natural gas,,1.42001886,MJ/MJ,input,energy,GREET,Primary variable to be passed to midstream stage,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 112
+Electricity co-production,Displacement method,DME Production,,natural gas,,1.459854015,MJ/MJ,input,energy,GREET,Primary variable to be passed to midstream stage,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 112
+Electricity co-production,Btu-based Allocation,DME Production,,natural gas,,1.459854015,MJ/MJ,input,energy,GREET,Primary variable to be passed to midstream stage,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 112
+No co-products,Displacement method,DME Production,electricity,nox,,3.49211E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No co-products,Displacement method,DME Production,total,nox,,3.49211E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production: Non-Combustion Emissions,total,nox,,6.46445E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production,electricity,nox,,3.52584E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,steam,nox,,-2.9322E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,total,nox,,3.52584E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production: Non-Combustion Emissions,total,nox,,6.46445E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,Production of Displaced Steam,total,nox,,-2.9322E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production,electricity,nox,,3.52584E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,steam,nox,,-2.9322E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,total,nox,,3.37724E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,nox,,5.93104E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production,total,nox,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production: Non-Combustion Emissions,total,nox,,6.46445E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,Generation of Displaced Electricity,total,nox,,-1.11151E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production,total,nox,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,nox,,6.29705E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production,electricity,oc,,5.26869E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No co-products,Displacement method,DME Production,total,oc,,5.26869E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production: Non-Combustion Emissions,total,oc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production,electricity,oc,,5.31959E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,steam,oc,,-8.52892E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,total,oc,,5.31959E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production: Non-Combustion Emissions,total,oc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,Production of Displaced Steam,total,oc,,-8.52892E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production,electricity,oc,,5.31959E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,steam,oc,,-8.52892E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,total,oc,,5.09539E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,oc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production,total,oc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production: Non-Combustion Emissions,total,oc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,Generation of Displaced Electricity,total,oc,,-1.67699E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production,total,oc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,oc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production,electricity,pm10,,6.27241E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No co-products,Displacement method,DME Production,total,pm10,,6.27241E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production: Non-Combustion Emissions,total,pm10,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production,electricity,pm10,,6.333E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,steam,pm10,,-2.05009E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,total,pm10,,6.333E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production: Non-Combustion Emissions,total,pm10,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,Production of Displaced Steam,total,pm10,,-2.05009E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production,electricity,pm10,,6.333E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,steam,pm10,,-2.05009E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,total,pm10,,6.06609E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,pm10,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production,total,pm10,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production: Non-Combustion Emissions,total,pm10,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,Generation of Displaced Electricity,total,pm10,,-1.99646E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production,total,pm10,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,pm10,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production,electricity,pm2.5,,2.71772E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No co-products,Displacement method,DME Production,total,pm2.5,,2.71772E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production: Non-Combustion Emissions,total,pm2.5,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production,electricity,pm2.5,,2.74397E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,steam,pm2.5,,-2.02629E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,total,pm2.5,,2.74397E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production: Non-Combustion Emissions,total,pm2.5,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,Production of Displaced Steam,total,pm2.5,,-2.02629E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production,electricity,pm2.5,,2.74397E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,steam,pm2.5,,-2.02629E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,total,pm2.5,,2.62833E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,pm2.5,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production,total,pm2.5,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production: Non-Combustion Emissions,total,pm2.5,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,Generation of Displaced Electricity,total,pm2.5,,-8.65031E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production,total,pm2.5,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,pm2.5,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production,electricity,sox,,8.58859E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No co-products,Displacement method,DME Production,total,sox,,8.58859E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production: Non-Combustion Emissions,total,sox,,9.00474E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production,electricity,sox,,8.67156E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,steam,sox,,-5.954E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,total,sox,,8.67156E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production: Non-Combustion Emissions,total,sox,,9.00474E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,Production of Displaced Steam,total,sox,,-5.954E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production,electricity,sox,,8.67156E-06,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,steam,sox,,-5.954E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,total,sox,,8.30609E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,sox,,8.26171E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production,total,sox,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production: Non-Combustion Emissions,total,sox,,9.00474E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,Generation of Displaced Electricity,total,sox,,-2.73369E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production,total,sox,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,sox,,8.77155E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production,,steam co-generated,,-0.044,MJ/MJ,input,energy,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 95
+Steam co-production,Btu-based Allocation,DME Production,,steam co-generated,,-0.044,MJ/MJ,input,energy,GREET,,MeOH_FTD tab for Natural Gas to Dimethyl Ether Row 95
+No co-products,Displacement method,DME Production,electricity,voc,,5.62608E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No co-products,Displacement method,DME Production,total,voc,,5.62608E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No co-products,Displacement method,DME Production: Non-Combustion Emissions,total,voc,,5.48815E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production,electricity,voc,,5.68043E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,steam,voc,,-4.97185E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Displacement method,DME Production,total,voc,,5.68043E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,DME Production: Non-Combustion Emissions,total,voc,,5.48815E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Displacement method,Production of Displaced Steam,total,voc,,-4.97185E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production,electricity,voc,,5.68043E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,steam,voc,,-4.97185E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Steam co-production,Btu-based Allocation,DME Production,total,voc,,5.44103E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Steam co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,voc,,5.0353E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production,total,voc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,DME Production: Non-Combustion Emissions,total,voc,,5.48815E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Displacement method,Generation of Displaced Electricity,total,voc,,-1.79074E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production,total,voc,,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Electricity co-production,Btu-based Allocation,DME Production: Non-Combustion Emissions,total,voc,,5.34603E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,

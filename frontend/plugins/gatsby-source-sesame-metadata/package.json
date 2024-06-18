@@ -1,0 +1,10 @@
+{
+  "name": "gatsby-source-sesame-metadata",
+  "version": "0.1.0",
+  "description": "Fetch the metadata to build the pathway analysis UI",
+  "author": "Alessia Bellisario <github@bellisar.io>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "0.19.2"
+  }
+}

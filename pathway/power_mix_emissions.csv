@@ -1,0 +1,181 @@
+﻿Power Mix,flow,value,unit,direction,source,data location,comment
+US mix,voc,5.3E-05,kg/KWh,output,GREET,Electric tab Row 210-221,different power options for users when modeling industrial processes or vehicles
+US mix,co,1.7E-04,kg/KWh,output,GREET,Electric tab Row 210-222,different power options for users when modeling industrial processes or vehicles
+US mix,nox,3.2E-04,kg/KWh,output,GREET,Electric tab Row 210-223,different power options for users when modeling industrial processes or vehicles
+US mix,pm10,5.8E-05,kg/KWh,output,GREET,Electric tab Row 210-224,different power options for users when modeling industrial processes or vehicles
+US mix,pm2.5,2.5E-05,kg/KWh,output,GREET,Electric tab Row 210-225,different power options for users when modeling industrial processes or vehicles
+US mix,sox,7.9E-04,kg/KWh,output,GREET,Electric tab Row 210-226,different power options for users when modeling industrial processes or vehicles
+US mix,bc,2.0E-06,kg/KWh,output,GREET,Electric tab Row 210-227,different power options for users when modeling industrial processes or vehicles
+US mix,oc,4.8E-06,kg/KWh,output,GREET,Electric tab Row 210-228,different power options for users when modeling industrial processes or vehicles
+US mix,ch4,9.0E-04,kg/KWh,output,GREET,Electric tab Row 210-229,different power options for users when modeling industrial processes or vehicles
+US mix,n2o,7.1E-06,kg/KWh,output,GREET,Electric tab Row 210-230,different power options for users when modeling industrial processes or vehicles
+US mix,co2 ,4.6E-01,kg/KWh,output,GREET,Electric tab Row 210-231,different power options for users when modeling industrial processes or vehicles
+US mix,ghg,4.8E-01,kg/KWh,output,GREET,Electric tab Row 210-232,different power options for users when modeling industrial processes or vehicles
+US natural gas,voc,7.7E-05,kg/KWh,output,GREET,Electric tab Row 210-233,different power options for users when modeling industrial processes or vehicles
+US natural gas,co,3.5E-04,kg/KWh,output,GREET,Electric tab Row 210-234,different power options for users when modeling industrial processes or vehicles
+US natural gas,nox,4.3E-04,kg/KWh,output,GREET,Electric tab Row 210-235,different power options for users when modeling industrial processes or vehicles
+US natural gas,pm10,1.5E-05,kg/KWh,output,GREET,Electric tab Row 210-236,different power options for users when modeling industrial processes or vehicles
+US natural gas,pm2.5,1.4E-05,kg/KWh,output,GREET,Electric tab Row 210-237,different power options for users when modeling industrial processes or vehicles
+US natural gas,sox,1.0E-04,kg/KWh,output,GREET,Electric tab Row 210-238,different power options for users when modeling industrial processes or vehicles
+US natural gas,bc,2.5E-06,kg/KWh,output,GREET,Electric tab Row 210-239,different power options for users when modeling industrial processes or vehicles
+US natural gas,oc,6.5E-06,kg/KWh,output,GREET,Electric tab Row 210-240,different power options for users when modeling industrial processes or vehicles
+US natural gas,ch4,1.4E-03,kg/KWh,output,GREET,Electric tab Row 210-241,different power options for users when modeling industrial processes or vehicles
+US natural gas,n2o,6.5E-06,kg/KWh,output,GREET,Electric tab Row 210-242,different power options for users when modeling industrial processes or vehicles
+US natural gas,co2 ,4.6E-01,kg/KWh,output,GREET,Electric tab Row 210-243,different power options for users when modeling industrial processes or vehicles
+US natural gas,ghg,5.1E-01,kg/KWh,output,GREET,Electric tab Row 210-244,different power options for users when modeling industrial processes or vehicles
+US coal,voc,8.4E-05,kg/KWh,output,GREET,Electric tab Row 210-245,different power options for users when modeling industrial processes or vehicles
+US coal,co,9.3E-05,kg/KWh,output,GREET,Electric tab Row 210-246,different power options for users when modeling industrial processes or vehicles
+US coal,nox,5.1E-04,kg/KWh,output,GREET,Electric tab Row 210-247,different power options for users when modeling industrial processes or vehicles
+US coal,pm10,1.5E-04,kg/KWh,output,GREET,Electric tab Row 210-248,different power options for users when modeling industrial processes or vehicles
+US coal,pm2.5,6.0E-05,kg/KWh,output,GREET,Electric tab Row 210-249,different power options for users when modeling industrial processes or vehicles
+US coal,sox,2.5E-03,kg/KWh,output,GREET,Electric tab Row 210-250,different power options for users when modeling industrial processes or vehicles
+US coal,bc,2.8E-06,kg/KWh,output,GREET,Electric tab Row 210-251,different power options for users when modeling industrial processes or vehicles
+US coal,oc,6.3E-06,kg/KWh,output,GREET,Electric tab Row 210-252,different power options for users when modeling industrial processes or vehicles
+US coal,ch4,1.5E-03,kg/KWh,output,GREET,Electric tab Row 210-253,different power options for users when modeling industrial processes or vehicles
+US coal,n2o,1.6E-05,kg/KWh,output,GREET,Electric tab Row 210-254,different power options for users when modeling industrial processes or vehicles
+US coal,co2 ,1.0E+00,kg/KWh,output,GREET,Electric tab Row 210-255,different power options for users when modeling industrial processes or vehicles
+US coal,ghg,1.1E+00,kg/KWh,output,GREET,Electric tab Row 210-256,different power options for users when modeling industrial processes or vehicles
+US hydro,voc,1.3E-06,kg/KWh,output,GREET,Electric tab Row 210-257,different power options for users when modeling industrial processes or vehicles
+US hydro,co,3.3E-06,kg/KWh,output,GREET,Electric tab Row 210-258,different power options for users when modeling industrial processes or vehicles
+US hydro,nox,3.1E-06,kg/KWh,output,GREET,Electric tab Row 210-259,different power options for users when modeling industrial processes or vehicles
+US hydro,pm10,1.2E-06,kg/KWh,output,GREET,Electric tab Row 210-260,different power options for users when modeling industrial processes or vehicles
+US hydro,pm2.5,4.6E-07,kg/KWh,output,GREET,Electric tab Row 210-261,different power options for users when modeling industrial processes or vehicles
+US hydro,sox,1.5E-06,kg/KWh,output,GREET,Electric tab Row 210-262,different power options for users when modeling industrial processes or vehicles
+US hydro,bc,2.2E-08,kg/KWh,output,GREET,Electric tab Row 210-263,different power options for users when modeling industrial processes or vehicles
+US hydro,oc,5.0E-08,kg/KWh,output,GREET,Electric tab Row 210-264,different power options for users when modeling industrial processes or vehicles
+US hydro,ch4,1.8E-06,kg/KWh,output,GREET,Electric tab Row 210-265,different power options for users when modeling industrial processes or vehicles
+US hydro,n2o,2.1E-08,kg/KWh,output,GREET,Electric tab Row 210-266,different power options for users when modeling industrial processes or vehicles
+US hydro,co2 ,2.2E-03,kg/KWh,output,GREET,Electric tab Row 210-267,different power options for users when modeling industrial processes or vehicles
+US hydro,ghg,2.3E-03,kg/KWh,output,GREET,Electric tab Row 210-268,different power options for users when modeling industrial processes or vehicles
+US nuclear,voc,3.7E-06,kg/KWh,output,GREET,Electric tab Row 210-269,different power options for users when modeling industrial processes or vehicles
+US nuclear,co,1.6E-05,kg/KWh,output,GREET,Electric tab Row 210-270,different power options for users when modeling industrial processes or vehicles
+US nuclear,nox,1.8E-05,kg/KWh,output,GREET,Electric tab Row 210-271,different power options for users when modeling industrial processes or vehicles
+US nuclear,pm10,1.4E-06,kg/KWh,output,GREET,Electric tab Row 210-272,different power options for users when modeling industrial processes or vehicles
+US nuclear,pm2.5,8.0E-07,kg/KWh,output,GREET,Electric tab Row 210-273,different power options for users when modeling industrial processes or vehicles
+US nuclear,sox,1.1E-05,kg/KWh,output,GREET,Electric tab Row 210-274,different power options for users when modeling industrial processes or vehicles
+US nuclear,bc,1.6E-07,kg/KWh,output,GREET,Electric tab Row 210-275,different power options for users when modeling industrial processes or vehicles
+US nuclear,oc,1.7E-07,kg/KWh,output,GREET,Electric tab Row 210-276,different power options for users when modeling industrial processes or vehicles
+US nuclear,ch4,1.9E-05,kg/KWh,output,GREET,Electric tab Row 210-277,different power options for users when modeling industrial processes or vehicles
+US nuclear,n2o,1.2E-07,kg/KWh,output,GREET,Electric tab Row 210-278,different power options for users when modeling industrial processes or vehicles
+US nuclear,co2 ,7.6E-03,kg/KWh,output,GREET,Electric tab Row 210-279,different power options for users when modeling industrial processes or vehicles
+US nuclear,ghg,8.3E-03,kg/KWh,output,GREET,Electric tab Row 210-280,different power options for users when modeling industrial processes or vehicles
+ASCC mix,voc,7.5E-05,kg/KWh,output,GREET,Electric tab Row 210-281,different power options for users when modeling industrial processes or vehicles
+ASCC mix,co,4.6E-04,kg/KWh,output,GREET,Electric tab Row 210-282,different power options for users when modeling industrial processes or vehicles
+ASCC mix,nox,1.4E-03,kg/KWh,output,GREET,Electric tab Row 210-283,different power options for users when modeling industrial processes or vehicles
+ASCC mix,pm10,1.1E-03,kg/KWh,output,GREET,Electric tab Row 210-284,different power options for users when modeling industrial processes or vehicles
+ASCC mix,pm2.5,3.4E-04,kg/KWh,output,GREET,Electric tab Row 210-285,different power options for users when modeling industrial processes or vehicles
+ASCC mix,sox,5.3E-04,kg/KWh,output,GREET,Electric tab Row 210-286,different power options for users when modeling industrial processes or vehicles
+ASCC mix,bc,1.6E-05,kg/KWh,output,GREET,Electric tab Row 210-287,different power options for users when modeling industrial processes or vehicles
+ASCC mix,oc,3.5E-05,kg/KWh,output,GREET,Electric tab Row 210-288,different power options for users when modeling industrial processes or vehicles
+ASCC mix,ch4,1.3E-03,kg/KWh,output,GREET,Electric tab Row 210-289,different power options for users when modeling industrial processes or vehicles
+ASCC mix,n2o,7.7E-06,kg/KWh,output,GREET,Electric tab Row 210-290,different power options for users when modeling industrial processes or vehicles
+ASCC mix,co2 ,5.7E-01,kg/KWh,output,GREET,Electric tab Row 210-291,different power options for users when modeling industrial processes or vehicles
+ASCC mix,ghg,6.1E-01,kg/KWh,output,GREET,Electric tab Row 210-292,different power options for users when modeling industrial processes or vehicles
+FRCC mix,voc,6.4E-05,kg/KWh,output,GREET,Electric tab Row 210-293,different power options for users when modeling industrial processes or vehicles
+FRCC mix,co,2.6E-04,kg/KWh,output,GREET,Electric tab Row 210-294,different power options for users when modeling industrial processes or vehicles
+FRCC mix,nox,5.1E-04,kg/KWh,output,GREET,Electric tab Row 210-295,different power options for users when modeling industrial processes or vehicles
+FRCC mix,pm10,7.6E-05,kg/KWh,output,GREET,Electric tab Row 210-296,different power options for users when modeling industrial processes or vehicles
+FRCC mix,pm2.5,4.3E-05,kg/KWh,output,GREET,Electric tab Row 210-297,different power options for users when modeling industrial processes or vehicles
+FRCC mix,sox,5.1E-04,kg/KWh,output,GREET,Electric tab Row 210-298,different power options for users when modeling industrial processes or vehicles
+FRCC mix,bc,3.6E-06,kg/KWh,output,GREET,Electric tab Row 210-299,different power options for users when modeling industrial processes or vehicles
+FRCC mix,oc,8.0E-06,kg/KWh,output,GREET,Electric tab Row 210-300,different power options for users when modeling industrial processes or vehicles
+FRCC mix,ch4,1.2E-03,kg/KWh,output,GREET,Electric tab Row 210-301,different power options for users when modeling industrial processes or vehicles
+FRCC mix,n2o,7.8E-06,kg/KWh,output,GREET,Electric tab Row 210-302,different power options for users when modeling industrial processes or vehicles
+FRCC mix,co2 ,5.0E-01,kg/KWh,output,GREET,Electric tab Row 210-303,different power options for users when modeling industrial processes or vehicles
+FRCC mix,ghg,5.4E-01,kg/KWh,output,GREET,Electric tab Row 210-304,different power options for users when modeling industrial processes or vehicles
+HICC mix,voc,8.6E-05,kg/KWh,output,GREET,Electric tab Row 210-305,different power options for users when modeling industrial processes or vehicles
+HICC mix,co,3.8E-04,kg/KWh,output,GREET,Electric tab Row 210-306,different power options for users when modeling industrial processes or vehicles
+HICC mix,nox,1.9E-03,kg/KWh,output,GREET,Electric tab Row 210-307,different power options for users when modeling industrial processes or vehicles
+HICC mix,pm10,2.8E-04,kg/KWh,output,GREET,Electric tab Row 210-308,different power options for users when modeling industrial processes or vehicles
+HICC mix,pm2.5,2.0E-04,kg/KWh,output,GREET,Electric tab Row 210-309,different power options for users when modeling industrial processes or vehicles
+HICC mix,sox,1.9E-03,kg/KWh,output,GREET,Electric tab Row 210-310,different power options for users when modeling industrial processes or vehicles
+HICC mix,bc,1.9E-05,kg/KWh,output,GREET,Electric tab Row 210-311,different power options for users when modeling industrial processes or vehicles
+HICC mix,oc,3.2E-05,kg/KWh,output,GREET,Electric tab Row 210-312,different power options for users when modeling industrial processes or vehicles
+HICC mix,ch4,1.1E-03,kg/KWh,output,GREET,Electric tab Row 210-313,different power options for users when modeling industrial processes or vehicles
+HICC mix,n2o,1.1E-05,kg/KWh,output,GREET,Electric tab Row 210-314,different power options for users when modeling industrial processes or vehicles
+HICC mix,co2 ,9.1E-01,kg/KWh,output,GREET,Electric tab Row 210-315,different power options for users when modeling industrial processes or vehicles
+HICC mix,ghg,9.5E-01,kg/KWh,output,GREET,Electric tab Row 210-316,different power options for users when modeling industrial processes or vehicles
+MRO mix,voc,6.7E-05,kg/KWh,output,GREET,Electric tab Row 210-317,different power options for users when modeling industrial processes or vehicles
+MRO mix,co,2.0E-04,kg/KWh,output,GREET,Electric tab Row 210-318,different power options for users when modeling industrial processes or vehicles
+MRO mix,nox,9.0E-04,kg/KWh,output,GREET,Electric tab Row 210-319,different power options for users when modeling industrial processes or vehicles
+MRO mix,pm10,1.3E-04,kg/KWh,output,GREET,Electric tab Row 210-320,different power options for users when modeling industrial processes or vehicles
+MRO mix,pm2.5,7.6E-05,kg/KWh,output,GREET,Electric tab Row 210-321,different power options for users when modeling industrial processes or vehicles
+MRO mix,sox,1.8E-03,kg/KWh,output,GREET,Electric tab Row 210-322,different power options for users when modeling industrial processes or vehicles
+MRO mix,bc,4.8E-06,kg/KWh,output,GREET,Electric tab Row 210-323,different power options for users when modeling industrial processes or vehicles
+MRO mix,oc,1.1E-05,kg/KWh,output,GREET,Electric tab Row 210-324,different power options for users when modeling industrial processes or vehicles
+MRO mix,ch4,9.3E-04,kg/KWh,output,GREET,Electric tab Row 210-325,different power options for users when modeling industrial processes or vehicles
+MRO mix,n2o,9.4E-06,kg/KWh,output,GREET,Electric tab Row 210-326,different power options for users when modeling industrial processes or vehicles
+MRO mix,co2 ,5.7E-01,kg/KWh,output,GREET,Electric tab Row 210-327,different power options for users when modeling industrial processes or vehicles
+MRO mix,ghg,6.0E-01,kg/KWh,output,GREET,Electric tab Row 210-328,different power options for users when modeling industrial processes or vehicles
+NPCC mix,voc,4.4E-05,kg/KWh,output,GREET,Electric tab Row 210-329,different power options for users when modeling industrial processes or vehicles
+NPCC mix,co,2.5E-04,kg/KWh,output,GREET,Electric tab Row 210-330,different power options for users when modeling industrial processes or vehicles
+NPCC mix,nox,2.2E-04,kg/KWh,output,GREET,Electric tab Row 210-331,different power options for users when modeling industrial processes or vehicles
+NPCC mix,pm10,6.2E-05,kg/KWh,output,GREET,Electric tab Row 210-332,different power options for users when modeling industrial processes or vehicles
+NPCC mix,pm2.5,4.4E-05,kg/KWh,output,GREET,Electric tab Row 210-333,different power options for users when modeling industrial processes or vehicles
+NPCC mix,sox,1.9E-04,kg/KWh,output,GREET,Electric tab Row 210-334,different power options for users when modeling industrial processes or vehicles
+NPCC mix,bc,5.9E-06,kg/KWh,output,GREET,Electric tab Row 210-335,different power options for users when modeling industrial processes or vehicles
+NPCC mix,oc,1.4E-05,kg/KWh,output,GREET,Electric tab Row 210-336,different power options for users when modeling industrial processes or vehicles
+NPCC mix,ch4,6.9E-04,kg/KWh,output,GREET,Electric tab Row 210-337,different power options for users when modeling industrial processes or vehicles
+NPCC mix,n2o,4.6E-06,kg/KWh,output,GREET,Electric tab Row 210-338,different power options for users when modeling industrial processes or vehicles
+NPCC mix,co2 ,2.5E-01,kg/KWh,output,GREET,Electric tab Row 210-339,different power options for users when modeling industrial processes or vehicles
+NPCC mix,ghg,2.7E-01,kg/KWh,output,GREET,Electric tab Row 210-340,different power options for users when modeling industrial processes or vehicles
+RFC mix,voc,6.4E-05,kg/KWh,output,GREET,Electric tab Row 210-341,different power options for users when modeling industrial processes or vehicles
+RFC mix,co,1.8E-04,kg/KWh,output,GREET,Electric tab Row 210-342,different power options for users when modeling industrial processes or vehicles
+RFC mix,nox,6.8E-04,kg/KWh,output,GREET,Electric tab Row 210-343,different power options for users when modeling industrial processes or vehicles
+RFC mix,pm10,2.0E-04,kg/KWh,output,GREET,Electric tab Row 210-344,different power options for users when modeling industrial processes or vehicles
+RFC mix,pm2.5,1.2E-04,kg/KWh,output,GREET,Electric tab Row 210-345,different power options for users when modeling industrial processes or vehicles
+RFC mix,sox,1.8E-03,kg/KWh,output,GREET,Electric tab Row 210-346,different power options for users when modeling industrial processes or vehicles
+RFC mix,bc,6.2E-06,kg/KWh,output,GREET,Electric tab Row 210-347,different power options for users when modeling industrial processes or vehicles
+RFC mix,oc,1.3E-05,kg/KWh,output,GREET,Electric tab Row 210-348,different power options for users when modeling industrial processes or vehicles
+RFC mix,ch4,1.0E-03,kg/KWh,output,GREET,Electric tab Row 210-349,different power options for users when modeling industrial processes or vehicles
+RFC mix,n2o,8.2E-06,kg/KWh,output,GREET,Electric tab Row 210-350,different power options for users when modeling industrial processes or vehicles
+RFC mix,co2 ,5.4E-01,kg/KWh,output,GREET,Electric tab Row 210-351,different power options for users when modeling industrial processes or vehicles
+RFC mix,ghg,5.7E-01,kg/KWh,output,GREET,Electric tab Row 210-352,different power options for users when modeling industrial processes or vehicles
+SERC mix,voc,6.0E-05,kg/KWh,output,GREET,Electric tab Row 210-353,different power options for users when modeling industrial processes or vehicles
+SERC mix,co,2.3E-04,kg/KWh,output,GREET,Electric tab Row 210-354,different power options for users when modeling industrial processes or vehicles
+SERC mix,nox,5.6E-04,kg/KWh,output,GREET,Electric tab Row 210-355,different power options for users when modeling industrial processes or vehicles
+SERC mix,pm10,1.2E-04,kg/KWh,output,GREET,Electric tab Row 210-356,different power options for users when modeling industrial processes or vehicles
+SERC mix,pm2.5,7.9E-05,kg/KWh,output,GREET,Electric tab Row 210-357,different power options for users when modeling industrial processes or vehicles
+SERC mix,sox,9.9E-04,kg/KWh,output,GREET,Electric tab Row 210-358,different power options for users when modeling industrial processes or vehicles
+SERC mix,bc,5.2E-06,kg/KWh,output,GREET,Electric tab Row 210-359,different power options for users when modeling industrial processes or vehicles
+SERC mix,oc,1.2E-05,kg/KWh,output,GREET,Electric tab Row 210-360,different power options for users when modeling industrial processes or vehicles
+SERC mix,ch4,1.0E-03,kg/KWh,output,GREET,Electric tab Row 210-361,different power options for users when modeling industrial processes or vehicles
+SERC mix,n2o,8.0E-06,kg/KWh,output,GREET,Electric tab Row 210-362,different power options for users when modeling industrial processes or vehicles
+SERC mix,co2 ,5.1E-01,kg/KWh,output,GREET,Electric tab Row 210-363,different power options for users when modeling industrial processes or vehicles
+SERC mix,ghg,5.4E-01,kg/KWh,output,GREET,Electric tab Row 210-364,different power options for users when modeling industrial processes or vehicles
+SPP mix,voc,6.2E-05,kg/KWh,output,GREET,Electric tab Row 210-365,different power options for users when modeling industrial processes or vehicles
+SPP mix,co,2.1E-04,kg/KWh,output,GREET,Electric tab Row 210-366,different power options for users when modeling industrial processes or vehicles
+SPP mix,nox,9.6E-04,kg/KWh,output,GREET,Electric tab Row 210-367,different power options for users when modeling industrial processes or vehicles
+SPP mix,pm10,1.1E-04,kg/KWh,output,GREET,Electric tab Row 210-368,different power options for users when modeling industrial processes or vehicles
+SPP mix,pm2.5,7.1E-05,kg/KWh,output,GREET,Electric tab Row 210-369,different power options for users when modeling industrial processes or vehicles
+SPP mix,sox,1.3E-03,kg/KWh,output,GREET,Electric tab Row 210-370,different power options for users when modeling industrial processes or vehicles
+SPP mix,bc,4.0E-06,kg/KWh,output,GREET,Electric tab Row 210-371,different power options for users when modeling industrial processes or vehicles
+SPP mix,oc,8.4E-06,kg/KWh,output,GREET,Electric tab Row 210-372,different power options for users when modeling industrial processes or vehicles
+SPP mix,ch4,1.0E-03,kg/KWh,output,GREET,Electric tab Row 210-373,different power options for users when modeling industrial processes or vehicles
+SPP mix,n2o,8.3E-06,kg/KWh,output,GREET,Electric tab Row 210-374,different power options for users when modeling industrial processes or vehicles
+SPP mix,co2 ,5.4E-01,kg/KWh,output,GREET,Electric tab Row 210-375,different power options for users when modeling industrial processes or vehicles
+SPP mix,ghg,5.8E-01,kg/KWh,output,GREET,Electric tab Row 210-376,different power options for users when modeling industrial processes or vehicles
+TRE mix,voc,6.5E-05,kg/KWh,output,GREET,Electric tab Row 210-377,different power options for users when modeling industrial processes or vehicles
+TRE mix,co,2.4E-04,kg/KWh,output,GREET,Electric tab Row 210-378,different power options for users when modeling industrial processes or vehicles
+TRE mix,nox,5.5E-04,kg/KWh,output,GREET,Electric tab Row 210-379,different power options for users when modeling industrial processes or vehicles
+TRE mix,pm10,6.1E-05,kg/KWh,output,GREET,Electric tab Row 210-380,different power options for users when modeling industrial processes or vehicles
+TRE mix,pm2.5,3.9E-05,kg/KWh,output,GREET,Electric tab Row 210-381,different power options for users when modeling industrial processes or vehicles
+TRE mix,sox,1.2E-03,kg/KWh,output,GREET,Electric tab Row 210-382,different power options for users when modeling industrial processes or vehicles
+TRE mix,bc,2.7E-06,kg/KWh,output,GREET,Electric tab Row 210-383,different power options for users when modeling industrial processes or vehicles
+TRE mix,oc,5.8E-06,kg/KWh,output,GREET,Electric tab Row 210-384,different power options for users when modeling industrial processes or vehicles
+TRE mix,ch4,1.1E-03,kg/KWh,output,GREET,Electric tab Row 210-385,different power options for users when modeling industrial processes or vehicles
+TRE mix,n2o,7.8E-06,kg/KWh,output,GREET,Electric tab Row 210-386,different power options for users when modeling industrial processes or vehicles
+TRE mix,co2 ,5.0E-01,kg/KWh,output,GREET,Electric tab Row 210-387,different power options for users when modeling industrial processes or vehicles
+TRE mix,ghg,5.4E-01,kg/KWh,output,GREET,Electric tab Row 210-388,different power options for users when modeling industrial processes or vehicles
+WECC mix,voc,4.1E-05,kg/KWh,output,GREET,Electric tab Row 210-389,different power options for users when modeling industrial processes or vehicles
+WECC mix,co,1.6E-04,kg/KWh,output,GREET,Electric tab Row 210-390,different power options for users when modeling industrial processes or vehicles
+WECC mix,nox,4.5E-04,kg/KWh,output,GREET,Electric tab Row 210-391,different power options for users when modeling industrial processes or vehicles
+WECC mix,pm10,1.2E-04,kg/KWh,output,GREET,Electric tab Row 210-392,different power options for users when modeling industrial processes or vehicles
+WECC mix,pm2.5,6.8E-05,kg/KWh,output,GREET,Electric tab Row 210-393,different power options for users when modeling industrial processes or vehicles
+WECC mix,sox,2.7E-04,kg/KWh,output,GREET,Electric tab Row 210-394,different power options for users when modeling industrial processes or vehicles
+WECC mix,bc,4.5E-06,kg/KWh,output,GREET,Electric tab Row 210-395,different power options for users when modeling industrial processes or vehicles
+WECC mix,oc,9.6E-06,kg/KWh,output,GREET,Electric tab Row 210-396,different power options for users when modeling industrial processes or vehicles
+WECC mix,ch4,6.6E-04,kg/KWh,output,GREET,Electric tab Row 210-397,different power options for users when modeling industrial processes or vehicles
+WECC mix,n2o,5.4E-06,kg/KWh,output,GREET,Electric tab Row 210-398,different power options for users when modeling industrial processes or vehicles
+WECC mix,co2 ,3.3E-01,kg/KWh,output,GREET,Electric tab Row 210-399,different power options for users when modeling industrial processes or vehicles
+WECC mix,ghg,3.5E-01,kg/KWh,output,GREET,Electric tab Row 210-400,different power options for users when modeling industrial processes or vehicles

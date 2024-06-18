@@ -1,0 +1,5 @@
+flows,value,unit,direction,type,source
+co2,0.0732,kg/MJ,output,emission,GREET JetFuel_PTWa Tab A34:E34
+carbon,0.01995,kg/MJ,output,emission,GREET JetFuel_PTWa Tab A34:E35
+sulfur,0.000016,kg/MJ,output,emission,GREET JetFuel_PTWa Tab A34:E36
+sox,0.000032,kg/MJ,output,emission,GREET JetFuel_PTWa Tab A34:E37

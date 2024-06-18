@@ -1,0 +1,10 @@
+﻿Year,2ds_process,2ds_energy_related,rts_direct,b2ds_direct,unit,source,Note,,,,,,previsou,now
+2000,718,718,718,718,metric ton/year,http://www.globalcarbonatlas.org/en/CO2-emissions,historical worldwide emission,,,,0.055882353,40.12352941,716,718
+2005,960,960,960,960,metric ton/year,http://www.globalcarbonatlas.org/en/CO2-emissions,historical worldwide emission,,,,0.058558559,56.21621622,958,960
+2010,1248,1248,1248,1248,metric ton/year,http://www.globalcarbonatlas.org/en/CO2-emissions,historical worldwide emission,,,,0.066666667,83.2,1242,1248
+2015,1437,1437,1437,1437,metric ton/year,http://www.globalcarbonatlas.org/en/CO2-emissions,historical worldwide emission,,,,0.065853659,94.63170732,1428,1437
+2020,1446.2,2270.2,2270.2,2270.2,metric ton/year,http://www.globalcarbonatlas.org/en/CO2-emissions,historical worldwide emission,,,,0.082926829,188.2604878,,
+2025,1407,2219.7,2259,2124.4,metric ton/year,https://iea.blob.core.windows.net/assets/cbaa3da1-fd61-4c2a-8719-31538f59b54f/TechnologyRoadmapLowCarbonTransitionintheCementIndustry.pdf,predicted allowable emission,,,,,,,
+2030,1395.7,2186.1,2264.6,1877.8,metric ton/year,https://iea.blob.core.windows.net/assets/cbaa3da1-fd61-4c2a-8719-31538f59b54f/TechnologyRoadmapLowCarbonTransitionintheCementIndustry.pdf,predicted allowable emission,,,,,,,
+2035,1367.7,2130,2264.6,1620,metric ton/year,https://iea.blob.core.windows.net/assets/cbaa3da1-fd61-4c2a-8719-31538f59b54f/TechnologyRoadmapLowCarbonTransitionintheCementIndustry.pdf,predicted allowable emission,,,,,,,
+2040,1322.9,2046,2292.6,1345.3,metric ton/year,https://iea.blob.core.windows.net/assets/cbaa3da1-fd61-4c2a-8719-31538f59b54f/TechnologyRoadmapLowCarbonTransitionintheCementIndustry.pdf,predicted allowable emission,,,,,,,

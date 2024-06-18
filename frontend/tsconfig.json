@@ -1,0 +1,24 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "types": ["cypress", "@testing-library/cypress", "node"],
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "jsx": "react",
+    "strict": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-tw-template"
+      }
+    ]
+  },
+  "include": ["./src/**/*", "./__tests__/**/*"],
+  "exclude": ["node_modules", "public", ".cache"]
+}

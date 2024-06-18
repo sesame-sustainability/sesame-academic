@@ -1,0 +1,4 @@
+technology,flows,value,unit,type,source
+compression + dehydration,electricity,0.36,MJ/kg,mass ,NPC 2019 CCUS Report
+amine,electricty,0.576,MJ/kg CO2,mass,NPC 2019 CCUS Report
+amine,natural gas,2.743136883,MJ/kg CO2,mass,NPC 2019 CCUS Report

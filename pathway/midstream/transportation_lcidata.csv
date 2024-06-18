@@ -1,0 +1,430 @@
+Feed,Sub Feed,"Transport Mode, Upstream to Process",Default Distance (mile one-way),Mix,flows,value,unit,direction,type,data location,comment
+crude,,default mix,2507.276661,See GREET T&D tab B206,voc,1.71E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,default mix,2507.276661,See GREET T&D tab B206,co,5.37E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,default mix,2507.276661,See GREET T&D tab B206,nox,3.78E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,default mix,2507.276661,See GREET T&D tab B206,pm10,3.01E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,default mix,2507.276661,See GREET T&D tab B206,pm2.5,2.61E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,default mix,2507.276661,See GREET T&D tab B206,sox,2.38E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,default mix,2507.276661,See GREET T&D tab B206,bc,3.81E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,default mix,2507.276661,See GREET T&D tab B206,oc,9.99E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,default mix,2507.276661,See GREET T&D tab B206,ch4,7.91E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,default mix,2507.276661,See GREET T&D tab B206,n2o,9.18E-12,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,default mix,2507.276661,See GREET T&D tab B206,co2,4.83E-07,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,ocean tanker,7812.026849,,voc,1.56E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,ocean tanker,7812.026849,,co,3.50E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,ocean tanker,7812.026849,,nox,3.83E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,ocean tanker,7812.026849,,pm10,3.32E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,ocean tanker,7812.026849,,pm2.5,3.06E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,ocean tanker,7812.026849,,sox,2.64E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,ocean tanker,7812.026849,,bc,4.59E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,ocean tanker,7812.026849,,oc,1.19E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,ocean tanker,7812.026849,,ch4,1.94E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,ocean tanker,7812.026849,,n2o,3.94E-12,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,ocean tanker,7812.026849,,co2,1.72E-07,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,barge,750,,voc,3.30E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,barge,750,,co,2.47E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,barge,750,,nox,1.06E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,barge,750,,pm10,3.60E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,barge,750,,pm2.5,3.47E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,barge,750,,sox,1.21E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,barge,750,,bc,5.25E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,barge,750,,oc,1.34E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,barge,750,,ch4,1.30E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,barge,750,,n2o,2.57E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,barge,750,,co2,1.05E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,pipeline,587.415895,,voc,1.57E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,pipeline,587.415895,,co,4.97E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,pipeline,587.415895,,nox,9.74E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,pipeline,587.415895,,pm10,1.75E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,pipeline,587.415895,,pm2.5,7.58E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,pipeline,587.415895,,sox,2.40E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,pipeline,587.415895,,bc,6.23E-12,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,pipeline,587.415895,,oc,1.47E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,pipeline,587.415895,,ch4,2.75E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,pipeline,587.415895,,n2o,2.18E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,pipeline,587.415895,,co2,1.39E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,rail,797,,voc,3.42E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,rail,797,,co,1.06E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,rail,797,,nox,7.13E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,rail,797,,pm10,2.16E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,rail,797,,pm2.5,2.08E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,rail,797,,sox,7.39E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,rail,797,,bc,1.84E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,rail,797,,oc,1.78E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,rail,797,,ch4,8.32E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,rail,797,,n2o,1.66E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,rail,797,,co2,6.42E-07,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,truck,30,,voc,1.13E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,truck,30,,co,3.40E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,truck,30,,nox,8.16E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,truck,30,,pm10,3.07E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,truck,30,,pm2.5,1.72E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,truck,30,,sox,3.77E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,truck,30,,bc,1.87E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,truck,30,,oc,3.30E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,truck,30,,ch4,4.71E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,truck,30,,n2o,1.25E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+crude,,truck,30,,co2,3.27E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+oil sands,,pipeline,1708,,voc,1.54E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+oil sands,,pipeline,1708,,co,4.86E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+oil sands,,pipeline,1708,,nox,9.53E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+oil sands,,pipeline,1708,,pm10,1.71E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+oil sands,,pipeline,1708,,pm2.5,7.42E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+oil sands,,pipeline,1708,,sox,2.34E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+oil sands,,pipeline,1708,,bc,6.09E-12,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+oil sands,,pipeline,1708,,oc,1.44E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+oil sands,,pipeline,1708,,ch4,2.69E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+oil sands,,pipeline,1708,,n2o,2.13E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+oil sands,,pipeline,1708,,co2,1.36E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,default mix,1500,See GREET T&D tab FQ206,voc,2.48E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,default mix,1500,See GREET T&D tab FQ206,co,7.73E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,default mix,1500,See GREET T&D tab FQ206,nox,4.03E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,default mix,1500,See GREET T&D tab FQ206,pm10,1.95E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,default mix,1500,See GREET T&D tab FQ206,pm2.5,1.41E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,default mix,1500,See GREET T&D tab FQ206,sox,1.23E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,default mix,1500,See GREET T&D tab FQ206,bc,1.23E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,default mix,1500,See GREET T&D tab FQ206,oc,9.59E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,default mix,1500,See GREET T&D tab FQ206,ch4,1.78E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,default mix,1500,See GREET T&D tab FQ206,n2o,1.91E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,default mix,1500,See GREET T&D tab FQ206,co2,1.01E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,pipeline,1500,,voc,1.56E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,pipeline,1500,,co,4.95E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,pipeline,1500,,nox,9.69E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,pipeline,1500,,pm10,1.74E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,pipeline,1500,,pm2.5,7.54E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,pipeline,1500,,sox,2.38E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,pipeline,1500,,bc,6.19E-12,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,pipeline,1500,,oc,1.46E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,pipeline,1500,,ch4,2.74E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,pipeline,1500,,n2o,2.16E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,pipeline,1500,,co2,1.38E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,rail,1500,,voc,3.40E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,rail,1500,,co,1.05E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,rail,1500,,nox,7.09E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,rail,1500,,pm10,2.15E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,rail,1500,,pm2.5,2.07E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,rail,1500,,sox,7.35E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,rail,1500,,bc,1.83E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,rail,1500,,oc,1.77E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,rail,1500,,ch4,8.28E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,rail,1500,,n2o,1.65E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,bakken,rail,1500,,co2,6.38E-07,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,default mix,533.9,See GREET T&D tab FR206,voc,3.63E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,default mix,533.9,See GREET T&D tab FR206,co,1.42E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,default mix,533.9,See GREET T&D tab FR206,nox,4.52E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,default mix,533.9,See GREET T&D tab FR206,pm10,2.36E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,default mix,533.9,See GREET T&D tab FR206,pm2.5,1.55E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,default mix,533.9,See GREET T&D tab FR206,sox,1.42E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,default mix,533.9,See GREET T&D tab FR206,bc,1.86E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,default mix,533.9,See GREET T&D tab FR206,oc,5.15E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,default mix,533.9,See GREET T&D tab FR206,ch4,2.63E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,default mix,533.9,See GREET T&D tab FR206,n2o,2.04E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,default mix,533.9,See GREET T&D tab FR206,co2,1.57E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,barge,568,,voc,3.25E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,barge,568,,co,2.44E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,barge,568,,nox,1.05E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,barge,568,,pm10,3.55E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,barge,568,,pm2.5,3.42E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,barge,568,,sox,1.19E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,barge,568,,bc,5.17E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,barge,568,,oc,1.32E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,barge,568,,ch4,1.28E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,barge,568,,n2o,2.53E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,barge,568,,co2,1.04E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,pipeline,462,,voc,1.55E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,pipeline,462,,co,4.90E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,pipeline,462,,nox,9.60E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,pipeline,462,,pm10,1.72E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,pipeline,462,,pm2.5,7.47E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,pipeline,462,,sox,2.36E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,pipeline,462,,bc,6.14E-12,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,pipeline,462,,oc,1.45E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,pipeline,462,,ch4,2.71E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,pipeline,462,,n2o,2.14E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,pipeline,462,,co2,1.37E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,rail,200,,voc,3.37E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,rail,200,,co,1.04E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,rail,200,,nox,7.03E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,rail,200,,pm10,2.13E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,rail,200,,pm2.5,2.05E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,rail,200,,sox,7.29E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,rail,200,,bc,1.82E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,rail,200,,oc,1.76E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,rail,200,,ch4,8.20E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,rail,200,,n2o,1.64E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,rail,200,,co2,6.33E-07,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,truck,90,,voc,1.12E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,truck,90,,co,3.35E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,truck,90,,nox,8.05E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,truck,90,,pm10,3.02E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,truck,90,,pm2.5,1.70E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,truck,90,,sox,3.71E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,truck,90,,bc,1.84E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,truck,90,,oc,3.25E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,truck,90,,ch4,4.64E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,truck,90,,n2o,1.23E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+shale oil,eagle ford,truck,90,,co2,3.22E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,
+natural gas,,Pipeline,750,,voc,5.41E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,750 miles is distance to CNG or H2 plants
+natural gas,,Pipeline,750,,co,2.78E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,750 miles is distance to CNG or H2 plants
+natural gas,,Pipeline,750,,nox,3.29E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,750 miles is distance to CNG or H2 plants
+natural gas,,Pipeline,750,,pm10,7.58E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,750 miles is distance to CNG or H2 plants
+natural gas,,Pipeline,750,,pm2.5,6.65E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,750 miles is distance to CNG or H2 plants
+natural gas,,Pipeline,750,,sox,6.21E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,750 miles is distance to CNG or H2 plants
+natural gas,,Pipeline,750,,bc,1.44E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,750 miles is distance to CNG or H2 plants
+natural gas,,Pipeline,750,,oc,2.61E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,750 miles is distance to CNG or H2 plants
+natural gas,,Pipeline,750,,ch4,2.72E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,750 miles is distance to CNG or H2 plants
+natural gas,,Pipeline,750,,n2o,1.93E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,750 miles is distance to CNG or H2 plants
+natural gas,,Pipeline,750,,co2,2.46E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,750 miles is distance to CNG or H2 plants
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Default Mix,700,See GREET T&D tab EE206,voc,6.47E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Default Mix,700,See GREET T&D tab EE206,co,2.01E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Default Mix,700,See GREET T&D tab EE206,nox,1.34E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Default Mix,700,See GREET T&D tab EE206,pm10,4.06E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Default Mix,700,See GREET T&D tab EE206,pm2.5,3.89E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Default Mix,700,See GREET T&D tab EE206,sox,1.42E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Default Mix,700,See GREET T&D tab EE206,bc,3.47E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Default Mix,700,See GREET T&D tab EE206,oc,3.31E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Default Mix,700,See GREET T&D tab EE206,ch4,1.61E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Default Mix,700,See GREET T&D tab EE206,n2o,3.10E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Default Mix,700,See GREET T&D tab EE206,co2,1.24E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Barge,320,,voc,3.11E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Barge,320,,co,2.33E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Barge,320,,nox,1.00E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Barge,320,,pm10,3.40E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Barge,320,,pm2.5,3.27E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Barge,320,,sox,1.14E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Barge,320,,bc,4.95E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Barge,320,,oc,1.26E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Barge,320,,ch4,1.22E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Barge,320,,n2o,2.42E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Barge,320,,co2,9.92E-07,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Rail,740,,voc,6.45E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Rail,740,,co,1.99E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Rail,740,,nox,1.35E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Rail,740,,pm10,4.08E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Rail,740,,pm2.5,3.93E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Rail,740,,sox,1.39E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Rail,740,,bc,3.48E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Rail,740,,oc,3.36E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Rail,740,,ch4,1.57E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Rail,740,,n2o,3.13E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Rail,740,,co2,1.21E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Truck,150,,voc,1.12E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Truck,150,,co,3.29E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Truck,150,,nox,7.87E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Truck,150,,pm10,3.01E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Truck,150,,pm2.5,1.72E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Truck,150,,sox,4.24E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Truck,150,,bc,1.94E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Truck,150,,oc,3.40E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Truck,150,,ch4,5.17E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Truck,150,,n2o,1.33E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,"Mix (~50% Bituminous, 40% Sub-bituminous, 5% Lignite, 5% Other)",Truck,150,,co2,3.68E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Default Mix,700,See GREET T&D tab EE206,voc,5.57E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Default Mix,700,See GREET T&D tab EE206,co,1.73E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Default Mix,700,See GREET T&D tab EE206,nox,1.15E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Default Mix,700,See GREET T&D tab EE206,pm10,3.49E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Default Mix,700,See GREET T&D tab EE206,pm2.5,3.35E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Default Mix,700,See GREET T&D tab EE206,sox,1.23E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Default Mix,700,See GREET T&D tab EE206,bc,2.99E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Default Mix,700,See GREET T&D tab EE206,oc,2.84E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Default Mix,700,See GREET T&D tab EE206,ch4,1.38E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Default Mix,700,See GREET T&D tab EE206,n2o,2.67E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Default Mix,700,See GREET T&D tab EE206,co2,1.06E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Barge,320,,voc,2.68E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Barge,320,,co,2.01E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Barge,320,,nox,8.64E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Barge,320,,pm10,2.92E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Barge,320,,pm2.5,2.81E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Barge,320,,sox,9.83E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Barge,320,,bc,4.26E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Barge,320,,oc,1.08E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Barge,320,,ch4,1.05E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Barge,320,,n2o,2.08E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Barge,320,,co2,8.53E-07,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Rail,740,,voc,5.55E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Rail,740,,co,1.72E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Rail,740,,nox,1.16E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Rail,740,,pm10,3.51E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Rail,740,,pm2.5,3.38E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Rail,740,,sox,1.20E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Rail,740,,bc,2.99E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Rail,740,,oc,2.89E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Rail,740,,ch4,1.35E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Rail,740,,n2o,2.69E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Rail,740,,co2,1.04E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Truck,150,,voc,9.61E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Truck,150,,co,2.83E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Truck,150,,nox,6.77E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Truck,150,,pm10,2.59E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Truck,150,,pm2.5,1.48E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Truck,150,,sox,3.65E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Truck,150,,bc,1.66E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Truck,150,,oc,2.93E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Truck,150,,ch4,4.45E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Truck,150,,n2o,1.14E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Bituminous,Truck,150,,co2,3.17E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Default Mix,700,See GREET T&D tab EE206,voc,7.84E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Default Mix,700,See GREET T&D tab EE206,co,2.44E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Default Mix,700,See GREET T&D tab EE206,nox,1.62E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Default Mix,700,See GREET T&D tab EE206,pm10,4.92E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Default Mix,700,See GREET T&D tab EE206,pm2.5,4.72E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Default Mix,700,See GREET T&D tab EE206,sox,1.72E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Default Mix,700,See GREET T&D tab EE206,bc,4.20E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Default Mix,700,See GREET T&D tab EE206,oc,4.00E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Default Mix,700,See GREET T&D tab EE206,ch4,1.95E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Default Mix,700,See GREET T&D tab EE206,n2o,3.76E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Default Mix,700,See GREET T&D tab EE206,co2,1.50E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Barge,320,,voc,3.77E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Barge,320,,co,2.83E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Barge,320,,nox,1.22E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Barge,320,,pm10,4.12E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Barge,320,,pm2.5,3.96E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Barge,320,,sox,1.38E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Barge,320,,bc,5.99E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Barge,320,,oc,1.53E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Barge,320,,ch4,1.48E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Barge,320,,n2o,2.93E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Barge,320,,co2,1.20E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Rail,740,,voc,7.81E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Rail,740,,co,2.41E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Rail,740,,nox,1.63E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Rail,740,,pm10,4.94E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Rail,740,,pm2.5,4.75E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Rail,740,,sox,1.69E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Rail,740,,bc,4.21E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Rail,740,,oc,4.07E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Rail,740,,ch4,1.90E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Rail,740,,n2o,3.79E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Rail,740,,co2,1.47E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Truck,150,,voc,1.35E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Truck,150,,co,3.99E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Truck,150,,nox,9.53E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Truck,150,,pm10,3.64E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Truck,150,,pm2.5,2.08E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Truck,150,,sox,5.13E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Truck,150,,bc,2.34E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Truck,150,,oc,4.12E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Truck,150,,ch4,6.26E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Truck,150,,n2o,1.61E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Subbituminous,Truck,150,,co2,4.46E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Default Mix,700,See GREET T&D tab EE206,voc,1.17E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Default Mix,700,See GREET T&D tab EE206,co,3.63E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Default Mix,700,See GREET T&D tab EE206,nox,2.41E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Default Mix,700,See GREET T&D tab EE206,pm10,7.32E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Default Mix,700,See GREET T&D tab EE206,pm2.5,7.02E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Default Mix,700,See GREET T&D tab EE206,sox,2.57E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Default Mix,700,See GREET T&D tab EE206,bc,6.26E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Default Mix,700,See GREET T&D tab EE206,oc,5.96E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Default Mix,700,See GREET T&D tab EE206,ch4,2.90E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Default Mix,700,See GREET T&D tab EE206,n2o,5.59E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Default Mix,700,See GREET T&D tab EE206,co2,2.23E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Barge,320,,voc,5.61E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Barge,320,,co,4.21E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Barge,320,,nox,1.81E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Barge,320,,pm10,6.13E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Barge,320,,pm2.5,5.90E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Barge,320,,sox,2.06E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Barge,320,,bc,8.92E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Barge,320,,oc,2.27E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Barge,320,,ch4,2.21E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Barge,320,,n2o,4.37E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Barge,320,,co2,1.79E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Rail,740,,voc,1.16E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Rail,740,,co,3.59E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Rail,740,,nox,2.42E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Rail,740,,pm10,7.35E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Rail,740,,pm2.5,7.08E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Rail,740,,sox,2.51E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Rail,740,,bc,6.26E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Rail,740,,oc,6.06E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Rail,740,,ch4,2.83E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Rail,740,,n2o,5.64E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Rail,740,,co2,2.18E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Truck,150,,voc,2.01E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Truck,150,,co,5.93E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Truck,150,,nox,1.42E-08,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Truck,150,,pm10,5.42E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Truck,150,,pm2.5,3.10E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Truck,150,,sox,7.64E-10,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Truck,150,,bc,3.49E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Truck,150,,oc,6.13E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Truck,150,,ch4,9.32E-09,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Truck,150,,n2o,2.39E-11,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+coal,Lignite,Truck,150,,co2,6.64E-06,kg/MJmile,output,mass,GREET T&D tab A106 & below,Very similar for power/H2/DME/MeOH plant use
+corn,,default mix,50,See GREET T&D tab CI206,voc,7.64E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,default mix,50,See GREET T&D tab CI206,co,2.55E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,default mix,50,See GREET T&D tab CI206,nox,5.34E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,default mix,50,See GREET T&D tab CI206,pm10,2.77E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,default mix,50,See GREET T&D tab CI206,pm2.5,1.51E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,default mix,50,See GREET T&D tab CI206,sox,3.10E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,default mix,50,See GREET T&D tab CI206,bc,1.36E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,default mix,50,See GREET T&D tab CI206,oc,2.39E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,default mix,50,See GREET T&D tab CI206,ch4,3.73E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,default mix,50,See GREET T&D tab CI206,n2o,1.07E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,default mix,50,See GREET T&D tab CI206,co2,0.000269251,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,barge,350,,voc,1.41E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,barge,350,,co,1.06E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,barge,350,,nox,4.55E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,barge,350,,pm10,1.54E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,barge,350,,pm2.5,1.48E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,barge,350,,sox,5.18E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,barge,350,,bc,2.24E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,barge,350,,oc,5.71E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,barge,350,,ch4,5.54E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,barge,350,,n2o,1.10E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,barge,350,,co2,4.49E-05,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,rail,400,,voc,1.46E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,rail,400,,co,4.52E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,rail,400,,nox,3.05E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,rail,400,,pm10,9.24E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,rail,400,,pm2.5,8.89E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,rail,400,,sox,3.16E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,rail,400,,bc,7.87E-10,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,rail,400,,oc,7.61E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,rail,400,,ch4,3.55E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,rail,400,,n2o,7.09E-10,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,rail,400,,co2,2.74E-05,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,truck,50,,voc,6.45E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,truck,50,,co,1.94E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,truck,50,,nox,4.65E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,truck,50,,pm10,1.75E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,truck,50,,pm2.5,9.80E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,truck,50,,sox,2.14E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,truck,50,,bc,1.07E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,truck,50,,oc,1.88E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,truck,50,,ch4,2.68E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,truck,50,,n2o,7.10E-10,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn,,truck,50,,co2,0.000186348,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn stover,,truck,53.30846678,,voc,4.84E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn stover,,truck,53.30846678,,co,1.45E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn stover,,truck,53.30846678,,nox,3.49E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn stover,,truck,53.30846678,,pm10,1.31E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn stover,,truck,53.30846678,,pm2.5,7.35E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn stover,,truck,53.30846678,,sox,1.61E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn stover,,truck,53.30846678,,bc,7.99E-10,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn stover,,truck,53.30846678,,oc,1.41E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn stover,,truck,53.30846678,,ch4,2.01E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn stover,,truck,53.30846678,,n2o,5.33E-10,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+corn stover,,truck,53.30846678,,co2,0.000139761,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+uranium,,truck,1360,,voc,2.53E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+uranium,,truck,1360,,co,7.46E-08,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+uranium,,truck,1360,,nox,1.78E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+uranium,,truck,1360,,pm10,6.81E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+uranium,,truck,1360,,pm2.5,3.90E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+uranium,,truck,1360,,sox,9.60E-09,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+uranium,,truck,1360,,bc,4.38E-10,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+uranium,,truck,1360,,oc,7.71E-10,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+uranium,,truck,1360,,ch4,1.17E-07,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+uranium,,truck,1360,,n2o,3.00E-10,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+uranium,,truck,1360,,co2,8.34E-05,kg/kgmile,output,mass,GREET T&D tab A106 & below,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),,default mix,70.40270151,See GREET Cement_Concrete tab A12,voc,1.92E-08,kg/kgmile,output,mass,GREET Cement_Concrete tab A12 and A29,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),,default mix,70.40270151,See GREET Cement_Concrete tab A12,co,5.68E-08,kg/kgmile,output,mass,GREET Cement_Concrete tab A12 and A29,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),,default mix,70.40270151,See GREET Cement_Concrete tab A12,nox,2.12E-07,kg/kgmile,output,mass,GREET Cement_Concrete tab A12 and A29,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),,default mix,70.40270151,See GREET Cement_Concrete tab A12,pm10,8.13E-09,kg/kgmile,output,mass,GREET Cement_Concrete tab A12 and A29,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),,default mix,70.40270151,See GREET Cement_Concrete tab A12,pm2.5,6.31E-09,kg/kgmile,output,mass,GREET Cement_Concrete tab A12 and A29,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),,default mix,70.40270151,See GREET Cement_Concrete tab A12,sox,1.78E-08,kg/kgmile,output,mass,GREET Cement_Concrete tab A12 and A29,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),,default mix,70.40270151,See GREET Cement_Concrete tab A12,bc,6.92E-10,kg/kgmile,output,mass,GREET Cement_Concrete tab A12 and A29,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),,default mix,70.40270151,See GREET Cement_Concrete tab A12,oc,3.37E-09,kg/kgmile,output,mass,GREET Cement_Concrete tab A12 and A29,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),,default mix,70.40270151,See GREET Cement_Concrete tab A12,ch4,7.64E-08,kg/kgmile,output,mass,GREET Cement_Concrete tab A12 and A29,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),,default mix,70.40270151,See GREET Cement_Concrete tab A12,n2o,4.08E-10,kg/kgmile,output,mass,GREET Cement_Concrete tab A12 and A29,
+concrete feeds (49% gravel/35% sand/9% cement/7% water),,default mix,70.40270151,See GREET Cement_Concrete tab A12,co2,5.52E-05,kg/kgmile,output,mass,GREET Cement_Concrete tab A12 and A29,

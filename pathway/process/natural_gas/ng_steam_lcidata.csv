@@ -1,0 +1,15 @@
+Location,Source,Feedstock source,Comments,flows,value,unit,direction,type,data location
+US,GREET ,North America Natural Gas,,voc,3.01E-06,kg/MJ,output,mass,EF tab-B5 divided by boiler efficiency 80%
+US,GREET ,North America Natural Gas,,co,2.63E-05,kg/MJ,output,mass,EF tab-B5 divided by boiler efficiency 80%
+US,GREET ,North America Natural Gas,,nox,4.31E-05,kg/MJ,output,mass,EF tab-B5 divided by boiler efficiency 80%
+US,GREET ,North America Natural Gas,,pm10,4.15E-06,kg/MJ,output,mass,EF tab-B5 divided by boiler efficiency 80%
+US,GREET ,North America Natural Gas,,pm2.5,4.15E-06,kg/MJ,output,mass,EF tab-B5 divided by boiler efficiency 80%
+US,GREET ,North America Natural Gas,,sox,3.18E-07,kg/MJ,output,mass,EF tab-B5 divided by boiler efficiency 80%
+US,GREET ,North America Natural Gas,,bc,6.86E-07,kg/MJ,output,mass,EF tab-B5 divided by boiler efficiency 80%
+US,GREET ,North America Natural Gas,,oc,1.78E-06,kg/MJ,output,mass,EF tab-B5 divided by boiler efficiency 80%
+US,GREET ,North America Natural Gas,,ch4,1.26E-06,kg/MJ,output,mass,EF tab-B5 divided by boiler efficiency 80%
+US,GREET ,North America Natural Gas,,n2o,8.89E-07,kg/MJ,output,mass,EF tab-B5 divided by boiler efficiency 80%
+US,GREET ,North America Natural Gas,,co2,7.03E-02,kg/MJ,output,mass,EF tab-B5 divided by boiler efficiency 80%
+US,GREET ,North America Natural Gas,Conventional vs. shale gas are not differentiated becaue their combustion GHG emission is the same,natural gas,1.25,MJ/MJ,input,energy,Inputs tab-E865
+US,IEA,Unspecified,Key knob: boiler efficiency lower bound,natural gas_loweff,1.428571429,MJ/MJ,input,energy,IEA ETSAP Industrial Combustion Boilers 2010 (https://iea-etsap.org/E-TechDS/HIGHLIGHTS%20PDF/I01-ind_boilers-GS-AD-gct%201.pdf)
+US,DOE,Unspecified,Key knob: boiler efficiency upper bound,natural gas_higheff,1.166861144,MJ/MJ,input,energy,DOE Steam Tip Sheet #15 2012 (https://www.energy.gov/sites/prod/files/2014/05/f16/steam15_benchmark.pdf)

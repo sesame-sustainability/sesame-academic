@@ -1,0 +1,57 @@
+activity,flow_source,flows,value,unit,direction,type,source,data location,comment
+total,resid oil,resid oil,0,MJ/kWh,input,energy,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,diesel,diesel,0,MJ/kWh,input,energy,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,natural gas,natural gas,139.9679293,MJ/kWh,input,energy,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,coal,coal,0,MJ/kWh,input,energy,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,electricity,electricity,29.89606257,MJ/kWh,input,energy,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,active material,active material,1.764531562,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,graphite/carbon,graphite/carbon,1.103961639,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,silicon,silicon,0,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,binder,binder,0.150973326,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,copper,copper,0.822778493,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,wrought aluminum,wrought aluminum,1.672371368,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,cast aluminum,cast aluminum,0,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,electrolyte: lipf6,electrolyte: lipf6,0.113072671,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,electrolyte: ethylene carbonate,electrolyte: ethylene carbonate,0.315653206,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,electrolyte: dimethyl carbonate,electrolyte: dimethyl carbonate,0.315653206,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,plastic: polypropylene,plastic: polypropylene,0.077388939,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,plastic: polyethylene,plastic: polyethylene,0.025314937,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,plastic: polyethylene terephthalate,plastic: polyethylene terephthalate,0.014438372,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,steel,steel,0.043384704,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,thermal insulation,thermal insulation,0.034015263,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,coolant: glycol,coolant: glycol,0.30153868,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,electronic parts,electronic parts,0.256336062,kg/kWh,input,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,electricity,voc,0.000426291,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13 and Electric tab B220 & C220 for electricity emissions calculation,kWh refers to battery capacity
+total,electricity,co,0.001350776,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13 and Electric tab B220 & C220 for electricity emissions calculation,kWh refers to battery capacity
+total,electricity,nox,0.002645986,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13 and Electric tab B220 & C220 for electricity emissions calculation,kWh refers to battery capacity
+total,electricity,pm10,0.000475263,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13 and Electric tab B220 & C220 for electricity emissions calculation,kWh refers to battery capacity
+total,electricity,pm2.5,0.000205923,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13 and Electric tab B220 & C220 for electricity emissions calculation,kWh refers to battery capacity
+total,electricity,sox,0.006507615,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13 and Electric tab B220 & C220 for electricity emissions calculation,kWh refers to battery capacity
+total,electricity,bc,1.69E-05,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13 and Electric tab B220 & C220 for electricity emissions calculation,kWh refers to battery capacity
+total,electricity,oc,3.99E-05,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13 and Electric tab B220 & C220 for electricity emissions calculation,kWh refers to battery capacity
+total,electricity,ch4,0.007479438,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13 and Electric tab B220 & C220 for electricity emissions calculation,kWh refers to battery capacity
+total,electricity,n2o,5.91E-05,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13 and Electric tab B220 & C220 for electricity emissions calculation,kWh refers to battery capacity
+total,electricity,co2,3.770959768,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13 and Electric tab B220 & C220 for electricity emissions calculation,kWh refers to battery capacity
+materials,total,voc,0.013390604,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+materials,total,co,0.035594265,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+materials,total,nox,0.083670423,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+materials,total,pm10,0.046806777,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+materials,total,pm2.5,0.015203186,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+materials,total,sox,0.787791625,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+materials,total,bc,0.001021195,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+materials,total,oc,0.001163391,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+materials,total,ch4,0.11911403,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+materials,total,n2o,0.001020829,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+materials,total,co2,53.28236898,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+assembly,total,voc,0.002132354,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+assembly,total,co,0.008541712,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+assembly,total,nox,0.012781864,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+assembly,total,pm10,0.001003204,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+assembly,total,pm2.5,0.000727047,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+assembly,total,sox,0.008075706,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+assembly,total,bc,0.000111156,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+assembly,total,oc,0.000259107,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+assembly,total,ch4,0.036704061,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+assembly,total,n2o,0.000346492,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+assembly,total,co2,12.45156671,kg/kWh,output,mass,GREET,Battery_Sum tab A173 and Battery Assembly tab A13,kWh refers to battery capacity
+total,battery,battery,1,kWh/kWh,input,mass,Dummy,Dummy,kWh refers to battery capacity

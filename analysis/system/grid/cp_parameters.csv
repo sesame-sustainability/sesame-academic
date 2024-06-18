@@ -1,0 +1,9 @@
+﻿name,type,fraction
+Hw_H,   % charging at home,0.59
+Hw_w,   % charging at work,0.40
+Hw_p,   % charging at public stations,0.01
+H_H,   % charging at home,0.88
+Hp_p,   % charging at public chargers,0.12
+w_w,   % charging at work,0.83
+w_p,   % charging at public chargers,0.17
+p_p,   % charging at public chargers,1.00

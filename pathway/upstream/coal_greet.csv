@@ -1,0 +1,107 @@
+﻿Count Emissions from Building Extraction Infrastructure,method,activity,flow_source,flows,value,unit,direction,type,source,comment,data location
+No,,Coal Cleaning: Non-Combustion ,total,bc,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Cleaning: Non-Combustion ,total,bc,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,electricity,bc,9.57E-10,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Yes,,Coal Mining and Cleaning,electricity,bc,9.57E-10,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No,,Coal Mining and Cleaning,total,bc,5.99E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining and Cleaning,total,bc,6.04E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining: Non-Combustion ,total,bc,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining: Non-Combustion ,total,bc,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Cleaning: Non-Combustion ,total,ch4,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Cleaning: Non-Combustion ,total,ch4,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,electricity,ch4,4.23E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Yes,,Coal Mining and Cleaning,electricity,ch4,4.23E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No,,Coal Mining and Cleaning,total,ch4,1.04E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining and Cleaning,total,ch4,1.24E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,Surface,Coal Mining: Non-Combustion,total,ch4,4.69E-05,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total ch4 emissions,"See ""co2"" flow"
+Yes,Surface,Coal Mining: Non-Combustion,total,ch4,4.69E-05,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total pm2.5 emissions,
+No,Underground,Coal Mining: Non-Combustion ,total,ch4,0.000340569,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total ch4 emissions,"See ""co2"" flow"
+Yes,Underground,Coal Mining: Non-Combustion ,total,ch4,0.000340569,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total pm2.5 emissions,"See ""co2"" flow"
+No,,Coal Cleaning: Non-Combustion ,total,co,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Cleaning: Non-Combustion ,total,co,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,electricity,co,7.64E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Yes,,Coal Mining and Cleaning,electricity,co,7.64E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No,,Coal Mining and Cleaning,total,co,1.33E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining and Cleaning,total,co,1.49E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining: Non-Combustion ,total,co,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining: Non-Combustion ,total,co,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Cleaning: Non-Combustion ,total,co2,0,kg/MJ,output,mass,GREET,,"Coal tab Row 58  (cleaning, non-combustion)"
+Yes,,Coal Cleaning: Non-Combustion ,total,co2,0,kg/MJ,output,mass,GREET,,"Coal tab Row 58  (cleaning, non-combustion)"
+No,,Coal Mining and Cleaning,electricity,co2,0.000213413,kg/MJ,output,mass,GREET,,Coal tab Row 39 and Electric tab B220 and C220
+Yes,,Coal Mining and Cleaning,electricity,co2,0.000213413,kg/MJ,output,mass,GREET,,Coal tab Row 39 and Electric tab B220 and C220
+No,,Coal Mining and Cleaning,total,co2,0.000682827,kg/MJ,output,mass,GREET,,Coal tab Row 58  (mining and cleaning)
+Yes,,Coal Mining and Cleaning,total,co2,0.000718326,kg/MJ,output,mass,GREET,,Coal tab Row 58  (mining and cleaning)
+No,,Coal Mining: Non-Combustion ,total,co2,0,kg/MJ,output,mass,GREET,,"Coal tab Row 58  (coal mining, non-combustion)"
+Yes,,Coal Mining: Non-Combustion ,total,co2,0,kg/MJ,output,mass,GREET,,"Coal tab Row 58  (mining, non-combustion)"
+No,,Coal Mining and Cleaning,Coal,Coal,0.000634441,MJ/MJ,input,energy,GREET,,Coal tab Row 38
+Yes,,Coal Mining and Cleaning,Coal,Coal,0.000634441,MJ/MJ,input,energy,GREET,,Coal tab Row 38
+No,,Coal Mining and Cleaning,Diesel ,Diesel,0.003947633,MJ/MJ,input,energy,GREET,,Coal tab Row 35
+Yes,,Coal Mining and Cleaning,Diesel ,Diesel ,0.003947633,MJ/MJ,input,energy,GREET,,Coal tab Row 35
+No,,Coal Mining and Cleaning,electricity,electricity,0.001691843,MJ/MJ,input,energy,GREET,,Coal tab Row 39
+Yes,,Coal Mining and Cleaning,electricity,electricity,0.001691843,MJ/MJ,input,energy,GREET,,Coal tab Row 39
+No,,Coal Mining and Cleaning,Gasoline,Gasoline,0.00021148,MJ/MJ,input,energy,GREET,,Coal tab Row 36
+Yes,,Coal Mining and Cleaning,Gasoline,Gasoline,0.00021148,MJ/MJ,input,energy,GREET,,Coal tab Row 36
+No,,Coal Cleaning: Non-Combustion ,total,n2o,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Cleaning: Non-Combustion ,total,n2o,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,electricity,n2o,3.34E-09,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Yes,,Coal Mining and Cleaning,electricity,n2o,3.34E-09,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No,,Coal Mining and Cleaning,total,n2o,8.54E-09,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining and Cleaning,total,n2o,9.00E-09,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining: Non-Combustion ,total,n2o,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining: Non-Combustion ,total,n2o,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,Natural gas,Natural gas,7.05E-05,MJ/MJ,input,energy,GREET,,Coal tab Row 37
+Yes,,Coal Mining and Cleaning,Natural gas,Natural gas,7.05E-05,MJ/MJ,input,energy,GREET,,Coal tab Row 37
+No,,Coal Cleaning: Non-Combustion ,total,nox,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Cleaning: Non-Combustion ,total,nox,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,electricity,nox,1.50E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Yes,,Coal Mining and Cleaning,electricity,nox,1.50E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No,,Coal Mining and Cleaning,total,nox,3.45E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining and Cleaning,total,nox,3.51E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining: Non-Combustion ,total,nox,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining: Non-Combustion ,total,nox,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Cleaning: Non-Combustion ,total,oc,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Cleaning: Non-Combustion ,total,oc,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,electricity,oc,2.26E-09,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Yes,,Coal Mining and Cleaning,electricity,oc,2.26E-09,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No,,Coal Mining and Cleaning,total,oc,2.48E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining and Cleaning,total,oc,2.58E-08,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining: Non-Combustion ,total,oc,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining: Non-Combustion ,total,oc,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Cleaning: Non-Combustion ,total,pm10,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Cleaning: Non-Combustion ,total,pm10,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,electricity,pm10,2.69E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Yes,,Coal Mining and Cleaning,electricity,pm10,2.69E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No,,Coal Mining and Cleaning,total,pm10,1.80E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining and Cleaning,total,pm10,1.95E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,Surface,Coal Mining: Non-Combustion,total,pm10,1.13E-05,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total pm10 emissions,"See ""co2"" flow"
+Yes,Surface,Coal Mining: Non-Combustion,total,pm10,1.13E-05,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total pm10 emissions,"See ""co2"" flow"
+No,Underground,Coal Mining: Non-Combustion ,total,pm10,2.83E-07,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total pm10 emissions,"See ""co2"" flow"
+Yes,Underground,Coal Mining: Non-Combustion ,total,pm10,2.83E-07,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total pm10 emissions,
+No,Underground,Coal Mining: Non-Combustion ,total,pm2.5,1.80E-08,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total pm2.5 emissions,"See ""co2"" flow"
+Yes,Underground,Coal Mining: Non-Combustion ,total,pm2.5,1.80E-08,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total pm2.5 emissions,
+No,,Coal Cleaning: Non-Combustion ,total,pm2.5,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Cleaning: Non-Combustion ,total,pm2.5,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,electricity,pm2.5,1.17E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Yes,,Coal Mining and Cleaning,electricity,pm2.5,1.17E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No,,Coal Mining and Cleaning,total,pm2.5,1.24E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining and Cleaning,total,pm2.5,1.32E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,Surface,Coal Mining: Non-Combustion,total,pm2.5,1.41E-06,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total pm2.5 emissions,"See ""co2"" flow"
+Yes,Surface,Coal Mining: Non-Combustion,total,pm2.5,1.41E-06,kg/MJ,output,mass,GREET,Coal mining shares shuold be asked from the user and based on that calculate the total pm2.5 emissions,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,Residual oil,Residual oil,0.000493454,MJ/MJ,input,energy,GREET,,Coal tab Row 34
+Yes,,Coal Mining and Cleaning,Residual oil,Residual oil,0.000493454,MJ/MJ,input,energy,GREET,,Coal tab Row 34
+No,,Coal Cleaning: Non-Combustion ,total,sox,5.33E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Cleaning: Non-Combustion ,total,sox,5.24E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,electricity,sox,3.68E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Yes,,Coal Mining and Cleaning,electricity,sox,3.68E-07,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No,,Coal Mining and Cleaning,total,sox,1.06E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining and Cleaning,total,sox,1.15E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining: Non-Combustion ,total,sox,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining: Non-Combustion ,total,sox,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Cleaning: Non-Combustion ,total,voc,6.45E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Cleaning: Non-Combustion ,total,voc,6.42E-06,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining and Cleaning,electricity,voc,2.41E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+Yes,,Coal Mining and Cleaning,electricity,voc,2.41E-08,kg/MJ,output,mass,GREET,,"See ""co2 from electricity"" flow"
+No,,Coal Mining and Cleaning,total,voc,1.97E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining and Cleaning,total,voc,2.27E-07,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+No,,Coal Mining: Non-Combustion ,total,voc,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"
+Yes,,Coal Mining: Non-Combustion ,total,voc,0,kg/MJ,output,mass,GREET,,"See ""co2"" flow"

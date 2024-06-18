@@ -1,0 +1,9 @@
+product,type,transportation method,value,unit,source
+diesel,cost,truck,4.73E-09,$/btu-mile,GREET
+diesel,cost,rail,1.06E-09,$/btu-mile,GREET
+diesel,cost,marine,7.38E-10,$/btu-mile,GREET
+diesel,cost,pipeline,7.43E-10,$/btu-mile,GREET
+diesel,distance,truck,30,miles,GREET
+diesel,distance,rail,490,miles,GREET
+diesel,distance,marine,1500,miles,GREET
+diesel,distance,pipeline,110,miles,GREET

@@ -1,0 +1,86 @@
+Substance,State,LHV,HHV,LHV & HHV unit,LHV/HHV,Density,Density unit,C ratio by weight,S ratio by weight,Reference
+Acetone,Liquid,83127,89511,Btu/gal,0.928679157,2964,g/gal,61.98%,0.00%,GREET Fuel_Specs Tab A4:I93
+Asphalt,Solid,152370.9013,162963.5308,Btu/ton,0.935,3839.682125,,83.00%,4.80%,GREET Fuel_Specs Tab A4:I93
+Bio-char,Solid,18916910.57,18916910.57,Btu/ton,1,,,51.20%,0.00%,GREET Fuel_Specs Tab A4:I93
+Bitumen,Liquid,152370.9013,162963.5308,Btu/gal,0.935,3839.682125,g/gal,83.00%,4.80%,GREET Fuel_Specs Tab A4:I93
+Bituminous coal,Solid,22639319.98,23633492.96,Btu/ton,0.957933726,,,61.20%,1.54%,GREET Fuel_Specs Tab A4:I93
+Bunker fuel for ocean tanker,Liquid,140352.5222,150110,Btu/gal,0.934997816,3752,g/gal,86.80%,2.70%,GREET Fuel_Specs Tab A4:I93
+Butane,Liquid,94970,103220,Btu/gal,0.920073629,2213,g/gal,82.80%,0.00%,GREET Fuel_Specs Tab A4:I93
+Butanol,Liquid,99837,108458,Btu/gal,0.92051301,3065,g/gal,64.86%,0.00%,GREET Fuel_Specs Tab A4:I93
+CA diesel,Liquid,129487.8476,138490,Btu/gal,,3206,g/gal,87.10%,0.00%,GREET Fuel_Specs Tab A4:I93
+CA gasoline,Liquid,112193.52,120438.62,Btu/gal,0.931541062,2835.562,g/gal,82.78%,0.00%,GREET Fuel_Specs Tab A4:I93
+Carbon Dioxide,Gas (32F/1atm),,,Btu/ft3,,55.97783,g/ft3,27.27%,0.00%,GREET Fuel_Specs Tab A4:I93
+Catalyst Coke,Solid,28385750.37,30120000,Btu/ton,0.942421991,,,86.41%,4.51%,GREET Fuel_Specs Tab A4:I93
+Clean Pine,Solid,15929000,17062000,Btu/ton,0.933595124,,,50.10%,0.02%,GREET Fuel_Specs Tab A4:I93
+Coal Mix for Electricity Generation,Solid,19474169.22,20673610.12,Btu/ton,,,,58.57%,1.05%,GREET Fuel_Specs Tab A4:I93
+Coking coal,Solid,24599421.97,25679670,Btu/ton,0.957933726,,,74.70%,1.18%,GREET Fuel_Specs Tab A4:I93
+Conventional Jet Fuel,Liquid,124307.0342,132948.6944,Btu/gal,0.935000038,3035.899622,g/gal,86.20%,0.07%,GREET Fuel_Specs Tab A4:I93
+Convertible municipal solid waste,Solid,14155275.21,16144032.89,Btu/ton,0.876811594,,,50.49%,0.18%,GREET Fuel_Specs Tab A4:I93
+Corn stover,Solid,14716000,15774000,Btu/ton,0.932927602,,,46.70%,0.10%,GREET Fuel_Specs Tab A4:I93
+Crude oil,Liquid,129670,138350,Btu/gal,0.937260571,3205,g/gal,85.30%,1.60%,GREET Fuel_Specs Tab A4:I93
+Diesel for non-road engines,Liquid,128450,137380,Btu/gal,0.934997816,3167,g/gal,86.50%,0.00%,GREET Fuel_Specs Tab A4:I93
+Dilbit (After Recovery),Liquid,152370.9013,162963.5308,Btu/gal,0.935,3839.682125,g/gal,83.00%,4.80%,GREET Fuel_Specs Tab A4:I93
+Dilbit (Before Recovery),Liquid,145194.189,155287.9027,Btu/gal,0.935,3500.477488,g/gal,83.25%,3.72%,GREET Fuel_Specs Tab A4:I93
+Diluent,Liquid,128448.5269,137378.1037,Btu/gal,0.935,2709,g/gal,84.06%,0.16%,GREET Fuel_Specs Tab A4:I93
+Dimethoxy methane (DMM),Liquid,72200,79196.8954,Btu/gal,0.911651898,3255,g/gal,47.40%,0.00%,GREET Fuel_Specs Tab A4:I93
+Dimethyl ether (DME),Liquid,68930,75610,Btu/gal,0.911651898,2518,g/gal,52.20%,0.00%,GREET Fuel_Specs Tab A4:I93
+E-Diesel Additives,Liquid,116090,124340,Btu/gal,0.93364967,2819,g/gal,86.30%,0.00%,GREET Fuel_Specs Tab A4:I93
+Ethanol,Liquid,76330,84530,Btu/gal,0.90299302,2988,g/gal,52.20%,0.00%,GREET Fuel_Specs Tab A4:I93
+Ethyl tertiary butyl ether (ETBE),Liquid,96720,104530,Btu/gal,0.925284607,2810,g/gal,70.60%,0.00%,GREET Fuel_Specs Tab A4:I93
+Fischer-Tropsch diesel (FTD),Liquid,123670,130030,Btu/gal,0.95108821,3017,g/gal,85.30%,0.00%,GREET Fuel_Specs Tab A4:I93
+Forage sorghum bagasse,Solid,14409931.25,15305245.09,Btu/ton,0.941502809,,,41.99%,0.00%,GREET Fuel_Specs Tab A4:I93
+Forest residue,Solid,17289000,17906000,Btu/ton,0.965542276,,,50.30%,0.04%,GREET Fuel_Specs Tab A4:I93
+Gas hydrogen,Gas (32F/1atm),290,343,Btu/ft3,0.84548105,2.55,g/ft3,0.00%,0.00%,GREET Fuel_Specs Tab A4:I93
+Gasoline,Liquid,112193.52,120438.62,Btu/gal,0.931541062,2835.562,g/gal,82.78%,0.00%,GREET Fuel_Specs Tab A4:I93
+Gasoline blendstock,Liquid,116090,124340,Btu/gal,0.93364967,2819,g/gal,86.30%,0.00%,GREET Fuel_Specs Tab A4:I93
+Grain sorghum bagasse,Solid,12781599.34,14131556.35,Btu/ton,0.904472163,,,39.34%,0.00%,GREET Fuel_Specs Tab A4:I93
+High Octane Fuel (E25),Liquid,106150,114387.5,Btu/gal,0.927986012,2861.25,g/gal,77.78%,0.00%,GREET Fuel_Specs Tab A4:I93
+High Octane Fuel (E40),Liquid,100186,108416,Btu/gal,0.924088695,2886.6,g/gal,72.66%,0.00%,GREET Fuel_Specs Tab A4:I93
+Isobutane,Liquid,90060,98560,Btu/gal,0.913758117,2118,g/gal,82.80%,0.00%,GREET Fuel_Specs Tab A4:I93
+Isobutylene,Liquid,95720,103010,Btu/gal,0.929230172,2253,g/gal,85.70%,0.00%,GREET Fuel_Specs Tab A4:I93
+Lignite coal,Solid,10805182.82,12992301.97,Btu/ton,0.831660382,,,49.10%,0.91%,GREET Fuel_Specs Tab A4:I93
+Liquefied natural gas (LNG),Liquid,74720,84820,Btu/gal,0.88092431,1621,g/gal,75.00%,0.00%,GREET Fuel_Specs Tab A4:I93
+Liquefied petroleum gas (LPG),Liquid,84950,91410,Btu/gal,0.929329395,1923,g/gal,82.00%,0.00%,GREET Fuel_Specs Tab A4:I93
+Liquid hydrogen,Liquid,30500,36020,Btu/gal,0.846751805,268,g/gal,0.00%,0.00%,GREET Fuel_Specs Tab A4:I93
+Low Octane Gasoline-Like Fuel (LOF),Liquid,118237.4348,126586.1571,Btu/gal,0.934047115,2833.856976,g/gal,85.32%,0.00%,GREET Fuel_Specs Tab A4:I93
+Low-sulfur diesel,Liquid,129487.8476,138490,Btu/gal,0.934997816,3206,g/gal,87.10%,0.00%,GREET Fuel_Specs Tab A4:I93
+Lubricants,Solid,144230,144230,Btu/ton,,3785.411,,80.80%,,GREET Fuel_Specs Tab A4:I93
+Methanol,Liquid,57250,65200,Btu/gal,0.878067485,3006,g/gal,37.50%,0.00%,GREET Fuel_Specs Tab A4:I93
+"Methyl ester (biodiesel, BD)",Liquid,119550,127960,Btu/gal,0.934276336,3361,g/gal,77.60%,0.00%,GREET Fuel_Specs Tab A4:I93
+Methyl tertiary butyl ether (MTBE),Liquid,93540,101130,Btu/gal,0.924948087,2811,g/gal,68.10%,0.00%,GREET Fuel_Specs Tab A4:I93
+Miscanthus,Solid,15342000,16377000,Btu/ton,0.936801612,,,47.60%,0.08%,GREET Fuel_Specs Tab A4:I93
+Municipal solid waste (defined by EISA),Solid,11209638.73,13583444.58,Btu/ton,0.825242718,,,49.16%,0.18%,GREET Fuel_Specs Tab A4:I93
+n-Hexane,Liquid,105124.8,112166.3,Btu/gal,0.937222677,2478.7,g/gal,83.63%,0.00%,GREET Fuel_Specs Tab A4:I93
+Natural gas,Gas (32F/1atm),983,1089,Btu/ft3,0.902662994,22,g/ft3,72.40%,0.00%,GREET Fuel_Specs Tab A4:I93
+Natural gas liquids,Liquid,83686.11202,90050,Btu/gal,0.929329395,2532,g/gal,,0.00%,GREET Fuel_Specs Tab A4:I93
+NG-based FT naphtha,Liquid,111520,119740,Btu/gal,0.931351261,2651,g/gal,84.20%,0.00%,GREET Fuel_Specs Tab A4:I93
+Pet Coke,Solid,26949428.73,28595925.17,Btu/ton,0.942421991,,,86.67%,4.51%,GREET Fuel_Specs Tab A4:I93
+Petroleum naphtha,Liquid,116920,125080,Btu/gal,0.934761752,2745,g/gal,85.00%,0.00%,GREET Fuel_Specs Tab A4:I93
+Poplar,Solid,15929000,17062000,Btu/ton,0.933595124,,,50.10%,0.02%,GREET Fuel_Specs Tab A4:I93
+Propane,Liquid,84250,91420,Btu/gal,0.921570772,1920,g/gal,81.80%,0.00%,GREET Fuel_Specs Tab A4:I93
+Pure Methane,Gas (32F/1atm),962.1850492,1068.025405,Btu/ft3,0.900900901,20.3031793,g/ft3,75.00%,0.00%,GREET Fuel_Specs Tab A4:I93
+Renewable Diesel I (SuperCetane),Liquid,117059,125293.7653,Btu/gal,0.934276336,2835,g/gal,87.10%,0.00%,GREET Fuel_Specs Tab A4:I93
+Renewable Diesel II (UOP-HDO),Liquid,122887,130817,Btu/gal,0.939380967,2948,g/gal,87.10%,0.00%,GREET Fuel_Specs Tab A4:I93
+Renewable Diesel III (PNNL-HTL),Liquid,123542.4264,133070.137,Btu/gal,0.928400836,3003.263948,g/gal,87.10%,0.00%,GREET Fuel_Specs Tab A4:I93
+Renewable Gasoline,Liquid,115983,124230,Btu/gal,0.933615069,2830,g/gal,84.00%,0.00%,GREET Fuel_Specs Tab A4:I93
+Renewable Gasoline (Ex Situ CFP),Liquid,112060.7,120028.8039,Btu/gal,0.933615069,2819,g/gal,86.43%,0.00%,GREET Fuel_Specs Tab A4:I93
+Renewable Gasoline (IDL),Liquid,113309,121365.8646,Btu/gal,0.933615069,2713,g/gal,83.11%,0.00%,GREET Fuel_Specs Tab A4:I93
+Residual oil,Liquid,140352.5222,150110,Btu/gal,0.934997816,3752,g/gal,86.80%,0.50%,GREET Fuel_Specs Tab A4:I93
+Shale Oil (Bakken),Liquid,125600.9073,134008.5257,Btu/gal,0.937260571,3087.237213,g/gal,85.30%,1.60%,GREET Fuel_Specs Tab A4:I93
+Shale Oil (Eagle Ford),Liquid,122492.6089,130692.1604,Btu/gal,0.937260571,2984.042655,g/gal,85.30%,1.60%,GREET Fuel_Specs Tab A4:I93
+SPK (FT Jet Fuel/HRJ) ,Liquid,119776.6215,128103.3334,Btu/gal,0.935000038,2865.556127,g/gal,84.70%,0.00%,GREET Fuel_Specs Tab A4:I93
+Still gas (in refineries),Gas (32F/1atm),1159.273712,1279.738145,Btu/ft3,0.905867905,25.01985227,g/ft3,76.98%,0.00%,GREET Fuel_Specs Tab A4:I93
+Subbituminous coal,Solid,16085444.01,17449319.67,Btu/ton,0.921837889,,,53.70%,0.36%,GREET Fuel_Specs Tab A4:I93
+Sugarcane bagasse,Solid,12381771.31,14062678,Btu/ton,0.880470371,,,46.30%,,GREET Fuel_Specs Tab A4:I93
+Sugarcane straw,Solid,13454048.89,15774000,Btu/ton,0.85292563,,,50.00%,,GREET Fuel_Specs Tab A4:I93
+Sweet sorghum bagasse,Solid,14409931.25,15305245.09,Btu/ton,0.941502809,,,41.99%,0.00%,GREET Fuel_Specs Tab A4:I93
+Switchgrass,Solid,14447000,15583000,Btu/ton,0.927100045,,,46.60%,0.11%,GREET Fuel_Specs Tab A4:I93
+Synthetic coal,Solid,22639319.98,23633492.96,Btu/ton,0.957933726,,,80.64%,1.61%,GREET Fuel_Specs Tab A4:I93
+Synthetic crude oil (SCO),Liquid,135084.9129,144475.8427,Btu/gal,0.935,3266,g/gal,85.56%,0.18%,GREET Fuel_Specs Tab A4:I93
+Tertiary amyl methyl ether (TAME),Liquid,100480,108570,Btu/gal,0.925485862,2913,g/gal,70.60%,0.00%,GREET Fuel_Specs Tab A4:I93
+Tire Derived Fuel,Solid,26664354.3,28293433.89,Btu/ton,0.942421991,,,48.80%,4.51%,GREET Fuel_Specs Tab A4:I93
+U.S. conventional diesel,Liquid,128450,137380,Btu/gal,0.934997816,3167,g/gal,86.50%,0.02%,GREET Fuel_Specs Tab A4:I93
+ULS Jet Fuel,Liquid,123041.2311,131594.8943,Btu/gal,0.935000038,2998.045512,g/gal,86.00%,0.00%,GREET Fuel_Specs Tab A4:I93
+Waste coal,Solid,9945646.34,11958783.36,Btu/ton,0.831660382,,,32.64%,0.91%,GREET Fuel_Specs Tab A4:I93
+Willow,Solid,15396000,16524000,Btu/ton,0.931735657,,,48.70%,0.05%,GREET Fuel_Specs Tab A4:I93
+Yard trimming waste,Solid,15000000,,Btu/ton,,,,47.80%,0.04%,GREET Fuel_Specs Tab A4:I93

@@ -1,0 +1,14 @@
+Inputs,Vehicle Type,Region,California,Florida,Midwest,Carolinas,Central (SWPP),New York,Mid Atlantic,New England,Northwest,Southeast,Southwest,Tennesee,Texas,Vehicle Size,Charge Profile,Vehicle MPG
+Vehicle Type,Gasoline ICEV,California,San Francisco,Orlando,St. Louis,Charlotte,Kansas City,New York City,Baltimore,Boston,Salt Lake City,Atlanta,Phoenix,Nashville,Austin,Sedan,Constant,Custom
+Region,Diesel ICEV,Florida,LA,,Minneapolis,,,,,,,,,,,SUV,Overnight,Choose from existing models
+City,BEV,Midwest,,,,,,,,,,,,,,,Midday,
+Vehicle Size,HEV,Carolinas,,,,,,,,,,,,,,,"No work access, Discount on home price",
+Vehicle MPG,,Central (SWPP),,,,,,,,,,,,,,,"Work access, Discount on home price",
+,,New York,,,,,,,,,,,,,,,"Work access, No discount on home price",
+,,Mid Atlantic,,,,,,,,,,,,,,,"No work access, No discount on home price",
+,,New England,,,,,,,,,,,,,,,Evening,
+,,Northwest,,,,,,,,,,,,,,,,
+,,Southeast,,,,,,,,,,,,,,,,
+,,Southwest,,,,,,,,,,,,,,,,
+,,Tennesee,,,,,,,,,,,,,,,,
+,,Texas,,,,,,,,,,,,,,,,

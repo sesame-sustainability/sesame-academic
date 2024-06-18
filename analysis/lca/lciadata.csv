@@ -1,0 +1,15 @@
+﻿name,indicator,flows,value,unit
+Global Warming Potential,GWP,co2,1,kgco2eq.
+Global Warming Potential,GWP,n2o,265,kgco2eq.
+Global Warming Potential,GWP,ch4,28,kgco2eq.
+Acidification Potential,AP,sox,1,kgso2eq.
+Acidification Potential,AP,nox,0.7,kgso2eq.
+Acidification Potential,AP,h2s,1.88,kgso2eq.
+Eutrophication Potential,EP,nox,0.13,kgpo4eq.
+Energy,Energy,petroleum,1,MJ
+Energy,Energy,crude oil,1,MJ
+Energy,Energy,gasoline,1,MJ
+Energy,Energy,coal,1,MJ
+Energy,Energy,natural gas,1,MJ
+Water,Water,water consumption,1,kg
+

@@ -1,0 +1,9 @@
+﻿Variable,Type,Class,Value,Units,Source,Source - year,Comment
+Capacity Factor,NPD,1,0.617275601,-,NREL ATB,2020,Weighted average of type and class
+Capacity Factor,NPD,2,0.636562346,-,NREL ATB,2020,Weighted average of type and class
+Capacity Factor,NPD,3,0.597168977,-,NREL ATB,2020,Weighted average of type and class
+Capacity Factor,NPD,4,0.59782998,-,NREL ATB,2020,Weighted average of type and class
+Capacity Factor,NSD,1,0.656435151,-,NREL ATB,2020,Weighted average of type and class
+Capacity Factor,NSD,2,0.66194676,-,NREL ATB,2020,Weighted average of type and class
+Capacity Factor,NSD,3,0.623501854,-,NREL ATB,2020,Weighted average of type and class
+Capacity Factor,NSD,4,0.664551728,-,NREL ATB,2020,Weighted average of type and class

@@ -1,0 +1,85 @@
+﻿Variable,Type,Class,Scenario,Year,Value,Units,Source,Source - year,Comment
+OCC,NPD,4,Advanced,2020,3929.895191,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NPD,4,Moderate,2020,4030.661734,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NPD,4,Conservative,2020,4030.661734,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NPD,3,Advanced,2020,4168.213732,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NPD,3,Moderate,2020,4275.091007,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NPD,3,Conservative,2020,4275.091007,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NPD,2,Advanced,2020,5635.799997,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,4,Advanced,2020,5743.783271,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NPD,2,Moderate,2020,5810.10309,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NPD,2,Conservative,2020,5810.10309,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,4,Moderate,2020,5891.150245,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,4,Conservative,2020,5921.426052,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NPD,1,Advanced,2020,6191.883761,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,3,Advanced,2020,6380.370557,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NPD,1,Moderate,2020,6383.385321,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NPD,1,Conservative,2020,6383.385321,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,2,Advanced,2020,6514.288349,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,3,Moderate,2020,6544.07031,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,3,Conservative,2020,6577.701605,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,2,Moderate,2020,6681.424001,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,2,Conservative,2020,6715.761184,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,1,Advanced,2020,7297.084218,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,1,Moderate,2020,7484.303891,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+OCC,NSD,1,Conservative,2020,7522.767235,$/kW,NREL ATB,2020,See comment in code about scaling CAPEX vs. power capacity
+FOM,NPD,1,Advanced,2020,104.6859062,$/kW-yr,NREL ATB,2020,
+FOM,NPD,1,Moderate,2020,120.2525282,$/kW-yr,NREL ATB,2020,
+FOM,NPD,1,Conservative,2020,120.2525282,$/kW-yr,NREL ATB,2020,
+FOM,NPD,2,Advanced,2020,28.8036485,$/kW-yr,NREL ATB,2020,
+FOM,NPD,2,Moderate,2020,33.08670364,$/kW-yr,NREL ATB,2020,
+FOM,NPD,2,Conservative,2020,33.08670364,$/kW-yr,NREL ATB,2020,
+FOM,NPD,3,Advanced,2020,111.191567,$/kW-yr,NREL ATB,2020,
+FOM,NPD,3,Moderate,2020,127.7255701,$/kW-yr,NREL ATB,2020,
+FOM,NPD,3,Conservative,2020,127.7255701,$/kW-yr,NREL ATB,2020,
+FOM,NPD,4,Advanced,2020,37.9801038,$/kW-yr,NREL ATB,2020,
+FOM,NPD,4,Moderate,2020,43.62768276,$/kW-yr,NREL ATB,2020,
+FOM,NPD,4,Conservative,2020,43.62768276,$/kW-yr,NREL ATB,2020,
+FOM,NSD,1,Advanced,2020,117.1326775,$/kW-yr,NREL ATB,2020,
+FOM,NSD,1,Moderate,2020,134.550114,$/kW-yr,NREL ATB,2020,
+FOM,NSD,1,Conservative,2020,134.550114,$/kW-yr,NREL ATB,2020,
+FOM,NSD,2,Advanced,2020,38.19448234,$/kW-yr,NREL ATB,2020,
+FOM,NSD,2,Moderate,2020,43.87393904,$/kW-yr,NREL ATB,2020,
+FOM,NSD,2,Conservative,2020,43.87393904,$/kW-yr,NREL ATB,2020,
+FOM,NSD,3,Advanced,2020,110.1911321,$/kW-yr,NREL ATB,2020,
+FOM,NSD,3,Moderate,2020,126.5763722,$/kW-yr,NREL ATB,2020,
+FOM,NSD,3,Conservative,2020,126.5763722,$/kW-yr,NREL ATB,2020,
+FOM,NSD,4,Advanced,2020,27.10767919,$/kW-yr,NREL ATB,2020,
+FOM,NSD,4,Moderate,2020,31.13854649,$/kW-yr,NREL ATB,2020,
+FOM,NSD,4,Conservative,2020,31.13854649,$/kW-yr,NREL ATB,2020,
+VOM,NPD,1,Advanced,2020,0,$/MWh,NREL ATB,2020,
+VOM,NPD,1,Moderate,2020,0,$/MWh,NREL ATB,2020,
+VOM,NPD,1,Conservative,2020,0,$/MWh,NREL ATB,2020,
+VOM,NPD,2,Advanced,2020,0,$/MWh,NREL ATB,2020,
+VOM,NPD,2,Moderate,2020,0,$/MWh,NREL ATB,2020,
+VOM,NPD,2,Conservative,2020,0,$/MWh,NREL ATB,2020,
+VOM,NPD,3,Advanced,2020,0,$/MWh,NREL ATB,2020,
+VOM,NPD,3,Moderate,2020,0,$/MWh,NREL ATB,2020,
+VOM,NPD,3,Conservative,2020,0,$/MWh,NREL ATB,2020,
+VOM,NPD,4,Advanced,2020,0,$/MWh,NREL ATB,2020,
+VOM,NPD,4,Moderate,2020,0,$/MWh,NREL ATB,2020,
+VOM,NPD,4,Conservative,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,1,Advanced,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,1,Moderate,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,1,Conservative,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,2,Advanced,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,2,Moderate,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,2,Conservative,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,3,Advanced,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,3,Moderate,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,3,Conservative,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,4,Advanced,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,4,Moderate,2020,0,$/MWh,NREL ATB,2020,
+VOM,NSD,4,Conservative,2020,0,$/MWh,NREL ATB,2020,
+OCC,Reservoir,> 5 MW,Min,2020,1899,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity
+OCC,Reservoir,> 5 MW,Mean,2020,3319,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity
+OCC,Reservoir,> 5 MW,Median,2020,2778,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity
+OCC,Reservoir,> 5 MW,Max,2020,5819,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity
+OCC,Run of River,> 5 MW,Min,2020,2326,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity
+OCC,Run of River,> 5 MW,Mean,2020,3557,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity
+OCC,Run of River,> 5 MW,Median,2020,3026,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity
+OCC,Run of River,> 5 MW,Max,2020,6681,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity
+OCC,Run of River,< 5 MW,Min,2020,956,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity
+OCC,Run of River,< 5 MW,Mean,2020,3507,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity
+OCC,Run of River,< 5 MW,Median,2020,2801,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity
+OCC,Run of River,< 5 MW,Max,2020,7484,$/kW,IEA,2020,Projected Costs of Generating Electricity - 2020 Edition. Table 3.1. See comment in code about scaling CAPEX vs. power capacity

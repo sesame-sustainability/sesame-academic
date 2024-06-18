@@ -1,0 +1,5 @@
+﻿Case,FOM,CapEx,H2_Flow,Water_Consumption,Efficiency,power_efficiency,Non-fuel_VOM
+Alk,55,1214,60,1.7,5.2,0,0
+PEM,75,1771,300,1.4,5.2,0,0
+SMR,23,678,100000,0,0.76,0.025,0.25
+SMR_CCS,27,1102,100000,0,0.69,0.00098,0.24

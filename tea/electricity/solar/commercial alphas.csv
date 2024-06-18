@@ -1,0 +1,12 @@
+,a - flat,b - flat,a - ground,b - ground
+EPC/Developer Profit,0.0294,0.9423,0.016,0.8455
+Contingency,0.1062,0.8847,0.0452,0.8463
+Developer Overhead,0.0295,0.9258,0.0388,0.8396
+Sales Tax,0.0355,0.8988,0.0508,0.848
+Pll,0.068,0.7643,0.0503,0.584
+EPC Overhead,0.0481,0.9135,0.0759,0.7555
+Install labor & Equipment,0.0689,0.788,0.0722,0.8227
+Electrical BOS,0.0532,0.9047,0.0166,0.6596
+Structural BOS,0,1,0.0571,0.8152
+Inverter,0,1,0,1
+Module,0,1,0,1

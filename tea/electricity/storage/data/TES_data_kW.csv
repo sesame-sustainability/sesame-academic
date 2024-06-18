@@ -1,0 +1,40 @@
+﻿Technology,Cost Scenario,Variable,Value,Units,Source,Comment
+Crushed Rock & supercritical CO2,High,Charging Capital Cost,3.34,$/kW_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,Discharging Capital Cost,1196,$/kW_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,Energy Capital Cost,9,$/kWh_th,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,Efficiency up,0.995,kWh_th/kWh_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,Efficiency down,0.46,kWh_e/kWh_th,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,Capital Recovery Period,30,yrs,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,"FOM discharge, nominal",9.5,$/kW_e-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,FOM discharge,3.93,$/kW_e-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,FOM charge,0.08,$/kW_e-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,FOM storage,0.051,$/kWh_th-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,VOM,0,$/MWh_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,Self-discharge,0.000418676,fraction per hour,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,High,Min duration,0.25,hrs,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,Charging Capital Cost,3.34,$/kW_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,Discharging Capital Cost,706,$/kW_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,Energy Capital Cost,5.4,$/kWh_th,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,Efficiency up,0.995,kWh_th/kWh_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,Efficiency down,0.5,kWh_e/kWh_th,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,Capital Recovery Period,30,yrs,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,"FOM discharge, nominal",9.5,$/kW_e-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,FOM discharge,3.93,$/kW_e-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,FOM charge,0.08,$/kW_e-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,FOM storage,0.03,$/kWh_th-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,VOM,0,$/MWh_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,Self-discharge,0.000208834,fraction per hour,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Moderate,Min duration,0.25,hrs,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,Charging Capital Cost,3.34,$/kW_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,Discharging Capital Cost,464,$/kW_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,Energy Capital Cost,2.9,$/kWh_th,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,Efficiency up,0.995,kWh_th/kWh_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,Efficiency down,0.55,kWh_e/kWh_th,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,Capital Recovery Period,30,yrs,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,"FOM discharge, nominal",9.5,$/kW_e-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,FOM discharge,3.93,$/kW_e-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,FOM charge,0.08,$/kW_e-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,FOM storage,0.016,$/kWh_th-yr,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,VOM,0,$/MWh_e,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,Self-discharge,0.000208834,fraction per hour,MIT - 2050 estimate,Manuscript will be published by June 2021
+Crushed Rock & supercritical CO2,Low,Min duration,0.25,hrs,MIT - 2050 estimate,Manuscript will be published by June 2021

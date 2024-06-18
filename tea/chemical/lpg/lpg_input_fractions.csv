@@ -1,0 +1,11 @@
+value,unit,Input,Source
+0.044392857,BTU of input per 1mmBTU of jet fuel,Natural Gas,GREET
+0.88,BTU of input per 1mmBTU of jet fuel,Petroleum,GREET
+0.002958052,BTU of input per 1mmBTU of jet fuel,Electricity,GREET
+0.105628951,BTU of input per 1mmBTU of jet fuel,Residual Oil,GREET
+0.00708608,BTU of input per 1mmBTU of jet fuel,Hydrogen,GREET
+0.060684219,BTU of input per 1mmBTU of jet fuel,N-butane,GREET
+1,fraction of transportation,Truck,GREET
+0.34,fraction of transportation,Rail,GREET
+0.12,fraction of transportation,Marine,GREET
+0.6,fraction of transportation,Pipeline,GREET

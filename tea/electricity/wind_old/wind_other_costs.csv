@@ -1,0 +1,13 @@
+﻿Cost Type,Source,Type,value,unit
+OCC,NREL,onshore,1575,$/KW
+FOM,NREL,onshore,43.56,$/KW-year
+VOM,NREL,onshore,0,$/MWh
+OCC,EIA,onshore,1242,$/KW
+FOM,EIA,onshore,24,$/KW-year
+VOM,EIA,onshore,0,$/MWh
+OCC,NREL,offshore,3710.5,$/KW
+FOM,NREL,offshore,113.5,$/KW-year
+VOM,NREL,offshore,0,$/MWh
+OCC,EIA,offshore,5354.965585,$/KW
+FOM,EIA,offshore,107.7089479,$/KW-year
+VOM,EIA,offshore,0,$/MWh

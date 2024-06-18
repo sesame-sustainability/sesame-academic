@@ -1,0 +1,2 @@
+flow_source,flows,value,unit,direction,type,source,data location,comment
+total,co2,0.0557,kg/MJ,output,mass,GREET property table,"See ""Property table"" in the Enduse folder",
