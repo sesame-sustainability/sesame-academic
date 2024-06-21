@@ -1,6 +1,0 @@
-Transport distance,cost,unit,source
-<50,0.065,$_2005/tCO2/km,"Koelbl, B. S., et al. ""Uncertainty in the deployment of Carbon Capture and Storage (CCS): A sensitivity analysis to techno-economic parameter uncertainty."" International Journal of Greenhouse Gas Control 27 (2014): 81-102."
-50-200,0.0725,$_2005/tCO2/km,"Koelbl, B. S., et al. ""Uncertainty in the deployment of Carbon Capture and Storage (CCS): A sensitivity analysis to techno-economic parameter uncertainty."" International Journal of Greenhouse Gas Control 27 (2014): 81-102."
-200-500,0.0705,$_2005/tCO2/km,"Koelbl, B. S., et al. ""Uncertainty in the deployment of Carbon Capture and Storage (CCS): A sensitivity analysis to techno-economic parameter uncertainty."" International Journal of Greenhouse Gas Control 27 (2014): 81-102."
-500-2000,0.0805,$_2005/tCO2/km,"Koelbl, B. S., et al. ""Uncertainty in the deployment of Carbon Capture and Storage (CCS): A sensitivity analysis to techno-economic parameter uncertainty."" International Journal of Greenhouse Gas Control 27 (2014): 81-102."
-2000-infinite,0.037,$_2005/tCO2/km,"Koelbl, B. S., et al. ""Uncertainty in the deployment of Carbon Capture and Storage (CCS): A sensitivity analysis to techno-economic parameter uncertainty."" International Journal of Greenhouse Gas Control 27 (2014): 81-102."

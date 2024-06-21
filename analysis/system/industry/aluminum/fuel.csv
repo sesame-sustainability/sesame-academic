@@ -1,8 +1,0 @@
-﻿Fuel,CO2 conversion factor for fuels,HHV
-Heavy oil/fuel oil,0.0851,40.87
-Natural gas,0.0632,49.5
-Hard coal,0.0979,27.05
-Diesel/light oil,0.0826,42.9
-Steam,0.0702,25.86
-Unit,kg CO2/MJ,MJ/kg
-source:,European Aluminum Industry: https://european-aluminium.eu/media/3321/full-environmental-profile-report-2018.pdf,https://www.claverton-energy.com/wordpress/wp-content/uploads/2012/08/the_energy_and_fuel_data_sheet1.pdf

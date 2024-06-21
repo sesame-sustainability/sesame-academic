@@ -1,7 +1,0 @@
-﻿material,India,unit,Year,Source,,price,,source
-limestone,430,rupee/tonne,2020,IBM : https://ibm.gov.in/writereaddata/files/04272021170955ASPmineral_Dec20_(P)&(U)_Final.pdf ,,3.125,Euro/tonne,"Roussanaly, Simon, et al. ""Techno-economic analysis of MEA CO2 capture from a cement kiln–impact of steam supply scenario."" Energy Procedia 114 (2017): 6229-6239."
-coal,2058.4,rupee/tonne,2020,IBM: https://ibm.gov.in/writereaddata/files/12102021174234Prices%20_2020.pdf,,185.9,USD/tonne,https://www.eia.gov/coal/markets/includes/archive2.php#tabs-prices-1
-natural gas,795.7,rupee/GJ,2021,"News. $11.5/milion btu, ex=73: https://www.reuters.com/business/energy/indias-top-gas-importer-sees-lng-price-surge-spurring-long-term-contracts-2021-10-22/",,5.2753,USD/GJ,https://tradingeconomics.com/commodity/natural-gas
-electricity,3.182,rupee/kWh,2021,"Ministry of Coal, page 3: https://coal.nic.in/sites/default/files/2022-02/msg-jan2022.pdf",,0.117,USD/kWh,https://www.globalpetrolprices.com/India/electricity_prices/
-diesel,87,Rupee/liter,2021,https://www.ndtv.com/business/petrol-and-diesel-prices-today-december-15-2021-petrol-diesel-rates-kept-unchanged-see-rates-2651870,,87,Rupee/liter,https://www.ndtv.com/business/petrol-and-diesel-prices-today-december-15-2021-petrol-diesel-rates-kept-unchanged-see-rates-2651870
-h2,370,Rupee/kg,2021,https://www.financialexpress.com/opinion/green-hydrogen-opportunities-and-challenges-for-india/2341349/,,370,Rupee/kg,https://www.financialexpress.com/opinion/green-hydrogen-opportunities-and-challenges-for-india/2341349/
