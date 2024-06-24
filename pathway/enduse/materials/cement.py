@@ -8,8 +8,6 @@ class Cement(ActivitySource):
 
     def prepare(self, input_set):
         super().prepare(input_set)
-        # low_heat_value = Substance('Liquid', 'Dimethyl ether (DME)').get_lower_heat_value()
-        # output flow is the heat content in MJ of the fuel per kg of the fuel
         self.output = utils.create_flow_object('cement', 1.0, 'kg')
 
     def get_output(self):

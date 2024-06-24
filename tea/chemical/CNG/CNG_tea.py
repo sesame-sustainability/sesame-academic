@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 
 
@@ -37,7 +35,7 @@ class CNGTEA(TeaBase):
                             tooltip=Tooltip(
                                 'Power is used in CNG production. This includes power generation (66) and distribution cost (14 $/MWh)',
                                 source='Statistica',
-                                source_link='https://www.statista.com/statistics/190680/us-industrial-consumer-price-estimates-for-retail-electricity-since-1970/; https://www.eia.gov/outlooks/aeo/data/browser/#/?id=8-AEO2021&region=0-0&cases=ref2021&star',
+                                source_link='https://www.statista.com/statistics/190680/us-industrial-consumer-price-estimates-for-retail-electricity-since-1970/; https://www.eia.gov/outlooks/aeo/data/browser/
                             )
                             ),
             ContinuousInput('discount_rate', 'Discount Rate',
@@ -58,7 +56,7 @@ class CNGTEA(TeaBase):
                             tooltip=Tooltip(
                                 'Percent of the facility design capacity is used to produce product, e.g., mathematically the number of hours in a year the facility runs, divided by 24*365 hours. No CNG-specific capacity factor has been found, so the natural gas to power capacity factor is used as a proxy here.',
                                 source='EIA',
-                                source_link='https://www.eia.gov/todayinenergy/detail.php?id=25652#:~:text=The%20capacity%20factor%20of%20the,over%20the%20past%20few%20years.',
+                                source_link='https://www.eia.gov/todayinenergy/detail.php?id=25652
                             )
                             ),
 
@@ -99,46 +97,32 @@ class CNGTEA(TeaBase):
     def __init__(self, lca_pathway=None):
         self.lca_pathway = lca_pathway
         super().__init__()
-        #Assumptions
         
     def get_cost_breakdown(self):
-        
-        #Compression
 
-        MMBtu_per_GGE = 0.114 # LHV conversion based on 983 Btu/scf (LHV for natural gas) and 1 GGE = 126 scf from: https://www.nat-g.com/why-cng/cng-units-explained/#:~:text=GGE%20%E2%80%93%20Gallon%20of%20Gasoline%20Equivalent,equals%20126.67%20SCF%20(126.67). https://www.nrel.gov/docs/fy14osti/62421.pdf
-        o_m = .01 # percentage of total CapEx - source mentions main component of O&M is electric power, include 1% of CapEx for "insurance and accounting software" -- https://www.nrel.gov/docs/fy14osti/62421.pdf
-# Correction eeded: this 350000 number must have a corresponding size, which is not specified here yet.
-        non_compressor_CapEx = 0 # This number can be read from the reference paper, but it's unclear what the facility scale is for those numbers, so we don't include it: Page 12: https://www.nrel.gov/docs/fy14osti/62421.pdf
-        power_consumption_factor = 0.8 # kW based on estimates from Bauer Compressors: https://www.bauercomp.com/en/products-solutions/cng-compressed-natural-gas-compressors
+        MMBtu_per_GGE = 0.114 # LHV conversion based on 983 Btu/scf (LHV for natural gas) and 1 GGE = 126 scf from: https://www.nat-g.com/why-cng/cng-units-explained/
+        o_m = .01 
+        non_compressor_CapEx = 0 
+        power_consumption_factor = 0.8 
         power_consumption = power_consumption_factor * self.CNG_size
-        base_CapEx = 13000 # Average of high and low costs for 1 to 4 GGE/hr compression systems see p. 12 - https://www.nrel.gov/docs/fy14osti/62421.pdf 
-        base_CNG_size = (1 + 4) / 2 #Average of high and low sizes for 1 to 4 GGE/hr compression systems
-        scaling_factor = 0.75 #see calculation in "Compressor_cost" workbook
-        
-        
-        ##################
-        ##Upstream Model##
-        ##################
-        
-        
-        
-        
-        #calculations
+        base_CapEx = 13000 
+        base_CNG_size = (1 + 4) / 2 
+        scaling_factor = 0.75 
         
         
         self.capacity_factor = self.capacity_factor/100
         self.discount_rate = self.discount_rate/100
-        hours_operation = 8760 * self.capacity_factor # hr/yr
+        hours_operation = 8760 * self.capacity_factor 
         CNG_Output = hours_operation * self.CNG_size * MMBtu_per_GGE
-        CNG_input = CNG_Output #Input-output ratio is taken from GREET 2019 Cell AH36 of 'NG' tab, i.e., no loss
+        CNG_input = CNG_Output 
         
         
-        crf = (self.discount_rate * ((1 + self.discount_rate)**self.lifetime)) / ((1 + self.discount_rate)**(self.lifetime) - 1) # %
+        crf = (self.discount_rate * ((1 + self.discount_rate)**self.lifetime)) / ((1 + self.discount_rate)**(self.lifetime) - 1) 
         
-        Overnight_CapEx = base_CapEx * (self.CNG_size / base_CNG_size) ** scaling_factor # scaling factor = 0.75
+        Overnight_CapEx = base_CapEx * (self.CNG_size / base_CNG_size) ** scaling_factor 
         annual_CapEx = (Overnight_CapEx + non_compressor_CapEx) * crf
         
-        FOM = (Overnight_CapEx + non_compressor_CapEx) * o_m #check on value here to come up with better value
+        FOM = (Overnight_CapEx + non_compressor_CapEx) * o_m 
         
         Power_cost = (self.power_price/1000) * power_consumption * self.capacity_factor * 8760
 
@@ -146,20 +130,15 @@ class CNGTEA(TeaBase):
         Unit_fuel_cost = Fuel_cost/CNG_Output
 
         shipping_cost = 0
-        total_charge = annual_CapEx + FOM + Power_cost + Fuel_cost + shipping_cost #before tax
-        unit_cost = total_charge / (CNG_Output) #before tax
+        total_charge = annual_CapEx + FOM + Power_cost + Fuel_cost + shipping_cost 
+        unit_cost = total_charge / (CNG_Output) 
 
-        tax = self.tax_rate*unit_cost/100 #$/MMBtu
+        tax = self.tax_rate*unit_cost/100 
 
 
-        capital = {'Capital Cost': annual_CapEx / CNG_Output} #capital cost of natural gas compression
+        capital = {'Capital Cost': annual_CapEx / CNG_Output} 
         fixed = {'FOM: Fixed Operation and Maintenance': FOM / CNG_Output}
         vom = {'VOM: Power & transport': Power_cost / CNG_Output + shipping_cost }
-
-
-        #####################
-        ## Cost Breakdown  ##
-        #####################
 
 
 

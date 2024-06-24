@@ -12,9 +12,3 @@ def test_lca():
     assert type(data) == dict
     assert type(data['data']) == pd.DataFrame
 
-# def test_wind_tea():
-#     tea_analysis = tea_registry.lookup_by_name('Wind')
-#     tea_pathway = TeaPathway.load(tea_analysis, ['State', 'California', 'onshore', 600, 0.7, 'NREL', 3, 47, 'ATB', 1, 6.35])
-#     data = tea.run(tea_pathway)
-#     assert type(data) == dict
-#     assert type(data['data']) == pd.DataFrame

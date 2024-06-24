@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 import os
 import pandas as pd
 from us import STATES
@@ -78,8 +76,8 @@ class GasolineTEA(TeaBase):
         else:
             crude_cost = float(self.user_crude_cost)*frac_petroleum/42/129670
 
-        crude_cost = crude_cost* (1-.0667)+0.0667 * 1.5/76100.           # Blending 10% ethanol into gasoline (which is equal to 6.67% of energy content), taking ethanol price 1.5 $/gal, and Ethanol energy content= 76100 BTU/gal
-        other_fuel_cost= other_fuel_cost * (1-.0667)+0.0667 * 1.5/76100. # Blending 10% ethanol into gasoline (which is equal to 6.67% of energy content), taking ethanol price 1.5 $/gal, and Ethanol energy content= 76100 BTU/gal
+        crude_cost = crude_cost* (1-.0667)+0.0667 * 1.5/76100.           
+        other_fuel_cost= other_fuel_cost * (1-.0667)+0.0667 * 1.5/76100. 
 
         return crude_cost, other_fuel_cost
 
@@ -89,8 +87,6 @@ class GasolineTEA(TeaBase):
         gasoline_vom = float(filtered[filtered['Item Type'] == "O&M"].iloc[0].value)
         gasoline_capital = float(filtered[filtered['Item Type'] == "Capital"].iloc[0].value)
         taxes = float(self.taxes[self.taxes["State"] == self.state].iloc[0].value)
-
-        #transportation costs
         filtered = self.input_fractions
         frac_truck = float(filtered[filtered['Input'] == "Truck"].iloc[0].value)
         frac_rail = float(filtered[filtered['Input'] == "Rail"].iloc[0].value)
@@ -122,9 +118,9 @@ class GasolineTEA(TeaBase):
         model = SLCOE(crude_cost + other_fuel_cost,
                             gasoline_capital, 0, gasoline_vom, 1, taxes, transportation)
         costs = model.get_cost_breakdown()
-        costs = {key:val * 947.82 for key, val in costs.items()} # BTU to MJ conversion
-        costs["Operational"] = {"Crude Cost": crude_cost * 947.82, # BTU to MJ conversion
-                       "Process Fuels & Utilities Cost": other_fuel_cost * 947.82} # BTU to MJ conversion
+        costs = {key:val * 947.82 for key, val in costs.items()} 
+        costs["Operational"] = {"Crude Cost": crude_cost * 947.82, 
+                       "Process Fuels & Utilities Cost": other_fuel_cost * 947.82} 
 
 
         return costs

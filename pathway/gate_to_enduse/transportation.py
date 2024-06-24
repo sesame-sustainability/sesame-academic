@@ -110,8 +110,6 @@ class EthanolTransportationNoBiogen(Transportation):
     @classmethod
     def user_inputs(cls):
         return super().user_inputs("default mix", "ethanol")
-#Dummy modes for ethanol to ensure modules for "with biogenic carbon" and "without biogenic carbon" are not mixed up to generate
-#inconsistent results unexpectedly
 
 class EthanolTransportationWithBiogen(Transportation):
     filters = [

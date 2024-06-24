@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Wed Mar 24 14:07:00 2021
 
@@ -11,11 +9,10 @@ from analysis.lca import compute_input_flows, compute_emission_flows
 from core import conditionals, validators
 import pandas as pd
 import os
-# import numpy as np
 
 
 PATH = os.getcwd() + "/pathway/process/caes/"
-scaling_factor = 0.6    # Default value for plant equipment
+scaling_factor = 0.6    
 
 class CAES(ActivitySource):
 
@@ -41,22 +38,13 @@ class CAES(ActivitySource):
         
     def storage_emission(self):
         df = pd.read_csv(PATH + "CAES_Data.csv")
-
-        # Values in table have units kg CO2
         ref_p_emissions = df.loc[df['Emissions Source'] == 'Total_Power']['Value'].item()
         ref_e_emissions = df.loc[df['Emissions Source'] == 'Total_Energy']['Value'].item()
-
-        # Scale emissions by power and energy capacity separately
-        ref_p_capacity = 60 # MW
-        ref_e_capacity = 60*12 # 60 MW * 12 hr
+        ref_p_capacity = 60 
+        ref_e_capacity = 60*12 
         fixed_emissions_power = ref_p_emissions*(self.p_capacity/ref_p_capacity)**scaling_factor
         fixed_emissions_energy = ref_e_emissions*(self.e_capacity/ref_e_capacity)**scaling_factor
-
-        # Calculate kWh discharged over lifetime of plant
-        # Energy capacity: MWh * 1000 --> kWh
         lifetime_storage = (self.e_capacity * 1000) * self.cycling_frequency * 365 * self.lifetime
-        
-        # Sum power and energy capacity related emissions
         emiss = (fixed_emissions_power + fixed_emissions_energy)/lifetime_storage
         return emiss
 

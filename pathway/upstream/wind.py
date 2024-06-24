@@ -15,9 +15,6 @@ class Wind(ActivitySource):
 
     def get_emissions(self):
         emission_flows = {}
-
-        # FIXME
-        # get the multiplier passed from the process stage
         multiplier = self.output['__multiplier']
         del self.output['__multiplier']
 

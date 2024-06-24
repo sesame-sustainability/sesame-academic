@@ -1,13 +1,10 @@
 from core.tea import TeaRegistry
 from core.utils import load_class
 import pathway.topology as pathway_topology
-# from tea.electricity.power_and_storage import PowerAndStorageTEA
-# from tea.electricity.power_and_storage_v2 import PowerAndStorageTEA
 import pandas as pd
 
 tea_registry = TeaRegistry()
 
-# registry IDs are triples of (enduse, process, upstream) activity IDs
 
 wind = tea_registry.register_tea_analysis(
     'Wind',
@@ -20,11 +17,6 @@ wind = tea_registry.register_tea_analysis(
     ),
 )
 
-# wind_old = tea_registry.register_tea_analysis(
-#     'Wind (old)',
-#     load_class('tea.electricity.wind_old.wind_tea', 'WindTEA'),
-#     table='tea/electricity/wind_old/region_speed_new.csv',
-# )
 
 solar = tea_registry.register_tea_analysis(
     'Solar',
@@ -37,11 +29,6 @@ solar = tea_registry.register_tea_analysis(
     ),
 )
 
-# As modified, solar_TEA_PS doesn't work as normal TEA pathway
-# solar_PS = tea_registry.register_tea_analysis(
-#     'Solar_PS',
-#     load_class('tea.electricity.solar.solar_TEA_PS', 'SolarTEA'),
-# )
 
 ng = tea_registry.register_tea_analysis(
     'Natural gas',
@@ -122,7 +109,6 @@ storage = tea_registry.register_tea_analysis(
     load_class('tea.electricity.storage.Storage_v3','StorageTEA'),
 )
 
-# power_and_storage = tea_registry.register(PowerAndStorageTEA('Power and storage'))
 power_and_storage = tea_registry.register_tea_analysis(
     'Power and storage',
     load_class('tea.electricity.power_and_storage.power_and_storage_v3','StorageCombination'),

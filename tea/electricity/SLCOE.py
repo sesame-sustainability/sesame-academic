@@ -1,4 +1,3 @@
-#This should retire due to incorrectness and inconsistency!
 
 
 class SLCOE:
@@ -28,7 +27,7 @@ class SLCOE:
         self.HR = HR
         self.TD_cost = TD_cost
         self.CRF = CRF
-        self.sale_tax_rate = sale_tax_rate #% This is the electricity sales tax rate, not the one used for levelized capital cost calculation
+        self.sale_tax_rate = sale_tax_rate 
 
     def get_cost_breakdown(self):
         real_discount = (self.interest + self.discount)/100
@@ -37,14 +36,14 @@ class SLCOE:
         else:
             CRF = real_discount * (1 + real_discount)**self.lifetime/((1 + real_discount) ** self.lifetime-1)
 
-        capital = (CRF * self.CAPEX ) *1000/ (8760 * self.CF) #$/MWh
+        capital = (CRF * self.CAPEX ) *1000/ (8760 * self.CF) 
 
-        fixed_om_cost = self.FOM*1000 / (8760 * self.CF)  # USD/MWh
-        var_om_cost = self.VOM  # USD/MWh
-        TDcost = self.TD_cost # USD/MWh
-        fuel_cost = (self.HR * self.fuel_cost)  #USD/MWh
+        fixed_om_cost = self.FOM*1000 / (8760 * self.CF)  
+        var_om_cost = self.VOM  
+        TDcost = self.TD_cost 
+        fuel_cost = (self.HR * self.fuel_cost)  
         tax = self.sale_tax_rate/100*(capital + fixed_om_cost + var_om_cost + fuel_cost + TDcost)
-        SLCOE = capital + fixed_om_cost + var_om_cost + fuel_cost #USD/MWh
+        SLCOE = capital + fixed_om_cost + var_om_cost + fuel_cost 
 
         cost_breakdown = {"Capital": capital,
                           "Fixed": fixed_om_cost,
@@ -54,5 +53,4 @@ class SLCOE:
                           "Tax": tax
                           }
 
-# $/MWh
         return cost_breakdown

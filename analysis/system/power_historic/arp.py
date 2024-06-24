@@ -39,14 +39,12 @@ def import_row(row):
         arp.heat_input=row['HEAT_INPUT (mmBtu)']
 
     try:
-        # try the insert first (since this will be the case most of the time)
         arp = ARP(plant_id=plant_id, timestamp=timestamp, unit=unit)
         update_arp_attrs(arp)
         db.save(arp)
     except sqlalchemy.exc.IntegrityError as e:
         db.rollback()
         if e.orig.pgcode == '23505':
-            # duplicate key, update existing record
             arp = ARP.query.filter(ARP.plant_id == plant_id, ARP.timestamp == timestamp, ARP.unit == unit).first()
             update_arp_attrs(arp)
             db.save(arp)

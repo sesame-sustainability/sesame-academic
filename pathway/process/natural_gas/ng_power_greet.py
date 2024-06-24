@@ -21,10 +21,6 @@ class NGPowerGREET(ActivitySource):
             input.conditionals.append(conditionals.context_equal_to('compute_cost', True))
 
         lca_inputs = [
-            # OptionsInput('user_efficiency','Use user-specified efficiency?', options=['Yes','No']),
-            # ContinuousInput('efficiency', 'Power Generation Efficiency (%), between 28 and 55 recommended',
-            #                 validators=[validators.numeric(), validators.gte(0), validators.lte(100)],
-            #                 conditionals=[conditionals.input_equal_to('user_effeciency','Yes')]),
             CategoricalInput(
                 'generation_region', 'Region',
                 defaults=[Default('US')],
@@ -71,11 +67,6 @@ class NGPowerGREET(ActivitySource):
                 minimizing='Combined Cycle',
                 maximizing='Gas Turbine',
             ),
-            # SensitivityInput(
-            #     'infrastructure_emission_inclusion',
-            #     minimizing='No',
-            #     maximizing='Yes',
-            # ),
             SensitivityInput(
                 'use_CCS',
                 minimizing='Yes',
@@ -90,10 +81,7 @@ class NGPowerGREET(ActivitySource):
         )
 
         if self.use_CCS == 'Yes':
-            # TODO: this is called here to run CCS, would be better to remove this implicit state
             self.get_emissions()
-
-            # TODO: would be nice to move below into CCS module as well
             CCS_inputs = pd.read_csv(PATH + "ng_power_ccs_lcidata.csv")
             filtered = CCS_inputs[CCS_inputs['technology'] == 'amine']
             nat_gas_ccs = float(filtered[filtered['flows'] == 'natural gas'].iloc[0].value)

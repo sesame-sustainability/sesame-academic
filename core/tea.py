@@ -19,9 +19,6 @@ def pathway_id(pathway):
 
 def compute_cost(tea_pathway, input_sets):
     input_set = input_sets[tea_pathway.analysis]
-
-    # instantiate a new pathway since the one passed in may have been
-    # created with an `lca_pathway` present
     tea_pathway = TeaPathway(tea_pathway.analysis, input_set)
 
     results = tea.run(tea_pathway)
@@ -45,7 +42,6 @@ class TeaBase(DataSource, InputSource, Versioned):
         if self.lca_pathway is not None:
             instance = self.lca_pathway.instance('tea')
             if instance is not None:
-                # copy input values from pathway instance to this TEA instance
                 for input in type(self).user_inputs(with_lca=True):
                     input_set.set_value(input.name, instance.input_value(input.name))
         super().prepare(input_set)
@@ -63,8 +59,6 @@ class TeaAnalysis:
         self.cls = cls
         self.pathway_id = pathway_id
         self.table = table
-
-        # if specified, these conditionals will be applied to every user input for this analysis
         self.conditionals = conditionals
 
     def __call__(self, *args, **kwargs):
@@ -112,7 +106,6 @@ class ComposedAnalysis:
     class TeaBase:
 
         def __init__(self, parent):
-            # `parent` is the instance of `ComposedAnalysis` that instantiated this
             self.parent = parent
 
             self.instances = {
@@ -128,7 +121,6 @@ class ComposedAnalysis:
                 instance.prepare(input_set)
 
         def current_instance(self):
-            # TODO: there's probably a more robust way to determine this
             for analysis in self.parent.analyses:
                 instance_input_set = self.instances[analysis].input_set
                 instance_inputs = list(instance_input_set.inputs.values())
@@ -254,8 +246,6 @@ class TeaPathway:
 
     @property
     def steps(self):
-        # to expose an interface similar to LCA pathways
-        # (used in sensitivity analysis, for example)
         return [
             TeaStep(self.analysis, self.input_set)
         ]

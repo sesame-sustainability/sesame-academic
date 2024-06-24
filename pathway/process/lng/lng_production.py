@@ -9,7 +9,6 @@ class LNGProduction(ActivitySource):
     def user_inputs(cls):
         return [
             CategoricalInput('leakage_param', 'Methane Fugitive Parameter',
-                     # This should be removed. Leaving it here as a placeholder for tooltip
                      defaults=[Default('EPA 2019')],
                      tooltip=Tooltip(
                         'Unlike the other pathways, LNG pathway LCA does not include LNG end use emissions, due to variations of how it can finally be used. E.g., if it will be burned, then the combustion emission of 57 g CO2/MJ LHV LNG should be added.',

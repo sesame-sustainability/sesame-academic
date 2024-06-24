@@ -279,13 +279,11 @@ class SolarPowerProduction(ActivitySource):
 
     def compute_cap_fac(self, cf_table):
         assumed_loss = 0.03
-        tec = 0.4223  # Typical tracker energy consumption per panel area in kWh/m²/yr
+        tec = 0.4223  
 
         pat = ' Si' if 'Si' in self.cell_type else ' TF'
         column_key = self.install_type + pat
         cf_row = cf_table.loc[cf_table['Location'] == self.location]
-
-        # Calculation of required CF
         cf_loc = cf_row[column_key].values
         snow_loss = cf_row['snow loss if any (%)'].values
         CF_AC = (cf_loc * (1 - snow_loss) * (1 - self.shading/100) * (1 - self.lifetime * self.degradation / 200) / (
@@ -324,8 +322,6 @@ class SolarPowerProduction(ActivitySource):
         relevant_cell_columns = columns[[i for i, item in enumerate(columns) if pat2 in item]]
         relevant_columns = np.concatenate(('input', relevant_cell_columns, relevant_install_columns), axis=None)
         amounts = master.filter(relevant_columns, axis=1)
-
-        # Calculation of User Input dependent variables in Amounts
         CF = self.compute_cap_fac(DATA['cf'].copy())
 
         a_pi = self.panel_install(params)
@@ -339,8 +335,6 @@ class SolarPowerProduction(ActivitySource):
         amounts.loc[amounts.input == relevant_install_columns[2], relevant_install_columns[-2]] = a_mi
         amounts.loc[amounts.input == relevant_install_columns[-2], relevant_install_columns[-1]] = a_ppo
         amounts.loc[amounts.input == 'transoceanic freight ship', relevant_install_columns[-2]] = a_transport
-
-        # Calculation of emissions
         ghg = amounts.copy()
         results_index = ['GHG Emissions by stage product (including previous stages)',
                          'GHG Emissions by stage product (excluding previous stages)',
@@ -387,7 +381,6 @@ class SolarPowerProduction(ActivitySource):
                 continue
             else:
                 ef.loc[ef.input == columnName, 'values'] = calc_sum
-        # print(results.iloc[3,:])
         return ghg, results
 
     def get_stage_emissions(self, stage, results):

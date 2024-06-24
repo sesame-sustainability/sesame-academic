@@ -20,7 +20,7 @@ def test_pathway_metadata(client):
     assert len(body['stages']) == 6
 
 def test_pathway_input_options(client):
-    source = pathway_topology.ng_power_production.sources[1] # ASPEN
+    source = pathway_topology.ng_power_production.sources[1] 
     res = client.get(f'/pathway/sources/{source.id}/user_inputs/turbine')
     assert res.status_code == 200
     body = json.loads(res.data)
@@ -33,7 +33,6 @@ def test_pathway_input_options_numerical(client):
     body = json.loads(res.data)
     assert body == {'options': ['residential', 'utility, fixed tilt', 'utility, 1-axis tracking']}
 
-# LCA
 
 def test_lca_analysis(client):
     source = pathway_topology.electricity.sources[0]
@@ -56,7 +55,7 @@ def test_lca_analysis_input_validation(client):
 
     body = {
         'pathways': [
-            {'steps': [{'source_id': source.id, 'user_inputs': ['pipeline', 500, 123]}]} # must be < 100
+            {'steps': [{'source_id': source.id, 'user_inputs': ['pipeline', 500, 123]}]} 
         ]
     }
     res = client.post(
@@ -82,56 +81,10 @@ def test_lca_analysis_validation_error(client):
     body = json.loads(res.data)
     assert 'pathways' in body['errors']
 
-# TEA
 
-# def test_tea_analysis(client):
-#     body = {
-#         'analysis_name': 'Wind',
-#         'user_inputs': ['State', 'California', 'onshore', 600, 0.7, 'NREL', 3, 47, 'ATB', 1, 6.35],
-#     }
-#     res = client.post(
-#         '/tea/analysis',
-#         data=json.dumps(body),
-#         content_type='application/json'
-#     )
-#     assert res.status_code == 200
 
-# def test_tea_analysis_input_validation(client):
-#     body = {
-#         'analysis_name': 'Wind',
-#         'user_inputs': ['State', 'California', 'onshore', 600, 0.7, 'NREL', 3, 47, 'ATB', 1, 'invalid'],
-#     }
-#     res = client.post(
-#         '/tea/analysis',
-#         data=json.dumps(body),
-#         content_type='application/json'
-#     )
-#     assert res.status_code == 422
-#     assert res.json['errors'] == {
-#         'tax_rate': ['must be numeric'],
-#     }
 
-# def test_tea_analysis_with_pathway(client):
-#     body = {
-#         'pathway': {
-#             'steps': [
-#                 {'source_id': 'enduse-electricity-default', 'user_inputs': []},
-#                 {'source_id': 'gatetoenduse-transmission-literaturereview', 'user_inputs': [4.68]},
-#                 {'source_id': 'process-windpowerproduction-default', 'user_inputs': ['onshore wind farm > 50MW', 'Wind Speed', 'medium (8 m/s)', 100, '2014-2016', 'Typical Onshore md-spd', 20, 600]},
-#                 {'source_id': 'tea-windtea-default', 'user_inputs': ['California', 600, 0.7, 'NREL', 47, 'ATB', 1, 6.35] },
-#                 {'source_id': 'upstream-wind-default', 'user_inputs': []},
-#             ],
-#             'name': 'Wind LCA + TEA pathway',
-#         },
-#     }
-#     res = client.post(
-#         '/tea/analysis',
-#         data=json.dumps(body),
-#         content_type='application/json'
-#     )
-#     assert res.status_code == 200
 
-# fleet
 
 from analysis.system.fleet.fleet import FleetModel
 
@@ -148,7 +101,6 @@ def test_fleet_analysis(client):
     )
     assert res.status_code == 200
 
-# grid
 
 from analysis.system.grid.grid import Grid
 
@@ -165,7 +117,6 @@ def test_grid_analysis(client):
     )
     assert res.status_code == 200
 
-# industry cement
 
 from analysis.system.industry.cement.cement import Cement
 
@@ -182,7 +133,6 @@ def test_cement_analysis(client):
     )
     assert res.status_code == 200
 
-# industry steel
 
 from analysis.system.industry.iron_steel.iron_steel import IronSteel
 
@@ -201,7 +151,6 @@ def test_steel_analysis(client):
         )
         assert res.status_code == 200
 
-# industry aluminum
 
 from analysis.system.industry.aluminum.aluminum import Aluminum
 
@@ -220,7 +169,6 @@ def test_aluminum_analysis(client):
         )
         assert res.status_code == 200
 
-# industry fleet
 
 from analysis.system.industrial_fleet.industrial_fleet import IndFleetModel
 

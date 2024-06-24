@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 
 
@@ -90,8 +88,6 @@ class JetFuelTEA(TeaBase):
         jetfuel_vom = float(filtered[filtered['Item Type'] == "O&M"].iloc[0].value)
         jetfuel_capital = float(filtered[filtered['Item Type'] == "Capital"].iloc[0].value)
         taxes = float(self.taxes[self.taxes["State"] == self.state].iloc[0].value)
-
-        #transportation costs
         filtered = self.input_fractions
         frac_truck = float(filtered[filtered['Input'] == "Truck"].iloc[0].value)
         frac_rail = float(filtered[filtered['Input'] == "Rail"].iloc[0].value)
@@ -122,7 +118,7 @@ class JetFuelTEA(TeaBase):
         model = SLCOE(crude_cost + other_fuel_cost,
                             jetfuel_capital, 0, jetfuel_vom, 1, taxes, transportation)
         costs = model.get_cost_breakdown()
-        costs = {key:val* 947.82 for key, val in costs.items()} # BTU to MJ conversion
+        costs = {key:val* 947.82 for key, val in costs.items()} 
         costs["Operational"] = {"Crude Cost": crude_cost*947.82,
                        "Process Fuels & Utilities Cost": other_fuel_cost*947.82}
         return costs

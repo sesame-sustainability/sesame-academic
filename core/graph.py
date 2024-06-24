@@ -19,7 +19,6 @@ def plot(analysis_result, x, y='value', group_by=None):
 
 def plot_lcia_multiple_pathways(multiple_pathways, indicator="GWP"):
     stack_df = perform_lcia(multiple_pathways, indicator)
-    #Greys
     stack_df.plot.bar(stacked=True, width=0.40, figsize=(12, 7))
     plt.title("LCIA - {}  for Multiple Pathways".format(indicator), fontweight="bold", fontsize=14)
     plt.ylabel("Emissions in kg", fontweight="bold", fontsize=14)

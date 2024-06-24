@@ -29,9 +29,6 @@ def _analysis():
     ]
 
     results = lca.run(pathways, indicator=body.indicator)
-
-    # TODO: consider having this endpoint only return results for a single pathway at a time.
-    # Front-end can make multiple concurrent requests if needed
     pathway = pathways[0]
 
     sensitivity = pathway.sensitivity_analysis()

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 
 CAPITAL_FRACTION = [0.8, 0.1, 0.1]
@@ -30,37 +28,25 @@ class LCOE:
         self.lifetime = lifetime
         self.grid_cost = grid_cost
         self.fuel_cost = fuel_cost
-        self.sale_tax_rate = sale_tax_rate #% This is the electricity sales tax rate, not the one used for levelized capital cost calculation
+        self.sale_tax_rate = sale_tax_rate 
 
     def get_cost_breakdown(self):
         debt_fraction = self.finance_values['df']
         rate_return_equity = self.finance_values['rre']
         interest_rate = self.finance_values['i']
         inflation_rate = self.finance_values['ir']
-        tax_rate = self.finance_values['tr'] #Don't confuse this with 'sale_tax_rate' above. This is used for capital cost levelization/amortization
-
-        # Weighted Average Capital Cost
+        tax_rate = self.finance_values['tr'] 
         WACC = ((1 + ((1 - debt_fraction) * ((1 + rate_return_equity) * (1 + inflation_rate) - 1)) + (
                 debt_fraction * ((1 + interest_rate) * (1 + inflation_rate) - 1) * (1 - tax_rate))) / (
                         1 + inflation_rate)) - 1
-
-        # Capital Recovery Factor
         CRF = WACC / (1 - (1 / (1 + WACC) ** self.lifetime))
-
-        # Depreciation - calculate the present value of PVD and multiply with dep factor
         PVD = 0
         for year, dep_rate in enumerate(DEPRECIATION):
             PVD += (1 / ((1 + WACC) * (1 + interest_rate)) ** year) * dep_rate
-
-        # Project Financing Factor
         PFF = (1 - tax_rate * PVD) / (1 - tax_rate)
-
-        # Construction Financing Factor depends upon the time taken to construct
         CFF = 0
         for year, cap_frac in enumerate(CAPITAL_FRACTION):
             CFF += (1 + (1 - tax_rate) * ((1 + inflation_rate) ** (year + 0.5) - 1)) * cap_frac
-
-        # End of finance based calculations - assembling costs together
         CAPEX = CFF * (self.OCC * self.cap_reg_mult + self.grid_cost)
         FCR = CRF * PFF
 
@@ -68,7 +54,6 @@ class LCOE:
         fixed = self.FOM * 1000 / (self.cap_fac * 8760)
         tax = self.sale_tax_rate/100*(capital + fixed + self.VOM + self.fuel_cost)
         total = capital + fixed + self.VOM + self.fuel_cost + tax
-        # $/MWh
         cost_breakdown = {"Capital": capital,
                           "Fixed": fixed,
                           "Fuel": self.fuel_cost,

@@ -17,54 +17,49 @@ class BECCSTea:
                  fuel_adj_factor, distance, crf):
 
         self.plant_type = plant_type
-        self.ethanol_production_rate = ethanol_production_rate  # MMgal/yr
-        self.ferment_cap_tech = ferment_cap_tech  # compression & dehydration
-        self.ferment_co2_cap_percent = ferment_co2_cap_percent  # typically 85 %
-        self.boiler_cap_tech = boiler_cap_tech  # amine
-        self.boiler_co2_cap_percent = boiler_co2_cap_percent  # typically 85 %
+        self.ethanol_production_rate = ethanol_production_rate  
+        self.ferment_cap_tech = ferment_cap_tech  
+        self.ferment_co2_cap_percent = ferment_co2_cap_percent  
+        self.boiler_cap_tech = boiler_cap_tech  
+        self.boiler_co2_cap_percent = boiler_co2_cap_percent  
         self.amine_co2_cap_percent = amine_co2_cap_percent
-        self.biorefinery_model = biorefinery_model  # Aecom or Avg 88 corn (EPA)
-        self.boilerstack_ccs = boilerstack_ccs  # Yes or No
-        self.amine_regen_ccs = amine_regen_ccs  # Yes or No
+        self.biorefinery_model = biorefinery_model  
+        self.boilerstack_ccs = boilerstack_ccs  
+        self.amine_regen_ccs = amine_regen_ccs  
         self.fuel_adj_factor = fuel_adj_factor
-        self.distance = distance  # distance from source to sink in miles
-        self.crf = crf  # capital recovery factor
+        self.distance = distance  
+        self.crf = crf  
 
     def get_capture_cost_breakdown(self):
-        # Reading the reference and corn_ethanol_ccs csv file
-
-        # Cost for transporting and storing CO2
         other_costs = pd.read_csv(PATH + "transport&storage costs.csv")
         ref_transport_cost = float(
-            other_costs[other_costs["Generation Region"] == 'US'].iloc[0].transport)  # in USD/mile-tCO2
-        ref_storage_cost = float(other_costs[other_costs["Generation Region"] == 'US'].iloc[0].storage)  # in USD/tCO2
-
-        # Estimating the emission factor of NG
-        kg_g = 1000  # 1 kg = 1000g
+            other_costs[other_costs["Generation Region"] == 'US'].iloc[0].transport)  
+        ref_storage_cost = float(other_costs[other_costs["Generation Region"] == 'US'].iloc[0].storage)  
+        kg_g = 1000  
         btu_in_mj = 947.81712
         g_C_in_mol_co2 = 12.0107
         g_co2_in_mol_co2 = 44.009
         g_nat_gas_in_ft3 = 22
-        btu_in_ft3 = 983  # LHV
+        btu_in_ft3 = 983  
         g_C_in_nat_gas = 0.724
 
         ng_co2_kg_MJ = btu_in_mj / btu_in_ft3 * g_nat_gas_in_ft3 * g_C_in_nat_gas / g_C_in_mol_co2 * \
-                       g_co2_in_mol_co2 / kg_g  # emission factor of NG units kgCo2/MJ NG burned
+                       g_co2_in_mol_co2 / kg_g  
 
         if self.boilerstack_ccs == 'No':
             ref_plant = pd.read_csv(PATH + "reference.csv")
             filtered = ref_plant[ref_plant['plant type'] == "Ethanol Production"]
             ref_plant_size = float(filtered[filtered['technology'] == self.ferment_cap_tech].iloc[
-                                       0].refsize)  # MMgal/yr  #units depend on plant type
+                                       0].refsize)  # MMgal/yr  
 
             ferment_ref_co2_captured = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].co2captured)  # tco2/year
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].co2captured)  
             ferment_ref_avg_capital_cost = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].avgcapex) * 1e6  # in $USD
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].avgcapex) * 1e6  
             ferment_fom_capex = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].fom_capex)  # in %
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].fom_capex)  
             ferment_elec_consumption = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].electricity)  # MJ elec/kgCo2
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].electricity)  
 
             flow_scaling_factor = self.ethanol_production_rate / float(ref_plant_size)
             capex_scaling_factor = float(flow_scaling_factor ** 0.6)
@@ -72,48 +67,42 @@ class BECCSTea:
             ferment_overnght_avg_cap_cost = float(
                 ferment_ref_avg_capital_cost * capex_scaling_factor * ferment_capture_scaling_factor)
 
-            cap_plant_emissions = ferment_ref_co2_captured * flow_scaling_factor * ferment_capture_scaling_factor  # tCo2/year
+            cap_plant_emissions = ferment_ref_co2_captured * flow_scaling_factor * ferment_capture_scaling_factor  
 
-            overnight_avg_cap_cost = ferment_overnght_avg_cap_cost  # overnight capital cost USD
-            annualized_avg_cap_cost = self.crf * overnight_avg_cap_cost  # annualized capital cost USD/yr
-            fom_avg_cost = overnight_avg_cap_cost * (ferment_fom_capex / 100)  # fixed O&M USD/yr
-
-            ## Variable O&M cost
+            overnight_avg_cap_cost = ferment_overnght_avg_cap_cost  
+            annualized_avg_cap_cost = self.crf * overnight_avg_cap_cost  
+            fom_avg_cost = overnight_avg_cap_cost * (ferment_fom_capex / 100)  
             power_cost = pd.read_csv(PATH + "electricity_industrial.csv")
             electricity_cost = float(power_cost[power_cost['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
-                               ferment_elec_consumption * 1000 * cap_plant_emissions  # $/BTU *BTU/MJ * MJ/kgCo2 * 1000 kgCo2/tCo2 * tCo2 = $USD
+                               ferment_elec_consumption * 1000 * cap_plant_emissions  
             nat_gas_cost = 0
 
-            capture_vom_cost = nat_gas_cost + electricity_cost  # in USD/year
+            capture_vom_cost = nat_gas_cost + electricity_cost  
 
             capture_avg_cost = annualized_avg_cap_cost + fom_avg_cost + capture_vom_cost
 
             cap_total_emissions = cap_plant_emissions
-
-            # Transportation & Storage Cost
-            transp_cost = ref_transport_cost * self.distance * cap_plant_emissions  # in USD/year
-            storage_cost = ref_storage_cost * cap_plant_emissions  # in USD/year
+            transp_cost = ref_transport_cost * self.distance * cap_plant_emissions  
+            storage_cost = ref_storage_cost * cap_plant_emissions  
             capture_avg_taxes = 0.21 * (
-                    capture_avg_cost + transp_cost + storage_cost)  # Federal tax rate from NPC Report 2019
+                    capture_avg_cost + transp_cost + storage_cost)  
 
 
 
         elif self.amine_regen_ccs == 'No' and self.biorefinery_model == 'AECOM':
-
-            # Fermenter
             ref_plant = pd.read_csv(PATH + "reference.csv")
             filtered = ref_plant[ref_plant['plant type'] == "Ethanol Production"]
             ref_plant_size = float(filtered[filtered['technology'] == self.ferment_cap_tech].iloc[
-                                       0].refsize)  # MMgal/yr  #units depend on plant type
+                                       0].refsize)  # MMgal/yr  
 
             ferment_ref_co2_captured = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].co2captured)  # tco2/year
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].co2captured)  
             ferment_ref_avg_capital_cost = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].avgcapex) * 1e6  # in $USD
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].avgcapex) * 1e6  
             ferment_fom_capex = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].fom_capex)  # in %
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].fom_capex)  
             ferment_elec_consumption = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].electricity)  # MJ elec/kgCo2
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].electricity)  
 
             flow_scaling_factor = self.ethanol_production_rate / float(ref_plant_size)
             capex_scaling_factor = float(flow_scaling_factor ** 0.6)
@@ -121,88 +110,80 @@ class BECCSTea:
             ferment_overnght_avg_cap_cost = float(
                 ferment_ref_avg_capital_cost * capex_scaling_factor * ferment_capture_scaling_factor)
 
-            # Boiler
-
             filtered_2 = ref_plant[ref_plant['plant type'] == "Natural Gas Power Plants"]
             nat_gas_ref_avg_capital_cost = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].avgcapex) * 1e6  # $USD
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].avgcapex) * 1e6  
             nat_gas_ref_co2_captured = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].co2captured)  # tco2/year
-            usd_tco2_ratio = nat_gas_ref_avg_capital_cost / nat_gas_ref_co2_captured  # USD/tco2
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].co2captured)  
+            usd_tco2_ratio = nat_gas_ref_avg_capital_cost / nat_gas_ref_co2_captured  
 
             boiler_fom_capex = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].fom_capex)  # in %
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].fom_capex)  
             boiler_elec_consumption = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].electricity)  # MJ elec/kgCo2
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].electricity)  
             boiler_fuel_consumption = float(
                 filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[
-                    0].fuel) * self.fuel_adj_factor  # MJ NG /kgCo2
+                    0].fuel) * self.fuel_adj_factor  
 
-            boiler_ferment_ratio_aecom = 0.9689  # Emission ratio for bio-refinery process model: AECOM
+            boiler_ferment_ratio_aecom = 0.9689  
             boiler_ref_co2_captured_aecom = (
-                                                    ferment_ref_co2_captured / 0.85) * boiler_ferment_ratio_aecom * 0.85  # tco2/year
+                                                    ferment_ref_co2_captured / 0.85) * boiler_ferment_ratio_aecom * 0.85  
 
             boiler_capture_scaling_factor = float(self.boiler_co2_cap_percent) / 85
-            boiler_ref_avg_capital_cost = usd_tco2_ratio * boiler_ref_co2_captured_aecom  # $USD
+            boiler_ref_avg_capital_cost = usd_tco2_ratio * boiler_ref_co2_captured_aecom  
 
             boiler_overnight_avg_cap_cost = float(
                 boiler_ref_avg_capital_cost * capex_scaling_factor * boiler_capture_scaling_factor)
 
             cap_plant_emissions = (ferment_ref_co2_captured * flow_scaling_factor * ferment_capture_scaling_factor) \
                                   + (
-                                          boiler_ref_co2_captured_aecom * flow_scaling_factor * boiler_capture_scaling_factor)  # tco2
+                                          boiler_ref_co2_captured_aecom * flow_scaling_factor * boiler_capture_scaling_factor)  
 
-            overnight_avg_cap_cost = ferment_overnght_avg_cap_cost + boiler_overnight_avg_cap_cost  # overnight capital cost USD
+            overnight_avg_cap_cost = ferment_overnght_avg_cap_cost + boiler_overnight_avg_cap_cost  
 
-            annualized_avg_cap_cost = self.crf * overnight_avg_cap_cost  # annualized capital cost USD/yr
+            annualized_avg_cap_cost = self.crf * overnight_avg_cap_cost  
             fom_avg_cost = boiler_overnight_avg_cap_cost * (boiler_fom_capex / 100) \
                            + ferment_overnght_avg_cap_cost * (ferment_fom_capex / 100)
-
-            # Variable O&M cost
             power_cost = pd.read_csv(PATH + "electricity_industrial.csv")
             ferment_electricity_cost = float(
                 power_cost[power_cost['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
                                        ferment_elec_consumption * 1000 * (
-                                               ferment_ref_co2_captured * flow_scaling_factor * ferment_capture_scaling_factor)  # $/BTU *BTU/MJ * MJ/kgCo2 * 1000 kgCo2/tCo2 * tCo2 = $USD
+                                               ferment_ref_co2_captured * flow_scaling_factor * ferment_capture_scaling_factor)  
 
             boiler_electricity_cost = float(power_cost[power_cost['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
                                       boiler_elec_consumption * 1000 * (
-                                              boiler_ref_co2_captured_aecom * flow_scaling_factor * boiler_capture_scaling_factor)  # $/BTU *BTU/MJ * MJ/kgCo2 * 1000 kgCo2/tCo2 * tCo2 = $USD
+                                              boiler_ref_co2_captured_aecom * flow_scaling_factor * boiler_capture_scaling_factor)  
 
             fuel_costs = pd.read_csv(PATH + "natgas_industrial.csv")
             nat_gas_cost = float(fuel_costs[fuel_costs['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
                            boiler_fuel_consumption * 1000 * (
-                                   boiler_ref_co2_captured_aecom * flow_scaling_factor * boiler_capture_scaling_factor)  # $/BTU *BTU/MJ * MJ/kgCo2 * 1000 kgCo2/tCo2 * tCo2 = $USD
+                                   boiler_ref_co2_captured_aecom * flow_scaling_factor * boiler_capture_scaling_factor)  
 
             capture_vom_cost = ferment_electricity_cost + boiler_electricity_cost + nat_gas_cost
             capture_avg_cost = annualized_avg_cap_cost + fom_avg_cost + capture_vom_cost
-
-            # Transportation & Storage Cost
-            transp_cost = ref_transport_cost * self.distance * cap_plant_emissions  # in USD/year
-            storage_cost = ref_storage_cost * cap_plant_emissions  # in USD/year
+            transp_cost = ref_transport_cost * self.distance * cap_plant_emissions  
+            storage_cost = ref_storage_cost * cap_plant_emissions  
             capture_avg_taxes = 0.21 * (
-                    capture_avg_cost + transp_cost + storage_cost)  # Federal tax rate from NPC Report 2019
+                    capture_avg_cost + transp_cost + storage_cost)  
 
             cap_total_emissions = cap_plant_emissions
 
 
 
         elif self.amine_regen_ccs == 'No' and self.biorefinery_model == 'Avg 88':
-
-            # Fermenter
             ref_plant = pd.read_csv(PATH + "reference.csv")
             filtered = ref_plant[ref_plant['plant type'] == "Ethanol Production"]
             ref_plant_size = float(filtered[filtered['technology'] == self.ferment_cap_tech].iloc[
-                                       0].refsize)  # MMgal/yr  #units depend on plant type
+                                       0].refsize)  # MMgal/yr  
 
             ferment_ref_co2_captured = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].co2captured)  # tco2/year
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].co2captured)  
             ferment_ref_avg_capital_cost = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].avgcapex) * 1e6  # in $USD
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].avgcapex) * 1e6  
             ferment_fom_capex = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].fom_capex)  # in %
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].fom_capex)  
             ferment_elec_consumption = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].electricity)  # MJ elec/kgCo2
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].electricity)  
 
             flow_scaling_factor = self.ethanol_production_rate / float(ref_plant_size)
             capex_scaling_factor = float(flow_scaling_factor ** 0.6)
@@ -210,29 +191,27 @@ class BECCSTea:
             ferment_overnght_avg_cap_cost = float(
                 ferment_ref_avg_capital_cost * capex_scaling_factor * ferment_capture_scaling_factor)
 
-            # Boiler
-
             filtered_2 = ref_plant[ref_plant['plant type'] == "Natural Gas Power Plants"]
             nat_gas_ref_avg_capital_cost = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].avgcapex) * 1e6  # $USD
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].avgcapex) * 1e6  
             nat_gas_ref_co2_captured = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].co2captured)  # tco2/year
-            usd_tco2_ratio = nat_gas_ref_avg_capital_cost / nat_gas_ref_co2_captured  # USD/tco2
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].co2captured)  
+            usd_tco2_ratio = nat_gas_ref_avg_capital_cost / nat_gas_ref_co2_captured  
 
             boiler_fom_capex = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].fom_capex)  # in %
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].fom_capex)  
             boiler_elec_consumption = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].electricity)  # MJ elec/kgCo2
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].electricity)  
             boiler_fuel_consumption = float(
                 filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[
-                    0].fuel) * self.fuel_adj_factor  # MJ NG /kgCo2
+                    0].fuel) * self.fuel_adj_factor  
 
-            boiler_ferment_ratio_avg88 = 0.71156  # Emission ratio for bio-refinery model: avg88 model
+            boiler_ferment_ratio_avg88 = 0.71156  
             boiler_ref_co2_captured_avg88 = (
-                                                    ferment_ref_co2_captured / 0.85) * boiler_ferment_ratio_avg88 * 0.85  # tco2/year
+                                                    ferment_ref_co2_captured / 0.85) * boiler_ferment_ratio_avg88 * 0.85  
             boiler_capture_scaling_factor = float(self.boiler_co2_cap_percent) / 85
 
-            boiler_ref_avg_capital_cost = usd_tco2_ratio * boiler_ref_co2_captured_avg88  # $USD
+            boiler_ref_avg_capital_cost = usd_tco2_ratio * boiler_ref_co2_captured_avg88  
 
             boiler_overnight_avg_cap_cost = float(
                 boiler_ref_avg_capital_cost * capex_scaling_factor * boiler_capture_scaling_factor)
@@ -242,34 +221,30 @@ class BECCSTea:
                                           boiler_ref_co2_captured_avg88 * flow_scaling_factor * boiler_capture_scaling_factor)
 
             overnight_avg_cap_cost = (
-                    ferment_overnght_avg_cap_cost + boiler_overnight_avg_cap_cost)  # overnight capital cost USD
-            annualized_avg_cap_cost = self.crf * overnight_avg_cap_cost  # annualized capital cost USD/yr
+                    ferment_overnght_avg_cap_cost + boiler_overnight_avg_cap_cost)  
+            annualized_avg_cap_cost = self.crf * overnight_avg_cap_cost  
             fom_avg_cost = boiler_overnight_avg_cap_cost * (boiler_fom_capex / 100) \
-                           + ferment_overnght_avg_cap_cost * (ferment_fom_capex / 100)  # fixed O&M cost
-
-            ## Variable O&M cost
+                           + ferment_overnght_avg_cap_cost * (ferment_fom_capex / 100)  
             power_cost = pd.read_csv(PATH + "electricity_industrial.csv")
             ferment_electricity_cost = float(
                 power_cost[power_cost['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
                                        ferment_elec_consumption * 1000 * (
-                                               ferment_ref_co2_captured * flow_scaling_factor * ferment_capture_scaling_factor)  # compression electricity cost
+                                               ferment_ref_co2_captured * flow_scaling_factor * ferment_capture_scaling_factor)  
 
             boiler_electricity_cost = float(power_cost[power_cost['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
                                       boiler_elec_consumption * 1000 * (
-                                              boiler_ref_co2_captured_avg88 * flow_scaling_factor * boiler_capture_scaling_factor)  # compression electricity cost
+                                              boiler_ref_co2_captured_avg88 * flow_scaling_factor * boiler_capture_scaling_factor)  
 
             fuel_costs = pd.read_csv(PATH + "natgas_industrial.csv")
             nat_gas_cost = float(fuel_costs[fuel_costs['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
                            boiler_fuel_consumption * 1000 * (
-                                   boiler_ref_co2_captured_avg88 * flow_scaling_factor * boiler_capture_scaling_factor)  # fuel cost
+                                   boiler_ref_co2_captured_avg88 * flow_scaling_factor * boiler_capture_scaling_factor)  
 
             capture_vom_cost = ferment_electricity_cost + boiler_electricity_cost + nat_gas_cost
 
             capture_avg_cost = annualized_avg_cap_cost + fom_avg_cost + capture_vom_cost
-
-            # Transportation & Storage Cost
-            transp_cost = ref_transport_cost * self.distance * cap_plant_emissions  # in USD/year
-            storage_cost = ref_storage_cost * cap_plant_emissions  # in USD/year
+            transp_cost = ref_transport_cost * self.distance * cap_plant_emissions  
+            storage_cost = ref_storage_cost * cap_plant_emissions  
 
             capture_avg_taxes = 0.21 * (capture_avg_cost + transp_cost + storage_cost)
 
@@ -277,20 +252,19 @@ class BECCSTea:
 
 
         elif self.amine_regen_ccs == 'Yes' and self.biorefinery_model == 'AECOM':
-            # Fermenter
             ref_plant = pd.read_csv(PATH + "reference.csv")
             filtered = ref_plant[ref_plant['plant type'] == "Ethanol Production"]
             ref_plant_size = float(filtered[filtered['technology'] == self.ferment_cap_tech].iloc[
-                                       0].refsize)  # MMgal/yr  #units depend on plant type
+                                       0].refsize)  # MMgal/yr  
 
             ferment_ref_co2_captured = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].co2captured)  # tco2/year
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].co2captured)  
             ferment_ref_avg_capital_cost = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].avgcapex) * 1e6  # in $USD
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].avgcapex) * 1e6  
             ferment_fom_capex = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].fom_capex)  # in %
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].fom_capex)  
             ferment_elec_consumption = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].electricity)  # MJ elec/kgCo2
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].electricity)  
 
             flow_scaling_factor = self.ethanol_production_rate / float(ref_plant_size)
             capex_scaling_factor = float(flow_scaling_factor ** 0.6)
@@ -298,34 +272,30 @@ class BECCSTea:
             ferment_overnght_avg_cap_cost = float(
                 ferment_ref_avg_capital_cost * capex_scaling_factor * ferment_capture_scaling_factor)
 
-            # Boiler
-
             filtered_2 = ref_plant[ref_plant['plant type'] == "Natural Gas Power Plants"]
             nat_gas_ref_avg_capital_cost = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].avgcapex) * 1e6  # $USD
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].avgcapex) * 1e6  
             nat_gas_ref_co2_captured = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].co2captured)  # tco2/year
-            usd_tco2_ratio = nat_gas_ref_avg_capital_cost / nat_gas_ref_co2_captured  # USD/tco2
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].co2captured)  
+            usd_tco2_ratio = nat_gas_ref_avg_capital_cost / nat_gas_ref_co2_captured  
 
             boiler_fom_capex = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].fom_capex)  # in %
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].fom_capex)  
             boiler_elec_consumption = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].electricity)  # MJ elec/kg Co2
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].electricity)  
             boiler_fuel_consumption = float(
                 filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[
-                    0].fuel) * self.fuel_adj_factor  # MJ NG/kg Co2
+                    0].fuel) * self.fuel_adj_factor  
 
-            boiler_ferment_ratio_aecom = 0.9689  # Emission ratio for bio-refinery model: AECOM model
+            boiler_ferment_ratio_aecom = 0.9689  
             boiler_ref_co2_captured_aecom = (
-                                                    ferment_ref_co2_captured / 0.85) * boiler_ferment_ratio_aecom * 0.85  # tco2/year
+                                                    ferment_ref_co2_captured / 0.85) * boiler_ferment_ratio_aecom * 0.85  
             boiler_capture_scaling_factor = float(self.boiler_co2_cap_percent) / 85
 
-            boiler_ref_avg_capital_cost = usd_tco2_ratio * boiler_ref_co2_captured_aecom  # USD
+            boiler_ref_avg_capital_cost = usd_tco2_ratio * boiler_ref_co2_captured_aecom  
 
             boiler_overnight_avg_cap_cost = float(
                 boiler_ref_avg_capital_cost * capex_scaling_factor * boiler_capture_scaling_factor)
-
-            # Amine Regen
 
             amine_regen_emissions = boiler_fuel_consumption * boiler_ref_co2_captured_aecom * ng_co2_kg_MJ
             amine_ref_co2_captured = amine_regen_emissions * (self.amine_co2_cap_percent / 100)
@@ -336,36 +306,32 @@ class BECCSTea:
                                           boiler_ref_co2_captured_aecom * flow_scaling_factor * boiler_capture_scaling_factor) \
                                   + (amine_ref_co2_captured * flow_scaling_factor * amine_capture_scaling_factor)
 
-            overnight_avg_cap_cost = ferment_overnght_avg_cap_cost + boiler_overnight_avg_cap_cost  # overnight capital cost USD
-            annualized_avg_cap_cost = self.crf * overnight_avg_cap_cost  # annualized capital cost USD/yr
+            overnight_avg_cap_cost = ferment_overnght_avg_cap_cost + boiler_overnight_avg_cap_cost  
+            annualized_avg_cap_cost = self.crf * overnight_avg_cap_cost  
             fom_avg_cost = boiler_overnight_avg_cap_cost * (boiler_fom_capex / 100) \
-                           + ferment_overnght_avg_cap_cost * (ferment_fom_capex / 100)  # fixed O&M USD/yr
-
-            ## Variable O&M cost
+                           + ferment_overnght_avg_cap_cost * (ferment_fom_capex / 100)  
             power_cost = pd.read_csv(PATH + "electricity_industrial.csv")
             ferment_electricity_cost = float(
                 power_cost[power_cost['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
                                        ferment_elec_consumption * 1000 * (
-                                               ferment_ref_co2_captured * flow_scaling_factor * ferment_capture_scaling_factor)  # compression electricity cost
+                                               ferment_ref_co2_captured * flow_scaling_factor * ferment_capture_scaling_factor)  
 
             boiler_total_ref_captured = (
                                                     boiler_ref_co2_captured_aecom * flow_scaling_factor * boiler_capture_scaling_factor) \
                                         + (amine_ref_co2_captured * flow_scaling_factor * amine_capture_scaling_factor)
 
             boiler_electricity_cost = float(power_cost[power_cost['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
-                                      boiler_elec_consumption * 1000 * boiler_total_ref_captured  # compression electricity cost
+                                      boiler_elec_consumption * 1000 * boiler_total_ref_captured  
 
             fuel_costs = pd.read_csv(PATH + "natgas_industrial.csv")
             nat_gas_cost = float(fuel_costs[fuel_costs['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
-                           boiler_fuel_consumption * 1000 * boiler_total_ref_captured  # fuel cost
+                           boiler_fuel_consumption * 1000 * boiler_total_ref_captured  
 
-            capture_vom_cost = ferment_electricity_cost + boiler_electricity_cost + nat_gas_cost  # USD/yr
+            capture_vom_cost = ferment_electricity_cost + boiler_electricity_cost + nat_gas_cost  
 
             capture_avg_cost = annualized_avg_cap_cost + fom_avg_cost + capture_vom_cost
-
-            # Transportation & Storage Cost
-            transp_cost = ref_transport_cost * self.distance * cap_plant_emissions  # in USD/year
-            storage_cost = ref_storage_cost * cap_plant_emissions  # in USD/year
+            transp_cost = ref_transport_cost * self.distance * cap_plant_emissions  
+            storage_cost = ref_storage_cost * cap_plant_emissions  
             capture_avg_taxes = 0.21 * (
                     capture_avg_cost + transp_cost + storage_cost)
 
@@ -373,21 +339,19 @@ class BECCSTea:
 
 
         elif self.amine_regen_ccs == 'Yes' and self.biorefinery_model == 'Avg 88':
-
-            # Fermenter
             ref_plant = pd.read_csv(PATH + "reference.csv")
             filtered = ref_plant[ref_plant['plant type'] == "Ethanol Production"]
             ref_plant_size = float(filtered[filtered['technology'] == self.ferment_cap_tech].iloc[
-                                       0].refsize)  # MMgal/yr  #units depend on plant type
+                                       0].refsize)  # MMgal/yr  
 
             ferment_ref_co2_captured = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].co2captured)  # tco2/year
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].co2captured)  
             ferment_ref_avg_capital_cost = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].avgcapex) * 1e6  # in $USD
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].avgcapex) * 1e6  
             ferment_fom_capex = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].fom_capex)  # in %
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].fom_capex)  
             ferment_elec_consumption = float(
-                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].electricity)  # MJ elec/kgCo2
+                filtered[filtered['technology'] == self.ferment_cap_tech].iloc[0].electricity)  
 
             flow_scaling_factor = self.ethanol_production_rate / float(ref_plant_size)
             capex_scaling_factor = float(flow_scaling_factor ** 0.6)
@@ -395,29 +359,27 @@ class BECCSTea:
             ferment_overnght_avg_cap_cost = float(
                 ferment_ref_avg_capital_cost * capex_scaling_factor * ferment_capture_scaling_factor)
 
-            # Boiler
-
             filtered_2 = ref_plant[ref_plant['plant type'] == "Natural Gas Power Plants"]
             nat_gas_ref_avg_capital_cost = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].avgcapex) * 1e6  # $USD
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].avgcapex) * 1e6  
             nat_gas_ref_co2_captured = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].co2captured)  # tco2/year
-            usd_tco2_ratio = nat_gas_ref_avg_capital_cost / nat_gas_ref_co2_captured  # USD/tco2
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].co2captured)  
+            usd_tco2_ratio = nat_gas_ref_avg_capital_cost / nat_gas_ref_co2_captured  
 
             boiler_fom_capex = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].fom_capex)  # in %
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].fom_capex)  
             boiler_fuel_consumption = float(
                 filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[
-                    0].fuel) * self.fuel_adj_factor  # MJ NG/kg Co2
+                    0].fuel) * self.fuel_adj_factor  
             boiler_elec_consumption = float(
-                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].electricity)  # MJ elec/kg Co2
+                filtered_2[filtered_2['technology'] == self.boiler_cap_tech].iloc[0].electricity)  
 
-            boiler_ferment_ratio_avg88 = 0.71156  # Emission ratio for bio-refinery model: avg88 model
+            boiler_ferment_ratio_avg88 = 0.71156  
             boiler_ref_co2_captured_avg88 = (
-                                                    ferment_ref_co2_captured / 0.85) * boiler_ferment_ratio_avg88 * 0.85  # tco2/year
+                                                    ferment_ref_co2_captured / 0.85) * boiler_ferment_ratio_avg88 * 0.85  
             boiler_capture_scaling_factor = float(self.boiler_co2_cap_percent) / 85
 
-            boiler_ref_avg_capital_cost = usd_tco2_ratio * boiler_ref_co2_captured_avg88  # $USD
+            boiler_ref_avg_capital_cost = usd_tco2_ratio * boiler_ref_co2_captured_avg88  
 
             boiler_overnight_avg_cap_cost = float(
                 boiler_ref_avg_capital_cost * capex_scaling_factor * ferment_capture_scaling_factor)
@@ -430,35 +392,31 @@ class BECCSTea:
                                           boiler_ref_co2_captured_avg88 * flow_scaling_factor * boiler_capture_scaling_factor) \
                                   + (amine_ref_co2_captured * flow_scaling_factor * amine_capture_scaling_factor)
 
-            overnight_avg_cap_cost = ferment_overnght_avg_cap_cost + boiler_overnight_avg_cap_cost  # overnight capital cost USD
-            annualized_avg_cap_cost = self.crf * overnight_avg_cap_cost  # annualized capital cost USD/yr
+            overnight_avg_cap_cost = ferment_overnght_avg_cap_cost + boiler_overnight_avg_cap_cost  
+            annualized_avg_cap_cost = self.crf * overnight_avg_cap_cost  
             fom_avg_cost = boiler_overnight_avg_cap_cost * (boiler_fom_capex / 100) \
                            + ferment_overnght_avg_cap_cost * (ferment_fom_capex / 100)
-
-            ## Variable O&M cost
             power_cost = pd.read_csv(PATH + "electricity_industrial.csv")
             ferment_electricity_cost = float(
                 power_cost[power_cost['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
                                        ferment_elec_consumption * 1000 * (
-                                               ferment_ref_co2_captured * flow_scaling_factor * ferment_capture_scaling_factor)  # compression electricity cost
+                                               ferment_ref_co2_captured * flow_scaling_factor * ferment_capture_scaling_factor)  
 
             boiler_total_ref_captured = (boiler_ref_co2_captured_avg88 * flow_scaling_factor * boiler_capture_scaling_factor) \
                                         + (amine_ref_co2_captured * flow_scaling_factor * amine_capture_scaling_factor)
 
             boiler_electricity_cost = float(power_cost[power_cost['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
-                                      boiler_elec_consumption * 1000 * boiler_total_ref_captured  # compression electricity cost
+                                      boiler_elec_consumption * 1000 * boiler_total_ref_captured  
 
             fuel_costs = pd.read_csv(PATH + "natgas_industrial.csv")
             nat_gas_cost = float(fuel_costs[fuel_costs['State'] == 'US average'].iloc[0].value) * btu_in_mj * \
-                           boiler_fuel_consumption * 1000 * boiler_total_ref_captured  # fuel cost
+                           boiler_fuel_consumption * 1000 * boiler_total_ref_captured  
 
-            capture_vom_cost = ferment_electricity_cost + boiler_electricity_cost + nat_gas_cost  # USD/yr
+            capture_vom_cost = ferment_electricity_cost + boiler_electricity_cost + nat_gas_cost  
 
             capture_avg_cost = annualized_avg_cap_cost + fom_avg_cost + capture_vom_cost
-
-            # Transportation & Storage Cost
-            transp_cost = ref_transport_cost * self.distance * cap_plant_emissions  # in USD/year
-            storage_cost = ref_storage_cost * cap_plant_emissions  # in USD/year
+            transp_cost = ref_transport_cost * self.distance * cap_plant_emissions  
+            storage_cost = ref_storage_cost * cap_plant_emissions  
 
             capture_avg_taxes = 0.21 * (capture_avg_cost + transp_cost + storage_cost)
 
@@ -476,8 +434,5 @@ class BECCSTea:
             "Transport Cost in USD/tCO2": transp_cost / cap_total_emissions,
             "Storage Cost in USD/tCO2": storage_cost / cap_total_emissions
         }
-
-        # print('annulaized cost', annualized_avg_cap_cost)
-        # rint('overnight cost', overnight_avg_cap_cost)
 
         return ccs_cost_breakdown, annualized_avg_cap_cost, fom_avg_cost, capture_vom_cost, capture_avg_taxes, transp_cost, storage_cost

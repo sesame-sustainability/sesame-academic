@@ -20,8 +20,6 @@ class SolarTEA(TeaBase):
     @classmethod
     def user_inputs(cls, tea_only=False):
         tea_only_inputs = [
-            # these inputs below are not defined in the LCA
-            # solar pathway
             ContinuousInput(
                 'interest_rate', 'Interest Rate, Nominal',
                 unit='%/year',
@@ -54,7 +52,7 @@ class SolarTEA(TeaBase):
                 tooltip=Tooltip(
                     '47 $/MWh is the US average transmission AND distribution cost, including 14 transmission, and 33 distribution (mainly to residential and commercial consumers). If the power is intended for industrial use, then 14 is recommended.',
                     source='EIA',
-                    source_link='https://www.eia.gov/outlooks/aeo/data/browser/#/?id=8-AEO2021&region=0-0&cases=ref2021&star; https://www.eia.gov/energyexplained/electricity/prices-and-factors-affecting-prices.php',
+                    source_link='https://www.eia.gov/outlooks/aeo/data/browser/
                 ),
             ),
             ContinuousInput(
@@ -64,7 +62,7 @@ class SolarTEA(TeaBase):
                 validators=[validators.numeric(), validators.gt(0), validators.lt(100)],
                 tooltip=Tooltip(
                     "The default value represents sales tax, which varies by states and specific use cases. 6.35% represents US averegae sales tax. For electricity-specific tax, 7% was found for North Carolina, and 6.25% for Texas non-residential use: https://comptroller.texas.gov/taxes/publications/96-1309.pdf.",
-                    source_link='https://www.ncdor.gov/taxes-forms/sales-and-use-tax/electricity#:~:text=Gross%20receipts%20derived%20from%20sales,Sales%20and%20Use%20Tax%20Return.',
+                    source_link='https://www.ncdor.gov/taxes-forms/sales-and-use-tax/electricity
                 ),
             ),
         ]
@@ -73,8 +71,6 @@ class SolarTEA(TeaBase):
             return tea_only_inputs
 
         return [
-                   # TODO: these are duplicated from the LCA solar process
-                   # find a way to reuse those
                    CategoricalInput(
                        'location', 'Location',
                        defaults=[Default('location with approximate average irradiance of US PV sites (2019)')],
@@ -238,10 +234,7 @@ class SolarTEA(TeaBase):
             self.install_type = 'util_fixed'
         else:
             self.install_type = 'res'
-
-        #finding CF
-        tec=0.4223 # Typical tracker energy consumption per panel area in kWh/m²/yr
-        # (Source: (5) Sinha, Eco-Efficiency of CdTe Photovoltaics with Tracking Systems, 2013, IEEE)
+        tec=0.4223 
 
         if 'Si' in self.cell_type:
             pat = ' Si'
@@ -270,41 +263,24 @@ class SolarTEA(TeaBase):
 
         CF_DC = CF_DC / 100
         CF_AC = CF_DC * float(self.ilr)
-
-        #print('CF DC')
-        #print(CF_DC)
-        #print('CF AC')
-        #print(CF_AC)
         if self.install_type == 'res':
             CF = CF_DC
         elif self.install_type == 'util_fixed' or self.install_type == 'util_track':
             CF = CF_AC
-
-        #finding column index
         column_name = 'PV_' + self.install_type + '_' + self.cell_type + '_2021'
-
-        #setting VOM:
         VOM_non_fuel = float(DATA['ATB'].loc['VOM_non_fuel', column_name])
         VOM_fuel = float(DATA['ATB'].loc['VOM_fuel', column_name])
         LCOE_VOM = VOM_non_fuel + VOM_fuel
-
-        #setting FOM
         FOM = float(DATA['ATB'].loc['FOM', column_name])
         LCOE_FOM = FOM / (float(CF) * 8760)
-
-        #setting capex
         OCC = float(DATA['ATB'].loc['OCC', column_name])
 
         CapRegMult = float(DATA['ATB'].loc['CapRegMult', 'all'])
         L = self.lifetime
-
-        #setting capex grid
         GF = float(DATA['ATB'].loc['GF', column_name])
         OnSpurCost = float(DATA['ATB'].loc['OnSpurCost', column_name])
         OffSpurCost = float(DATA['ATB'].loc['OffSpurCost', column_name])
         GCC = GF + OnSpurCost + OffSpurCost
-
-        #setting general finance
         i = float(DATA['ATB'].loc['i', 'all'])
         IR_nom = self.interest_rate/100
         IR = (IR_nom - i) / (1 + i)
@@ -314,8 +290,6 @@ class SolarTEA(TeaBase):
         RROE = (RROE_nom - i) / (1 + i)
         WACC = ((1+((1-DF)*((1+RROE)*(1+i)-1)) + (DF*((1+IR)*(1+i)-1)*(1-TR))) / (1+i)) - 1
         CRF = WACC / (1 - (1 / (1 + WACC)**L))
-
-        #setting project finance
         M = float(DATA['ATB'].loc['M', column_name])
         FD_y1 = float(DATA['ATB'].loc['FD_y.1', column_name])
         FD_y2 = float(DATA['ATB'].loc['FD_y.2', column_name])
@@ -335,8 +309,6 @@ class SolarTEA(TeaBase):
         ProFinFactor = (1 - TR * PVD) / (1 - TR)
 
         FRC = CRF * ProFinFactor
-
-        #setting capex - construction finance
         C = float(DATA['ATB'].loc['C', column_name])
         FC = float(DATA['ATB'].loc['FC', column_name])
         LDC = float(DATA['ATB'].loc['LDC', 'all'])
@@ -350,22 +322,13 @@ class SolarTEA(TeaBase):
         CEC = EPC + RROE_nom
         AEC = 1 + ((1 + CEC) ** (0 + 0.5) - 1)
         ConFinFactor = (FC * AI * LDC) + (FC * AEC * EDC)
-
-        #finding capex
         CAPEX = (OCC * CapRegMult + GCC) * ConFinFactor
-
-        #finding outputs
-        LCOE_capex = FRC * CAPEX / (CF * 8760) #$/KWh
-        LCOE = LCOE_capex + LCOE_FOM + LCOE_VOM #$/KWh
-        #print(LCOE)
-
-        #adjustemnts for size
+        LCOE_capex = FRC * CAPEX / (CF * 8760) 
+        LCOE = LCOE_capex + LCOE_FOM + LCOE_VOM 
         if self.install_type != 'res':
             LCOE_capex = LCOE_capex * (-0.1 * math.log(self.size / 100) + 1)
             LCOE_FOM = LCOE_FOM * (-0.1 * math.log(self.size / 100) + 1)
             LCOE_VOM = LCOE_VOM * (-0.1 * math.log(self.size / 100) + 1)
-
-        #final adjustments for efficiency
         efficiency_ref = 0.20
         LCOE_capex = LCOE_capex * efficiency_ref / self.efficiency
         LCOE_FOM = LCOE_FOM * efficiency_ref / self.efficiency
@@ -373,13 +336,12 @@ class SolarTEA(TeaBase):
 
         tax = float(self.tax_rate/100 * 1000*(LCOE_capex + LCOE_FOM +LCOE_VOM + self.user_trans_dist_cost/1000))
 
-        cost_breakdown = {"Capital": 1/(1 - self.transm_loss / 100) * float(LCOE_capex) * 1000, #$/MWh
-                          "Fixed": 1/(1 - self.transm_loss / 100) * float(LCOE_FOM) * 1000, #$/MWh
+        cost_breakdown = {"Capital": 1/(1 - self.transm_loss / 100) * float(LCOE_capex) * 1000, 
+                          "Fixed": 1/(1 - self.transm_loss / 100) * float(LCOE_FOM) * 1000, 
                           "Fuel": 0,
-                          # "Non-fuel variable": 1/(1 - self.transm_loss / 100) * (float(float(LCOE_VOM) * 1000 + self.user_trans_dist_cost)), #$/MWh
-                          "Non-fuel variable": 1/(1 - self.transm_loss / 100) * float(float(LCOE_VOM) * 1000), #$/MWh
-                          "Delivery": 1/(1 - self.transm_loss / 100) * self.user_trans_dist_cost, #$/MWh
-                          "Tax": 1/(1 - self.transm_loss / 100) * float(tax) #$/MWh
+                          "Non-fuel variable": 1/(1 - self.transm_loss / 100) * float(float(LCOE_VOM) * 1000), 
+                          "Delivery": 1/(1 - self.transm_loss / 100) * self.user_trans_dist_cost, 
+                          "Tax": 1/(1 - self.transm_loss / 100) * float(tax) 
                           }
         return cost_breakdown
 

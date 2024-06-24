@@ -18,7 +18,6 @@ class HydrogenProduction(ActivitySource):
 
     @classmethod
     def base_inputs(cls, co_produce_steam_default='Yes'):
-        # applicable to all tech
         return [
             CategoricalInput(
                 'plant_type', 'Plant Type',
@@ -38,16 +37,6 @@ class HydrogenProduction(ActivitySource):
             ),
         ]
 
-    # @classmethod
-    # def sensitivity(cls):
-    #     return [
-    #         SensitivityInput(
-    #             '',
-    #             minimizing=,
-    #             maximizing=,
-    #         ),
-    #     ]
-
     def prepare(self, input_set):
         self.use_CCS = 'No'
         super().prepare(input_set)
@@ -57,22 +46,17 @@ class HydrogenProduction(ActivitySource):
             self.filtered_data_frame(),
             flow_output=self.output
         )
-        # start
         if input_flow == 'natural gas':
             flow_dict['natural gas']['value'] += flow_dict['natural gas: process fuel']['value']
 
         if self.use_CCS == 'Yes':
             self.get_emissions(CCS_input = False)
-
-            # lcidata values
             CCS_inputs = pd.read_csv(PATH + "hydrogen_ccs_lcidata.csv")
             filtered = CCS_inputs[CCS_inputs['technology'] == self.ccs.technology]
             nat_gas_ccs = float(filtered[filtered['flows'] == "natural gas"].iloc[0].value)
             electricity_ccs = float(filtered[filtered['flows'] == "electricity"].iloc[0].value)
 
             mj_in_kwh = 3.6
-
-            # if SMR + CCS, we need to send excess natural gas used to run CCS plant as information to the upstream stage
 
             flow_dict['natural gas']['value'] += self.ccs.CO2_captured * nat_gas_ccs
             flow_dict['electricity']['value'] += self.ccs.CO2_captured * electricity_ccs
@@ -88,8 +72,6 @@ class HydrogenProduction(ActivitySource):
             emissions = compute_emission_flows(
                 df,
                 flow_output=self.output)
-
-        ## Calculating CO2 emissions captured by assuming CCS is initially not turned on
         else:
             emissions = compute_emission_flows(
                 self.filtered_data_frame(),
@@ -144,9 +126,6 @@ class HydrogenProductionElec(HydrogenProduction):
         tea_inputs = HydrogenTEA.user_inputs(tea_lca=True, prod_type='Electrolysis')
 
         for input in tea_inputs:
-            # if input.name == 'Gas_Cost':
-            #     input.conditionals.pop(0)
-            #     input.conditionals.pop(0)
             input.conditionals.append(conditionals.context_equal_to('compute_cost', True))
 
 
@@ -159,7 +138,6 @@ class HydrogenProductionElec(HydrogenProduction):
                     'The carbon intensity reflects the amount of CO\u2082 released per unit of electricity produced. It widely differs with the electricity production type - renewables have a very low carbon intensity, contrary to coal. Choose Custom to input your value',
                 ),
             ),
-            # User Input: prompts the user to input a custom electricity carbon intensity value [gCO2/kWh]
             ContinuousInput(
                 'custom_power_source_ci', 'Input a Custom Power Source Carbon Intensity',
                 unit='gCO\u2082/kWh',
@@ -179,10 +157,7 @@ class HydrogenProductionElec(HydrogenProduction):
         emissions = super().get_emissions()
 
         if self.use_CCS != 'Yes':
-            # Reflect the carbon intensity of the input electricity that powers the electrolyzers
             if self.power_source != 'US Grid Average':
-                
-                # Addition of a custom value for the power source carbon intensity:
                     if self.power_source == 'Custom':
                         for activity in emissions:
                             for flow in emissions[activity]:
@@ -190,14 +165,10 @@ class HydrogenProductionElec(HydrogenProduction):
                                 
                                 
                     else:    
-                        # Current grid average = 480 g CO2eq/kWh. To obtain results in time for beta release, the carbon intensity of other sources is hard coded in this
-                        # dictionary as a proportion of the grid average (which is the value used for the emissions calculations)
                         power_source_carbon_intensity = {
                             'Renewable / Nuclear Electricity': 22/480,
                             'Coal'                           : 1097/480
                         }
-        
-                        # the emission values are multiplied by the corresponding power source carbon intensity
                         for activity in emissions:
                             for flow in emissions[activity]:
                                 emissions[activity][flow]['value'] *= power_source_carbon_intensity[self.power_source]

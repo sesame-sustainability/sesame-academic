@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Tue Aug  4 15:04:16 2020
 
@@ -7,16 +5,11 @@ Created on Tue Aug  4 15:04:16 2020
 These are the end-use case for system analysis
 """
 
-#IN UI, the user could choose state, start year and end year
 state='CA'
 start='2018'
 end='2019'
 
-#The query below is for extracting total hourly generation and emissions for start/stop, part load, near full load, and full load
-#The table provides the output for different fuel type and turbine types
 
-#start of query, the total query is divided into different parts for reducing time
-#SQL start
 --part 1: Extract the processed arp and egrid data for given years and states
 -- note year and states are hard coded but should be decided by the UI
 with arp_small as (
@@ -67,15 +60,11 @@ with arp_small as (
 	group by date_part('hour', "timestamp"), date_part('year', "timestamp"),
 	state, fuel_type, status, type
 	order by year,hour,type;
-#SQL end
 
-#Query 2 estimates the emissions intensity over two years for a given state for start/stop, part load, near full load, and full load
-#IN UI, the user could choose state, start year and end year
 state='CA'
 start='2018'
 end='2019'
 
-#SQL start
 --part 1: Extract the processed arp and egrid data for given years and states
 -- note year and states are hard coded but should be decided by the UI
 with arp_small as (
@@ -125,4 +114,3 @@ with arp_small as (
 	state, fuel_type, status, type
 	order by year,type;
 
-#SQL end

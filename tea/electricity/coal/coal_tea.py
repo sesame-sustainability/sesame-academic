@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 CAPITAL_FRACTION = [0.8, 0.1, 0.1]
 DEPRECIATION = [0.2, 0.32, 0.192, 0.1152, 0.1152, 0.0576]
 
@@ -17,10 +15,8 @@ from analysis.sensitivity import SensitivityInput
 
 PATH = os.getcwd() + "/tea/electricity/coal/"
 REGION_STATE = pd.read_csv(os.getcwd() + "/tea/electricity/regions_mapping.csv")
-#States_available = pd.read_csv(os.getcwd() + "/tea/electricity/coal/coal_heatrate_cf.csv")
 
 
-# inputs are read from the electricity database based on the parameters from JSON
 class CoalTEA(TeaBase):
     unit = '$/MWh'
 
@@ -67,7 +63,7 @@ class CoalTEA(TeaBase):
                 tooltip=Tooltip(
                     '47 $/MWh is the US average transmission AND distribution cost, including 14 transmission, and 33 distribution (mainly to residential and commercial consumers). If the power is intended for industrial use, then 14 is recommended.',
                     source='EIA',
-                    source_link='https://www.eia.gov/outlooks/aeo/data/browser/#/?id=8-AEO2021&region=0-0&cases=ref2021&star; https://www.eia.gov/energyexplained/electricity/prices-and-factors-affecting-prices.php',
+                    source_link='https://www.eia.gov/outlooks/aeo/data/browser/
                 ),
             ),
 
@@ -78,7 +74,7 @@ class CoalTEA(TeaBase):
                 validators=[validators.numeric(), validators.gt(0), validators.lt(100)],
                 tooltip=Tooltip(
                     "The default value represents sales tax, which varies by states and specific use cases. 6.35% represents US averegae sales tax. For electricity-specific tax, 7% was found for North Carolina, and 6.25% for Texas non-residential use: https://comptroller.texas.gov/taxes/publications/96-1309.pdf.",
-                    source_link='https://www.ncdor.gov/taxes-forms/sales-and-use-tax/electricity#:~:text=Gross%20receipts%20derived%20from%20sales,Sales%20and%20Use%20Tax%20Return.',
+                    source_link='https://www.ncdor.gov/taxes-forms/sales-and-use-tax/electricity
                 ),
             ),
 
@@ -95,8 +91,6 @@ class CoalTEA(TeaBase):
 
             ),
         ]
-
-        # splitting inputs so ordering makes more sense
         tea_lca_inputs2 = [
             OptionsInput(
                 'interest_rate_or_crf', 'Choose Interest Rate or Capital Recovery Factor',
@@ -213,7 +207,6 @@ class CoalTEA(TeaBase):
                 minimizing='MRO',
                 maximizing='NPCC',
             ),
-            # 300-1200 MW is ~ 20th-80th percentile in US in 2019. source: https://en.wikipedia.org/wiki/List_of_coal-fired_power_stations_in_the_United_States
             SensitivityInput(
                 'plant_size',
                 minimizing=1200,
@@ -265,10 +258,8 @@ class CoalTEA(TeaBase):
             process = self.lca_pathway.instance('process')
             self.gr = process.region
             if hasattr(process, 'generator_type'):
-                # ASPEN
                 self.gt = 'Boiler (~99% of US coal turbines)'
             else:
-                # GREET
                 self.gt = process.plant_type
 
             if process.use_CCS == 'Yes':
@@ -293,32 +284,24 @@ class CoalTEA(TeaBase):
                     value = getattr(process, input.name)
                     print(value,"yes")
                     setattr(self, input.name, value)
-
-            #extra inputs
             self.coal_rank = self.lca_pathway.instance('upstream').coal_type
-
-
-            # Note: LCA + TEA doesn't require any additional consistency statements to be included for efficiency,
-            # heatrate, emissions etc because the data table used are the same.
-            # Note: TEA assumes 'Mix' as the Coal Type (as can be seen from the co2emissions column of the table)
 
         else:
             setattr(self,'coal_rank','Mix')
 
     def get_fuel_cost(self):
-        return self.user_coalprice # USD/MMBtu
+        return self.user_coalprice 
 
     def get_generator_type(self):
         return self.gt
 
     def filtered_data(self):
-        # state = us.states.lookup(self.state)
         return self.heatrate_cf[(self.heatrate_cf["Generator Type"] == self.get_generator_type()) &
                                 (self.heatrate_cf["Region"] == self.gr)]
 
     def get_capacity_factor(self):
         filtered = self.filtered_data()
-        return float(statistics.mean(filtered['cf 2018'])) # dless
+        return float(statistics.mean(filtered['cf 2018'])) 
 
     def get_electricity_ci(self):
         if self.lca_pathway is None:
@@ -335,56 +318,54 @@ class CoalTEA(TeaBase):
             filtered = self.filtered_data()
             heat_rate = float((filtered['heat rate (mmBtu/MWh)']))
 
-        return heat_rate  # MMBtu/MWh
-
-        # For mix options
+        return heat_rate  
 
     def get_boiler_weight(self):
         filtered = self.filtered_data()
-        return float((filtered['Boiler in mix']))  # dless
+        return float((filtered['Boiler in mix']))  
 
     def get_igcc_weight(self):
         filtered = self.filtered_data()
-        return float((filtered['IGCC in mix']))  # dless
+        return float((filtered['IGCC in mix']))  
 
     def get_other_costs(self):
         turb = self.get_generator_type()
         if "Mix" in turb:
             filtered1 = self.other_costs[(self.other_costs["Turbine"] == "Boiler (~99% of US coal turbines)")]
-            turbine_capital1 = float(statistics.mean(filtered1[filtered1['Cost Type'] == "OCC"].value))  # USD/kW
-            ref_plant_size1 = float(statistics.mean(filtered1[filtered1['Cost Type'] == "OCC"].refsize))  # MW
+            turbine_capital1 = float(statistics.mean(filtered1[filtered1['Cost Type'] == "OCC"].value))  
+            ref_plant_size1 = float(statistics.mean(filtered1[filtered1['Cost Type'] == "OCC"].refsize))  
             adj_turbine_capital1 = ref_plant_size1/self.plant_size * turbine_capital1 * (
-                    self.plant_size / ref_plant_size1) ** self.economies_of_scale_factor  # USD/kW
-            turbine_vom1 = float(statistics.mean(filtered1[filtered1['Cost Type'] == "VOM"].value))  # USD/MWh
-            turbine_fom1 = float(statistics.mean(filtered1[filtered1['Cost Type'] == "FOM"].value))  # USD/KW-year
+                    self.plant_size / ref_plant_size1) ** self.economies_of_scale_factor  
+            turbine_vom1 = float(statistics.mean(filtered1[filtered1['Cost Type'] == "VOM"].value))  
+            turbine_fom1 = float(statistics.mean(filtered1[filtered1['Cost Type'] == "FOM"].value))  
 
             filtered2 = self.other_costs[(self.other_costs["Turbine"] == "IGCC - Integrated Gasification Combined Cycle")]
-            turbine_capital2 = float(statistics.mean(filtered2[filtered2['Cost Type'] == "OCC"].value))  # USD/kW
-            ref_plant_size2 = float(statistics.mean(filtered2[filtered2['Cost Type'] == "OCC"].refsize))  # MW
+            turbine_capital2 = float(statistics.mean(filtered2[filtered2['Cost Type'] == "OCC"].value))  
+            ref_plant_size2 = float(statistics.mean(filtered2[filtered2['Cost Type'] == "OCC"].refsize))  
             adj_turbine_capital2 = ref_plant_size2/self.plant_size *turbine_capital2 * (
-                    self.plant_size / ref_plant_size2) ** self.economies_of_scale_factor  # USD/kW
-            turbine_vom2 = float(statistics.mean(filtered2[filtered2['Cost Type'] == "VOM"].value))  # USD/MWh
-            turbine_fom2 = float(statistics.mean(filtered2[filtered2['Cost Type'] == "FOM"].value))  # USD/KW-year
+                    self.plant_size / ref_plant_size2) ** self.economies_of_scale_factor  
+            turbine_vom2 = float(statistics.mean(filtered2[filtered2['Cost Type'] == "VOM"].value))  
+            turbine_fom2 = float(statistics.mean(filtered2[filtered2['Cost Type'] == "FOM"].value))  
 
 
             adj_turbine_capital = (
                                               self.get_boiler_weight() * adj_turbine_capital1 + self.get_igcc_weight() * adj_turbine_capital2) / (
-                                              self.get_boiler_weight() + self.get_igcc_weight())  # USD/kW
+                                              self.get_boiler_weight() + self.get_igcc_weight())  
 
             turbine_vom = (self.get_boiler_weight() * turbine_vom1 + self.get_igcc_weight() * turbine_vom2) / (
-                                      self.get_boiler_weight() + self.get_igcc_weight() )  # USD/MWh
+                                      self.get_boiler_weight() + self.get_igcc_weight() )  
 
             turbine_fom = (self.get_boiler_weight() * turbine_fom1 + self.get_igcc_weight() * turbine_fom2 ) / (
-                                      self.get_boiler_weight() + self.get_igcc_weight() )  # USD/KW-year
+                                      self.get_boiler_weight() + self.get_igcc_weight() )  
 
         else:
             filtered = self.other_costs[(self.other_costs["Turbine"] == self.get_generator_type())]
-            turbine_capital = float(statistics.mean(filtered[filtered['Cost Type'] == "OCC"].value)) # USD/kW
-            ref_plant_size = float(statistics.mean(filtered[filtered['Cost Type'] == "OCC"].refsize))  # MW
+            turbine_capital = float(statistics.mean(filtered[filtered['Cost Type'] == "OCC"].value)) 
+            ref_plant_size = float(statistics.mean(filtered[filtered['Cost Type'] == "OCC"].refsize))  
             adj_turbine_capital = ref_plant_size/self.plant_size *turbine_capital * (
-                    self.plant_size / ref_plant_size) ** self.economies_of_scale_factor  # USD/kW
-            turbine_vom = float(statistics.mean(self.other_costs[self.other_costs['Cost Type'] == "VOM"].value)) #USD/MWh
-            turbine_fom = float(statistics.mean(self.other_costs[self.other_costs['Cost Type'] == "FOM"].value)) #USD/KW-year
+                    self.plant_size / ref_plant_size) ** self.economies_of_scale_factor  
+            turbine_vom = float(statistics.mean(self.other_costs[self.other_costs['Cost Type'] == "VOM"].value)) 
+            turbine_fom = float(statistics.mean(self.other_costs[self.other_costs['Cost Type'] == "FOM"].value)) 
 
         return adj_turbine_capital, turbine_fom, turbine_vom
 
@@ -410,35 +391,25 @@ class CoalTEA(TeaBase):
         if self.interest_rate_or_crf == 'Capital Recovery Factor':
             CRF = self.crf / 100
         else:
-#           CRF = self.interest_rate / 100 * (1 + self.interest_rate / 100) ** self.lifetime / (((1 + self.interest_rate / 100) ** self.lifetime) - 1)
             finance_values = self.get_finance_values()
             debt_fraction = finance_values['df']
             rate_return_equity = finance_values['rre']
             interest_rate = finance_values['i']
             inflation_rate = finance_values['ir']
-            tax_rate = finance_values['tr']  # Don't confuse this with 'sale_tax_rate' above. This is used for capital cost levelization/amortization
-
-            # Weighted Average Capital Cost
+            tax_rate = finance_values['tr']  
             WACC = ((1 + ((1 - debt_fraction) * ((1 + rate_return_equity) * (1 + inflation_rate) - 1)) + (
                     debt_fraction * ((1 + interest_rate) * (1 + inflation_rate) - 1) * (1 - tax_rate))) / (
                             1 + inflation_rate)) - 1
-
-            # Capital Recovery Factor (nominal)
             CRF_nom = WACC / (1 - (1 / (1 + WACC) ** self.lifetime))
-
-            # Depreciation - calculate the present value of PVD and multiply with dep factor
             PVD = 0
             for year, dep_rate in enumerate(DEPRECIATION):
                 PVD += (1 / ((1 + WACC) * (1 + interest_rate)) ** year) * dep_rate
-
-            # Project Financing Factor
             PFF = (1 - tax_rate * PVD) / (1 - tax_rate)
-            #Actual CRF used to anualize total capital cost
             CRF=PFF*CRF_nom
 
         if self.use_CCS == 'Yes':
 
-            comp_choice = 'Yes' # Assume emissions from compression are always captured in TEA
+            comp_choice = 'Yes' 
 
             if self.storage_cost_source == 'User defined':
                 user_storage_cost = self.user_storage_cost
@@ -452,9 +423,9 @@ class CoalTEA(TeaBase):
             else:
                 for key, i in self.CO2_captured_dict.items():
                     self.CO2_captured_dict[key] = self.CO2_captured_dict[
-                                                      key] * net_operation / 1000  # ton CO2/year
+                                                      key] * net_operation / 1000  
 
-            ccs = CcsTea( plant_type = "Coal Power Plants", plant_size = self.plant_size * self.get_capacity_factor(), #CcsTea Class considers Net Capacity
+            ccs = CcsTea( plant_type = "Coal Power Plants", plant_size = self.plant_size * self.get_capacity_factor(), 
                                  economies_of_scale_factor = self.economies_of_scale_factor,
                                   cap_percent_plant = self.cap_percent_plant,
                                  cap_percent_regen = self.cap_percent_regen,
@@ -467,15 +438,15 @@ class CoalTEA(TeaBase):
 
             avg_cost_breakdown, emissions, parasitic_load_ccs, overnight_avg_cost, ccs_heat_rate = ccs.get_capture_cost_breakdown()
 
-            capture_capital = overnight_avg_cost / (self.plant_size * 1000)  # USD/kW installed
+            capture_capital = overnight_avg_cost / (self.plant_size * 1000)  
 
-            capture_fom = avg_cost_breakdown['Capital & Fixed']['FOM'] / net_operation  # USD/kWh-year
+            capture_fom = avg_cost_breakdown['Capital & Fixed']['FOM'] / net_operation  
 
-            capture_vom = (avg_cost_breakdown['Operational']['VOM'] + avg_cost_breakdown['Operational']['Tax'])/ net_operation # USD/kWh
+            capture_vom = (avg_cost_breakdown['Operational']['VOM'] + avg_cost_breakdown['Operational']['Tax'])/ net_operation 
 
-            capture_transp = avg_cost_breakdown['Operational']['Transport'] / net_operation  # USD/kWh
+            capture_transp = avg_cost_breakdown['Operational']['Transport'] / net_operation  
 
-            capture_storage = avg_cost_breakdown['Operational']['Storage']/ net_operation # USD/kWh
+            capture_storage = avg_cost_breakdown['Operational']['Storage']/ net_operation 
 
 
 
@@ -495,15 +466,15 @@ class CoalTEA(TeaBase):
                       interest=0,
                       discount=0,
                       lifetime=0,
-                      fuel_cost = (1/(1 - self.transm_loss / 100) + parasitic_load_ccs) * self.get_fuel_cost(),  # USD/MMBtu #
-                      CAPEX = (1/(1 - self.transm_loss / 100) + parasitic_load_ccs) * (adj_turbine_capital + capture_capital), # USD/kW
-                      FOM = (1/(1 - self.transm_loss / 100) + parasitic_load_ccs) * (turbine_fom + capture_fom), # USD/kW-year
-                      VOM = 1000*(1/(1 - self.transm_loss / 100) + parasitic_load_ccs) * (turbine_vom / 1000 + capture_transp + capture_storage),  # USD/MWh
+                      fuel_cost = (1/(1 - self.transm_loss / 100) + parasitic_load_ccs) * self.get_fuel_cost(),  # USD/MMBtu 
+                      CAPEX = (1/(1 - self.transm_loss / 100) + parasitic_load_ccs) * (adj_turbine_capital + capture_capital), 
+                      FOM = (1/(1 - self.transm_loss / 100) + parasitic_load_ccs) * (turbine_fom + capture_fom), 
+                      VOM = 1000*(1/(1 - self.transm_loss / 100) + parasitic_load_ccs) * (turbine_vom / 1000 + capture_transp + capture_storage),  
                       CF = self.get_capacity_factor(),
-                      HR = self.get_heat_rate() + ccs_heat_rate, #MMBtu/MWh
-                      TD_cost=(1 / (1 - self.transm_loss / 100) + parasitic_load_ccs) * self.user_trans_dist_cost,  # USD/MWh
+                      HR = self.get_heat_rate() + ccs_heat_rate, 
+                      TD_cost=(1 / (1 - self.transm_loss / 100) + parasitic_load_ccs) * self.user_trans_dist_cost,  
                       CRF=CRF,
-                      sale_tax_rate=self.sale_tax_rate) #%
+                      sale_tax_rate=self.sale_tax_rate) 
 
 
         costs = model.get_cost_breakdown()

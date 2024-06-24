@@ -61,7 +61,6 @@ class CoalGreet(ActivitySource):
 
     def _get_df(self):
         df = self.filtered_data_frame()
-        # aggregates underground and surface emissions by underground mining share
         surface_underground = df[df["method"].isin(["Underground", "Surface"])]
         combined_df = df[~df["method"].isin(["Underground", "Surface"])]
 

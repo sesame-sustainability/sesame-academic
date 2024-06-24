@@ -8,10 +8,6 @@ class NGPowerGREET(ActivitySource):
     @classmethod
     def user_inputs(cls):
         return [
-            # OptionsInput('user_effeciency','Use user-specified effeciency?', options=['Yes','No']),
-            # ContinuousInput('efficiency', 'Power Generation Efficiency (%), between 28 and 55 recommended',
-            #                 validators=[validators.numeric(), validators.gte(0), validators.lte(100)],
-            #                 conditionals=[conditionals.input_equal_to('user_effeciency','Yes')]),
             CategoricalInput('generation_region', 'Generation Region', defaults=[Default('US')]),
             CategoricalInput('generator_type', 'Generator Type', defaults=[Default('Mix')]),
             CategoricalInput('infrastructure_emission_inclusion', 'Include Infrastructure Emissions?', defaults=[Default('Yes')])

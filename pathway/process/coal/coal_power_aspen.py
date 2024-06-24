@@ -30,7 +30,7 @@ class CoalPowerASPEN(ActivitySource):
             ContinuousInput(
                 'loading_ratio', 'Loading',
                 unit='%',
-                defaults=[Default(40)], #https://www.statista.com/statistics/183680/us-average-capacity-factors-by-selected-energy-source-since-1998/
+                defaults=[Default(40)], 
                 tooltip=Tooltip(
                     'Powerplant capacity factors averaged ~57% for combined cycle, ~12% for gas turbine, & ~40% for coal, in the US in 2020.',
                     source='EIA 2020', source_link='https://www.eia.gov/electricity/annual/html/epa_04_08_a.html'),
@@ -92,7 +92,6 @@ class CoalPowerASPEN(ActivitySource):
     @property
     def coal_type(self):
         if not hasattr(self, 'pathway'):
-            # during option selection
             return None
 
         return self.pathway.instance('upstream').coal_type

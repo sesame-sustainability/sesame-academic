@@ -1,10 +1,3 @@
-# generates and verifies fleet fixture data (inputs -> results)
-#
-# usage example:
-#   save a set of 100 fixtures:
-#     python -m analysis.system.fleet.fleet_fixtures save -n 100 --output-dir=tests/fixtures/fleet
-#   verify those fixtures against the current implementation:
-#     python -m analysis.system.fleet.fleet_fixtures verify --dir=tests/fixtures/fleet
 
 import json
 from tqdm import tqdm
@@ -18,7 +11,6 @@ class FleetJSONEncoder(JSONEncoder):
 
     def _value(self, value):
         if isinstance(value, float):
-            # 10 decimal places to prevent floating point discrepancies
             return format(value, '.10f')
         else:
             return super()._value(value)

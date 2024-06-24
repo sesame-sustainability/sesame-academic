@@ -27,16 +27,6 @@ cost_files = {
     'Compressed Air': 'compressed_air_costs.csv'
 }
 
-# Copied from default_value_dict_creator.xlsx
-# defaults_dict = {
-#   var: (
-#       deafult_value, 
-#       [
-#           ('conditional_fn','input_variable_name','input_variable_value'), 
-#           more_conditionals, ...
-#       ] 
-#   )
-# }
 LiB_defaults = {
     'duration_charge': (4,[('input_equal_to','storage_tech','Li-ion battery')]),
     'duration_discharge': (4,[('input_equal_to','storage_tech','Li-ion battery')]),
@@ -44,8 +34,6 @@ LiB_defaults = {
     'lifetime_ss': (15,[('input_equal_to','storage_tech','Li-ion battery')]),
     'finance_source_ss': ('ATB',[]),
     'user_defined': ('Literature',[]),
-    # 'cost_source_ss': ('MIT - 2020 estimate',[('input_equal_to','storage_tech','Li-ion battery')]),
-    # 'cost_scenario': ('Today',[('input_equal_to','storage_tech','Li-ion battery')]),
     'capex_power_charge': (0,[('input_equal_to','storage_tech','Li-ion battery')]),
     'capex_power_discharge': (298,[('input_equal_to','storage_tech','Li-ion battery')]),
     'capex_energy': (237,[('input_equal_to','storage_tech','Li-ion battery')]),
@@ -64,8 +52,6 @@ TES_defaults = {
     'lifetime_ss': (30,[('input_equal_to','storage_tech','Thermal')]),
     'finance_source_ss': ('ATB',[]),
     'user_defined': ('Literature',[]),
-    # 'cost_source_ss': ('MIT - 2050 estimate',[('input_equal_to','storage_tech','Thermal')]),
-    # 'cost_scenario': ('Moderate',[('input_equal_to','storage_tech','Thermal')]),
     'capex_power_charge': (3.34,[('input_equal_to','storage_tech','Thermal')]),
     'capex_power_discharge': (706,[('input_equal_to','storage_tech','Thermal')]),
     'capex_energy': (5.4,[('input_equal_to','storage_tech','Thermal')]),
@@ -84,8 +70,6 @@ CAES_defaults = {
     'lifetime_ss': (30,[('input_equal_to','storage_tech','Compressed Air')]),
     'finance_source_ss': ('ATB',[]),
     'user_defined': ('Literature',[]),
-    # 'cost_source_ss': ('MIT estimate',[('input_equal_to','storage_tech','Compressed Air')]),
-    # 'cost_scenario': (2020,[('input_equal_to','storage_tech','Compressed Air')]),
     'capex_power_charge': (452,[('input_equal_to','storage_tech','Compressed Air')]),
     'capex_power_discharge': (617,[('input_equal_to','storage_tech','Compressed Air')]),
     'capex_energy': (53.2,[('input_equal_to','storage_tech','Compressed Air')]),
@@ -99,8 +83,6 @@ CAES_defaults = {
 
 class StorageTEA(TeaBase):
     unit = '$/MWh'
-
-    # Is this correct use of @staticmethod ?
     @staticmethod
     def set_user_inputs_default(inputs,defaults_dict):
         """
@@ -118,8 +100,6 @@ class StorageTEA(TeaBase):
                         fn = conditional_tuple[0]
                         var_name = conditional_tuple[1]
                         var_value = conditional_tuple[2]
-                        # Some unicode issue
-                        # https://stackoverflow.com/questions/10993612/how-to-remove-xa0-from-string-in-python
                         var_value = var_value.replace(u'\xa0', u' ')
 
                         if fn == 'input_equal_to':
@@ -138,9 +118,6 @@ class StorageTEA(TeaBase):
                 defaults=[Default('Li-ion battery')], 
                 options=storage_tech_options
             ),
-            # Operational parameters
-            # TO-DO: create or modify the validator such that the capacity factor is between 0 and 1
-            # defaults=[Default(4,conditionals.input_equal_to('storage_tech', 'Li-ion battery'))]
             ContinuousInput('duration_charge','Charge Duration (hr)', 
                 validators=[validators.numeric(), validators.gt(0)]
             ),
@@ -153,14 +130,10 @@ class StorageTEA(TeaBase):
             ContinuousInput('lifetime_ss','Lifetime (yr)', 
                 validators=[validators.numeric(), validators.integer(), validators.gt(0)]
             ),
-
-            # Financial parameters
             OptionsInput('finance_source_ss', 'Select Data Source for Finance Costs', 
                 defaults=[Default('ATB')], 
                 options=['ATB', 'EIA', 'ReEDS']
             ),
-
-            # Cost data
             OptionsInput('user_defined', 'Use literature or custom values', 
                 defaults=[Default('Literature')], 
                 options=['Literature','Custom']
@@ -221,27 +194,19 @@ class StorageTEA(TeaBase):
 
 
         if with_lca:
-            # Not setup for LCA
             pass
         else:
             if power_storage:
                 return common_inputs_0 + literature_options
             else:
                 inputs = common_inputs_0 + custom_cost_inputs + literature_options
-                # Append default values
                 inputs = cls.set_user_inputs_default(inputs,LiB_defaults)
                 inputs = cls.set_user_inputs_default(inputs,TES_defaults)
                 inputs = cls.set_user_inputs_default(inputs,CAES_defaults)
                 return inputs
-        
-    # How to deal with file names and paths?
     def __init__(self, power_storage_dict=None, *args, **kwargs):
         self.finance = pd.read_csv(PATH + "finance.csv")   
-        # Can't initialize cost data here because haven't selected values for user input yet
-        # self.cost_data = pd.read_csv(PATH + "storage_data.csv")
         super().__init__(*args, **kwargs)
-
-        # Args passed in from PowerAndStorageTEA class
         if power_storage_dict != None:
             self.storage_tech = power_storage_dict['storage_tech']
             self.duration_charge = power_storage_dict['t_c']
@@ -257,8 +222,6 @@ class StorageTEA(TeaBase):
     def load_cost_data(self):
         self.cost_data = pd.read_csv(os.path.join(PATH_cost, cost_files[self.storage_tech]))
         return None
-
-    # Does storage CF include charge duration?
     def get_capacity_factor(self):
         cf = self.cycles * self.duration_discharge * 365 / 8760
         return cf
@@ -294,8 +257,6 @@ class StorageTEA(TeaBase):
             FOM_discharge = df.loc[df['Variable'] == 'FOM discharge']["Value"].item() 
             FOM_charge = df.loc[df['Variable'] == 'FOM charge']["Value"].item() 
             FOM_storage = df.loc[df['Variable'] == 'FOM storage']["Value"].item() 
-
-            # VOM recorded as $/MWh, which SESAME's LCOE() expects
             VOM = df.loc[df['Variable'] == 'VOM']["Value"].item()
             
             eta_charge = df.loc[df['Variable'] == 'Efficiency up']["Value"].item() 
@@ -310,10 +271,6 @@ class StorageTEA(TeaBase):
             VOM = self.VOM
             eta_charge = self.eta_charge
             eta_discharge = self.eta_discharge                
-        
-        # Overnight Capital Cost (OCC) expressed in $/kW_e produced
-        # Convert charging cost from $/kW_in to $/kW_out with roundtrip efficiency and ratio of duration
-        # Convert energy cost from "native" units, e.g. kWh_thermal, to kWh_elec
         ratio = self.duration_discharge/self.duration_charge * 1/(eta_charge*eta_discharge)
         storage_costs["OCC"] = capex_power_discharge + (capex_power_charge * ratio) + (capex_energy/eta_discharge * self.duration_discharge)
         storage_costs["FOM"] = FOM_discharge + (FOM_charge * ratio) + (FOM_storage/eta_discharge * self.duration_discharge)
@@ -324,7 +281,6 @@ class StorageTEA(TeaBase):
     def get_storage_lcoe(self):
         self.load_cost_data()
         cap_fac = self.get_capacity_factor()
-        # cap_reg_mult = self.get_cap_reg_mult()
         cap_reg_mult = 1
         cost_values = self.get_cost_values()
         finance_values = self.get_finance_values()

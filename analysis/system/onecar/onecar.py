@@ -8,47 +8,16 @@ import math
 from core import validators, conditionals
 from core.inputs import ContinuousInput, OptionsInput, Default, CategoricalInput
 
-# PATH = os.getcwd() + '/'
 PATH = os.getcwd() + '/analysis/system/onecar/'
 
-# FLEET_DATA = pd.read_csv(PATH + "fleet_data.csv", index_col='year')
 class OneCar:
 
     @classmethod
     def user_inputs(self):
-        # return [
-        # OptionsInput('car_type','Powertrain Type',options = ['Gasoline ICEV', 'Diesel ICEV', 'BEV','HEV']),
-        # CategoricalInput('region','Region'),
-        # CategoricalInput('city','City'),
-        # OptionsInput('cptype','Charging Profile', conditionals=[conditionals.input_equal_to('car_type', 'BEV')],),
-        # OptionsInput('size', 'Vehicle Size', options=['Sedan','SUV']),
-        # ContinuousInput('f_city','Fraction Driven in City',
-        #                 validators=[validators.integer(), validators.gte(0), validators.lte(1)],
-        #                 defaults=[Default(0.5)],
-        #                 ),
-        # OptionsInput('fes', 'Fuel Economy Source', options=['User', 'From Existing Models']),
-        # ContinuousInput('mpg_hw','Highway MPG',
-        #                 validators=[validators.integer(), validators.gte(0), validators.lte(1000)],
-        #                 defaults=[Default(50)],
-        #                 conditionals=[conditionals.input_equal_to('fes', 'User')],
-        #                 ),
-        # ContinuousInput('mpg_city','City MPG',
-        #                 validators=[validators.integer(), validators.gte(0), validators.lte(1000)],
-        #                 defaults=[Default(50)],
-        #                 conditionals=[conditionals.input_equal_to('fes', 'User')],
-        #                 ),
-        # ]
-        # ui_dict = {'car_type': 'BEV', 'Region': 'Florida', 'City': 'Orlando', 'Vehicle Size': 'Sedan',
-        #            'Vehicle MPG': 'Representative Vehicle-TESLA Model 3 Mid Range Auto-1 2WD MPG(128 city/117 hw)',
-        #            'MPG_city': 128, 'MPG_hw': 117, 'f_city': 0.55, 'Charge Profile': 'Constant'}
         inputs = pd.read_csv(PATH + 'inputs.csv')
-
-        # Powertrain Input
         print("Enter Powertrain type:")
         print(inputs['Vehicle Type'][~pd.isna(inputs['Vehicle Type'])].to_string(header=None))
         self.car_type = inputs['Vehicle Type'].iloc[int(input())]
-
-        # Region Inputs
         print("Enter Region:")
         print(inputs['Region'][~pd.isna(inputs['Region'])].to_string(header=None))
         self.region = inputs['Region'].iloc[int(input())]
@@ -59,8 +28,6 @@ class OneCar:
             print("Choose Charging Profile:")
             print(inputs['Charge Profile'][~pd.isna(inputs['Charge Profile'])].to_string(header=None))
             self.cptype = inputs['Charge Profile'].iloc[int(input())]
-
-        # Vehicle Inputs
         print("Enter Vehicle Size:")
         print(inputs['Vehicle Size'][~pd.isna(inputs['Vehicle Size'])].to_string(header=None))
         self.size = inputs['Vehicle Size'].iloc[int(input())]
@@ -165,7 +132,6 @@ class OneCar:
         return F
 
     def main(self):
-        # Calculate emissions intensity
         self.td_loss = 0.049
         self.read_vars()
         if self.car_type == 'BEV':
@@ -173,14 +139,8 @@ class OneCar:
         else:
             I = pd.DataFrame(columns=['I_f'], index=self.I_f.index)
             I.loc[:, :] = 262.8
-
-        ## Find charge profile, distance profile and f_d for given data
         epsilon = self.cp();
-
-        ## Calculate F
         F = self.F_calc();
-
-        ## Calculating day by day emissions
         intermediate = pd.DataFrame(columns=['IE', 'FD', 'dy'])
         intermediate.dy = self.location_matrix.dy
         intermediate.IE = I.multiply(epsilon['e'], axis=0)

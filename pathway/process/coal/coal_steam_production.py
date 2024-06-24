@@ -10,11 +10,10 @@ import os
 class SteamProductionCoal(ActivitySource):
 
     default_eff = 84
-    # If you change this default value, the lcidata csv file need to be adjusted. See comment in the "data location" cell in the csv file.
 
     @classmethod
     def user_inputs(cls):
-        return [ # default efficiency: default_eff = 84
+        return [ 
             CategoricalInput('coal_type', 'Coal type'),
             ContinuousInput('boiler_efficiency', 'Boiler Efficiency',
                             unit='%',

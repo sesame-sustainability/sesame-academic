@@ -87,8 +87,6 @@ class SensitivityAnalysis:
 
         if cache_key not in _cache:
             input_sets = self.default_input_sets()
-
-            # make sure defaults are set properly
             values = { input_name: input_value }
             input_set = InputSet.build_default(source, values=values)
             input_sets[source] = input_set
@@ -131,30 +129,6 @@ class SensitivityAnalysis:
 if __name__ == '__main__':
     from core.pathway import Pathway
     import pathway.topology
-
-    # solar_pathway = Pathway.build([
-    #     'enduse-electricity-default',
-    #     'gatetoenduse-transmission-literaturereview',
-    #     'process-solarpowerproduction-default',
-    #     'upstream-solar-default',
-    # ])
-
-    # sensitivity = solar_pathway.sensitivity_analysis()
-
-    # print('Solar LCA:')
-    # print(sensitivity.serialize())
-
-    # # solar TEA
-
-    # from core.tea import TeaPathway
-    # from tea.topology import tea_registry
-
-    # analysis = tea_registry.lookup_by_name('Solar')
-    # pathway = TeaPathway(analysis)
-    # sensitivity = pathway.sensitivity_analysis()
-
-    # print('Solar TEA:')
-    # print(sensitivity.serialize())
 
     wind_pathway = Pathway.build([
         'enduse-electricity-default',

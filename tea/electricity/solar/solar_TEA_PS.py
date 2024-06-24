@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Thu Apr 29 11:45:44 2021
 
@@ -64,11 +63,9 @@ class SolarTEA(TeaBase):
                 ]
 
     def __init__(self, lca_pathway=None):
-        # print(lca_pathway)
         self.lca_pathway = lca_pathway
         self.finance = pd.read_csv(PATH + "finance.csv")
         if lca_pathway is None:
-            # print('Hi')
             pass
         if lca_pathway is not None:
             self.cell = self.lca_pathway.instance('process').cell_type
@@ -107,18 +104,13 @@ class SolarTEA(TeaBase):
         return float(self.CF)
     
     def set_capacity_factor(self,cf):
-        # add check that cf is a float or int between 0, 1 inclusive
         self.CF = cf
         return None
 
     def get_lcoe(self):
-        #creating adjustment factors
         efficiency_mf = 19.5/float(self.efficiency)
         efficiency_cost = 0
         ILR_cost = 0
-        
-        # print(self.shading)
-        #pulling initial TEA values based on user input and then adjusting necessary values based on input efficiency and ILR
         if self.cell or self.cell == 'CIGS':
             cost_perW = pd.read_csv(PATH + 'thin film.csv', index_col = 0)
             if self.cell == 'CdTe':
@@ -182,7 +174,6 @@ class SolarTEA(TeaBase):
                 cost_perW.loc['Sales Tax'] = cost_perW.loc['Sales Tax'] + ILR_tax_cost            
         
                 cost_perW.loc['Total'] = cost_perW.loc['Total'] + efficiency_cost + ILR_cost
-            #print('Results assume a 100MW system with fixed tilt') 
         
         if self.location == 'Residential':
             ILR_mf = 1.14/float(self.ILR)  
@@ -235,7 +226,6 @@ class SolarTEA(TeaBase):
                         print('Issue with selected installer option')
                 else:
                     print('Isssue with selected inverter option')           
-            #print('Results assume a 7kW system')    
         
             cost_perW = pd.DataFrame(cost_perW)
             cost_perW_shape = cost_perW.shape
@@ -450,9 +440,6 @@ class SolarTEA(TeaBase):
             cost_perW.loc['Sales Tax'] = cost_perW.loc['Sales Tax'] + ILR_tax_cost.values[0]      
         
             cost_perW.loc['Total'] = cost_perW.loc['Total'] + efficiency_cost.values[0] + ILR_cost.values[0]
-                  
-
-        # Calculation of maintenance costs
         if self.location == 'Residential':
             maintenance_cost = 28.94 * float(self.lifetime)*7
         elif self.location == 'Commercial':
@@ -477,9 +464,6 @@ class SolarTEA(TeaBase):
             total_cost = cost_perW.loc['Total']*100*1000000 + maintenance_cost
         else:
             total_cost = cost_perW.loc['Total']*float(self.size)*1000000 + maintenance_cost
-        
-        
-        # Calculation of required CF
         if self.location == 'Residential':
             install_type = 'rooftop, typical tilt'
         elif self.tilt == '1-axis':
@@ -487,8 +471,7 @@ class SolarTEA(TeaBase):
         else: 
             install_type = 'utility, fixed tilt'
             
-        tec=0.4223 # Typical tracker energy consumption per panel area in kWh/m²/yr
-        # (Source: (5) Sinha, Eco-Efficiency of CdTe Photovoltaics with Tracking Systems, 2013, IEEE)
+        tec=0.4223 
         
         cf_table=pd.read_csv(PATH +"solar_tables.csv")
         if 'Si' in self.cell:
@@ -513,48 +496,13 @@ class SolarTEA(TeaBase):
         if self.location == 'Residential': 
             max_output = 7000*8760*float(self.lifetime)
         else:
-            # MW * 10^6 * hr * lifetime --> Wh
-            # max_output = float(self.size)*1000000*8760*float(self.lifetime)
-            # MW * hr * lifetime --> MWh
             max_output = float(self.size)*8760*float(self.lifetime)
-        # self.CF = CF_AC
-        # output = CF_AC/100*max_output
-
-        # call set_capacity_factor() in power_and_storage.py before get_cost_breakdown()
         output = self.CF*max_output
-        # LCOE = total_cost/output
-        
-        
-        #creation of capital costs dictionary
-        cost_perW_df = cost_perW.copy()#to_frame()
+        cost_perW_df = cost_perW.copy()
         cost_perW_transposed = cost_perW_df.T
         cost_perW_transposed = cost_perW_transposed.drop(columns = ['Total'])
-        
-        
-        # if self.location == 'Residential':
-        #     capital_LCOE = cost_perW_transposed*7.0*1000/float(output)*1000000
-        # elif self.cell == 'CIGS' or self.cell == 'CdTe':  
-        #     capital_LCOE = cost_perW_transposed*100*1000000/float(output)*1000000
-        # else:
-        #     # capital_LCOE = cost_perW_transposed*float(self.size)*1000000/float(output)*1000000
-        #     # $/W * (MW * 10^6) / MWh_lifetime --> $/MWh
-        #     capital_LCOE = cost_perW_transposed*float(self.size)*1000000/float(output)
-        
-        # # capital_cost_dict = capital_LCOE.to_dict('records')
-        # capital_cost_dict = capital_LCOE.to_dict()
-
-        # # solar_cost_breakdown = {'Capital and Fixed':capital_cost_dict['Total'],'Operational':0,'Maintenance':float(maintenance_cost/output)*1000000}
-        # solar_cost_breakdown = {'Capital and Fixed':capital_cost_dict['Total'],'Operational':0,'Maintenance':float(maintenance_cost/output)*1000}
-        
-        # return solar_cost_breakdown
-
-
-
-        # Change LCOE calculation to use LCOE()
         cap_reg_mult = 1
-        # $/W * 1000 --> $/kW
         OCC = cost_perW_transposed['Total'] * 1000
-        # FOM value copied from above (line 467)
         FOM = 17.46
         VOM = 0
         finance_values = self.get_finance_values()

@@ -40,9 +40,6 @@ class NGPowerASPEN(ActivitySource):
                 'loading', 'Loading',
                 unit='%',
                 defaults=[Default(50)],
-                #     Default(57, conditionals=[conditionals.input_equal_to('turbine', 'Combined Cycle')]),
-                #     Default(14, conditionals=[conditionals.input_equal_to('turbine', 'Gas Turbine')]),
-                # ],
                 validators=[validators.numeric(), validators.gte(0), validators.lte(100)],
                 tooltip=Tooltip('Powerplant capacity factors averaged ~57% for combined cycle, ~12% for gas turbine, & ~40% for coal, in the US in 2020.', source='EIA 2020', source_link='https://www.eia.gov/electricity/annual/html/epa_04_08_a.html')
             ),

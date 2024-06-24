@@ -1,11 +1,9 @@
-## Setup
 
 ```
 psql -d sesame -c "\copy grid_unit_genmap FROM './grid_unit_genmap.csv' DELIMITER ',' CSV HEADER;"
 psql -d sesame -c "\copy loading_fraction FROM './loading_fraction.csv' DELIMITER ',' CSV HEADER;"
 ```
 
-## Ingest
 
 Ingest the EGRID data before ARP since it has more info about the individual plants:
 
@@ -44,7 +42,6 @@ REFRESH MATERIALIZED VIEW CONCURRENTLY arp_egrid_capacity;
 REFRESH MATERIALIZED VIEW CONCURRENTLY arp_generation;
 ```
 
-## Connecting to remote database
 
 These scripts have been run on the EC2 instance hosting the PostgreSQL database.  To connect to that database remotely you can use the `psql` client:
 
@@ -61,7 +58,6 @@ Or using a tool like `pgadmin`:
 * username: `sesame`
 * password
 
-## Notes
 
 * Currently skipping ARP rows for which no plant exists (i.e. was not present in the EGRID data):
   - orispl = 880041, 880075, 1393, 880100, 880107, 880079, 880053

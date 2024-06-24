@@ -10,7 +10,6 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 
-# make sure the topology registries are loaded
 import pathway.topology
 
 from core import validators, conditionals
@@ -87,12 +86,6 @@ class Grid(InputSource, Versioned):
                     conditionals=[conditionals.input_equal_to('evmethod', 'Direct input')],
                     defaults=[Default(30)],
                 ),
-                # ContinuousInput(
-                #     'E',
-                #     '% of charging in evening (4pm-12am) ',
-                #     validators=[validators.integer(), validators.gte(0), validators.lte(100)],
-                #     conditionals=[conditionals.input_equal_to('evmethod', 'Direct Input')],
-                # ),
                 ContinuousInput(
                     'fhw',
                     '% of EVs w/ charger access at home & work',
@@ -196,7 +189,7 @@ class Grid(InputSource, Versioned):
                 InputGroup('demand_evs', 'Demand, EVs', children=[
                     OptionsInput(
                         'DEVf_D0', 'EV power demand in 2050, as % of demand today ',
-                        options=[1, 10, 20, 30, 40, 50],  # can make numbers, as as well as default
+                        options=[1, 10, 20, 30, 40, 50],  
                         defaults=[Default(20)],
                     ),
                     OptionsInput(
@@ -204,15 +197,6 @@ class Grid(InputSource, Versioned):
                         options=['Direct input', 'Determine by charger access & power pricing', 'Flatten demand', 'Minimize storage, then flatten demand', 'Minimize storage, then flatten dispatchable generation'],
                         defaults=[Default('Direct input')],
                     ),
-
-                #### NEW OPTION FOR GRID OPTIMIZER (will be a drop down on front end)
-                    #OptionsInput(
-                    #    'D_EV_objective', 'Method for shape of EV power demand ',
-                    #    options=['Flatten demand', 'Minimize storage, then flatten demand', 'Minimize storage, then flatten dispatchable generation'],
-                    #    conditionals=[conditionals.input_equal_to('evmethod', 'Optimize')],
-                    #    defaults=[Default('Minimize Storage')],
-                    #),
-                    ####
 
                 ContinuousInput(
                     'O',
@@ -228,12 +212,6 @@ class Grid(InputSource, Versioned):
                         conditionals=[conditionals.input_equal_to('evmethod', 'Direct input')],
                         defaults=[Default(30)],
                     ),
-                    # ContinuousInput(
-                    #     'E',
-                    #     '% of charging in evening (4pm-12am) ',
-                    #     validators=[validators.integer(), validators.gte(0), validators.lte(100)],
-                    #     conditionals=[conditionals.input_equal_to('evmethod', 'Direct input')],
-                    # ),
                 ContinuousInput(
                     'fhw',
                     '% of EVs w/ charger access at home & work ',
@@ -271,7 +249,6 @@ class Grid(InputSource, Versioned):
         self.cp_parameters = pd.read_csv(PATH + 'cp_parameters.csv', index_col=['name'])
         self.powertypes = ["Coal", "Natural gas", "Solar", "Wind", "Nuclear", "Hydro"]
         self.lca_defaults = pd.DataFrame(0, index=self.powertypes, columns=['S', 'F', 'P_S'])
-        # self.lca_defaults = pd.read_csv(PATH + 'lca_defaults.csv', index_col = ['Source'])
 
     def prepare(self, input_set, fleet=False):
         super().prepare(input_set)
@@ -429,7 +406,7 @@ class Grid(InputSource, Versioned):
     def general_energy_emission_intensity(self, f_coal, f_gas, f_other, region, S_coal, S_gas):
         base_coal = self.lca_defaults.loc['Coal', 'S']
         base_gas = self.lca_defaults.loc['Natural gas', 'S']
-        base_power = 433 #(.2 * base_coal + .5 * base_gas )
+        base_power = 433 
 
         years = self.smokestack_data.loc[self.initial_year:self.final_year].index
         vals = np.divide((f_coal.multiply(S_coal, axis=0).values + f_gas.multiply(S_gas, axis=0).values),(base_power*(1-f_other)).values).flatten()
@@ -468,8 +445,6 @@ class Grid(InputSource, Versioned):
 
         if 'Fuel Production' in self.counted:
             if self.F_Pps == "Proportional to general energy emission intensity":
-                # f_coal = pd.DataFrame(0.2, index=years, columns=['f_coal'])
-                # f_gas = pd.DataFrame(0.5, index=years, columns=['f_gas'])
                 energy_intensity_c = self.general_energy_emission_intensity(f_coal, f_gas, f_other, "US",
                                                                             emissions['S_Coal'],
                                                                             emissions['S_Natural gas']
@@ -488,25 +463,12 @@ class Grid(InputSource, Versioned):
                 emissions['P_' + source] = self.powerplant_production_em(source)
                 emissions['Total_' + source] = emissions['Total_' + source] + emissions['P_' + source]
 
-        #Overrides emissions value for 'other' if modeling California emissions (where 'other' is largely geothermal, rather than assorted mix)
-
-        #if self.region == 'US_CA':
-        #    emissions['S_Other'] = 0
-        #    emissions['F_Other'] = 0
-        #    emissions['P_Other'] = 36.7
-        #    emissions['Total_Other'] = 36.7
-
-
-        # for source in self.powertypes:
-        #     emissions['Total_' + source] = emissions['S_' + source] + emissions['F_' + source] + emissions['P_' + source]
-
         return emissions
 
     def charging_profile(self):
         epsilon = pd.DataFrame(index = np.arange(1,25),columns=['demand'])
 
         if self.evmethod == "Direct input":
-            # self.E = 1 - self.O - self.D
             A = [[22,1,1],[1,22,1],[1,1,22]]
             B = [[0.03*self.O],[0.03*self.D],[0.03*self.E]]
             x = np.linalg.inv(A).dot(B)
@@ -528,12 +490,6 @@ class Grid(InputSource, Versioned):
             fhnd = (self.fh - fhd*100)/100
             fw = self.fw/100
             fp = self.fp/100
-            #o	Ɛ = fHdw (HwH ƐHd + Hww Ɛw + Hwp Ɛp)
-            #    + fHnw (HwH ƐHn + Hww Ɛw + Hwp Ɛp)
-            #    + fHd (HH ƐHd + Hp Ɛp)
-            #    + fHn (HH ƐHn + Hp Ɛp)
-            #    + fw (ww Ɛw + wp Ɛp)
-            #    + fp Ɛp
             vals = fhdw * (self.cp_parameters.loc['Hw_H', 'fraction'] * self.cp['home, discount 12am-7am'].values.flatten()
                            + self.cp_parameters.loc['Hw_w', 'fraction'] * self.cp['work'].values.flatten()
                            + self.cp_parameters.loc['Hw_p', 'fraction'] * self.cp['public'].values.flatten()) +\
@@ -552,11 +508,6 @@ class Grid(InputSource, Versioned):
         return epsilon
 
     def hourly_generation_mix(self, Dh_vals, fp = 0):
-        # self.D_source = "Historical"
-        # if self.D_source == "Historical":
-        #     Dh = pd.read_csv(PATH + 'Dhist.csv', index_col=['hour'])
-
-        # fph = pd.DataFrame(index=np.arange(1, 25))
         Dh = pd.DataFrame(index = np.arange(1,25), columns = [self.region])
         Dh[self.region] = Dh_vals
 
@@ -567,7 +518,6 @@ class Grid(InputSource, Versioned):
         solar = self.solar_gen[self.region].divide(Dh[self.region]).values.flatten() * fp['Solar']
         wind = self.wind_gen[self.region].divide(Dh[self.region]).values.flatten() * fp['Wind']
         f_nondisp_h = solar + wind + nuclear
-        ## Storage
         f_temp = np.multiply((f_nondisp_h - 1), Dh_vals)
         f_s = sum(f for f in f_temp if f > 0)
         fdisp_h = np.ones((24)) - f_nondisp_h
@@ -604,18 +554,13 @@ class Grid(InputSource, Versioned):
             D_EV_h: fractional share of total EV demand by hour of day
 
         '''
-        #D_table = pd.read_csv(PATH + 'D_' + self.region + '_' +self.PBD + '.csv', index_col = ['year'])
         years = self.smokestack_data.loc[self.initial_year:self.final_year].index
         f_p = pd.DataFrame(0, index = years, columns = ["Coal","Natural gas","Solar","Wind","Nuclear","Hydro","Other"])
-
-        #Projection of non-EV power demand
         if self.PBD == "AEO20":
-            #Looks up data
             D_table = pd.read_csv(PATH + 'D_' + self.region + '_' + self.PBD + '.csv', index_col=['year'])
             D = D_table.copy().filter(items = ['D','D_nEV','D_EV'])
             D['D_EV'] = D_EV_vals
         elif self.PBD == "User":
-            #Calls extrapolation function that takes user inputs
             Db, DnEV = self.user_PBD(self.region, y0, yc, yf, self.delta_DnEV_P)
             D = pd.DataFrame(0, index=years, columns=["D", "D_nEV", "D_EV"])
             D['D'] = Db
@@ -623,7 +568,7 @@ class Grid(InputSource, Versioned):
             D['D_EV'] = D_EV_vals
 
         PBGM = self.PGM
-        if PBGM == "AEO20": # if self.PBGM == "AEO20":
+        if PBGM == "AEO20": 
             D_table = pd.read_csv(PATH + 'D_' + self.region + '_' + PBGM + '.csv', index_col=['year'])
             f_p = D_table.loc[:,["Coal","Natural gas","Solar","Wind","Nuclear","Hydro","Other"]].copy()
             if self.model == "fleet":
@@ -633,55 +578,43 @@ class Grid(InputSource, Versioned):
             else:
                 ap = f_p
         elif self.PGM == 'User':
-            #f_p = self.fp_b
             f_p = self.user_PGM(self.region, y0, yc, yf, self.yf_PGM, self.PGM_speed)
-            ap = f_p #check location of this...needs to be compatible with EV case
+            ap = f_p 
 
-        self.f_p = f_p #to access outside this function
+        self.f_p = f_p 
 
         D['D_updated'] = D['D_EV'].add(D['D_nEV'])
-        #updated fp equation, double check it
         delta_D = D['D_updated'] - D['D']
         output = (f_p.multiply(D['D'], axis=0) + ap.multiply(delta_D, axis=0)).divide(D['D_updated'], axis=0)
-
-        #output = (f_p.multiply(D['D'], axis = 0) + ap.multiply(D['D_EV'], axis = 0)).divide(D['D_updated'], axis = 0)
         D_nEV_h = pd.read_csv(PATH + 'Dhist.csv', index_col=['hour']).filter([self.region])
 
         D_EV_h_y = pd.DataFrame(0, index=np.arange(1,25), columns=years)
         Dh = pd.Series(data=0,index=years,dtype=object)
 
-        #print(output)
-
         if self.evmethod in ['Flatten demand', 'Minimize storage, then flatten demand', 'Minimize storage, then flatten dispatchable generation']:
 
             objective = self.evmethod
-
-            #need to loop over and apply for each year
             for y in years:
-
-                #y = 2050
 
                 D_nEV = D['D_nEV'][y]
                 D_EV = D['D_EV'][y]
 
-                f_sol = output['Solar'][y] #ap['Solar'][y]
+                f_sol = output['Solar'][y] 
                 f_wind = output['Wind'][y]
                 f_nuc = output['Nuclear'][y]
 
 
                 D_EV_h = self.D_EV_h_optimizer(D_nEV, D_EV, D_nEV_h, f_sol, f_wind, f_nuc, objective)
-                D_EV_h_y[y] = D_EV_h #store for each year
+                D_EV_h_y[y] = D_EV_h 
                 Dh[y] = (( D['D_nEV'][y] * D_nEV_h + D['D_EV'][y] * D_EV_h ) /  D['D_updated'][y]).values.flatten()
 
-        else: #compute as usual
+        else: 
 
             D_EV_h_y = pd.DataFrame(0, index=np.arange(1, 25), columns=years)
             D_EV_h = self.charging_profile().rename(columns={'demand': self.region})
             for y in years:
                 D_EV_h_y[y] = D_EV_h
                 Dh[y] = ((D['D_nEV'][y] * D_nEV_h + D['D_EV'][y] * D_EV_h) / D['D_updated'][y]).values.flatten()
-
-        #####
 
         output['Dh'] = Dh
         output['D'] = D['D']
@@ -692,36 +625,20 @@ class Grid(InputSource, Versioned):
 
         years = self.smokestack_data.loc[self.initial_year:self.final_year].index
         I_h = pd.DataFrame(0, index=years, columns=['S', 'F', 'P', 'Total'])
-
-        #powertypes = self.powertypes.copy()
-        #if self.region == 'US_CA':
-        #    powertypes.append('Other')
-        #    denominator = 1
-        #else:
-        #    denominator = 1-f_ph['Other']
         if self.region == 'US_CA':
             denominator = 1
-            extra = 36.7 # g/kWh
-            #denominator = 1 - f_ph['Other']
-            #extra = 0
+            extra = 36.7 
         else:
             denominator = 1 - f_ph['Other']
             extra = 0
 
 
-        for source in self.powertypes: #powertypes:
-
-            #I_h['S'] += (I_p['S_' + source].multiply(f_ph[source])).divide(f_ph['Total'])
+        for source in self.powertypes: 
             I_h['S'] += (I_p['S_' + source].multiply(f_ph[source])).divide(denominator)
             if 'Fuel' in self.counted:
-                #I_h['F'] += (I_p['F_' + source].multiply(f_ph[source])).divide(f_ph['Total'])
                 I_h['F'] += (I_p['F_' + source].multiply(f_ph[source])).divide(denominator)
             if 'Powerplant' in self.counted:
-                #I_h['P'] += (I_p['S_' + source].multiply(f_ph[source])).divide(f_ph['Total'])
                 I_h['P'] += (I_p['P_' + source].multiply(f_ph[source])).divide(denominator) + (extra * f_ph['Other'])
-            #I_h['Total'] += (I_p['Total_' + source].multiply(f_ph[source])).divide(f_ph['Total'])
-            #I_h['Total'] += I_h['S'] + I_h['F'] + I_h['P']
-            #I_h['Total'] += (I_p['Total_' + source].multiply(f_ph[source])).divide(denominator)
 
         I_h['Total'] = I_h['S'] + I_h['F'] + I_h['P']
 
@@ -771,9 +688,6 @@ class Grid(InputSource, Versioned):
 
         output_demand, D, D_EV_h_y = self.hourly_demand(D_EV_vals.values.flatten(), 'y0', 'yc','yf')
 
-        #print('print output_demand --')
-        #print(output_demand)
-
         f_ph =  self.yearly_hourly_generation_mix(output_demand)
         I_p = self.grid_intensity(f_coal = output_demand['Coal'], f_gas = output_demand['Natural gas'], f_other= output_demand['Other'] )
         I_h, S_h, Total_h = self.hourly_intensity(I_p, f_ph)
@@ -783,11 +697,6 @@ class Grid(InputSource, Versioned):
         for source in self.powertypes:
             f_ph_n[source] = f_ph[source].apply(pd.Series)
             f_ph_n[source].columns = f_ph_n[source].columns + 1
-
-        #print('fph 2035 print')
-        #print(f_ph_n['Nuclear'])
-
-        ## Data for plots
         D_2020 = pd.DataFrame(index = np.arange(0,25))
         D_2035 = pd.DataFrame(index =np.arange(0,25))
         D_2050 = pd.DataFrame(index =np.arange(0,25))
@@ -802,9 +711,6 @@ class Grid(InputSource, Versioned):
         D_2035.loc[0, 'EV'] = D_2035.loc[24, 'EV']
         D_2035['non-EV'] = -D_2035['EV'].subtract(D_h_2035.values.flatten())
 
-        #print('D_h 2035 print')
-        #print(D.loc[2035,:])
-
 
         D_h_2050, S_h_2050 = self.hourly_generation_and_demand(f_ph_n, D_h,D.D_updated, 2050)
         D_2050['EV'] = D_EV_h_y[2050] * D_EV_vals.loc[2050, :].values * 1000 / 365
@@ -816,8 +722,6 @@ class Grid(InputSource, Versioned):
             grid_CI = self.aggregator(S_h, D_h)
 
         return grid_CI, D_2020,D_2035,D_2050,S_h_2020,S_h_2035,S_h_2050
-
-    ##JIM's FUNCTIONS AND INTEGRATOR (also modified inputs as necessary)
 
     def D_EV_interpolator(self, region, y0, yc, yf, DEVf_D0 ):
         '''This function projects annualized EV power demand a sa function of region and a fraction of present overall demand
@@ -831,18 +735,14 @@ class Grid(InputSource, Versioned):
         OUTPUT:
             D_EV: df of annual EV demand for each year
         '''
+        self.D_past = pd.read_csv(PATH + 'D_past.csv', index_col=['year']) 
+        self.D_EV_past = pd.read_csv(PATH + 'D_EV_past.csv', index_col=['year']) 
 
-        # Reads data
-        self.D_past = pd.read_csv(PATH + 'D_past.csv', index_col=['year']) #Total demand
-        self.D_EV_past = pd.read_csv(PATH + 'D_EV_past.csv', index_col=['year']) #EV damand
-
-        D0 = self.D_past[region][y0] #Total non-EV demand for specicif regi0on in year y0
-        D_EV0 = self.D_EV_past[region][y0] #Total EV demand for specicif regi0on in year y0
+        D0 = self.D_past[region][y0] 
+        D_EV0 = self.D_EV_past[region][y0] 
         self.D_EV0 = D_EV0
 
-        y = np.arange(yc, yf+1) #vector of years
-
-        #Linear extrapolation
+        y = np.arange(yc, yf+1) 
         D_EVf = DEVf_D0/100 * D0
         EV_demand =  D_EV0 + (D_EVf + D_EV0)*(y-y0)/(yf-y0)
 
@@ -860,8 +760,6 @@ class Grid(InputSource, Versioned):
             Db: Total projected demand (EV + nEV)
             DnEV: Total non-EV demand
         '''
-
-        #Looks up population data since computed on per capita basis, see equations
         self.pop_past = pd.read_csv(PATH + 'pop_past.csv', index_col=['year'])
         self.P_P0 = pd.read_csv(PATH + 'pop_future.csv', index_col=['year'])
 
@@ -870,10 +768,7 @@ class Grid(InputSource, Versioned):
 
         D0 = self.D_past[region][y0]
         D_EV = self.D_EV
-        #D_EV0 = D_EV.loc[y0].values
         DnEV0 = D0 - self.D_EV0
-
-        #Extrapolation
         y = np.arange(yc, yf+1)
         DnEV_P = ( (DnEV0/P0) * ( 1 + (delta_DnEV_P/100)*(y-y0)/(yf-y0) ) )
         DnEV = DnEV_P * P
@@ -897,14 +792,8 @@ class Grid(InputSource, Versioned):
 
         years = np.arange(yc,yf+1)
         fp_b = pd.DataFrame(0, index=years, columns=["Coal", "Natural gas", "Solar", "Wind", "Nuclear", "Hydro", "Other"])
-
-        #sources = ['coal', 'gas', 'nuc', 'hydro', 'wind', 'solar', 'other'
-        # sources = ['coal', 'gas', 'solar', 'wind', 'nuc', 'hydro', 'other']
-
-        # VERY IMPORTANT THAT THESE LISTS REMAIN IN THE SAME ORDER
-        # sources = ["Coal", "Natural gas", "Solar", "Wind", "Nuclear", "Hydro", "Other"]
         sources = ["coal", "gas", "solar", "wind", "nuc", "hydro", "other"]
-        col_header = ["Coal", "Natural gas", "Solar", "Wind", "Nuclear", "Hydro", "Other"] #to keep consistent with other code headers
+        col_header = ["Coal", "Natural gas", "Solar", "Wind", "Nuclear", "Hydro", "Other"] 
 
         i_col = 0
 
@@ -917,15 +806,11 @@ class Grid(InputSource, Versioned):
             s = 0.75
         elif speed == 'Fast':
             s = 2.5
-
-        #Based on equation sheet
         k = 2*np.log(19)
         a = 1/0.9
         x = (years - y0)/(yf - y0)
         b = s * np.square(x-1) + 1
         y = a * ( 1 / ( 1 + np.exp( -k*(x-0.5)) ) - 0.05 ) * b
-
-        #Iterations over power types for calculation
         for source in sources:
 
             fp_b[ col_header[i_col] ] = y * ( (yf_PGM[col_header[i_col]]/100) - fpb0['f_' + source][y0] ) + fpb0['f_' + source][y0]
@@ -956,10 +841,6 @@ class Grid(InputSource, Versioned):
         return 1000*D_h_y, 1000*DnEV_h_y, 1000*DEV_h_y
 
     def D_EV_h_optimizer(self, D_nEV, D_EV, D_nEV_h, f_sol, f_wind, f_nuc, objective):
-        #for a single year
-        # must add conditional inputs up top
-
-        #Normalize total demand to 1
         D_tot = D_nEV + D_EV
         D_nEV = D_nEV / D_tot
         D_EV = D_EV / D_tot
@@ -969,18 +850,14 @@ class Grid(InputSource, Versioned):
         f_nd_gen = f_sol + f_wind + f_nuc
 
         if objective == 'Flatten demand':
-
-            #max_DnEVh = D_nEV_h[self.region].max()
             max_DnEVh = D_nEV_h_vals[self.region].max()
 
             if (1/24) > max_DnEVh:
-                # Can divide total demand evenly across 24 horus (perfectly flat)
 
                 D_EV_h = (1/24)*np.ones((24,1)) - D_nEV_h_vals
                 D_EV_h = (D_EV_h / D_EV).values
 
             else:
-                # Cannot evenly divide
                 k_D = D_EV / ( 24*max_DnEVh - D_nEV )
 
                 D_EV_h = k_D*(max_DnEVh - D_nEV_h_vals )
@@ -1012,19 +889,15 @@ class Grid(InputSource, Versioned):
 
             D_nEV_pseudo = D_nEV_h_vals[self.region].values + D_EV_soak
             D_nEV_pseudo_tot = np.sum(D_nEV_pseudo,axis=1)
-
-            #Now flatten demand
             max_DnEVh = D_nEV_pseudo.max()
 
             if (1 / 24) > max_DnEVh:
-                # Can divide total demand evenly across 24 horus (perfectly flat)
 
                 D_EV_h = (1 / 24) * np.ones((1, 24)) - D_nEV_pseudo
                 D_EV_h = (D_EV_h + D_EV_soak) / D_EV
                 D_EV_h = np.transpose(D_EV_h)
 
             else:
-                # Cannot evenly divide
                 k_D = D_EV_remaining / (24 * max_DnEVh - D_nEV_pseudo_tot)
 
                 D_EV_h = k_D * (max_DnEVh - D_nEV_pseudo)
@@ -1058,9 +931,7 @@ class Grid(InputSource, Versioned):
 
             D_nEV_pseudo = D_nEV_h_vals[self.region].values + D_EV_soak
             D_nEV_pseudo_tot = np.sum(D_nEV_pseudo, axis=1)
-
-            # Now flatten dispatchable gen
-            G_d = D_nEV_pseudo - (G_nd_shape * f_nd_gen) #pseudo nd demand - nd gen, results in d gen that must be made up at each hour
+            G_d = D_nEV_pseudo - (G_nd_shape * f_nd_gen) 
             G_d_tot = np.sum(G_d,axis=1)
 
             max_G_d = G_d.max()
@@ -1073,51 +944,31 @@ class Grid(InputSource, Versioned):
         return D_EV_h
 
     def power_grid_integrator(self):
-
-        #timeline
-        y0 = 2019 #we currently extrapolate/project out from 2019 since that is the most recent historical data we have
-        yc = y0+1 #current year, we report results from yc to yf
+        y0 = 2019 
+        yc = y0+1 
         yf = 2050
         years = np.arange(yc,yf+1)
-
-        # type of emissions being accounted for
         self.counted = 'Smokestack + Fuel Production + Powerplant Production'
-
-        # Generate projection of annual EV demand, name it D_EV_vals
         D_EV_vals = self.D_EV_interpolator(self.region, y0, yc, yf, self.DEVf_D0)
         self.D_EV = D_EV_vals
-
-        #Runs hourly demand and generation functions
         output_demand, D, D_EV_h_y = self.hourly_demand(D_EV_vals.values.flatten(),y0,yc,yf)
         DEV = D['D_EV']
         DnEV = D['D_nEV']
-
-        #Converts annual demand fractional shares to hourly fraction shares by year (series stored within dataframe)
         f_ph =  self.yearly_hourly_generation_mix(output_demand)
-
-        #Computes hourly emissions intensities based on demand (Ragini's code)
         I_p = self.grid_intensity(f_coal = output_demand['Coal'], f_gas = output_demand['Natural gas'], f_other= output_demand['Other'] )
         I_h, S_h, Total_h = self.hourly_intensity(I_p, f_ph)
-
-        #Computes hourly demand values (total, non-EV, and EV) for each year
         D_h = output_demand.Dh.apply(pd.Series)
         D_h.columns = D_h.columns + 1
 
         D_h_y, DnEV_h_y, DEV_h_y = self.yearly_hourly_demand(D['D_updated'], D['D_EV'], D_h, D_EV_h_y, yc, yf)
-
-        #Hourly fractional demand shares by power type
         sources = ["Coal", "Natural gas", "Solar", "Wind", "Nuclear", "Hydro", "Other"]
         f_ph_n = {}
-        for source in sources: #self.powertypes:
+        for source in sources: 
             f_ph_n[source] = f_ph[source].apply(pd.Series)
             f_ph_n[source].columns = f_ph_n[source].columns + 1
-
-        #Computes hourly generation by power type for each year
-        S_p_h = {}  # pd.DataFrame(0, index= self.powertypes, columns = [1])
+        S_p_h = {}  
         for source in sources:
             S_p_h[source] = f_ph_n[source] * D_h_y
-
-        # Initializing dataframes (dfs) to store annual results segmented by stage,end use, and power type
         S_avg = pd.DataFrame(0, index=years, columns=['Value'])
         F_avg = pd.DataFrame(0, index=years, columns=['Value'])
         P_avg = pd.DataFrame(0, index=years, columns=['Value'])
@@ -1127,66 +978,44 @@ class Grid(InputSource, Versioned):
         e_powertype = pd.DataFrame(0, index=years, columns=["Coal", "Natural gas", "Solar", "Wind", "Nuclear", "Hydro", "Other"], dtype='float')
         e_cum_ss = pd.DataFrame(0, index=years, columns=['cum_ss'], dtype='float')
         e_cum_lc = pd.DataFrame(0, index=years, columns=['cum_ss'], dtype='float')
-
-        # Generation by power type each year
         G_p = pd.DataFrame(0, index=years, columns=["Coal", "Natural gas", "Solar", "Wind", "Nuclear", "Hydro", "Other"], dtype='float')
         sources = ["Coal", "Natural gas", "Solar", "Wind", "Nuclear", "Hydro"]
-
-        #Changed for consistency with front end name convention
         S = S_avg
         L = L_avg
-
-        #Compuute to/from storage values
         hours = np.arange(1, 25)
         to_storage = pd.DataFrame(0, index=years, columns=np.arange(1, 25))
         from_storage = pd.DataFrame(0, index=years, columns=np.arange(1, 25))
         fraction_gen_stored = pd.DataFrame(0, index=years, columns=['Value'])
-
-        #Iterates over years and hours to compute relevant values
         for year in years:
 
             for h in hours:
-
-                #Computes total generation for given hour (Gh) and looks up Dh, makes comparison to determine whether energy is stored or drawn from storage
                 Gh = S_p_h['Coal'][h].loc[year] + S_p_h['Natural gas'][h].loc[year] + S_p_h['Solar'][h].loc[year] + S_p_h['Wind'][h].loc[year] + S_p_h['Nuclear'][h].loc[year] + S_p_h['Hydro'][h].loc[year] + S_p_h['Other'][h].loc[year]
                 Dh =  D_h_y[h].loc[year]
 
-                if Dh > Gh: #draw from storage
+                if Dh > Gh: 
                     to_storage.loc[year,h] = 0
                     from_storage.loc[year,h] = Dh-Gh
-                elif Dh < Gh: #curtail to storage
+                elif Dh < Gh: 
                     to_storage.loc[year,h] = Gh-Dh
                     from_storage.loc[year,h] = 0
-                else: #perfect balance between generation and demand
+                else: 
                     to_storage.loc[year,h] = 0
                     from_storage.loc[year,h] = 0
 
             fraction_gen_stored.loc[year] = to_storage.loc[year].sum() / D_h_y.loc[year].sum() * 100
-
-            #Computes emissions values based on demand and associated emissions constants on
-
-            #Avg for lifecycle segments
             S_avg.loc[year] = sum( D_h.loc[year] * S_h.loc[year] )
             F_avg.loc[year] = sum( D_h.loc[year] * I_h['F'].loc[year] )
             P_avg.loc[year] = sum( D_h.loc[year] * I_h['P'].loc[year] )
             L_avg.loc[year] = sum(D_h.loc[year] * Total_h.loc[year])
-
-            #By stage
             e_stage['e_smokestack'][year] = (S_avg.loc[year] * D['D_updated'][year]) /1000.0
             e_stage['e_fuel_prod'][year] = F_avg.loc[year] * D['D_updated'][year] /1000.0
-            e_stage['e_powerplant_prod'][year] = P_avg.loc[year] * D['D_updated'][year] /1000.0 #100000.0, confirm that this change is correct
+            e_stage['e_powerplant_prod'][year] = P_avg.loc[year] * D['D_updated'][year] /1000.0 
 
             e_stage['e_tot'][year] = e_stage['e_smokestack'][year] + e_stage['e_fuel_prod'][year] + e_stage['e_powerplant_prod'][year]
-
-            #Cummulative smokestack and total
             e_cum_ss['cum_ss'][year] = e_stage['e_smokestack'].sum()
             e_cum_lc['cum_ss'][year] = e_stage['e_tot'].sum()
-
-            #End use
             e_enduse['e_EV'][year] = L_avg.loc[year] * D['D_EV'][year] /1000
             e_enduse['e_nEV'][year] = e_stage['e_tot'][year] - e_enduse['e_EV'][year]
-
-            #print(self.f_p['Other'])
 
             for source in sources:
                 e_powertype[source].loc[year] = ( self.f_p[source].loc[year] * D['D_updated'][year] * I_p['Total_'+source].loc[year] )/1000
@@ -1194,11 +1023,6 @@ class Grid(InputSource, Versioned):
 
             G_p['Other'].loc[year] = self.f_p['Other'].loc[year] * D['D_updated'][year]
             e_powertype['Other'].loc[year] = e_stage['e_tot'][year] - sum(e_powertype.loc[year])
-
-            #if self.region == 'US_CA':
-            #    e_powertype['Other'].loc[year] = (self.f_p['Other'].loc[year] * D['D_updated'][year] * I_p['Total_Other'].loc[year]) / 1000
-            #else:
-            #    e_powertype['Other'].loc[year] = e_stage['e_tot'][year] - sum ( e_powertype.loc[year] )
 
         if 'Fuel' in self.counted:
             grid_CI = self.aggregator(Total_h, D_h)

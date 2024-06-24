@@ -17,7 +17,6 @@ class DieselProduction(ActivitySource):
         )
         return {
             'primary': flow_dict['petroleum'],
-            #            'secondary': [flow_dict[key] for key in flow_dict if key != 'natural gas']
             'secondary': []
         }
 

@@ -8,7 +8,6 @@ from tea.electricity.LCOE import LCOE
 from core import conditionals, validators
 from core.inputs import OptionsInput, ContinuousInput, Default, CategoricalInput
 from core.tea import TeaBase
-# from tea.electricity.storage.thermal.thermal_storage_tea import ThermalStorageTEA
 
 
 PATH = os.getcwd() + "/tea/electricity/wind/"
@@ -22,18 +21,12 @@ class WindTEA(TeaBase):
     def user_inputs(cls):
         return [
             CategoricalInput('group_by', 'Group By'),
-            # OptionsInput('state', 'State', options=[state.name for state in cls.states_speed.State],
-            #              conditionals=[conditionals.input_equal_to('group_by', 'State')]),
             CategoricalInput('region', 'Region'),
-            # OptionsInput('trg', 'Techno-Resource Group', options=TRGs,
-            #              conditionals=[conditionals.input_equal_to('group_by', 'Techno-Resource Group')]),
             CategoricalInput('install_type', 'Installation Type'),
             OptionsInput('cost_source', 'Select Data Source for Technology Costs', defaults=[Default('NREL')], options=['NREL', 'EIA']),
             OptionsInput('finance_source', 'Select Data Source for Finance Costs', defaults=[Default('ATB')], options=['ATB', 'EIA', 'ReEDS']),
             ContinuousInput('tax_credit', 'Tax Credits', validators=[validators.numeric(), validators.gte(0)]),
-            # OptionsInput('storage','Include Storage?',defaults=[Default('Yes')],options=['Yes','No']),
         ]
-               # + ThermalStorageTEA().user_inputs(generation= 'Yes')
 
     def __init__(self, lca_pathway=None):
         self.lca_pathway = lca_pathway
@@ -41,20 +34,12 @@ class WindTEA(TeaBase):
         self.cost_multipliers = pd.read_csv(PATH + "capital_cost_multipliers.csv")
         self.finance = pd.read_csv(PATH + "finance.csv")
         self.region_speed = pd.read_csv(PATH + "region_speed_new.csv")
-        # self.trgs_speed = pd.read_csv(PATH + "trgs_speed.csv")
         self.other_costs = pd.read_csv(PATH + "wind_other_costs.csv")
         super().__init__()
 
     def get_capacity_factor(self):
         region_speeds = self.region_speed[self.region_speed['Region'] == self.region]
         return float(statistics.mean(region_speeds['cap_fac']))
-        # if self.group_by == 'Techno-Resource Group':
-        #     trg_speed_row = self.trgs_speed[self.trgs_speed['TRG Zone'] == self.trg].iloc[0]
-        #     return float(trg_speed_row['cap_fac'])
-        # else:
-        #     state = us.states.lookup(self.state)
-        #     state_speeds = self.states_speed[self.states_speed['State'] == state.name]
-        #     return float(statistics.mean(state_speeds['cap_fac']))
 
     def get_cap_reg_mult(self):
         if self.group_by == 'Techno-Resource Group':
@@ -96,16 +81,11 @@ class WindTEA(TeaBase):
 
         wind_lcoe, CF = self.get_wind_lcoe()
         wind_cost_breakdown = wind_lcoe.get_cost_breakdown()
-
-        ## Connection with storage
         self.storage = "No"
         if self.storage == "Yes":
             self.storage_connection()
-            # Fraction of electricity from RE to storage
             alpha = self.r * (self.cycles / self.eta_rt) / (24 * CF)
-            # Total energy from renewable
             kWh_re = 1 / (alpha * self.eta_rt + 1 - alpha)
-            # Energy out of storage
             kWh_sto = kWh_re * self.eta_rt
             storage_lcoe = self.storage_object.get_cost_breakdown()
             wind_cost_breakdown["Capital and Fixed"] = {'Generation':kWh_re * wind_cost_breakdown["Capital and Fixed"], 'storage':kWh_sto *storage_lcoe["Capital and Fixed"]}
@@ -122,9 +102,3 @@ class WindTEA(TeaBase):
             wind_cost_breakdown["Capital and Fixed"] = cap_cost_by_part
 
         return wind_cost_breakdown
-
-    # def storage_connection(self):
-    #     self.storage_object = ThermalStorageTEA()
-    #     storage_inputs = self.user_inputs[-8:] #8 is the number of storage onputs
-    #     self.storage_object.set_user_inputs(storage_inputs)
-    #     self.eta_rt = self.storage_object.get_storage_rte()

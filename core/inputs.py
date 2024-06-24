@@ -14,9 +14,6 @@ class Default:
 
     def serialize(self):
         return {
-            # casting the value to a string so that the front-end type system can
-            # handle the union of types that `self.value` will be
-            # handle the union of types that `self.value` will be
             'value': json.dumps(self.value),
 
             'conditionals': [
@@ -40,7 +37,6 @@ class Tooltip:
         }
 
 class InputNode:
-    # this class is intended to be overridden
     input_type = 'unknown'
 
     def __init__(self, name, label, conditionals=None, children=None):
@@ -79,18 +75,13 @@ class InputGroup(InputNode):
 
 def default_value(node, input_set):
     for default in node.defaults:
-        # return first valid default
 
         if len(default.conditionals) == 0:
-            # considered valid if there are no conditionas
             return default.value
         else:
             for conditional in default.conditionals:
                 if conditional.check(input_set):
                     return default.value
-
-    # there are either no defaults or none of them
-    # pass the conditional checks
     return None
 
 class Input(InputNode):
@@ -144,7 +135,6 @@ class ContinuousInput(Input):
         value = super().transform(value)
         if value is not None and type(value) == str:
             try:
-                # try and convert str value to float
                 value = float(value)
             except ValueError:
                 pass
@@ -282,8 +272,6 @@ class ShareTableInput(Input):
             column: column_defaults(idx)
             for idx, column in enumerate(self.columns)
         }
-
-        # if there's only a single column then return that column as a list
         if len(self.columns) == 1:
             res = res[self.columns[0]]
 
@@ -295,11 +283,8 @@ class ShareTableInput(Input):
             value = json.loads(value)
 
         if type(value) == list:
-            # `value` is the last column of values
             res = { column: [] for column in self.columns }
             res[self.columns[-1]] = value
-
-            # if there's only a single column then return that column as a list
             if len(self.columns) == 1:
                 res = res[self.columns[0]]
 
@@ -332,8 +317,6 @@ class InputSet:
 
         for name, value in values.items():
             input_set.set_value(name, value)
-
-        # defaults for all remaining values
         for name in input_set.input_names:
             if name not in values:
                 value = input_set.default_value(name)
@@ -346,20 +329,14 @@ class InputSet:
         inputs: list of `Input`s
         values: dict of input name -> value
         """
-
-        # dict of input_name -> input
         self.inputs = {}
         self._add_inputs(inputs)
-
-        # dict of input_name -> value
         self.values = {}
         if values is not None:
             for name in self.inputs:
                 value = values.get(name)
                 if value is not None:
                     self.set_value(name, value)
-
-        # make a copy of the given context
         self.context = dict(context or {})
 
     def __contains__(self, input_name):

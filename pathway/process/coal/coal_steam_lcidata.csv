@@ -12,7 +12,7 @@ Mix (50% bituminous/40% subbituminous/4.4% lignite/other),US,GREET ,Unspecified,
 Mix (50% bituminous/40% subbituminous/4.4% lignite/other),US,GREET ,Unspecified,,co2,1.12E-01,kg/MJ,output,mass,EF tab-AD5 divided by boiler efficiency 84%
 Mix (50% bituminous/40% subbituminous/4.4% lignite/other),US,DOE,Unspecified,,coal,1.186323367,MJ/MJ,input,energy,1.186=1/eff (84%) where 84%=80%*90%/86% i.e. harmonized with GREET default efficiency of 80% (NG) with DOE benchmark for NG (86%) and coal (90%)
 Mix (50% bituminous/40% subbituminous/4.4% lignite/other),US,IEA,Unspecified,Key knob: boiler efficiency lower bound,coal,1.333333333,MJ/MJ,input,energy,IEA ETSAP Industrial Combustion Boilers 2010 (https://iea-etsap.org/E-TechDS/HIGHLIGHTS%20PDF/I01-ind_boilers-GS-AD-gct%201.pdf)
-Mix (50% bituminous/40% subbituminous/4.4% lignite/other),US,DOE,Unspecified,Key knob: boiler efficiency upper bound,coal,1.107419712,MJ/MJ,input,energy,DOE Steam Tip Sheet #15 2012 (https://www.energy.gov/sites/prod/files/2014/05/f16/steam15_benchmark.pdf)
+Mix (50% bituminous/40% subbituminous/4.4% lignite/other),US,DOE,Unspecified,Key knob: boiler efficiency upper bound,coal,1.107419712,MJ/MJ,input,energy,DOE Steam Tip Sheet 
 Bituminous,US,GREET ,Unspecified,,voc,5.30E-07,kg/MJ,output,mass,EF tab-AD5 divided by boiler efficiency 84%
 Bituminous,US,GREET ,Unspecified,,co,2.69E-05,kg/MJ,output,mass,EF tab-AD5 divided by boiler efficiency 84%
 Bituminous,US,GREET ,Unspecified,,nox,1.37E-04,kg/MJ,output,mass,EF tab-AD5 divided by boiler efficiency 84%
@@ -26,7 +26,7 @@ Bituminous,US,GREET ,Unspecified,,n2o,9.64E-07,kg/MJ,output,mass,EF tab-AD5 divi
 Bituminous,US,GREET ,Unspecified,,co2,1.01E-01,kg/MJ,output,mass,EF tab-AD16 (divided by boiler efficiency 84%) where in formula Fuel_Specs!B66 is replaced with B67 and F66 is replaced with F67 in Fuel_Specs tab
 Bituminous,US,DOE,Unspecified,,coal,1.186323367,MJ/MJ,input,energy,1.186=1/eff (84%) where 84%=80%*90%/86% i.e. harmonized with GREET default efficiency of 80% (NG) with DOE benchmark for NG (86%) and coal (90%)
 Bituminous,US,IEA,Unspecified,Key knob: boiler efficiency lower bound,coal,1.333333333,MJ/MJ,input,energy,IEA ETSAP Industrial Combustion Boilers 2010 (https://iea-etsap.org/E-TechDS/HIGHLIGHTS%20PDF/I01-ind_boilers-GS-AD-gct%201.pdf)
-Bituminous,US,DOE,Unspecified,Key knob: boiler efficiency upper bound,coal,1.107419712,MJ/MJ,input,energy,DOE Steam Tip Sheet #15 2012 (https://www.energy.gov/sites/prod/files/2014/05/f16/steam15_benchmark.pdf)
+Bituminous,US,DOE,Unspecified,Key knob: boiler efficiency upper bound,coal,1.107419712,MJ/MJ,input,energy,DOE Steam Tip Sheet 
 Subbituminous,US,GREET ,Unspecified,,voc,5.30E-07,kg/MJ,output,mass,EF tab-AD5 divided by boiler efficiency 84%
 Subbituminous,US,GREET ,Unspecified,,co,2.69E-05,kg/MJ,output,mass,EF tab-AD5 divided by boiler efficiency 84%
 Subbituminous,US,GREET ,Unspecified,,nox,1.37E-04,kg/MJ,output,mass,EF tab-AD5 divided by boiler efficiency 84%
@@ -40,7 +40,7 @@ Subbituminous,US,GREET ,Unspecified,,n2o,9.64E-07,kg/MJ,output,mass,EF tab-AD5 d
 Subbituminous,US,GREET ,Unspecified,,co2,1.25E-01,kg/MJ,output,mass,EF tab-AD16 (divided by boiler efficiency 84%) where in formula Fuel_Specs!B66 is replaced with B68 and F66 is replaced with F68 in Fuel_Specs tab
 Subbituminous,US,DOE,Unspecified,,coal,1.186323367,MJ/MJ,input,energy,1.186=1/eff (84%) where 84%=80%*90%/86% i.e. harmonized with GREET default efficiency of 80% (NG) with DOE benchmark for NG (86%) and coal (90%)
 Subbituminous,US,IEA,Unspecified,Key knob: boiler efficiency lower bound,coal,1.333333333,MJ/MJ,input,energy,IEA ETSAP Industrial Combustion Boilers 2010 (https://iea-etsap.org/E-TechDS/HIGHLIGHTS%20PDF/I01-ind_boilers-GS-AD-gct%201.pdf)
-Subbituminous,US,DOE,Unspecified,Key knob: boiler efficiency upper bound,coal,1.107419712,MJ/MJ,input,energy,DOE Steam Tip Sheet #15 2012 (https://www.energy.gov/sites/prod/files/2014/05/f16/steam15_benchmark.pdf)
+Subbituminous,US,DOE,Unspecified,Key knob: boiler efficiency upper bound,coal,1.107419712,MJ/MJ,input,energy,DOE Steam Tip Sheet 
 Lignite,US,GREET ,Unspecified,,voc,5.30E-07,kg/MJ,output,mass,EF tab-AD5
 Lignite,US,GREET ,Unspecified,,co,2.69E-05,kg/MJ,output,mass,EF tab-AD5
 Lignite,US,GREET ,Unspecified,,nox,1.37E-04,kg/MJ,output,mass,EF tab-AD5
@@ -54,4 +54,4 @@ Lignite,US,GREET ,Unspecified,,n2o,9.64E-07,kg/MJ,output,mass,EF tab-AD5
 Lignite,US,GREET ,Unspecified,,co2,1.70E-01,kg/MJ,output,mass,EF tab-AD16 (divided by boiler efficiency 84%) where in formula Fuel_Specs!B66 is replaced with B69 and F66 is replaced with F69 in Fuel_Specs tab
 Lignite,US,DOE,Unspecified,,coal,1.186323367,MJ/MJ,input,energy,1.186=1/eff (84%) where 84%=80%*90%/86% i.e. harmonized with GREET default efficiency of 80% (NG) with DOE benchmark for NG (86%) and coal (90%)
 Lignite,US,IEA,Unspecified,Key knob: boiler efficiency lower bound,coal,1.333333333,MJ/MJ,input,energy,IEA ETSAP Industrial Combustion Boilers 2010 (https://iea-etsap.org/E-TechDS/HIGHLIGHTS%20PDF/I01-ind_boilers-GS-AD-gct%201.pdf)
-Lignite,US,DOE,Unspecified,Key knob: boiler efficiency upper bound,coal,1.107419712,MJ/MJ,input,energy,DOE Steam Tip Sheet #15 2012 (https://www.energy.gov/sites/prod/files/2014/05/f16/steam15_benchmark.pdf)
+Lignite,US,DOE,Unspecified,Key knob: boiler efficiency upper bound,coal,1.107419712,MJ/MJ,input,energy,DOE Steam Tip Sheet 

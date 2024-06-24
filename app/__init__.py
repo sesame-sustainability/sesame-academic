@@ -1,12 +1,3 @@
-# import sys
-# import traceback
-# class TracePrints(object):
-#     def __init__(self):
-#         self.stdout = sys.stdout
-#     def write(self, s):
-#         self.stdout.write(s)
-#         traceback.print_stack(file=self.stdout)
-# sys.stdout = TracePrints()
 
 from flask import Flask
 from flask_cors import CORS

@@ -135,10 +135,6 @@ class WindPowerProduction(ActivitySource):
         }
 
         multiplier = self.output['value']
-
-        # FIXME
-        # we're passing this multiplier, which indirectly represents the transmission loss
-        # through to the upstream stage in this pathway
         upstream_emissions['__multiplier'] = multiplier
 
         return {

@@ -10,7 +10,6 @@ class CNG(ActivitySource):
     def prepare(self, input_set):
         super().prepare(input_set)
         self.output = utils.create_flow_object('cng', 1.0 , 'MJ')
-# CNG doesn't have a gate to user transportation module because compression and end use are usually co-located. CNG transportation data was not found in GREET 2019.
     def get_inputs(self):
         return {
             'primary': self.output,

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Tue Jan 26 10:44:43 2021
 
@@ -19,17 +17,7 @@ from core.tea import TeaBase
 
 
 PATH = os.getcwd() + "/tea/electricity/nuclear/"
-# Different types of nuclear reactors
-    # PWR:  Pressurized Water Reactor
-    # BWR: Boiling Water Reactor
-    # HTGR: High Temperature Gas Reactor
-    # SMR:  Small Modular Reactor
 
-# NOTE: CAPEX is not scaled by power law (typically with coefficient = 0.6) because literature and data generally do not support this trend
-# This is not surprising given challenges of staying on bugdget for large civil engineering projects
-# Exceptions may be in countries that routinely build similarly designed nuclear power stations such as France, China, and South Korea
-# https://doi.org/10.1016/j.joule.2020.10.001
-# https://energy.mit.edu/wp-content/uploads/2018/09/The-Future-of-Nuclear-Energy-in-a-Carbon-Constrained-World.pdf
 
 
 class NuclearTEA(TeaBase):
@@ -64,8 +52,6 @@ class NuclearTEA(TeaBase):
                 ),
             ),
 
-#            OptionsInput('cost_source', 'Data Source for Technology Costs', defaults=[Default('MIT Literature Review')], options=['MIT Literature Review']),
-#            OptionsInput('finance_source', 'Data Source for Finance Costs', defaults=[Default('ATB')], options=['ATB']),
 
             ContinuousInput(
                 'lifetime','Lifetime',
@@ -110,7 +96,7 @@ class NuclearTEA(TeaBase):
                 tooltip=Tooltip(
                     '47 $/MWh is the US average transmission AND distribution cost, including 14 transmission, and 33 distribution (mainly to residential and commercial consumers). If the power is intended for industrial use, then 14 is recommended.',
                     source='EIA',
-                    source_link='https://www.eia.gov/outlooks/aeo/data/browser/#/?id=8-AEO2021&region=0-0&cases=ref2021&star; https://www.eia.gov/energyexplained/electricity/prices-and-factors-affecting-prices.php',
+                    source_link='https://www.eia.gov/outlooks/aeo/data/browser/
                 ),
             ),
             ContinuousInput(
@@ -120,7 +106,7 @@ class NuclearTEA(TeaBase):
                 validators=[validators.numeric(), validators.gt(0), validators.lt(100)],
                 tooltip=Tooltip(
                     "The default value represents sales tax, which varies by states and specific use cases. 6.35% represents US averegae sales tax. For electricity-specific tax, 7% was found for North Carolina, and 6.25% for Texas non-residential use: https://comptroller.texas.gov/taxes/publications/96-1309.pdf.",
-                    source_link='https://www.ncdor.gov/taxes-forms/sales-and-use-tax/electricity#:~:text=Gross%20receipts%20derived%20from%20sales,Sales%20and%20Use%20Tax%20Return.',
+                    source_link='https://www.ncdor.gov/taxes-forms/sales-and-use-tax/electricity
                 ),
            ),
         ]
@@ -144,7 +130,7 @@ class NuclearTEA(TeaBase):
 
     def get_cost_values(self):
         nuclear_costs = {}
-        filtered = self.other_costs[#(self.other_costs['Source'] == 'MIT Literature Review') &
+        filtered = self.other_costs[
                                     (self.other_costs['Type'] == self.reactor_type)]
         for row in filtered.to_dict(orient='records'):
             nuclear_costs[row['Cost Type']] = float(row['Value'])
@@ -152,11 +138,9 @@ class NuclearTEA(TeaBase):
         print (nuclear_costs)
 
     def get_lcoe(self):
-#        interest_rate = 0.05
         cost_values = self.get_cost_values()
-        occ = self.occ #$/kW
+        occ = self.occ 
         cap_fac = self.cap_fac
-        # cap_reg_mult = self.get_cap_reg_mult()
         cap_reg_mult = 1
         finance_values = self.get_finance_values()
 
@@ -164,22 +148,19 @@ class NuclearTEA(TeaBase):
         tax_rate = self.tax_rate
         interest_rate = self.interest_rate
         grid_cost = 0
-        fuel_cost = 7 # $/MWh: NREL ATB 2020 'Nuclear' tab
-        #find values later
+        fuel_cost = 7 
 
 
         nuclear_lcoe = LCOE(
             cap_fac, cap_reg_mult,
-            occ, #$/kW
-#            cost_values['OCC'],
-            cost_values['FOM'], #$/kW-year
-            cost_values['VOM']+self.user_trans_dist_cost, # $/MWh
+            occ, 
+            cost_values['FOM'], 
+            cost_values['VOM']+self.user_trans_dist_cost, 
             finance_values,
-            #interest_rate,
-            lifetime, #year
-            grid_cost, # $/kW
-            fuel_cost, # $/MWh
-            tax_rate # %this is the electricity sales tax rate, not the one used for levelized capital cost calculation
+            lifetime, 
+            grid_cost, 
+            fuel_cost, 
+            tax_rate 
         )
         return nuclear_lcoe
 
@@ -187,15 +168,3 @@ class NuclearTEA(TeaBase):
         lcoe = self.get_lcoe()
         cost_breakdown = lcoe.get_cost_breakdown()
         return cost_breakdown
-
-    #     nuclear_lcoe = self.get_nuclear_lcoe()
-    #     nuclear_cost_breakdown = nuclear_lcoe.get_cost_breakdown()
-    #     cap_cost_total = nuclear_cost_breakdown["Capital and Fixed"]
-    #     cap_cost_by_part = {}
-    #     filtered = self.cost_by_parts[self.cost_by_parts['Type'] == self.reactor_type]
-    #     for row in filtered.to_dict(orient='records'):
-    #         cap_cost_by_part[row["Item"]] = (float(row["% cost"]) * cap_cost_total) / 100.0
-
-    #     nuclear_cost_breakdown["Capital and Fixed"] = cap_cost_by_part
-
-    #     return nuclear_cost_breakdown

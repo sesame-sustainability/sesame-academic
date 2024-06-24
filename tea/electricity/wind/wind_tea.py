@@ -54,7 +54,7 @@ class WindTEA(TeaBase):
                 tooltip=Tooltip(
                     '47 $/MWh is the US average transmission AND distribution cost, including 14 transmission, and 33 distribution (mainly to residential and commercial consumers). If the power is intended for industrial use, then 14 is recommended.',
                     source='EIA',
-                    source_link='https://www.eia.gov/outlooks/aeo/data/browser/#/?id=8-AEO2021&region=0-0&cases=ref2021&star; https://www.eia.gov/energyexplained/electricity/prices-and-factors-affecting-prices.php',
+                    source_link='https://www.eia.gov/outlooks/aeo/data/browser/
                 ),
             ),
             OptionsInput(
@@ -74,7 +74,7 @@ class WindTEA(TeaBase):
                 validators=[validators.numeric(), validators.gt(0), validators.lt(100)],
                 tooltip=Tooltip(
                     "The default value represents sales tax, which varies by states and specific use cases. 6.35% represents US averegae sales tax. For electricity-specific tax, 7% was found for North Carolina, and 6.25% for Texas non-residential use: https://comptroller.texas.gov/taxes/publications/96-1309.pdf.",
-                    source_link='https://www.ncdor.gov/taxes-forms/sales-and-use-tax/electricity#:~:text=Gross%20receipts%20derived%20from%20sales,Sales%20and%20Use%20Tax%20Return.',
+                    source_link='https://www.ncdor.gov/taxes-forms/sales-and-use-tax/electricity
                 ),
             ),
 
@@ -153,7 +153,6 @@ class WindTEA(TeaBase):
         self.cost_multipliers = pd.read_csv(PATH + "capital_cost_multipliers.csv")
         self.finance = pd.read_csv(PATH + "finance.csv")
         self.region_speed = pd.read_csv(PATH + "region_speed_new.csv")
-        # self.trgs_speed = pd.read_csv(PATH + "trgs_speed.csv")
         self.other_costs = pd.read_csv(PATH + "wind_other_costs.csv")
         super().__init__(**kwargs)
 
@@ -174,13 +173,6 @@ class WindTEA(TeaBase):
     def get_cap_fac(self):
         region_speeds = self.region_speed[self.region_speed['Region'] == self.region]
         return float(statistics.mean(region_speeds['cap_fac']))
-        # if self.group_by == 'Techno-Resource Group':
-        #     trg_speed_row = self.trgs_speed[self.trgs_speed['TRG Zone'] == self.trg].iloc[0]
-        #     return float(trg_speed_row['cap_fac'])
-        # else:
-        #     state = us.states.lookup(self.state)
-        #     state_speeds = self.states_speed[self.states_speed['State'] == state.name]
-        #     return float(statistics.mean(state_speeds['cap_fac']))
 
     def get_cap_reg_mult(self):
         if self.group_by == 'Techno-Resource Group':
@@ -209,9 +201,8 @@ class WindTEA(TeaBase):
     def get_references(self):
         filtered = self.other_costs[(self.other_costs['Source'] == self.cost_source) &
                                     (self.other_costs['Type'] == self.install_type)]
-#        ref_turbine = filtered[filtered['Cost Type'] == "OCC"].ref_turbine
         ref_windfarm = filtered[filtered['Cost Type'] == "OCC"].ref_windfarm
-        return ref_windfarm #, ref_turbine
+        return ref_windfarm 
 
     def get_wind_lcoe(self):
         if self.lca_pathway is not None:
@@ -222,10 +213,8 @@ class WindTEA(TeaBase):
 
         filtered = self.other_costs[(self.other_costs['Source'] == self.cost_source) &
                                     (self.other_costs['Type'] == self.install_type)]
-#        ref_turbine = filtered[filtered['Cost Type'] == "OCC"].ref_turbine
         ref_windfarm = filtered[filtered['Cost Type'] == "OCC"].ref_windfarm
 
-#        turbine_scaling_factor = float((self.turbine_size /ref_turbine) ** self.economies_of_scale_factor)
         windfarm_scaling_factor = float((self.windfarm_size/ref_windfarm) ** self.economies_of_scale_factor)
 
         OCC = self.get_other_costs()["OCC"]
@@ -236,8 +225,6 @@ class WindTEA(TeaBase):
         lifetime = self.lifetime
         grid_cost = 0
         fuel_cost = 0
-#removed double counting of windfarm size and turbine size
-#corrected economy of scale equation (was totally wrong before this correction - causing directionally mistake)
         wind_lcoe = LCOE(
             cap_fac,
             cap_reg_mult,
@@ -254,18 +241,9 @@ class WindTEA(TeaBase):
     def get_cost_breakdown(self):
         wind_lcoe = self.get_wind_lcoe()
         wind_cost_breakdown = wind_lcoe.get_cost_breakdown()
-        wind_cost_breakdown['Non-fuel variable'] = 0  # $/MWh
-        wind_cost_breakdown['Delivery'] = 1 / (1 - self.transm_loss / 100) * self.user_trans_dist_cost # $/MWh
-        wind_cost_breakdown['Tax'] = self.tax_rate/100 * (wind_cost_breakdown['Capital'] + wind_cost_breakdown['Fuel'] + wind_cost_breakdown['Non-fuel variable'] + wind_cost_breakdown['Delivery'])  # $/MWh
-
-        # cap_cost_total = wind_cost_breakdown['Capital'] + wind_cost_breakdown['Fixed']
-        # del wind_cost_breakdown['Capital']
-        # del wind_cost_breakdown['Fixed']
-        # cap_cost_by_part = {}
-        # filtered = self.cost_by_parts[self.cost_by_parts['Type'] == self.install_type]
-        # for row in filtered.to_dict(orient='records'):
-        #     cap_cost_by_part[row["Item"]] = (float(row["% cost"]) * cap_cost_total) / 100.0
-        # wind_cost_breakdown["Capital and Fixed"] = cap_cost_by_part
+        wind_cost_breakdown['Non-fuel variable'] = 0  
+        wind_cost_breakdown['Delivery'] = 1 / (1 - self.transm_loss / 100) * self.user_trans_dist_cost 
+        wind_cost_breakdown['Tax'] = self.tax_rate/100 * (wind_cost_breakdown['Capital'] + wind_cost_breakdown['Fuel'] + wind_cost_breakdown['Non-fuel variable'] + wind_cost_breakdown['Delivery'])  
 
         return {
             key: wind_cost_breakdown[key]

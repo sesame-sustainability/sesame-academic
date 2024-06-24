@@ -9,7 +9,6 @@ class Corn_ethanol_nobiogen(ActivitySource):
     def prepare(self, input_set):
         super().prepare(input_set)
         low_heat_value = Substance('Liquid', 'Ethanol').get_lower_heat_value()
-        # output flow is the heat content in MJ of the fuel per kg of the fuel
         self.output = utils.create_flow_object('ethanol', 1.0, 'MJ')
 
     def get_inputs(self):

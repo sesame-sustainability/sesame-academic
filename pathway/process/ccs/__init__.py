@@ -54,11 +54,6 @@ def user_inputs(tea=True, user_ci_default=None):
             )
 
         ),
-        # OptionsInput(
-        #     'cap_tech', 'Capture Technology',
-        #     options=['amine'],
-        #     conditionals=[conditionals.input_equal_to('use_CCS', 'Yes')],
-        # ),
         ContinuousInput(
             'cap_percent_plant', 'CO\u2082 Captured from Plant',
             unit='%',

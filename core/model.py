@@ -22,7 +22,6 @@ class ModelComposer:
         return inputs
 
     def prepare(self, full_input_set, model):
-        # unprefix model's input set before preparing model
         inputs = model.__class__.inputs()
         model_input_set = InputSet(inputs, context=full_input_set.context)
 
@@ -40,8 +39,6 @@ class ModelComposer:
             for conditional in conditionals:
                 dependent_name, val = conditional.args
                 conditional.args = (f'{prefix(name)}_{dependent_name}', val)
-
-        # each input must have a unique name
         input.name = f'{prefix(name)}_{input.name}'
 
         prefix_conditionals(input.conditionals)

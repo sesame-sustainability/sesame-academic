@@ -16,10 +16,7 @@ class CcsTea:
     def user_inputs(cls, source = "Hydrogen Production", tea_lca = False, cost_or_not = "Cost"):
         cost_defaults = pd.read_csv(PATH + "transport&storage costs.csv")
 
-        cap_tech = "amine" # Presently the only CCS Technology modeled in SESAME
-        # cls.plant_type = source
-
-        # splitting tea-only-inputs only to have the ordering make more sense
+        cap_tech = "amine" 
         tea_only_inputs1 = [
             ContinuousInput(
                 'cap_percent_plant', 'CO\u2082 Captured from Plant',
@@ -53,7 +50,7 @@ class CcsTea:
             ContinuousInput(
                 'pipeline_miles', 'Pipeline Distance from Capture to Sequester',
                 unit='mi',
-                defaults=[Default(240)], # 240 mi would lead the transpor & storage cost to ~20$/T, commonly accepted value. Will add source later. The original 3 mi was too low.
+                defaults=[Default(240)], 
                 validators=[validators.numeric(), validators.gte(0)],
                 conditionals=[conditionals.input_equal_to('use_CCS', 'Yes')],
                 tooltip=Tooltip(
@@ -130,108 +127,86 @@ class CcsTea:
     def __init__(self, plant_type, plant_size, economies_of_scale_factor, cap_percent_plant, cap_percent_regen, storage_cost_source,
                  storage_cost, crf, gr, distance, electricity_ci, electricity_price, natural_gas_price, CO2_captured, extra_inputs = None):
         self.plant_type = plant_type
-        self.plant_size = float(plant_size)  # MW net
+        self.plant_size = float(plant_size)  
         self.economies_of_scale_factor = economies_of_scale_factor
-        self.capture_tech = "amine"  # amine, None
-        self.cap_percent_plant = cap_percent_plant  # capture, typically 85%
-        self.cap_percent_regen = cap_percent_regen  # capture from regeneration. typically 85%
+        self.capture_tech = "amine"  
+        self.cap_percent_plant = cap_percent_plant  
+        self.cap_percent_regen = cap_percent_regen  
         self.storage_cost_source = storage_cost_source
-        self.storage_cost = storage_cost  # storage cost in USD/tCO2
-        self.crf = crf # capital recovery factor
-        self.gr = gr # generating region
-        self.distance = distance  # distance from source to sink in miles
-        self.electricity_ci = electricity_ci  # from power plant
-        self.Power_Price = electricity_price # 0 for NG and coal power
+        self.storage_cost = storage_cost  
+        self.crf = crf 
+        self.gr = gr 
+        self.distance = distance  
+        self.electricity_ci = electricity_ci  
+        self.Power_Price = electricity_price 
         self.Gas_Cost = natural_gas_price
         self.extra_inputs = extra_inputs
 
         if CO2_captured is not None:
-            self.CO2_captured = CO2_captured['total'] # None if LCA is not done prior, otherwise from LCA
+            self.CO2_captured = CO2_captured['total'] 
             self.CO2_captured_plant = CO2_captured['plant']
             self.CO2_captured_regen = CO2_captured['regen']
             self.CO2_captured_comp = CO2_captured['comp']
         else:
             self.CO2_captured = None
-        #self.coal_rank = coal_rank
-
-    # INPUTS
 
     def get_capture_cost_breakdown(self):
-
-        # Read techno-economic reference data
         global cap_regen_emissions, cap_comp_emissions
         ref_plant = pd.read_csv(PATH + "reference.csv")
         filtered = ref_plant[ref_plant['plant type'] == self.plant_type]
         ref_plant_size = float(
-            filtered[filtered['technology'] == self.capture_tech].iloc[0].refsize)  # units depend on plant type
+            filtered[filtered['technology'] == self.capture_tech].iloc[0].refsize)  
         ref_co2_captured = float(
-            filtered[filtered['technology'] == self.capture_tech].iloc[0].co2captured)  # in tCO2/year
+            filtered[filtered['technology'] == self.capture_tech].iloc[0].co2captured)  
         ref_avg_capital_cost = float(
-            filtered[filtered['technology'] == self.capture_tech].iloc[0].avgcapex) * 1000000  # in USD
+            filtered[filtered['technology'] == self.capture_tech].iloc[0].avgcapex) * 1000000  
         ref_min_capital_cost = float(
-            filtered[filtered['technology'] == self.capture_tech].iloc[0].mincapex) * 1000000  # in USD
+            filtered[filtered['technology'] == self.capture_tech].iloc[0].mincapex) * 1000000  
         ref_max_capital_cost = float(
-            filtered[filtered['technology'] == self.capture_tech].iloc[0].maxcapex) * 1000000  # in USD
+            filtered[filtered['technology'] == self.capture_tech].iloc[0].maxcapex) * 1000000  
         fuel_consumption = float(
-            filtered[filtered['technology'] == self.capture_tech].iloc[0].fuel)  # in MJ/kgCO2 captured
+            filtered[filtered['technology'] == self.capture_tech].iloc[0].fuel)  
         elec_consumption = float(
-            filtered[filtered['technology'] == self.capture_tech].iloc[0].electricity)  # in MJ/kgCO2 captured
+            filtered[filtered['technology'] == self.capture_tech].iloc[0].electricity)  
         fom_capex = float(
-            filtered[filtered['technology'] == self.capture_tech].iloc[0].fom_capex)  # in %
-
-
-        #fuel_costs = pd.read_csv(PATH + "coal_EIA_fuelcost.csv")
-        #filtered = fuel_costs[fuel_costs["Generation Region"] == self.gr]
-        #coal_price = float(filtered[filtered['Year'] == self.yr].iloc[0].value)/1055 # in USD/MJ
+            filtered[filtered['technology'] == self.capture_tech].iloc[0].fom_capex)  
 
         other_costs = pd.read_csv(PATH + "transport&storage costs.csv")
-        ref_transp_cost = float(other_costs[other_costs["Generation Region"] == self.gr].iloc[0].transport)  # in USD/mile-tCO2
+        ref_transp_cost = float(other_costs[other_costs["Generation Region"] == self.gr].iloc[0].transport)  
         if self.storage_cost_source != 'User defined':
-            ref_storage_cost = float(other_costs[other_costs["Generation Region"] == self.gr].iloc[0].storage)  # in USD/tCO2
+            ref_storage_cost = float(other_costs[other_costs["Generation Region"] == self.gr].iloc[0].storage)  
             self.storage_cost = ref_storage_cost
-        capture_scaling_factor = float(self.cap_percent_plant) / 85  # 85 is the default capture percent
+        capture_scaling_factor = float(self.cap_percent_plant) / 85  
 
         if self.plant_type == "Hydrogen Production":
-            self.cap_percent_comp = 0  # no capture during compression
+            self.cap_percent_comp = 0  
             mmcfd_m3_per_hr = 1177.17
-            m3_MW = 0.003 # m3/hr H2 to MW H2
-            plant_size = self.plant_size # in MW H2
-            ref_plant_size = ref_plant_size * mmcfd_m3_per_hr * m3_MW # MMCF/D TO MW
+            m3_MW = 0.003 
+            plant_size = self.plant_size 
+            ref_plant_size = ref_plant_size * mmcfd_m3_per_hr * m3_MW 
         else:
-            self.cap_percent_comp = self.cap_percent_plant  # rate matches capture rate of plant
-            # Updated plant size due to electricity for compression generated in situ
+            self.cap_percent_comp = self.cap_percent_plant  
             plant_size = float(self.plant_size / (
                         1 - elec_consumption * ref_co2_captured * capture_scaling_factor / (
-                            ref_plant_size * 3.6 * 8760))) #MW net
-
-        # Scaling factors
+                            ref_plant_size * 3.6 * 8760))) 
         flow_scaling_factor = float(plant_size) / float(ref_plant_size)
-        # capture_scaling_factor = float(self.cap_percent_plant) / 85  # 85 is the default capture percent
         capex_scaling_factor = float(flow_scaling_factor ** self.economies_of_scale_factor)
-
-
-        # general conversion factors needed for calculations
         g_in_kg = 1000
         btu_in_mj = 947.81712
         g_C_in_mol_co2 = 12.0107
         g_co2_in_mol_co2 = 44.009
         g_in_short_ton = 907185
 
-        #for a plant_type different than Coal POwer Plan, CCS fuel is natural gas
-
         if self.plant_type == "Coal Power Plants":
-            # gathering energy density based on type of coal
             coal_rank = self.extra_inputs['coal_rank']
             print(coal_rank)
             coal_properties = pd.read_csv(PATH [:- len ("ccs/pointsources/")] + "coal/coal_properties.csv")
             coal_densities = coal_properties[coal_properties['characteristic'] == 'energy density']
-            filtered = coal_densities[coal_densities['coal rank'] == coal_rank] #default value
+            filtered = coal_densities[coal_densities['coal rank'] == coal_rank] 
             btu_in_short_ton = float(filtered.iloc[0].value)
             coal_carbon = coal_properties[coal_properties['characteristic'] == 'carbon content']
-            filtered = coal_carbon[coal_carbon['coal rank'] == coal_rank]  #default value
+            filtered = coal_carbon[coal_carbon['coal rank'] == coal_rank]  
             g_C_in_coal = float(filtered.iloc[0].value) / 100
-
-            # coal emission factor
             fuel_co2_kg_MJ = btu_in_mj / btu_in_short_ton * g_in_short_ton * g_C_in_coal / g_C_in_mol_co2 * \
                              g_co2_in_mol_co2 / g_in_kg
 
@@ -248,19 +223,14 @@ class CcsTea:
             cap_regen_emissions = self.CO2_captured_regen
             cap_comp_emissions = self.CO2_captured_comp
         else:
-            # if LCA and TEA are not done together emissions from plant are calculated based on scaling up
-            # from reference values
-            cap_plant_emissions = ref_co2_captured * flow_scaling_factor * capture_scaling_factor  # in tCO2/year
-            # setting appropriate electricity carbon intensity
-            elec_co2_kg_MJ = self.electricity_ci / 3.6  # power plant carbon intensity in kg/MJ
+            cap_plant_emissions = ref_co2_captured * flow_scaling_factor * capture_scaling_factor  
+            elec_co2_kg_MJ = self.electricity_ci / 3.6  
             a = float(fuel_consumption * fuel_co2_kg_MJ * cap_plant_emissions)
             b = float(fuel_consumption * fuel_co2_kg_MJ * self.cap_percent_regen / 100)
             c = float(fuel_consumption * fuel_co2_kg_MJ * self.cap_percent_comp / 100)
             d = float(elec_consumption * elec_co2_kg_MJ * cap_plant_emissions)
             e = float(elec_consumption * elec_co2_kg_MJ * self.cap_percent_regen / 100)
             f = float(elec_consumption * elec_co2_kg_MJ * self.cap_percent_comp / 100)
-
-            # Regen and comp emissions
             if self.cap_percent_regen == 0:
                 cap_regen_emissions = 0
             else:
@@ -270,55 +240,35 @@ class CcsTea:
                 cap_comp_emissions = 0
             else:
                 cap_comp_emissions = (d + e * cap_regen_emissions) / (1 - f)
-
-            # Captured total emissions
             cap_total_emissions = cap_plant_emissions + cap_regen_emissions + cap_comp_emissions
 
-        extra_scaling_factor = cap_total_emissions / cap_plant_emissions  # extra scaling factor takes into account emissions from regen and comp
-
-        # Overnight capital cost
+        extra_scaling_factor = cap_total_emissions / cap_plant_emissions  
         ovrnght_avg_cap_cost = float(
-            ref_avg_capital_cost * capex_scaling_factor * capture_scaling_factor * extra_scaling_factor)  # in USD
+            ref_avg_capital_cost * capex_scaling_factor * capture_scaling_factor * extra_scaling_factor)  
         ovrnght_min_cap_cost = float(
-            ref_min_capital_cost * capex_scaling_factor * capture_scaling_factor * extra_scaling_factor)  # in USD
+            ref_min_capital_cost * capex_scaling_factor * capture_scaling_factor * extra_scaling_factor)  
         ovrnght_max_cap_cost = float(
-            ref_max_capital_cost * capex_scaling_factor * capture_scaling_factor * extra_scaling_factor)  # in USD
+            ref_max_capital_cost * capex_scaling_factor * capture_scaling_factor * extra_scaling_factor)  
+        annualized_avg_cap_cost = self.crf * ovrnght_avg_cap_cost  
+        annualized_min_cap_cost = self.crf * ovrnght_min_cap_cost  
+        annualized_max_cap_cost = self.crf * ovrnght_max_cap_cost  
+        fom_avg_cost = ovrnght_avg_cap_cost * fom_capex / 100  
+        fom_min_cost = ovrnght_min_cap_cost * fom_capex / 100  
+        fom_max_cost = ovrnght_max_cap_cost * fom_capex / 100  
+        nat_gas_cost = self.Gas_Cost * fuel_consumption * cap_total_emissions * 1000 * 0.000948 
+        electricity_cost = self.Power_Price * elec_consumption * cap_total_emissions * 1000 * 0.000277778 
+        vom_cost = nat_gas_cost + electricity_cost  
 
-        # Annualized capital cost
-        annualized_avg_cap_cost = self.crf * ovrnght_avg_cap_cost  # in USD/year
-        annualized_min_cap_cost = self.crf * ovrnght_min_cap_cost  # in USD/year
-        annualized_max_cap_cost = self.crf * ovrnght_max_cap_cost  # in USD/year
-
-        # Fixed O&M cost
-        fom_avg_cost = ovrnght_avg_cap_cost * fom_capex / 100  # in USD/year
-        fom_min_cost = ovrnght_min_cap_cost * fom_capex / 100  # in USD/year
-        fom_max_cost = ovrnght_max_cap_cost * fom_capex / 100  # in USD/year
-
-        # Variable O&M cost
-        # There are no var O&M cost for capture, rather there are extra coal and electricity consumption when ng and coal are run with ccs
-        # for h2 extra electricity and natural gas will contribute to VOM and electricity price != 0
-        nat_gas_cost = self.Gas_Cost * fuel_consumption * cap_total_emissions * 1000 * 0.000948 #Conversion factor MJ to MMBtu
-        electricity_cost = self.Power_Price * elec_consumption * cap_total_emissions * 1000 * 0.000277778 #Conversion factor MJ to MWh
-        vom_cost = nat_gas_cost + electricity_cost  # in USD/year
-
-        ccs_parasitic_load = plant_size/self.plant_size-1 #extra load due to ccs
-        fuel_consumption_per_MWh= fuel_consumption * 1000 * cap_total_emissions * (btu_in_mj/ 1000000) / (plant_size  * 8760) # MMBTU/MWh
-
-        # Capture cost
+        ccs_parasitic_load = plant_size/self.plant_size-1 
+        fuel_consumption_per_MWh= fuel_consumption * 1000 * cap_total_emissions * (btu_in_mj/ 1000000) / (plant_size  * 8760) 
         capture_avg_cost = annualized_avg_cap_cost + fom_avg_cost + vom_cost
         capture_min_cost = annualized_min_cap_cost + fom_min_cost + vom_cost
         capture_max_cost = annualized_max_cap_cost + fom_max_cost + vom_cost
-
-        # Taxes on capture costs
-        capture_avg_taxes = 0.21 * capture_avg_cost  # Federal tax rate from NPC Report 2019
-        capture_min_taxes = 0.21 * capture_min_cost  # Federal tax rate from NPC Report 2019
-        capture_max_taxes = 0.21 * capture_max_cost  # Federal tax rate from NPC Report 2019
-
-        # Transportation cost
-        transp_cost = ref_transp_cost * self.distance * cap_total_emissions  # in USD/year
-
-        # Storage cost
-        storage_cost = self.storage_cost * cap_total_emissions # in USD/year
+        capture_avg_taxes = 0.21 * capture_avg_cost  
+        capture_min_taxes = 0.21 * capture_min_cost  
+        capture_max_taxes = 0.21 * capture_max_cost  
+        transp_cost = ref_transp_cost * self.distance * cap_total_emissions  
+        storage_cost = self.storage_cost * cap_total_emissions 
         print(cap_total_emissions)
         cost_breakdown = {
             "Total AVG capture, transport and storage cost in USD/tCO2":

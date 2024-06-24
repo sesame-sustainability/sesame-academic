@@ -45,7 +45,6 @@ def prompt_value(user_input, input_set):
 
         val = input(label)
         if val == '':
-            # use default
             val = default
 
         return float(val)
@@ -153,8 +152,6 @@ class IronSteelCLI(SystemCLI):
 
     def prompt_inputs(self):
         super().prompt_inputs()
-
-        # there's no default for route
         if self.input_set.value('route') is None:
             route_input = self.input_set.input('route')
             self.input_set.set_value('route', prompt_input(route_input, self.input_set))

@@ -3,7 +3,6 @@ import statistics
 from pathlib import Path
 
 import pandas as pd
-# import us
 
 from tea.electricity.LCOE import LCOE
 from core import conditionals, validators
@@ -17,12 +16,10 @@ class ThermalStorageTEA(TeaBase):
     @classmethod
     def user_inputs(cls):
         return[
-            # TO-DO: create or modify the validator such that the capacity factor is between 0 and 1
             ContinuousInput('duration_charge','Charge Duration (hr)',validators=[validators.numeric(), validators.gt(0)]),
             ContinuousInput('duration_discharge','Discharge Duration (hr)',validators=[validators.numeric(), validators.gt(0)]),
             ContinuousInput('cycles','Cycles per day',validators=[validators.numeric(), validators.gt(0)]),
             ContinuousInput('lifetime','Lifetime', defaults=[Default(30)], validators=[validators.numeric(), validators.integer(), validators.gt(0)]),
-            # Energy capital cost estimated for 200 GWh_th (~100 GWh_e) system
             OptionsInput('cost_source', 'Select Data Source for Technology Costs', defaults=[Default('MIT - 2050 estimate')], options=['MIT - 2050 estimate']),
             OptionsInput('cost_scenario', 'Select Cost Scenario', defaults=[Default('Moderate')], options=['High','Moderate','Low']),
             OptionsInput('finance_source', 'Select Data Source for Finance Costs', defaults=[Default('ATB')], options=['ATB', 'EIA', 'ReEDS'])
@@ -32,15 +29,6 @@ class ThermalStorageTEA(TeaBase):
         self.lca_pathway = lca_pathway   
         self.finance = pd.read_csv(PATH + "finance.csv")   
         self.cost_data = pd.read_csv(PATH + "TES_data_kW.csv")
-
-    # Set to 1 in get_storage_lcoe()
-
-    # def get_cap_reg_mult(self):
-    #     if self.group_by == 'Techno-Resource Group':
-    #         return 1
-    #     else:
-    #         state_cost_multipliers = self.cost_multipliers[self.cost_multipliers['State'] == self.state.abbr]
-    #         return float(statistics.mean(state_cost_multipliers['cap_reg_mult']))
 
     def get_cap_fac(self):
         cf = self.cycles * self.duration_discharge * 365 / 8760
@@ -69,10 +57,6 @@ class ThermalStorageTEA(TeaBase):
         
         eta_charge = df.loc[df['Variable'] == 'Efficiency up']["Value"].item() 
         eta_discharge = df.loc[df['Variable'] == 'Efficiency down']["Value"].item() 
-
-        # Overnight Capital Cost (OCC) expressed in $/kW_e produced
-        # Convert charging cost from $/kW_in to $/kW_out with roundtrip efficiency and ratio of duration
-        # Convert energy cost from "native" units, e.g. thermal, to electricity
         ratio = self.duration_discharge/self.duration_charge * 1/(eta_charge*eta_discharge)
         storage_costs["OCC"] = capex_power_discharge + (capex_power_charge * ratio) + (capex_energy/eta_discharge * self.duration_discharge)
         storage_costs["FOM"] = FOM_discharge + (FOM_charge * ratio) + (FOM_storage/eta_discharge * self.duration_discharge)
@@ -82,7 +66,6 @@ class ThermalStorageTEA(TeaBase):
 
     def get_storage_lcoe(self):
         cap_fac = self.get_cap_fac()
-        # cap_reg_mult = self.get_cap_reg_mult()
         cap_reg_mult = 1
         cost_values = self.get_cost_values()
         finance_values = self.get_finance_values()
@@ -98,13 +81,4 @@ class ThermalStorageTEA(TeaBase):
         lcoe = self.get_storage_lcoe()
         cost_breakdown = lcoe.get_cost_breakdown()
         return cost_breakdown
-
-        # storage_lcoe = self.get_storage_lcoe()
-        # storage_cost_breakdown = storage_lcoe.get_cost_breakdown()
-        # cap_cost_total = storage_cost_breakdown["Capital and Fixed"]
-        # cap_cost_by_part = {}
-        # for row in self.cost_by_parts.to_dict(orient='records'):
-        #     cap_cost_by_part[row["Item"]] = (float(row["% cost"]) * cap_cost_total) / 100.0
-
-        # storage_cost_breakdown["Capital and Fixed"] = cap_cost_by_part
         # return storage_cost_breakdown

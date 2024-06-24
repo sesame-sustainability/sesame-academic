@@ -35,8 +35,6 @@ class LcaAnalysis(Model):
                 try:
                     input_set.validate()
                 except BaseError as e:
-                    # we lose the context of which pathway+step this is part of,
-                    # can we add that to the error?
                     raise e
 
 class TeaAnalysis(Model):

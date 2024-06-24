@@ -43,13 +43,13 @@ def _analysis():
     generation_by_enduse['non-EV'] = results['DnEV']
 
     colors = {
-        'blue': '#5B9BD5',
-        'green': '#62993E',
-        'yellow': '#FFC000',
-        'orange': '#ED7D31',
-        'gray': '#929292',
-        'black': '#000000',
-        'red': '#FF0000',
+        'blue': '
+        'green': '
+        'yellow': '
+        'orange': '
+        'gray': '
+        'black': '
+        'red': '
         'purple': 'purple',
     }
 

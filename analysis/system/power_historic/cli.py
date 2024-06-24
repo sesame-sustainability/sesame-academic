@@ -38,7 +38,6 @@ def arp_range(args):
 
 def egrid_import(args):
     imports = [
-        # (file_name, sheet_name, header_index)
         ('eGRID2018_Data_v2.xlsx', 'PLNT18', 1),
         ('egrid2016_data.xlsx', 'PLNT16', 1),
         ('eGRID2014_Data_v2.xlsx', 'PLNT14', 1),

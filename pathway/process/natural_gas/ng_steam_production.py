@@ -10,7 +10,6 @@ import os
 class SteamProductionNG(ActivitySource):
 
     default_eff = 80
-# If you change this default value, the lcidata csv file need to be adjusted. See comment in the "data location" cell in the csv file.
     @classmethod
     def user_inputs(cls):
         return [
@@ -32,11 +31,8 @@ class SteamProductionNG(ActivitySource):
             self.filtered_data_frame(),
             flow_output=self.output
         )
-#        print (flow_dict['natural gas']['value'])
         flow_dict['natural gas']['value'] = \
             flow_dict['natural gas']['value'] * SteamProductionNG.default_eff/self.boiler_efficiency
-        #self.user_inputs[0].value is equivalent to self.boiler_efficiency
-#        print(self.user_inputs[0].value); print(self.user_inputs); print(ContinuousInput); print(core.stages.ContinuousInput)
         return {
             'primary': flow_dict['natural gas'],
             'secondary': []
@@ -48,7 +44,6 @@ class SteamProductionNG(ActivitySource):
             self.filtered_data_frame(),
             flow_output=self.output
         )
-#        print (emission_dict['aggregate']['co2']['value'])
         for emission in emission_dict['aggregate']:
             emission_dict['aggregate'][emission]['value'] = \
                 emission_dict['aggregate'][emission]['value'] * SteamProductionNG.default_eff / self.boiler_efficiency

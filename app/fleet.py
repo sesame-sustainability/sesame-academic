@@ -53,7 +53,6 @@ def _analysis():
         {
             'label': 'Fuel Use by Fuel',
             'unit': 'TWh',
-            # 'extra_units': ['billion GGE', 'billion LGE'], #pseudocode for [unit change] work
             'data': outputs['fuel_use_by_fuel'],
             'axis': 0,
         },
@@ -87,8 +86,6 @@ def _analysis():
             'data': outputs['emissions'],
             'axis': 0,
         },
-
-        # right axis
         {
             'label': 'Lifecycle Emissions (Car Op & Prod)',
             'unit': 'MMT',
@@ -285,13 +282,8 @@ def _analysis():
     ]
 
     def map_column(col):
-        # TODO: there's some inconsistency in the dataframe columns being returned from the fleet calculations
-        # would be nice to resolve this in the fleet file
         if type(col) != str:
-            # this handles the case where the column name is a tuple like ('ICEG', 'LT')
             col = ' '.join(col)
-
-        # now convert 'ICEG LT' or 'ICEG_LT' to 'ICEG/LT' (which is the format the frontend expects)
         return col.strip().replace(' ', '/').replace('_', '/')
 
     for figure in figures:
@@ -299,8 +291,6 @@ def _analysis():
 
     def onecar_data(df):
         return df.transpose().reset_index().rename(columns={'index': 'powertrain'})
-
-    # one car
     figures += [
         {
             'name': 'onecar_sedan_2020',

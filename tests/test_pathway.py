@@ -1,12 +1,6 @@
 from core.pathway import Pathway
 import pathway.topology
 
-# from tests.helper import random_pathway
-# def test_random_pathways():
-#     # test 10 random pathways
-#     for _ in range(10):
-#         pathway = random_pathway()
-#         pathway.perform()
 
 context = {
     'compute_cost': True,
@@ -19,8 +13,6 @@ def test_solar_pathway():
         'process-solarpowerproduction-default',
         'upstream-solar-default',
     ], context=context)
-
-    # tests the use of context
     process = pathway.steps[2]
     assert process.input_set.context['compute_cost']
     assert process.input_set.values['interest_rate'] == 4

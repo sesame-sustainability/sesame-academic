@@ -1252,7 +1252,7 @@ Lignite,SERC,Mix,Yes,100%Boiler_0%IGCC,34.90%,bc,7.74E-06,kg/kWh,output,mass,GRE
 Lignite,SERC,Mix,Yes,100%Boiler_0%IGCC,34.90%,oc,1.46E-05,kg/kWh,output,mass,GREET,Electric tab Row 144-154 plus Row 188-198 for Coal Mix when Inputs tab E710 = SERC
 Lignite,SERC,Mix,Yes,100%Boiler_0%IGCC,34.90%,ch4,1.13E-05,kg/kWh,output,mass,GREET,Electric tab Row 144-154 plus Row 188-198 for Coal Mix when Inputs tab E710 = SERC
 Lignite,SERC,Mix,Yes,100%Boiler_0%IGCC,34.90%,n2o,1.50E-05,kg/kWh,output,mass,GREET,Electric tab Row 144-154 plus Row 188-198 for Coal Mix when Inputs tab E710 = SERC
-Lignite,#REF!,Mix,Yes,ASCCCoal_ASCCCoal,Boiler,co2,#REF!,kg/kWh,output,mass,GREET,#REF!
+Lignite,#REF!,Mix,Yes,ASCCCoal_ASCCCoal,Boiler,co2,#REF!,kg/kWh,output,mass,GREET,
 Lignite,SPP,Boiler,No,,34.30%,voc,1.80E-05,kg/kWh,output,mass,GREET,Electric tab Row 144-154 for Coal Boiler when Inputs tab E710 = SPP
 Lignite,SPP,Boiler,No,,34.30%,co,1.47E-04,kg/kWh,output,mass,GREET,Electric tab Row 144-154 for Coal Boiler when Inputs tab E710 = SPP
 Lignite,SPP,Boiler,No,,34.30%,nox,1.47E-03,kg/kWh,output,mass,GREET,Electric tab Row 144-154 for Coal Boiler when Inputs tab E710 = SPP

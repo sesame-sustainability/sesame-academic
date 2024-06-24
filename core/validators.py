@@ -11,8 +11,6 @@ class Validator:
         self.warning = warning
 
     def validate(self, value):
-        # only raise an error if this is not a warning
-        # TODO: maybe print out a warning in the CLI?
         if not self.warning:
             return self.fn(value, *self.args)
 

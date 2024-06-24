@@ -41,18 +41,14 @@ class DB():
 
     def connection(self):
         if self.test_session is None:
-            # get new connection from the pool
             return scoped_session(sessionmaker(autocommit=False, autoflush=False, bind=self.engine, expire_on_commit=False))
         else:
-            # nested transaction that we'll roll back
             self.test_session.begin_nested()
             return self.test_session
 
     @contextlib.contextmanager
     def session(self):
         session = self.connection()
-
-        # convenience for querying through models
         self.Base.query = session.query_property()
 
         try:
@@ -62,7 +58,6 @@ class DB():
             raise
         finally:
             if self.test_session is None:
-                # return connection to pool
                 session.close()
 
             self.Base.query = None

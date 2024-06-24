@@ -5,7 +5,6 @@ from core.tea import TeaBase
 from core import validators, conditionals
 from tea.electricity.ccs.pointsources.ccs_tea import CcsTea
 
-#PATH = os.getcwd() + "/tea/electricity/steam/"
 
 class SteamTEA(TeaBase):
     """
@@ -101,42 +100,15 @@ class SteamTEA(TeaBase):
     def __init__(self, lca_pathway=None):
         self.lca_pathway = lca_pathway
         self.cost_par = pd.read_csv(PATH + "steam_costpar.csv")
-        #        self.cost_coal_filename = pd.read_csv(PATH + "coal_industrialprice.csv")
-        #        self.cost_ng_filename = pd.read_csv(PATH + "ng_industrialprice.csv")
         super().__init__()
 
 """
     def get_cost(self):
-#        boiler_efficiency_ng = self.boiler_efficiency_ng/100
- #       fuel_cost_ng = (1/boiler_efficiency_ng)*self.ng_price*0.964 #$/MJ LHV steam; 0.964 thousand ft3/MJ natural gas LHV
-  #      boiler_efficiency_coal = self.boiler_efficiency_coal/100
-   #     fuel_cost_coal = (1/boiler_efficiency_coal)*self.coal_price/20546 #$/MJ LHV steam; 20546 MJ LHV coal/ton coal, where coal=US mix from GREET
-
-#        capital_ng = self.cost_par['Natural gas boiler capital']['value'] #$/(MJ/h)
-#        capital_ng = 13.3
-#        capital_coal = self.cost_par['Coal boiler capital']['value'] #$/(MJ/h)
- #       capital_coal = 42
-
-
- #       if self.feed == 'Natural Gas':
- #           CAPEX = capital_ng #$/(MJ/h)
- #           fuel_cost = fuel_cost_ng #$/MJ steam LHV
-  #      else:
- #           CAPEX = capital_coal #$/(MJ/h)
-  #          fuel_cost = fuel_cost_coal #$/MJ steam LHV
-
- #       capital = CAPEX*(self.CRF/100)/(8760*self.CF/100) #levelized $/MJ steam
         capital = 0
-#        om_multip = self.cost_par['O&M cost']['value'] #operational & maintenance cost, calcualted with this multiplier and levelized capital cost
-#        om_multip = 0.333
         fuel_cost =0
-#        OM = capital*om_multip #Operating & Maintenance #$/MJ steam
         OM=0
-#        total = capital + OM + fuel_cost #
-#        cost_breakdown = 0
         cost_breakdown = {"Capital": capital,
                           "O&M": OM,
-#                         "Fuel Cost": fuel_cost
                           }
 
         return cost_breakdown

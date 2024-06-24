@@ -10,7 +10,6 @@ class  Jetfuel(ActivitySource):
     def prepare(self, input_set):
         super().prepare(input_set)
         low_heat_value = Substance('Liquid', 'Conventional Jet Fuel').get_lower_heat_value()
-        # output flow is the heat content in MJ of the fuel per kg of the fuel
         self.output = utils.create_flow_object('jetfuel', 1.0 * low_heat_value, 'MJ')
 
     def get_output(self):

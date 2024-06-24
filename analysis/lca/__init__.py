@@ -1,7 +1,6 @@
 import pandas as pd
 import copy
 
-# -*- coding: utf-8 -*-
 """
 Created on Fri Nov 22 02:05:43 2019
 
@@ -23,7 +22,6 @@ def compute_activity_flows(df, flow_output, flow_info):
         flow = {"name": i.lower()}
         upper_unit, lower_unit = row['unit'].split('/')
         flow["unit"] = upper_unit
-#Tony changed rounding from 4 to 9 because nuclear and hydro power csv numbers are very small
         if lower_unit == "MJmile":
             assert flow_output['unit'] == "MJ"
             flow["value"] = round(row['value'] * flow_output['value'] * flow_info["distance"], 9)
@@ -65,7 +63,6 @@ def compute_input_flows(df, flow_output=None, flow_info=None):
                 combined[name] = flow
     return combined
 
-# Adding H2/Electrical emissions contribution calculator
 
 
 def compute_elec_output_flows(df, flow_output=None, flow_info=None):
@@ -138,16 +135,6 @@ def compute_grid_intensity(df, flow_output=None, flow_info=None):
 
 
 
-#
-# def compute_h2_flows(df, flow_output=None, flow_info=None):
-#     df = df[df["direction"] == "output"]
-#     if "flow_source" in list(df.columns):
-#         df_h2 = df[df["flow_source"] == "h2"]
-#     else:
-#         df_h2 = df.copy()
-#         df_h2['value'] = 0
-#     h2_emission_flows = compute_flows(df_h2, flow_output, flow_info)
-#     return h2_emission_flows
 
 
 def compute_emission_flows(df, flow_output=None, flow_info=None):
@@ -221,21 +208,11 @@ def run(pathways, indicator='GWP'):
 
     for pathway in pathways:
         pathway_results = pathway.perform()
-        # elec = total = 0
-        # for stage in pathway_results.items():
-        #     elec = elec + stage["elec_emissions"]['aggregate']['co2']['value']
-        #     total = total + stage['flow_emissions']['aggregate']['co2']['value']
-        # if elec > 0.1 * total:
-        #     x= input('Enter grid intensity')
-        #     for stage in pathway_results.items():
-        #         stage['flow_emissions']['aggregate']['co2']['value'] = stage['flow_emissions']['aggregate']['co2']['value']*x*pathway_results["Enduse"]["flow_output"]["value"]/elec
         value = pathway_results["Enduse"]["flow_output"]["unit"]
         df = perform_lcia(pathway_results, indicator=indicator)
         df.value = df.value*1000
         df.unit = "g"
         df['pathway'] = pathway.name
-
-        # sort by stage
         df['stage'] = pd.Categorical(df['stage'], categories=['Enduse', 'GateToEnduse', 'Process', 'Midstream', 'Upstream'], ordered=True)
         df = df.sort_values('stage')
 

@@ -2,7 +2,6 @@ import pandas as pd
 
 
 def perform_tea(tea_result):
-    # FIXME: find better way to pass this into TEA class
     data = []
     cost_breakdown = tea_result['cost_breakdown']
     for cost_category in cost_breakdown:

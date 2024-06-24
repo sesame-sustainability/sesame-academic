@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Thursday Dec 27 15:36:50 2019
 
@@ -41,9 +39,9 @@ class SLCOE:
 
         SLCOE = capital_fixed + maintenance + operational + taxes + transportation
 
-        profit_margin = SLCOE * .2273559 #average profit margin based on calculated costs for jet fuel and the retail price from EIA
+        profit_margin = SLCOE * .2273559 
 
-        cost_breakdown = {#"Total Cost": SLCOE,
+        cost_breakdown = {
                           "Capital": capital_fixed,
                           "Other Operating and Maintenance": maintenance,
                           "Operational": operational,

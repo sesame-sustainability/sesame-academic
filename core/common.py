@@ -14,11 +14,7 @@ class DataSource:
     A `DataSource` is a mixin for reading data from a CSV file.
     Requires that `self.table` be a path to a CSV file.
     """
-
-    # these can be overridden in subclasses
     filters = [
-        # example: will filter data rows down to those with `column_name` equal to `example`:
-        # ('column_name', 'example'),
     ]
 
     def data_frame(self):
@@ -41,12 +37,10 @@ class InputSource:
 
     @classmethod
     def user_inputs(cls):
-        # DEPRECATED: please implement `inputs` instead
         return []
 
     @classmethod
     def inputs(cls):
-        # this should be overridden in child classes
         return cls.user_inputs()
 
     @classmethod
@@ -62,10 +56,6 @@ class InputSource:
 
     def prepare(self, input_set):
         self.input_set = input_set
-
-        # TODO: I'd like to deprecate this and always access input values
-        # via `self.input_set.input_value(input_name)` so that it's clear where
-        # the value is coming from
         for input_name in self.input_set.inputs.keys():
             value = self.input_set.value(input_name)
             setattr(self, input_name, value)
@@ -83,8 +73,6 @@ class InputSource:
         if input_name not in self.input_set.inputs:
             raise Exception(f'unknown input: {input_name}')
         return self.input_set.value(input_name, default=default)
-
-    # only applicable for instances that are also a `DataSource`
     def filtered_data_frame(self):
         df = self.data_frame()
 

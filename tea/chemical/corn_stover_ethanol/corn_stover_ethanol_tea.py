@@ -1,20 +1,12 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Created on Wed August 4 10:00:29 2021
 
 @author  Jon-Marc McGregor ExxonMobil Intern
 """
 
-###Notes###
-# This is a TEA for corn stover ethanol production
-# All data are based on the NREL study "Process Design and Economics for Biochemical Conversion of Lignocellulosic Biomass to Ethanol"
-# https://www.nrel.gov/docs/fy11osti/47764.pdf
-#
 
 import os
 import pandas as pd
-# import us, statistics
 
 
 from core import validators, conditionals
@@ -67,7 +59,6 @@ class corn_stover_EthanolTEA(TeaBase):
             ContinuousInput('feedstock_cost', 'Feedstock & Handling Cost',
                             unit='$/dry ton stover',
                             defaults=[Default(68)],
-                            # Deafualt is based on US average price in April 2019, from (https://www.nass.usda.gov/Publications/Todays_Reports/reports/agpr0519.pdf)
                             validators=[validators.numeric(), validators.gte(0), validators.lte(300)],
                             tooltip=Tooltip(
                                 'Biomass feedstock cost (paid by the biorefinery, including purchase, transportation and handling) varies with collection radius and thus biorefinery capacity. The Applied Energy paper (Fig 10A) developed an optimization model to find the cost-optimal transportation mode (combination of truck, depot usage, and rail) for different stover ethanol biorefinery capacity. As a reference, with the default 60 MM gal/yr (i.e., 2000 dry tonne/day stover input) capacity and 68 $/dry ton stover price as the base case, the feedstock cost multipliers to the base case are: 4000 tonne/day ~ 1.1, 8000 ~ 1.16, 16000 ~1.22. So, if the user accepts 68 $/dry ton as the price for a 2000 tonne/day facility, then one could multiply 68 by 1.1 to roughly predict the feedstock cost for a 4000 tonne/day facility. A fitting function from the paper is generated for the users to use at their own risk: Y=0.53*X^0.086, where Y=feedstock cost multiplier, and X=biorefinery capacity (dry tonne/day stover). Also note that users aiming for a benchmark analysis may not need to adjust the capacity and feedstock price, because the total cost (Fig 10B in the paper, minus the MESP) does not change very much with capacity, because the economy of scale from capital cost and dis-economy of scale from feedstock cost somewhat offset each other.',
@@ -79,7 +70,6 @@ class corn_stover_EthanolTEA(TeaBase):
             ContinuousInput('Capex_adjust_factor', 'Capital Cost Adjustment Factor',
                             defaults=[Default(1)],
                             validators=[validators.numeric(), validators.gte(0), validators.lte(3)],
-                            # Capex adjusment factor between 10% to 300%
                             tooltip=Tooltip(
                                 'This input provides flexibility to capital cost adjustment. Put 1 to use the NREL cost assumption; 2 to represent doubling NREL cost.',
                                 source='NREL 2011, assuming corn and corn stover ethanol plants have same lifetime and discount rate',
@@ -92,7 +82,7 @@ class corn_stover_EthanolTEA(TeaBase):
                             tooltip=Tooltip(
                                 'Capital cost for Capacity X = capital cost for base capacity*(X/base capacity)^scaling factor; 0.6 is a common assumption for facilities made up of tanks and pipes, such as a refinery. The default 60 MMGal/yr stover ethanol capacity corresponds to 2000 dry tonne/day stover input and ~ 50 mi collection radius; MM= million. Caveat: the further away from the base capacity of 60 MMGal/yr, the less accurate the capital cost prediction for the new capacity.',
                                 source='ECPE paper, ChemE text book',
-                                source_link='https://www.sciencedirect.com/science/article/abs/pii/0167188X86900534#:~:text=The%20value%20of%20%CE%B1%20%3D%200.6,level%20of%20capacity%20V1; https://www.osti.gov/biblio/293030',
+                                source_link='https://www.sciencedirect.com/science/article/abs/pii/0167188X86900534
                             ),
                             ),
             ContinuousInput('tax_gal', 'Tax',
@@ -102,10 +92,9 @@ class corn_stover_EthanolTEA(TeaBase):
                             tooltip=Tooltip(
                                 'Default tax value = fuel tax, which varies by states. 0.1 $/gal is a reasonable benchmark. Ethanol 1 gal = 80.53 MJ LHV, so 0.1 $/gal = 0.00124 $/MJ',
                                 source='NCSL',
-                                source_link='https://www.ncsl.org/research/transportation/taxation-of-alternative-fuels.aspx#:~:text=Ethyl%20alcohol%20and%20methyl%20alcohol,%240.20%20per%20gasoline%20gallon%20equivalent.',
+                                source_link='https://www.ncsl.org/research/transportation/taxation-of-alternative-fuels.aspx
                             ),
                         ),
-            # Capex adjusment factor between 10% to 300%
 
             OptionsInput('use_ccs', 'Use CCS (Carbon Capture & Sequester)', options=['Yes', 'No']),
             OptionsInput('ferment_ccs', 'Capture CO\u2082 from Fermenter ?', options=['Yes'],
@@ -157,45 +146,34 @@ class corn_stover_EthanolTEA(TeaBase):
         self.cost_transportation = pd.read_csv(PATH + "corn_stover_ethanol_transportation_costs.csv")
         super().__init__()
 
-    # Read Data from excel file
-
     def get_cost_breakdown(self):
         global capture_capital, capture_fom, capture_vom, capture_transp, capture_storage, capture_taxes
-
-        # Assumptions
-        # get values based off user input
         index = 1
-        base_cost = self.ethanol_production_param.iloc[0, index]  # MM$ 2007, from the reference
-        base_size = self.ethanol_production_param.iloc[1, index]  # MMgal/yr , from the reference
-        ethanol_yeild = self.ethanol_production_param.iloc[2, index]  # gal/dry ton corn stover
-        CEPCI_base = self.ethanol_production_param.iloc[3, index]  # Chemical Engineering Plant Cost Index-(base 2007)
-        CEPCI_current = self.ethanol_production_param.iloc[4, index]  # Chemical Engineering Plant Cost Index-current
+        base_cost = self.ethanol_production_param.iloc[0, index]  
+        base_size = self.ethanol_production_param.iloc[1, index]  
+        ethanol_yeild = self.ethanol_production_param.iloc[2, index]  
+        CEPCI_base = self.ethanol_production_param.iloc[3, index]  
+        CEPCI_current = self.ethanol_production_param.iloc[4, index]  
         scaling_factor = self.scaling_factor
-        fixed_operational_cost = self.ethanol_production_param.iloc[6, index]  # MM$
-        taxes = self.tax_gal * 0.00124 / 0.1 # see conversion factor in tooltip
+        fixed_operational_cost = self.ethanol_production_param.iloc[6, index]  
+        taxes = self.tax_gal * 0.00124 / 0.1 
 
-        ethanol_density = 787.6  # ethanol density at 25 C and 1 bar in kg/m3
-        Conversion_gal_to_m3 = 264.17  # gal to m3
-        LHV_ethanol = 26.82  # Ethanol Lower Heating Value in MJ/kg
-
-        # calculations
+        ethanol_density = 787.6  
+        Conversion_gal_to_m3 = 264.17  
+        LHV_ethanol = 26.82  
 
         fixed_operational_cost_current = fixed_operational_cost * CEPCI_current / CEPCI_base
-        dry_corn = self.ethanol_production_rate * 1e6 / ethanol_yeild  # dry corn stover needed
-        feedstock_cost_total = self.feedstock_cost * dry_corn / 1e6  # feedstock & handling cost in MM$
+        dry_corn = self.ethanol_production_rate * 1e6 / ethanol_yeild  
+        feedstock_cost_total = self.feedstock_cost * dry_corn / 1e6  
         capex_scaled = base_cost * (self.ethanol_production_rate / base_size) ** scaling_factor * (
                 CEPCI_current / CEPCI_base) * self.Capex_adjust_factor
 
         crf = (self.discount_rate * ((1 + self.discount_rate) ** self.lifetime)) / (
-                    (1 + self.discount_rate) ** (self.lifetime) - 1)  # % CRF: Capital recovery factor
+                    (1 + self.discount_rate) ** (self.lifetime) - 1)  
 
         print('Capital charge factor (CRF)=', '%.3f' % crf)
-        capex_cost = crf * capex_scaled  # MM$/yr
-        variable_operational_cost= (20.13)*CEPCI_current/CEPCI_base + feedstock_cost_total # MM$/yr, Number 20.13 from Table 30 on page 63 of the reference
-
-        #####################
-        ## Midstream Model ##
-        #####################
+        capex_cost = crf * capex_scaled  
+        variable_operational_cost= (20.13)*CEPCI_current/CEPCI_base + feedstock_cost_total 
         filtered = self.cost_transportation
 
         costs = filtered[filtered['type'] == "cost"]
@@ -217,13 +195,9 @@ class corn_stover_EthanolTEA(TeaBase):
         frac_pipeline = float(fractions[fractions['transportation method'] == "pipeline"].iloc[0].value)
 
         transportation = ((truck * frac_truck) + (rail * frac_rail) + (marine * frac_marine) + (
-                    pipeline * frac_pipeline))  # $/gal
+                    pipeline * frac_pipeline))  
 
-        transportation = transportation * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/gal*gal/m3 *1/density *LHV =$/MJ,   For pipeline mode of transport
-
-        #####################
-        ## Cost related to CCS  ##
-        #####################
+        transportation = transportation * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
         if self.use_ccs == 'No':
             capture_capital = 0
             capture_fom = 0
@@ -232,31 +206,31 @@ class corn_stover_EthanolTEA(TeaBase):
             capture_transp = 0
             capture_storage = 0
 
-        elif self.boilerstack_ccs == 'No':  # For fermenter
+        elif self.boilerstack_ccs == 'No':  
             capturecost = BECCSTea("Ethanol Production", self.ethanol_production_rate, self.ferment_cap_tech,
                                    0, self.ferment_co2_cap_percent, 0,
                                    0, self.boilerstack_ccs,
                                    0, 1, self.pipeline_miles, crf)
 
             capture_capital = capturecost.get_capture_cost_breakdown()[1] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_fom = capturecost.get_capture_cost_breakdown()[2] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_vom = capturecost.get_capture_cost_breakdown()[3] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_taxes = capturecost.get_capture_cost_breakdown()[4] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_transp = capturecost.get_capture_cost_breakdown()[5] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_storage = capturecost.get_capture_cost_breakdown()[6] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
-        elif self.amine_regen_ccs == 'No':  # For fermenter + boilerstack
+        elif self.amine_regen_ccs == 'No':  
 
             capturecost = BECCSTea("Ethanol Production", self.ethanol_production_rate, self.ferment_cap_tech,
                                    self.boiler_cap_tech, self.ferment_co2_cap_percent, self.boiler_co2_cap_percent,
@@ -264,63 +238,57 @@ class corn_stover_EthanolTEA(TeaBase):
                                    self.pipeline_miles, crf)
 
             capture_capital = capturecost.get_capture_cost_breakdown()[1] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_fom = capturecost.get_capture_cost_breakdown()[2] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_vom = capturecost.get_capture_cost_breakdown()[3] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_taxes = capturecost.get_capture_cost_breakdown()[4] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_transp = capturecost.get_capture_cost_breakdown()[5] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_storage = capturecost.get_capture_cost_breakdown()[6] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
-        elif self.amine_regen_ccs == 'Yes':  # For fermenter, boilerstack and amine regn
+        elif self.amine_regen_ccs == 'Yes':  
             capturecost = BECCSTea("Ethanol Production", self.ethanol_production_rate, self.ferment_cap_tech,
                                    self.boiler_cap_tech, self.ferment_co2_cap_percent, self.boiler_co2_cap_percent,
                                    self.amine_co2_cap_percent, self.boilerstack_ccs,
                                    self.amine_regen_ccs, self.fuel_adj_factor, self.pipeline_miles, crf)
 
             capture_capital = capturecost.get_capture_cost_breakdown()[1] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_fom = capturecost.get_capture_cost_breakdown()[2] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_vom = capturecost.get_capture_cost_breakdown()[3] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_taxes = capturecost.get_capture_cost_breakdown()[4] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_transp = capturecost.get_capture_cost_breakdown()[5] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
             capture_storage = capturecost.get_capture_cost_breakdown()[6] / (
-                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  # $/MJ
-
-        #####################
-        ## Cost Breakdown  ##
-        #####################
+                self.ethanol_production_rate) / 1e6 * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol  
 
         capital_fixed = (capex_cost + fixed_operational_cost_current) / (
             self.ethanol_production_rate) * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol \
-                        + capture_capital + capture_fom  # $/gal*gal/m3 *1/density *1/LHV =$/MJ
+                        + capture_capital + capture_fom  
 
         maintenance = 0.00
         variable_cost = variable_operational_cost / (
             self.ethanol_production_rate) * Conversion_gal_to_m3 / ethanol_density / LHV_ethanol \
                         + capture_vom
 
-        trans_storage_cost = transportation + capture_transp + capture_storage  # $/gal*gal/m3 *1/density *LHV =$/MJ
-
-        # total= (capital_fixed + operational+ taxes + transportation) #  $/MJ
+        trans_storage_cost = transportation + capture_transp + capture_storage  
 
         cost_breakdown = {
             "Capital & Fixed": capital_fixed,
@@ -329,8 +297,6 @@ class corn_stover_EthanolTEA(TeaBase):
             "Variable Cost": variable_cost,
             "Taxes": taxes,
         }
-
-        # return costs as $/GJ
         return {
             key: value * 1000
             for key, value in cost_breakdown.items()

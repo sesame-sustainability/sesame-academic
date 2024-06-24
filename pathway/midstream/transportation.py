@@ -109,7 +109,6 @@ class CoalTransportation(Transportation):
     @property
     def coal_type(self):
         if not hasattr(self, 'pathway'):
-            # during option selection
             return None
 
         return self.pathway.instance('upstream').coal_type

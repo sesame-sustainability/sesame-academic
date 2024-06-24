@@ -204,14 +204,10 @@ class Step:
     def load(self, serialized, context=None):
         source = sources_db.find(serialized['source_id'])
         input_set = InputSet(source.inputs(), context=context)
-
-        # FIXME: can we make this consistent?
-        # Maybe rename to `values` instead
         values = serialized['user_inputs']
         if type(values) == dict:
             input_set = InputSet(source.inputs(), values)
         else:
-            # would be nice to deprecate this style
             input_set.build(values)
 
         return Step(source, input_set)
@@ -258,21 +254,12 @@ class Pathway:
     def load(cls, serialized, context=None):
         steps = [Step.load(item, context=context) for item in serialized['steps']]
         return Pathway(steps, name=serialized.get('name'))
-
-    # `items` is a list of the form:
-    # [
-    #    'source-id', # no overridden inputs, defaults are used
-    #    ('next-source-id', { 'input_name': 'input value', ... }), # overridden input values
-    #    ...
-    # ]
     @classmethod
     def build(cls, items, context=None, **kwargs):
         def build_step(item):
             if type(item) == str:
-                # `item` is a source ID
                 return Step.build(item, context=context)
             else:
-                # `item` is a `(source_id, input_values)` tuple
                 return Step.build(*item, context=context)
 
         steps = [build_step(item) for item in items]
@@ -302,9 +289,6 @@ class Pathway:
         for step in self.steps:
             obj = self.instances[step.stage.id]
             obj.output = prev_output
-
-            # FIXME: some pathway steps are defining `self.output` in the `prepare` method
-            # so we need to call this again to make sure `self.output` exists
             obj.prepare(step.input_set)
 
             results[step.source.activity.stage] = obj

@@ -6,11 +6,8 @@ analyses = {}
 
 states = [row['state'] for row in queries.states()]
 if len(states) == 0:
-    # data must not be populated in the database
-    # add a placeholder
     states.append('<placeholder>')
 
-# FIXME: need to filter based on state
 def years():
     year_range = queries.year_range()
     res = []

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 import os
 import pandas as pd
@@ -33,7 +31,7 @@ class LNGTEA(TeaBase):
                             tooltip=Tooltip(
                                 'Power is used in LNG production. This includes 66 for power generation and 14 $/MWh distribution.',
                                 source='Statistica',
-                                source_link='https://www.statista.com/statistics/190680/us-industrial-consumer-price-estimates-for-retail-electricity-since-1970/; https://www.eia.gov/outlooks/aeo/data/browser/#/?id=8-AEO2021&region=0-0&cases=ref2021&star',
+                                source_link='https://www.statista.com/statistics/190680/us-industrial-consumer-price-estimates-for-retail-electricity-since-1970/; https://www.eia.gov/outlooks/aeo/data/browser/
                             )
                             ),
             ContinuousInput('discount_rate', 'Discount Rate',
@@ -54,7 +52,7 @@ class LNGTEA(TeaBase):
                             tooltip=Tooltip(
                                 'Percent of the facility design capacity is used to produce product, e.g., mathematically the number of hours in a year the facility runs, divided by 24*365 hours. No LNG-specific capacity factor has been found, so the natural gas to power capacity factor is used as a proxy here.',
                                 source='EIA',
-                                source_link='https://www.eia.gov/todayinenergy/detail.php?id=25652#:~:text=The%20capacity%20factor%20of%20the,over%20the%20past%20few%20years.',
+                                source_link='https://www.eia.gov/todayinenergy/detail.php?id=25652
                             )
                             ),
 
@@ -96,7 +94,6 @@ class LNGTEA(TeaBase):
         self.shipping_distance = pd.read_csv(PATH + "shipping.csv")
         super().__init__()
 
-#Read Data
 
     def get_destination_type(self):
         if self.lca_pathway:
@@ -105,8 +102,6 @@ class LNGTEA(TeaBase):
         else:
             dest_loc = self.dest
         return dest_loc
-  
- #prepare to read table values come from OIES study p. 33 -- https://www.oxfordenergy.org/wpcms/wp-content/uploads/2019/03/Outlook-for-Competitive-LNG-Supply-NG-142.pdf      
     def get_cost_breakdown(self):
         dest= self.dest
         if dest == 'Rotterdam':
@@ -130,69 +125,52 @@ class LNGTEA(TeaBase):
         self.capacity_factor = self.capacity_factor/100
         self.discount_rate = self.discount_rate/100
 
-#Assumptions
 
-#Liequefaction
 
-        MMBtu_per_ton = 48.6 # Confirmed LHV conversion based on Qatargas - https://qp.com.qa/en/Pages/ConversionFactor.aspx
-        o_m = .04 # percentage of total CapEx - from https://era.library.ualberta.ca/items/4b665316-ad4c-41a6-9312-a971b0b2d8ce/view/831e3938-1be1-4a67-bf4c-a895fc2c57c5/SETA_18_140.pdf
-        CapEx = 660 # $/tons per year capacity see p. 14 - https://www.oxfordenergy.org/wpcms/wp-content/uploads/2019/03/Outlook-for-Competitive-LNG-Supply-NG-142.pdf
-        CapEx_MMBtu = CapEx / MMBtu_per_ton  # $/MMBtu per year
-#        power_consumption = 141.86 * 2 # MW - For 10 Million ton per annum site from p. 23 of https://era.library.ualberta.ca/items/4b665316-ad4c-41a6-9312-a971b0b2d8ce/view/831e3938-1be1-4a67-bf4c-a895fc2c57c5/SETA_18_140.pdf
-        plant_size = 10000000 #tons per year (10 Millon Tons Per Annum facility)
+        MMBtu_per_ton = 48.6 
+        o_m = .04 
+        CapEx = 660 
+        CapEx_MMBtu = CapEx / MMBtu_per_ton  
+        plant_size = 10000000 
         plant_size_MMBtu = plant_size * MMBtu_per_ton
 
 
-##################
-##Upstream Model##
-##################
 
     
-#get values based off user input
         shipping_cost = self.shipping_distance.iloc[index,1]
 
 
-#calculations
 
         LNG_output = self.capacity_factor * plant_size_MMBtu
-        LNG_input = LNG_output* (10**6+96923)/10**6 #Input-output ratio is taken from GREET 2019 Cell AI41 of 'NG' tab, where 96923 is the natural gas in but needed in liquefaction per 1 mmbtu LNG produced, with zero feed loss
-        crf = (self.discount_rate * ((1 + self.discount_rate)**self.lifetime)) / ((1 + self.discount_rate)**(self.lifetime) - 1) # %
+        LNG_input = LNG_output* (10**6+96923)/10**6 
+        crf = (self.discount_rate * ((1 + self.discount_rate)**self.lifetime)) / ((1 + self.discount_rate)**(self.lifetime) - 1) 
 
         Overnight_CapEx = plant_size_MMBtu * CapEx_MMBtu
         annual_CapEx = Overnight_CapEx * crf
 
-        FOM = Overnight_CapEx * o_m # o_m fraction=4% is taken from the referenced paper. There is no breakdown or further explanation for this 4%, but because it is applied on the capital cost basis, we consider it the FOM cost because VOM varies with LNG production level not capital cost. https://era.library.ualberta.ca/items/4b665316-ad4c-41a6-9312-a971b0b2d8ce/view/831e3938-1be1-4a67-bf4c-a895fc2c57c5/SETA_18_140.pdf
+        FOM = Overnight_CapEx * o_m 
 
-        Unit_power_cost = 1978 * self.Power_Price * 2.93*10**(-7)  #$/MMBtu LNG; 1978 btu electricity/MMBtu LNG needed in liquefaction (GREET 2019 Cell AI47 in 'NG' tab); 2.93*10^-7 MWh/btu
+        Unit_power_cost = 1978 * self.Power_Price * 2.93*10**(-7)  
         Power_cost = Unit_power_cost*LNG_output
-#        Power_cost = self.Power_Price * power_consumption * self.capacity_factor * 8760
         Fuel_cost = LNG_input*self.ng_price
         Unit_fuel_cost = Fuel_cost/LNG_output
-        total_charge = annual_CapEx + FOM +  Power_cost + Fuel_cost + shipping_cost #before tax
+        total_charge = annual_CapEx + FOM +  Power_cost + Fuel_cost + shipping_cost 
 
-        unit_cost = total_charge / (LNG_output) #before tax
+        unit_cost = total_charge / (LNG_output) 
 
-        tax = self.tax_rate*unit_cost/100 #$/MMBtu
+        tax = self.tax_rate*unit_cost/100 
     
 
 
-#####################
-## Midstream Model ##
-#####################
 
-        DES_cost = shipping_cost + unit_cost #Delivered ex-ship -- shipper responsible for bearing cost of shipping
+        DES_cost = shipping_cost + unit_cost 
 
-        FOB_cost = unit_cost #Free on Board -- shipper not responsible for shipping cost
+        FOB_cost = unit_cost 
 
 
-        capital = {'Capital Cost': annual_CapEx / LNG_output} #capital cost of natural gas liquefaction
+        capital = {'Capital Cost': annual_CapEx / LNG_output} 
         fixed = {'FOM: Fixed Operation and Maintenance': FOM / LNG_output}
         vom = {'VOM: Power & transport': Unit_power_cost + shipping_cost }
-
-
-        #####################
-        ## Cost Breakdown  ##
-        #####################
 
         cost_breakdown = {"Capital": capital,
                           "Fixed": fixed,

@@ -7,17 +7,12 @@ from core.inputs import ContinuousInput, Default, Tooltip
 import core.validators as validators
 from analysis.sensitivity import SensitivityInput
 
-# DATA = {
-#     'loss_defaults': pd.read_csv(os.path.join(os.getcwd(), 'pathway', 'gate_to_enduse', 'loss_defaults.csv')),
-# }
-default_loss = 4.7 # tooltip=Tooltip(' ',source='Average of 2018 EPA & EIA values',source_link='https://greet.es.anl.gov/files/Update_td_losses_2018'),
+default_loss = 4.7 
 
 class Transmission(ActivitySource):
 
     @classmethod
     def user_inputs(cls):
-        # loss_df = DATA['loss_defaults']
-        # default_loss = loss_df[loss_df['Product'] == "electricity"]["Default Loss in %"].iloc[0]
 
         return [
             ContinuousInput(
@@ -32,11 +27,6 @@ class Transmission(ActivitySource):
 
     @classmethod
     def sensitivity(cls):
-        # # consolidate redundancy
-        # loss_df = DATA['loss_defaults']
-        # default_loss = loss_df[loss_df['Product'] == "electricity"]["Default Loss in %"].iloc[0]
-
-        #
         return [
             SensitivityInput(
                 'loss',

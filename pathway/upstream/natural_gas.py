@@ -36,15 +36,6 @@ class NaturalGas(ActivitySource):
                     source='EDF & EPA 2019',
                     source_link='https://www.science.org/doi/10.1126/science.aar7204',
                 )),
-            # ContinuousInput(
-            #     'leak_rate', 'Methane Leakage Rate', unit='%',
-            #     defaults=[Default(2.3)],
-            #     validators = [validators.numeric(), validators.gte(0), validators.lte(20)],
-            #     tooltip=Tooltip('Default based on EDF study finding 2.3% leakage at US natural gas production sites. EPA earlier estimated 1.4%. Large uncertainty exists and true leakage could be significantly higher.',
-            #                source='EDF 2019',
-            #                source_link='https://www.science.org/doi/10.1126/science.aar7204')
-            #
-            #     )
         ]
 
     @classmethod

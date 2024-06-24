@@ -3,11 +3,9 @@ from core.utils import load_class
 
 metadata = Metadata()
 
-# enduse
 enduse = metadata.register_stage('Enduse')
 
 
-# electricity category enduse
 electricity = enduse.register_activity('Electricity', category='Electricity')
 electricity.register_source(
     'Default',
@@ -15,7 +13,6 @@ electricity.register_source(
 )
 
 
-# Chemical category enduse
 dme = enduse.register_activity('DME - Dimethyl Ether', category='Chemical')
 dme.register_source(
     'Default',
@@ -38,7 +35,6 @@ lng.register_source(
 )
 
 
-# Fuel category enduse
 
 gasoline = enduse.register_activity('Gasoline', category='Fuel')
 gasoline.register_source(
@@ -86,7 +82,6 @@ corn_stover_ethanol.register_source(
     table = 'pathway/enduse/fuel/ethanol_withbiogen_lcidata.csv'
 )
 
-#  Materials category enduse
 concrete = enduse.register_activity('Concrete', category='Material')
 concrete.register_source(
     'GREET',
@@ -130,14 +125,7 @@ dac.register_source(
     load_class('pathway.enduse.other.dac', 'DAC_EU')
 )
 
-# # Light-Duty Vehicle enduse
-# gas_ldv = enduse.register_activity('Gasoline Light-Duty Vehicle', category='Light-Duty Vehicle')
-# gas_ldv.register_source(
-#     'Default',
-#     load_class('pathway.enduse.light_duty_vehicle.gas_ldv', 'Gasoline_LDV')
-# )
 
-# GateToEnduse
 gate_to_enduse = metadata.register_stage('GateToEnduse')
 
 transmission = gate_to_enduse.register_activity('Transmission')
@@ -230,7 +218,6 @@ transportation_jetfuel.register_source(
     table='pathway/gate_to_enduse/transportation_lcidata.csv'
 )
 
-# Process
 process = metadata.register_stage('Process')
 
 coal_steam_production = process.register_activity('Coal steam production')
@@ -453,7 +440,6 @@ compressed_air_energy_storage.register_source(
     table='pathway/process/caes/CAES_Data.csv'
 )
 
-# Midstream
 midstream = metadata.register_stage('Midstream')
 
 transportation_uranium = midstream.register_activity('Uranium transportation')
@@ -483,8 +469,6 @@ transportation_ethanol_nobiogen.register_source(
     load_class('pathway.gate_to_enduse.transportation', 'EthanolTransportationNoBiogen'),
     table='pathway/gate_to_enduse/transportation_lcidata.csv'
 )
-#Dummy modes for ethanol to ensure modules for "with biogenic carbon" and "without biogenic carbon" are not mixed up to generate
-#inconsistent results unexpectedly
 transportation_ethanol_withbiogen = gate_to_enduse.register_activity('Ethanol transportation')
 transportation_ethanol_withbiogen.register_source(
     'GREET',
@@ -525,7 +509,6 @@ transportation_concrete_mid.register_source(
     load_class('pathway.midstream.transportation', 'ConcreteTransportation'),
     table='pathway/midstream/transportation_lcidata.csv'
 )
-# TEA
 tea = metadata.register_stage('TEA')
 
 wind_tea = tea.register_activity('WindTEA')
@@ -535,7 +518,6 @@ wind_tea.register_source(
     table='tea/electricity/wind/region_speed_new.csv',
 )
 
-# Upstream
 upstream = metadata.register_stage('Upstream')
 
 solar_power_plant = upstream.register_activity('Solar')
@@ -656,10 +638,8 @@ caes_up.register_source(
     load_class('pathway.upstream.caes_upstream', 'CAES_Upstream')
 )
 
-# Links
 
 links = [
-    # EndUse
     (steam, coal_steam_production),
     (steam, ng_steam_production),
 
@@ -680,8 +660,6 @@ links = [
     (libat,libattery_production),
     (jetfuel, transportation_jetfuel),
     (dac,dac_process),
-
-    # GateToEnduse
     (transmission, ng_power_production),
     (transmission, coal_power_production),
     (transmission, wind_power_production),
@@ -706,8 +684,6 @@ links = [
     (transportation_cement, cement_production),
     (transportation_jetfuel, jetfuel_production),
     (transmission, compressed_air_energy_storage),
-
-    # Process
     (ng_power_production, transportation_ng_electricity),
     (coal_power_production, transportation_coal),
     (methanol_production, transportation_ng_non_electricity),
@@ -729,9 +705,6 @@ links = [
     (htgr_nuclear_power_production, transportation_uranium),
     (concrete_production,transportation_concrete_mid),
     (jetfuel_production, transportation_crude),
-
-
-    # Midstream
     (transportation_ng_electricity, natural_gas),
     (transportation_ng_non_electricity, natural_gas),
     (transportation_coal, coal),
@@ -741,11 +714,7 @@ links = [
     (transportation_uranium, lwr_uranium),
     (transportation_uranium, htgr_uranium),
     (transportation_concrete_mid, concrete_up),
-
-    # TEA
     (wind_power_production, wind_tea),
-
-    # Upstream
     (hydro_power_production, hydro_power_plant),
     (wind_tea, wind_power_plant),
     (solar_power_production, solar_power_plant),
@@ -781,9 +750,6 @@ for activity in upstream.activities:
     tag_resources(activity, activity.name)
 
 if __name__ == '__main__':
-    # usage:
-    #  pip install graphviz
-    #  python -m pathway.topology | dot -Tpdf > pathways.pdf
 
     import graphviz
 

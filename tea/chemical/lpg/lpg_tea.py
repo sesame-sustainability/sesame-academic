@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 import os
 import pandas as pd
@@ -95,9 +93,7 @@ class LPGTEA(TeaBase):
         filtered = self.cost_other
         lpg_vom = float(filtered[filtered['Item Type'] == "O&M"].iloc[0].value)
         lpg_capital = float(filtered[filtered['Item Type'] == "Capital"].iloc[0].value)
-        taxes = self.tax_gal*0.000006/0.526 #$/Btu
-
-        #transportation costs
+        taxes = self.tax_gal*0.000006/0.526 
         filtered = self.input_fractions
         frac_truck = float(filtered[filtered['Input'] == "Truck"].iloc[0].value)
         frac_rail = float(filtered[filtered['Input'] == "Rail"].iloc[0].value)
@@ -124,12 +120,11 @@ class LPGTEA(TeaBase):
 
     def get_cost_breakdown(self):
         lpg_capital, lpg_vom, taxes, transportation = self.get_other_costs()
-       # lpg_usage = self.get_amount_lpg()
         crude_cost, other_fuel_cost = self.get_fuel_cost()
         model = SLCOE(crude_cost + other_fuel_cost,
                             lpg_capital, 0, lpg_vom, 1, taxes, transportation)
         costs = model.get_cost_breakdown()
-        costs = {key:val * 947.82 for key, val in costs.items()} # BTU to MJ conversion
-        costs["Operational"] = {"Crude Cost": crude_cost*947.82,# BTU to MJ conversion
-                       "Process Fuels & Utilities Cost": other_fuel_cost* 947.82}# BTU to MJ conversion
+        costs = {key:val * 947.82 for key, val in costs.items()} 
+        costs["Operational"] = {"Crude Cost": crude_cost*947.82,
+                       "Process Fuels & Utilities Cost": other_fuel_cost* 947.82}
         return costs
