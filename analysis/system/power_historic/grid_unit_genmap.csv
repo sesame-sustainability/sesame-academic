@@ -1025,9 +1025,9 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 1255,AR,Whillock,7135,3,HY,WAT,,2018,3,0,OP,HY,WAT,10.8,1,305
 1256,AR,White Bluff,6009,1,ST,SUB,1980,2018,1,1,OP,ST,SUB,900,1,306
 1257,AR,White Bluff,6009,2,ST,SUB,1981,2018,2,1,OP,ST,SUB,900,1,306
-1258,AR,White River Lock and Dam 1,57160,LD#1,HY,WAT,,2018,LD
-1259,AR,White River Lock and Dam 2,57161,LD#2,HY,WAT,,2018,LD
-1260,AR,White River Lock and Dam 3,57162,LD#3,HY,WAT,,2018,LD
+1258,AR,White River Lock and Dam 1,57160,LD#1,HY,WAT,,2018,LD#1,0,OP,HY,WAT,4.3,1,307
+1259,AR,White River Lock and Dam 2,57161,LD#2,HY,WAT,,2018,LD#2,0,OP,HY,WAT,3.5,1,308
+1260,AR,White River Lock and Dam 3,57162,LD#3,HY,WAT,,2018,LD#3,0,OP,HY,WAT,4.3,1,309
 1261,AZ,Actus Lend Lease DMAFB,58632,1,PV,SUN,,2018,1,0,OP,PV,SUN,3,1,310
 1262,AZ,AES ES GILBERT,61861,SRP,BA,MWH,,2018,SRP,0,V,BA,MWH,10,1,311
 1263,AZ,Agua Caliente Solar Project,57373,AGU01,PV,SUN,,2018,AGU01,0,IP,PV,SUN,290,1,312
@@ -1318,7 +1318,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 1605,AZ,Walmart Casa Grande,57939,2,PV,SUN,,2018,2,0,OP,PV,SUN,1,1,455
 1606,AZ,Western Renewable Energy,56358,1,ST,WDS,,2018,1,0,OS,ST,WDS,3,1,456
 1607,AZ,White Wing Solar,60572,GEN01,PV,SUN,,2018,GEN01,0,L,PV,SUN,200,1,457
-1612,CA,1420 Coil Av 
+1612,CA,1420 Coil Av #C,57310,1,PV,SUN,,2018,1,0,OP,PV,SUN,1.3,1,460
 1613,CA,2081 Terzian Solar Project,58918,2081,PV,SUN,,2018,2081,0,OP,PV,SUN,1.2,1,461
 1614,CA,2097 Helton Solar Project,58920,2097,PV,SUN,,2018,2097,0,OP,PV,SUN,1.5,1,462
 1615,CA,2127 Harris Solar Project,58919,2127,PV,SUN,,2018,2127,0,OP,PV,SUN,1.3,1,463
@@ -1329,9 +1329,9 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 1620,CA,A G Wishon,293,2,HY,WAT,,2018,2,0,OP,HY,WAT,3.2,1,467
 1621,CA,A G Wishon,293,3,HY,WAT,,2018,3,0,OP,HY,WAT,3.2,1,467
 1622,CA,A G Wishon,293,4,HY,WAT,,2018,4,0,OP,HY,WAT,3.2,1,467
-1623,CA,ABEC 
-1624,CA,ABEC 
-1625,CA,ABEC 
+1623,CA,ABEC #2 dba West-Star Dairy,61501,GEN1,IC,OBG,,2018,GEN1,0,OP,IC,OBG,1,1,468
+1624,CA,ABEC #3 dba Lakeview Dairy,61502,GEN1,IC,OBG,,2018,GEN1,0,OP,IC,OBG,1,1,469
+1625,CA,ABEC #4 dba CE&S Dairy,61503,GEN1,IC,OBG,,2018,GEN1,0,OP,IC,OBG,1,1,470
 1626,CA,ABEC Bidart-Old River LLC,58699,GEN 1,IC,OBG,,2018,GEN 1,0,OP,IC,OBG,1,1,471
 1627,CA,ABEC Bidart-Old River LLC,58699,GEN 2,IC,OBG,,2018,GEN 2,0,OP,IC,OBG,1,1,471
 1628,CA,Acorn I Energy Storage LLC,62874,ACOR1,BA,MWH,,2018,ACOR1,0,T,BA,MWH,2,1,472
@@ -1436,7 +1436,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 1736,CA,Anaheim Combustion Turbine,7693,1,GT,NG,1991,2018,1,0,OP,GT,NG,49.2,1,535
 1737,CA,Anaheim Solar Energy Plant,59416,PV1,PV,SUN,,2018,PV1,0,OP,PV,SUN,2.1,1,536
 1738,CA,Angels,215,1,HY,WAT,,2018,1,0,OP,HY,WAT,1.4,1,537
-1739,CA,Anheuser-Busch 
+1739,CA,Anheuser-Busch #2,59331,ANB2,WT,WND,,2018,ANB2,0,OP,WT,WND,1.6,1,538
 1740,CA,Antelope Big Sky Ranch,60279,ABSR,PV,SUN,,2018,ABSR,0,OP,PV,SUN,20,1,539
 1741,CA,Antelope DSR 1,60186,DSR1,PV,SUN,,2018,DSR1,0,OP,PV,SUN,50,1,540
 1742,CA,Antelope DSR 2,60187,DSR2,PV,SUN,,2018,DSR2,0,OP,PV,SUN,5,1,541
@@ -2229,8 +2229,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 2636,CA,GE - Tehachapi,57566,1.7SF,WT,WND,,2018,1.7SF,0,OP,WT,WND,1.8,1,1007
 2637,CA,GE - Tehachapi,57566,2.5P2,WT,WND,,2018,2.5P2,0,OP,WT,WND,2.5,1,1007
 2638,CA,GE - Tehachapi,57566,2.8P3,WT,WND,,2018,2.8P3,0,OP,WT,WND,2.8,1,1007
-2639,CA,Genentech Vacaville Meter 
-2640,CA,Genentech Vacaville Meter 
+2639,CA,Genentech Vacaville Meter #1,60844,PV1,PV,SUN,,2018,PV1,0,OP,PV,SUN,3.8,1,1008
+2640,CA,Genentech Vacaville Meter #1,60844,PV2,PV,SUN,,2018,PV2,0,OP,PV,SUN,2.3,1,1008
 2641,CA,Genentech-Oceanside,60231,BA1,BA,MWH,,2018,BA1,0,OP,BA,MWH,2,1,1009
 2642,CA,Genentech-Oceanside,60231,PV1,PV,SUN,,2018,PV1,0,OP,PV,SUN,4.5,1,1009
 2643,CA,Genesis Solar Energy Project,57394,GEN01,ST,SUN,,2018,GEN01,1,OP,ST,SUN,125,1,1010
@@ -2821,7 +2821,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 3306,CA,Naval Hospital Medical Center,50963,4TG,GT,NG,,2018,4TG,0,OP,GT,NG,5.3,1,1363
 3307,CA,Naval Station,306,NSGT,GT,NG,,2018,NSGT,0,RE,GT,NG,26,1,1364
 3310,CA,Naval Training Center,6707,NTCG,GT,NG,,2018,NTCG,0,RE,GT,NG,16,1,1366
-3311,CA,NCPA Combustion Turbine Project 
+3311,CA,NCPA Combustion Turbine Project #2,7449,NA1,GT,NG,1996,2018,NA1,0,OP,GT,NG,50,1,1367
 3312,CA,Neenach Solar Center,60826,ECA03,PV,SUN,,2018,ECA03,0,P,PV,SUN,1.5,1,1368
 3313,CA,Nelson Creek,50223,1296,HY,WAT,,2018,1296,0,OP,HY,WAT,1.2,1,1369
 3314,CA,New Hogan Power Plant,50755,GEN1,HY,WAT,,2018,GEN1,0,OP,HY,WAT,2,1,1370
@@ -3039,7 +3039,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 3537,CA,Pardee,376,1,HY,WAT,,2018,1,0,OP,HY,WAT,7.5,1,1459
 3538,CA,Pardee,376,2,HY,WAT,,2018,2,0,OP,HY,WAT,7.5,1,1459
 3539,CA,Pardee,376,3,HY,WAT,,2018,3,0,OP,HY,WAT,8.6,1,1459
-3540,CA,Park Meridian 
+3540,CA,Park Meridian #1,59539,1,PV,SUN,,2018,1,0,OP,PV,SUN,1.5,1,1460
 3541,CA,Parker,428,1,HY,WAT,,2018,1,0,OP,HY,WAT,2.7,1,1461
 3542,CA,Parker Dam,447,1,HY,WAT,,2018,1,0,OP,HY,WAT,30,1,1462
 3543,CA,Parker Dam,447,2,HY,WAT,,2018,2,0,OP,HY,WAT,30,1,1462
@@ -3179,7 +3179,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 3692,CA,Ramona 1,58909,RAM1,PV,SUN,,2018,RAM1,0,OP,PV,SUN,2,1,1525
 3693,CA,Ramona 2,58911,RAM2,PV,SUN,,2018,RAM2,0,OP,PV,SUN,5,1,1526
 3694,CA,Ramona Solar Energy,60995,1,PV,SUN,,2018,1,0,OP,PV,SUN,4.3,1,1527
-3695,CA,Rancho Cucamonga Dist 
+3695,CA,Rancho Cucamonga Dist #1,59540,2,PV,SUN,,2018,2,0,OP,PV,SUN,1.8,1,1528
 3696,CA,Rancho Penasquitos,56615,G100,HY,WAT,,2018,G100,0,OP,HY,WAT,4.6,1,1529
 3697,CA,Rancho Seco Solar,529,1,PV,SUN,,2018,1,0,RE,PV,SUN,1,1,1530
 3698,CA,Rancho Seco Solar,529,2,PV,SUN,,2018,2,0,RE,PV,SUN,1,1,1530
@@ -3558,261 +3558,261 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 4101,CA,Solar Gen 2,58592,ALHM,PV,SUN,,2018,ALHM,0,OP,PV,SUN,51.7,1,1752
 4102,CA,Solar Gen 2,58592,ARK,PV,SUN,,2018,ARK,0,OP,PV,SUN,51.7,1,1752
 4103,CA,Solar Gen 2,58592,SONR,PV,SUN,,2018,SONR,0,OP,PV,SUN,51.7,1,1752
-4104,CA,Solar Photovoltaic Project 
-4105,CA,Solar Photovoltaic Project 
-4106,CA,Solar Photovoltaic Project 
-4107,CA,Solar Photovoltaic Project 
-4108,CA,Solar Photovoltaic Project 
-4109,CA,Solar Photovoltaic Project 
-4110,CA,Solar Photovoltaic Project 
-4111,CA,Solar Photovoltaic Project 
-4112,CA,Solar Photovoltaic Project 
-4113,CA,Solar Photovoltaic Project 
-4114,CA,Solar Photovoltaic Project 
-4115,CA,Solar Photovoltaic Project 
-4116,CA,Solar Photovoltaic Project 
-4117,CA,Solar Photovoltaic Project 
-4118,CA,Solar Photovoltaic Project 
-4119,CA,Solar Photovoltaic Project 
-4120,CA,Solar Photovoltaic Project 
-4121,CA,Solar Photovoltaic Project 
-4122,CA,Solar Photovoltaic Project 
-4123,CA,Solar Photovoltaic Project 
-4124,CA,Solar Photovoltaic Project 
-4125,CA,Solar Photovoltaic Project 
-4126,CA,Solar Photovoltaic Project 
-4127,CA,Solar Photovoltaic Project 
-4128,CA,Solar Photovoltaic Project 
-4129,CA,Solar Photovoltaic Project 
-4130,CA,Solar Photovoltaic Project 
-4131,CA,Solar Photovoltaic Project 
-4132,CA,Solar Photovoltaic Project 
-4133,CA,Solar Photovoltaic Project 
-4134,CA,Solar Photovoltaic Project 
-4135,CA,Solar Photovoltaic Project 
-4136,CA,Solar Photovoltaic Project 
-4137,CA,Solar Photovoltaic Project 
-4138,CA,Solar Photovoltaic Project 
-4139,CA,Solar Photovoltaic Project 
-4140,CA,Solar Photovoltaic Project 
-4141,CA,Solar Photovoltaic Project 
-4142,CA,Solar Photovoltaic Project 
-4143,CA,Solar Photovoltaic Project 
-4144,CA,Solar Photovoltaic Project 
-4145,CA,Solar Photovoltaic Project 
-4146,CA,Solar Photovoltaic Project 
+4104,CA,Solar Photovoltaic Project #01,56976,S1A,PV,SUN,,2018,S1A,0,RE,PV,SUN,0.5,1,1753
+4105,CA,Solar Photovoltaic Project #01,56976,S1B,PV,SUN,,2018,S1B,0,RE,PV,SUN,0.5,1,1753
+4106,CA,Solar Photovoltaic Project #01,56976,S1C,PV,SUN,,2018,S1C,0,RE,PV,SUN,0.5,1,1753
+4107,CA,Solar Photovoltaic Project #01,56976,S1D,PV,SUN,,2018,S1D,0,RE,PV,SUN,0.5,1,1753
+4108,CA,Solar Photovoltaic Project #02,56996,S1A,PV,SUN,,2018,S1A,0,OP,PV,SUN,0.5,1,1754
+4109,CA,Solar Photovoltaic Project #02,56996,S1B,PV,SUN,,2018,S1B,0,OP,PV,SUN,0.5,1,1754
+4110,CA,Solar Photovoltaic Project #03,57217,S003A,PV,SUN,,2018,S003A,0,OP,PV,SUN,0.5,1,1755
+4111,CA,Solar Photovoltaic Project #03,57217,S003B,PV,SUN,,2018,S003B,0,OP,PV,SUN,0.5,1,1755
+4112,CA,Solar Photovoltaic Project #04,57218,S004A,PV,SUN,,2018,S004A,0,CN,PV,SUN,0.5,1,1756
+4113,CA,Solar Photovoltaic Project #04,57218,S004B,PV,SUN,,2018,S004B,0,CN,PV,SUN,0.5,1,1756
+4114,CA,Solar Photovoltaic Project #04,57218,S004C,PV,SUN,,2018,S004C,0,CN,PV,SUN,0.5,1,1756
+4115,CA,Solar Photovoltaic Project #05,57219,S005A,PV,SUN,,2018,S005A,0,OP,PV,SUN,0.5,1,1757
+4116,CA,Solar Photovoltaic Project #05,57219,S005B,PV,SUN,,2018,S005B,0,OP,PV,SUN,0.5,1,1757
+4117,CA,Solar Photovoltaic Project #05,57219,S005C,PV,SUN,,2018,S005C,0,OP,PV,SUN,0.5,1,1757
+4118,CA,Solar Photovoltaic Project #05,57219,S005D,PV,SUN,,2018,S005D,0,OP,PV,SUN,0.5,1,1757
+4119,CA,Solar Photovoltaic Project #05,57219,S005E,PV,SUN,,2018,S005E,0,OP,PV,SUN,0.5,1,1757
+4120,CA,Solar Photovoltaic Project #06,57220,S006A,PV,SUN,,2018,S006A,0,OP,PV,SUN,0.5,1,1758
+4121,CA,Solar Photovoltaic Project #06,57220,S006B,PV,SUN,,2018,S006B,0,OP,PV,SUN,0.5,1,1758
+4122,CA,Solar Photovoltaic Project #06,57220,S006C,PV,SUN,,2018,S006C,0,OP,PV,SUN,0.5,1,1758
+4123,CA,Solar Photovoltaic Project #06,57220,S006D,PV,SUN,,2018,S006D,0,OP,PV,SUN,0.5,1,1758
+4124,CA,Solar Photovoltaic Project #07,57221,S007A,PV,SUN,,2018,S007A,0,OP,PV,SUN,0.5,1,1759
+4125,CA,Solar Photovoltaic Project #07,57221,S007B,PV,SUN,,2018,S007B,0,OP,PV,SUN,0.5,1,1759
+4126,CA,Solar Photovoltaic Project #07,57221,S007C,PV,SUN,,2018,S007C,0,OP,PV,SUN,0.5,1,1759
+4127,CA,Solar Photovoltaic Project #07,57221,S007D,PV,SUN,,2018,S007D,0,OP,PV,SUN,0.5,1,1759
+4128,CA,Solar Photovoltaic Project #07,57221,S007E,PV,SUN,,2018,S007E,0,OP,PV,SUN,0.5,1,1759
+4129,CA,Solar Photovoltaic Project #08,57222,S008A,PV,SUN,,2018,S008A,0,OP,PV,SUN,0.5,1,1760
+4130,CA,Solar Photovoltaic Project #08,57222,S008B,PV,SUN,,2018,S008B,0,OP,PV,SUN,0.5,1,1760
+4131,CA,Solar Photovoltaic Project #08,57222,S008C,PV,SUN,,2018,S008C,0,OP,PV,SUN,0.5,1,1760
+4132,CA,Solar Photovoltaic Project #08,57222,S008D,PV,SUN,,2018,S008D,0,OP,PV,SUN,0.5,1,1760
+4133,CA,Solar Photovoltaic Project #08,57222,S008E,PV,SUN,,2018,S008E,0,IP,PV,SUN,0.5,1,1760
+4134,CA,Solar Photovoltaic Project #09,57223,S009A,PV,SUN,,2018,S009A,0,OP,PV,SUN,0.5,1,1761
+4135,CA,Solar Photovoltaic Project #09,57223,S009B,PV,SUN,,2018,S009B,0,OP,PV,SUN,0.5,1,1761
+4136,CA,Solar Photovoltaic Project #09,57223,S009C,PV,SUN,,2018,S009C,0,IP,PV,SUN,0.5,1,1761
+4137,CA,Solar Photovoltaic Project #10,57224,S010A,PV,SUN,,2018,S010A,0,OP,PV,SUN,0.5,1,1762
+4138,CA,Solar Photovoltaic Project #10,57224,S010B,PV,SUN,,2018,S010B,0,OP,PV,SUN,0.5,1,1762
+4139,CA,Solar Photovoltaic Project #10,57224,S010C,PV,SUN,,2018,S010C,0,OP,PV,SUN,0.5,1,1762
+4140,CA,Solar Photovoltaic Project #10,57224,S010D,PV,SUN,,2018,S010D,0,IP,PV,SUN,0.5,1,1762
+4141,CA,Solar Photovoltaic Project #11,57225,S011A,PV,SUN,,2018,S011A,0,OP,PV,SUN,0.5,1,1763
+4142,CA,Solar Photovoltaic Project #11,57225,S011B,PV,SUN,,2018,S011B,0,OP,PV,SUN,0.5,1,1763
+4143,CA,Solar Photovoltaic Project #11,57225,S011C,PV,SUN,,2018,S011C,0,OP,PV,SUN,0.5,1,1763
+4144,CA,Solar Photovoltaic Project #11,57225,S011D,PV,SUN,,2018,S011D,0,OP,PV,SUN,0.5,1,1763
+4145,CA,Solar Photovoltaic Project #11,57225,S011E,PV,SUN,,2018,S011E,0,OP,PV,SUN,0.5,1,1763
+4146,CA,Solar Photovoltaic Project #11,57225,S011F,PV,SUN,,2018,S011F,0,OP,PV,SUN,0.5,1,1763
 ,AZ,,55455,CC2B,CT,NG,,,CT2B,,,CT,NG,,0.833333333,428
-4147,CA,Solar Photovoltaic Project 
-4148,CA,Solar Photovoltaic Project 
-4149,CA,Solar Photovoltaic Project 
-4150,CA,Solar Photovoltaic Project 
-4151,CA,Solar Photovoltaic Project 
-4152,CA,Solar Photovoltaic Project 
-4153,CA,Solar Photovoltaic Project 
-4154,CA,Solar Photovoltaic Project 
-4155,CA,Solar Photovoltaic Project 
-4156,CA,Solar Photovoltaic Project 
-4157,CA,Solar Photovoltaic Project 
-4158,CA,Solar Photovoltaic Project 
-4159,CA,Solar Photovoltaic Project 
-4160,CA,Solar Photovoltaic Project 
-4161,CA,Solar Photovoltaic Project 
-4162,CA,Solar Photovoltaic Project 
-4163,CA,Solar Photovoltaic Project 
-4164,CA,Solar Photovoltaic Project 
-4165,CA,Solar Photovoltaic Project 
-4166,CA,Solar Photovoltaic Project 
-4167,CA,Solar Photovoltaic Project 
-4168,CA,Solar Photovoltaic Project 
-4169,CA,Solar Photovoltaic Project 
-4170,CA,Solar Photovoltaic Project 
-4171,CA,Solar Photovoltaic Project 
-4172,CA,Solar Photovoltaic Project 
-4173,CA,Solar Photovoltaic Project 
-4174,CA,Solar Photovoltaic Project 
-4175,CA,Solar Photovoltaic Project 
-4176,CA,Solar Photovoltaic Project 
-4177,CA,Solar Photovoltaic Project 
-4178,CA,Solar Photovoltaic Project 
-4179,CA,Solar Photovoltaic Project 
-4180,CA,Solar Photovoltaic Project 
-4181,CA,Solar Photovoltaic Project 
-4182,CA,Solar Photovoltaic Project 
-4183,CA,Solar Photovoltaic Project 
-4184,CA,Solar Photovoltaic Project 
-4185,CA,Solar Photovoltaic Project 
-4186,CA,Solar Photovoltaic Project 
-4187,CA,Solar Photovoltaic Project 
-4188,CA,Solar Photovoltaic Project 
-4189,CA,Solar Photovoltaic Project 
-4190,CA,Solar Photovoltaic Project 
-4191,CA,Solar Photovoltaic Project 
-4192,CA,Solar Photovoltaic Project 
-4193,CA,Solar Photovoltaic Project 
-4194,CA,Solar Photovoltaic Project 
-4195,CA,Solar Photovoltaic Project 
-4196,CA,Solar Photovoltaic Project 
-4197,CA,Solar Photovoltaic Project 
-4198,CA,Solar Photovoltaic Project 
-4199,CA,Solar Photovoltaic Project 
-4200,CA,Solar Photovoltaic Project 
-4201,CA,Solar Photovoltaic Project 
-4202,CA,Solar Photovoltaic Project 
-4203,CA,Solar Photovoltaic Project 
-4204,CA,Solar Photovoltaic Project 
-4205,CA,Solar Photovoltaic Project 
-4206,CA,Solar Photovoltaic Project 
-4207,CA,Solar Photovoltaic Project 
-4208,CA,Solar Photovoltaic Project 
-4209,CA,Solar Photovoltaic Project 
-4210,CA,Solar Photovoltaic Project 
-4211,CA,Solar Photovoltaic Project 
-4212,CA,Solar Photovoltaic Project 
-4213,CA,Solar Photovoltaic Project 
-4214,CA,Solar Photovoltaic Project 
-4215,CA,Solar Photovoltaic Project 
-4216,CA,Solar Photovoltaic Project 
-4217,CA,Solar Photovoltaic Project 
-4218,CA,Solar Photovoltaic Project 
-4219,CA,Solar Photovoltaic Project 
-4220,CA,Solar Photovoltaic Project 
-4221,CA,Solar Photovoltaic Project 
-4222,CA,Solar Photovoltaic Project 
-4223,CA,Solar Photovoltaic Project 
-4224,CA,Solar Photovoltaic Project 
-4225,CA,Solar Photovoltaic Project 
-4226,CA,Solar Photovoltaic Project 
-4227,CA,Solar Photovoltaic Project 
-4228,CA,Solar Photovoltaic Project 
-4229,CA,Solar Photovoltaic Project 
-4230,CA,Solar Photovoltaic Project 
-4231,CA,Solar Photovoltaic Project 
-4232,CA,Solar Photovoltaic Project 
-4233,CA,Solar Photovoltaic Project 
-4234,CA,Solar Photovoltaic Project 
-4235,CA,Solar Photovoltaic Project 
-4236,CA,Solar Photovoltaic Project 
-4237,CA,Solar Photovoltaic Project 
-4238,CA,Solar Photovoltaic Project 
-4239,CA,Solar Photovoltaic Project 
-4240,CA,Solar Photovoltaic Project 
-4241,CA,Solar Photovoltaic Project 
+4147,CA,Solar Photovoltaic Project #11,57225,S011G,PV,SUN,,2018,S011G,0,OP,PV,SUN,0.5,1,1763
+4148,CA,Solar Photovoltaic Project #12,57226,S012A,PV,SUN,,2018,S012A,0,OP,PV,SUN,0.5,1,1764
+4149,CA,Solar Photovoltaic Project #12,57226,S012B,PV,SUN,,2018,S012B,0,IP,PV,SUN,0.5,1,1764
+4150,CA,Solar Photovoltaic Project #13,57227,S013A,PV,SUN,,2018,S013A,0,OP,PV,SUN,0.5,1,1765
+4151,CA,Solar Photovoltaic Project #13,57227,S013B,PV,SUN,,2018,S013B,0,OP,PV,SUN,0.5,1,1765
+4152,CA,Solar Photovoltaic Project #13,57227,S013C,PV,SUN,,2018,S013C,0,OP,PV,SUN,0.5,1,1765
+4153,CA,Solar Photovoltaic Project #13,57227,S013D,PV,SUN,,2018,S013D,0,OP,PV,SUN,0.5,1,1765
+4154,CA,Solar Photovoltaic Project #13,57227,S013E,PV,SUN,,2018,S013E,0,OP,PV,SUN,0.5,1,1765
+4155,CA,Solar Photovoltaic Project #13,57227,S013F,PV,SUN,,2018,S013F,0,OP,PV,SUN,0.5,1,1765
+4156,CA,Solar Photovoltaic Project #13,57227,S013G,PV,SUN,,2018,S013G,0,OP,PV,SUN,0.5,1,1765
+4157,CA,Solar Photovoltaic Project #14,57228,S014A,PV,SUN,,2018,S014A,0,CN,PV,SUN,0.5,1,1766
+4158,CA,Solar Photovoltaic Project #14,57228,S014B,PV,SUN,,2018,S014B,0,CN,PV,SUN,0.5,1,1766
+4159,CA,Solar Photovoltaic Project #14,57228,S014C,PV,SUN,,2018,S014C,0,CN,PV,SUN,0.5,1,1766
+4160,CA,Solar Photovoltaic Project #15,57229,S015A,PV,SUN,,2018,S015A,0,OP,PV,SUN,0.5,1,1767
+4161,CA,Solar Photovoltaic Project #15,57229,S015B,PV,SUN,,2018,S015B,0,OP,PV,SUN,0.5,1,1767
+4162,CA,Solar Photovoltaic Project #15,57229,S015C,PV,SUN,,2018,S015C,0,OP,PV,SUN,0.5,1,1767
+4163,CA,Solar Photovoltaic Project #15,57229,S015D,PV,SUN,,2018,S015D,0,OP,PV,SUN,0.5,1,1767
+4164,CA,Solar Photovoltaic Project #15,57229,S015E,PV,SUN,,2018,S015E,0,OP,PV,SUN,0.5,1,1767
+4165,CA,Solar Photovoltaic Project #15,57229,S015F,PV,SUN,,2018,S015F,0,OP,PV,SUN,0.5,1,1767
+4166,CA,Solar Photovoltaic Project #15,57229,S015G,PV,SUN,,2018,S015G,0,OP,PV,SUN,0.5,1,1767
+4167,CA,Solar Photovoltaic Project #16,57230,S016A,PV,SUN,,2018,S016A,0,OP,PV,SUN,0.5,1,1768
+4168,CA,Solar Photovoltaic Project #16,57230,S016B,PV,SUN,,2018,S016B,0,OP,PV,SUN,0.5,1,1768
+4169,CA,Solar Photovoltaic Project #16,57230,S016C,PV,SUN,,2018,S016C,0,OP,PV,SUN,0.5,1,1768
+4170,CA,Solar Photovoltaic Project #17,57231,S017A,PV,SUN,,2018,S017A,0,OP,PV,SUN,0.5,1,1769
+4171,CA,Solar Photovoltaic Project #17,57231,S017B,PV,SUN,,2018,S017B,0,OP,PV,SUN,0.5,1,1769
+4172,CA,Solar Photovoltaic Project #17,57231,S017C,PV,SUN,,2018,S017C,0,OP,PV,SUN,0.5,1,1769
+4173,CA,Solar Photovoltaic Project #17,57231,S017D,PV,SUN,,2018,S017D,0,OP,PV,SUN,0.5,1,1769
+4174,CA,Solar Photovoltaic Project #17,57231,S017E,PV,SUN,,2018,S017E,0,OP,PV,SUN,0.5,1,1769
+4175,CA,Solar Photovoltaic Project #17,57231,S017F,PV,SUN,,2018,S017F,0,OP,PV,SUN,0.5,1,1769
+4176,CA,Solar Photovoltaic Project #17,57231,S017G,PV,SUN,,2018,S017G,0,OP,PV,SUN,0.5,1,1769
+4177,CA,Solar Photovoltaic Project #17,57231,S017H,PV,SUN,,2018,S017H,0,CN,PV,SUN,0.5,1,1769
+4178,CA,Solar Photovoltaic Project #18,57232,S018A,PV,SUN,,2018,S018A,0,OP,PV,SUN,0.5,1,1770
+4179,CA,Solar Photovoltaic Project #18,57232,S018B,PV,SUN,,2018,S018B,0,OP,PV,SUN,0.5,1,1770
+4180,CA,Solar Photovoltaic Project #18,57232,S018C,PV,SUN,,2018,S018C,0,OP,PV,SUN,0.5,1,1770
+4181,CA,Solar Photovoltaic Project #18,57232,S018D,PV,SUN,,2018,S018D,0,IP,PV,SUN,0.5,1,1770
+4182,CA,Solar Photovoltaic Project #19,57233,S019A,PV,SUN,,2018,S019A,0,CN,PV,SUN,1,1,1771
+4183,CA,Solar Photovoltaic Project #19,57233,S019B,PV,SUN,,2018,S019B,0,CN,PV,SUN,0.5,1,1771
+4184,CA,Solar Photovoltaic Project #19,57233,S019C,PV,SUN,,2018,S019C,0,CN,PV,SUN,0.5,1,1771
+4185,CA,Solar Photovoltaic Project #19,57233,S019D,PV,SUN,,2018,S019D,0,CN,PV,SUN,0.5,1,1771
+4186,CA,Solar Photovoltaic Project #19,57233,S019E,PV,SUN,,2018,S019E,0,CN,PV,SUN,0.5,1,1771
+4187,CA,Solar Photovoltaic Project #19,57233,S019F,PV,SUN,,2018,S019F,0,CN,PV,SUN,0.5,1,1771
+4188,CA,Solar Photovoltaic Project #19,57233,S019G,PV,SUN,,2018,S019G,0,CN,PV,SUN,0.5,1,1771
+4189,CA,Solar Photovoltaic Project #19,57233,S019H,PV,SUN,,2018,S019H,0,CN,PV,SUN,0.5,1,1771
+4190,CA,Solar Photovoltaic Project #19,57233,S019I,PV,SUN,,2018,S019I,0,CN,PV,SUN,0.5,1,1771
+4191,CA,Solar Photovoltaic Project #20,57234,S020A,PV,SUN,,2018,S020A,0,CN,PV,SUN,0.5,1,1772
+4192,CA,Solar Photovoltaic Project #20,57234,S020B,PV,SUN,,2018,S020B,0,CN,PV,SUN,0.5,1,1772
+4193,CA,Solar Photovoltaic Project #20,57234,S020C,PV,SUN,,2018,S020C,0,CN,PV,SUN,0.5,1,1772
+4194,CA,Solar Photovoltaic Project #20,57234,S020D,PV,SUN,,2018,S020D,0,CN,PV,SUN,0.5,1,1772
+4195,CA,Solar Photovoltaic Project #20,57234,S020E,PV,SUN,,2018,S020E,0,CN,PV,SUN,0.5,1,1772
+4196,CA,Solar Photovoltaic Project #20,57234,S020F,PV,SUN,,2018,S020F,0,CN,PV,SUN,0.5,1,1772
+4197,CA,Solar Photovoltaic Project #20,57234,S020G,PV,SUN,,2018,S020G,0,CN,PV,SUN,0.5,1,1772
+4198,CA,Solar Photovoltaic Project #21,57235,S021A,PV,SUN,,2018,S021A,0,CN,PV,SUN,0.5,1,1773
+4199,CA,Solar Photovoltaic Project #21,57235,S021B,PV,SUN,,2018,S021B,0,CN,PV,SUN,0.5,1,1773
+4200,CA,Solar Photovoltaic Project #21,57235,S021C,PV,SUN,,2018,S021C,0,CN,PV,SUN,0.5,1,1773
+4201,CA,Solar Photovoltaic Project #21,57235,S021D,PV,SUN,,2018,S021D,0,CN,PV,SUN,0.5,1,1773
+4202,CA,Solar Photovoltaic Project #21,57235,S021E,PV,SUN,,2018,S021E,0,CN,PV,SUN,0.5,1,1773
+4203,CA,Solar Photovoltaic Project #22,57237,S022A,PV,SUN,,2018,S022A,0,OP,PV,SUN,0.5,1,1774
+4204,CA,Solar Photovoltaic Project #22,57237,S022B,PV,SUN,,2018,S022B,0,OP,PV,SUN,0.5,1,1774
+4205,CA,Solar Photovoltaic Project #22,57237,S022C,PV,SUN,,2018,S022C,0,OP,PV,SUN,0.5,1,1774
+4206,CA,Solar Photovoltaic Project #22,57237,S022D,PV,SUN,,2018,S022D,0,OP,PV,SUN,0.5,1,1774
+4207,CA,Solar Photovoltaic Project #23,57236,S023A,PV,SUN,,2018,S023A,0,OP,PV,SUN,0.5,1,1775
+4208,CA,Solar Photovoltaic Project #23,57236,S023B,PV,SUN,,2018,S023B,0,OP,PV,SUN,0.5,1,1775
+4209,CA,Solar Photovoltaic Project #23,57236,S023C,PV,SUN,,2018,S023C,0,OP,PV,SUN,0.5,1,1775
+4210,CA,Solar Photovoltaic Project #23,57236,S023D,PV,SUN,,2018,S023D,0,OP,PV,SUN,0.5,1,1775
+4211,CA,Solar Photovoltaic Project #23,57236,S023E,PV,SUN,,2018,S023E,0,OP,PV,SUN,0.5,1,1775
+4212,CA,Solar Photovoltaic Project #23,57236,S023F,PV,SUN,,2018,S023F,0,IP,PV,SUN,0.5,1,1775
+4213,CA,Solar Photovoltaic Project #24,57127,SO24A,PV,SUN,,2018,SO24A,0,CN,PV,SUN,0.5,1,1776
+4214,CA,Solar Photovoltaic Project #24,57127,SO24B,PV,SUN,,2018,SO24B,0,CN,PV,SUN,0.5,1,1776
+4215,CA,Solar Photovoltaic Project #24,57127,SO24C,PV,SUN,,2018,SO24C,0,CN,PV,SUN,0.5,1,1776
+4216,CA,Solar Photovoltaic Project #24,57127,SO24D,PV,SUN,,2018,SO24D,0,CN,PV,SUN,0.5,1,1776
+4217,CA,Solar Photovoltaic Project #24,57127,SO24E,PV,SUN,,2018,SO24E,0,CN,PV,SUN,0.5,1,1776
+4218,CA,Solar Photovoltaic Project #24,57127,SO24F,PV,SUN,,2018,SO24F,0,CN,PV,SUN,0.5,1,1776
+4219,CA,Solar Photovoltaic Project #24,57127,SO24G,PV,SUN,,2018,SO24G,0,CN,PV,SUN,0.5,1,1776
+4220,CA,Solar Photovoltaic Project #24,57127,SO24H,PV,SUN,,2018,SO24H,0,CN,PV,SUN,0.5,1,1776
+4221,CA,Solar Photovoltaic Project #25,57528,S25A,PV,SUN,,2018,S25A,0,CN,PV,SUN,0.5,1,1777
+4222,CA,Solar Photovoltaic Project #25,57528,S25B,PV,SUN,,2018,S25B,0,CN,PV,SUN,0.5,1,1777
+4223,CA,Solar Photovoltaic Project #25,57528,S25C,PV,SUN,,2018,S25C,0,CN,PV,SUN,0.5,1,1777
+4224,CA,Solar Photovoltaic Project #25,57528,S25D,PV,SUN,,2018,S25D,0,CN,PV,SUN,0.5,1,1777
+4225,CA,Solar Photovoltaic Project #25,57528,S25E,PV,SUN,,2018,S25E,0,CN,PV,SUN,0.5,1,1777
+4226,CA,Solar Photovoltaic Project #25,57528,S25F,PV,SUN,,2018,S25F,0,CN,PV,SUN,0.5,1,1777
+4227,CA,Solar Photovoltaic Project #25,57528,S25G,PV,SUN,,2018,S25G,0,CN,PV,SUN,0.5,1,1777
+4228,CA,Solar Photovoltaic Project #25,57528,S25H,PV,SUN,,2018,S25H,0,CN,PV,SUN,0.5,1,1777
+4229,CA,Solar Photovoltaic Project #25,57528,S25I,PV,SUN,,2018,S25I,0,CN,PV,SUN,0.5,1,1777
+4230,CA,Solar Photovoltaic Project #26,57245,S026A,PV,SUN,,2018,S026A,0,OP,PV,SUN,0.5,1,1778
+4231,CA,Solar Photovoltaic Project #26,57245,S026B,PV,SUN,,2018,S026B,0,OP,PV,SUN,0.5,1,1778
+4232,CA,Solar Photovoltaic Project #26,57245,S026C,PV,SUN,,2018,S026C,0,OP,PV,SUN,0.5,1,1778
+4233,CA,Solar Photovoltaic Project #26,57245,S026D,PV,SUN,,2018,S026D,0,OP,PV,SUN,0.5,1,1778
+4234,CA,Solar Photovoltaic Project #26,57245,S026E,PV,SUN,,2018,S026E,0,OP,PV,SUN,0.5,1,1778
+4235,CA,Solar Photovoltaic Project #26,57245,S026F,PV,SUN,,2018,S026F,0,OP,PV,SUN,0.5,1,1778
+4236,CA,Solar Photovoltaic Project #26,57245,S026G,PV,SUN,,2018,S026G,0,OP,PV,SUN,0.5,1,1778
+4237,CA,Solar Photovoltaic Project #26,57245,S026H,PV,SUN,,2018,S026H,0,OP,PV,SUN,0.5,1,1778
+4238,CA,Solar Photovoltaic Project #26,57245,S026I,PV,SUN,,2018,S026I,0,OP,PV,SUN,0.5,1,1778
+4239,CA,Solar Photovoltaic Project #26,57245,S026J,PV,SUN,,2018,S026J,0,OP,PV,SUN,0.5,1,1778
+4240,CA,Solar Photovoltaic Project #26,57245,SO26K,PV,SUN,,2018,SO26K,0,OP,PV,SUN,0.5,1,1778
+4241,CA,Solar Photovoltaic Project #26,57245,SO26L,PV,SUN,,2018,SO26L,0,OP,PV,SUN,0.5,1,1778
 ,FL,,7846,1,GT,NG,,,1,,,GT,NG,,0.75,2476
-4242,CA,Solar Photovoltaic Project 
-4243,CA,Solar Photovoltaic Project 
-4244,CA,Solar Photovoltaic Project 
-4245,CA,Solar Photovoltaic Project 
-4246,CA,Solar Photovoltaic Project 
-4247,CA,Solar Photovoltaic Project 
-4248,CA,Solar Photovoltaic Project 
-4249,CA,Solar Photovoltaic Project 
-4250,CA,Solar Photovoltaic Project 
-4251,CA,Solar Photovoltaic Project 
-4252,CA,Solar Photovoltaic Project 
-4253,CA,Solar Photovoltaic Project 
-4254,CA,Solar Photovoltaic Project 
-4255,CA,Solar Photovoltaic Project 
-4256,CA,Solar Photovoltaic Project 
-4257,CA,Solar Photovoltaic Project 
-4258,CA,Solar Photovoltaic Project 
-4259,CA,Solar Photovoltaic Project 
-4260,CA,Solar Photovoltaic Project 
-4261,CA,Solar Photovoltaic Project 
-4262,CA,Solar Photovoltaic Project 
-4263,CA,Solar Photovoltaic Project 
-4264,CA,Solar Photovoltaic Project 
-4265,CA,Solar Photovoltaic Project 
-4266,CA,Solar Photovoltaic Project 
-4267,CA,Solar Photovoltaic Project 
-4268,CA,Solar Photovoltaic Project 
-4269,CA,Solar Photovoltaic Project 
-4270,CA,Solar Photovoltaic Project 
-4271,CA,Solar Photovoltaic Project 
-4272,CA,Solar Photovoltaic Project 
-4273,CA,Solar Photovoltaic Project 
-4274,CA,Solar Photovoltaic Project 
-4275,CA,Solar Photovoltaic Project 
-4276,CA,Solar Photovoltaic Project 
-4277,CA,Solar Photovoltaic Project 
-4278,CA,Solar Photovoltaic Project 
-4279,CA,Solar Photovoltaic Project 
-4280,CA,Solar Photovoltaic Project 
-4281,CA,Solar Photovoltaic Project 
-4282,CA,Solar Photovoltaic Project 
-4283,CA,Solar Photovoltaic Project 
-4284,CA,Solar Photovoltaic Project 
-4285,CA,Solar Photovoltaic Project 
-4286,CA,Solar Photovoltaic Project 
-4287,CA,Solar Photovoltaic Project 
-4288,CA,Solar Photovoltaic Project 
-4289,CA,Solar Photovoltaic Project 
-4290,CA,Solar Photovoltaic Project 
-4291,CA,Solar Photovoltaic Project 
-4292,CA,Solar Photovoltaic Project 
-4293,CA,Solar Photovoltaic Project 
-4294,CA,Solar Photovoltaic Project 
-4295,CA,Solar Photovoltaic Project 
-4296,CA,Solar Photovoltaic Project 
-4297,CA,Solar Photovoltaic Project 
-4298,CA,Solar Photovoltaic Project 
+4242,CA,Solar Photovoltaic Project #27,57246,S027A,PV,SUN,,2018,S027A,0,OP,PV,SUN,0.5,1,1779
+4243,CA,Solar Photovoltaic Project #27,57246,S027B,PV,SUN,,2018,S027B,0,OP,PV,SUN,0.5,1,1779
+4244,CA,Solar Photovoltaic Project #27,57246,S027C,PV,SUN,,2018,S027C,0,OP,PV,SUN,0.5,1,1779
+4245,CA,Solar Photovoltaic Project #27,57246,S027D,PV,SUN,,2018,S027D,0,OP,PV,SUN,0.5,1,1779
+4246,CA,Solar Photovoltaic Project #27,57246,S027E,PV,SUN,,2018,S027E,0,CN,PV,SUN,0.5,1,1779
+4247,CA,Solar Photovoltaic Project #27,57246,S027F,PV,SUN,,2018,S027F,0,CN,PV,SUN,0.5,1,1779
+4248,CA,Solar Photovoltaic Project #28,57247,S028A,PV,SUN,,2018,S028A,0,OP,PV,SUN,0.5,1,1780
+4249,CA,Solar Photovoltaic Project #28,57247,S028B,PV,SUN,,2018,S028B,0,OP,PV,SUN,0.5,1,1780
+4250,CA,Solar Photovoltaic Project #28,57247,S028C,PV,SUN,,2018,S028C,0,OP,PV,SUN,0.5,1,1780
+4251,CA,Solar Photovoltaic Project #28,57247,S028D,PV,SUN,,2018,S028D,0,OP,PV,SUN,0.5,1,1780
+4252,CA,Solar Photovoltaic Project #28,57247,S028E,PV,SUN,,2018,S028E,0,OP,PV,SUN,0.5,1,1780
+4253,CA,Solar Photovoltaic Project #28,57247,S028F,PV,SUN,,2018,S028F,0,OP,PV,SUN,0.5,1,1780
+4254,CA,Solar Photovoltaic Project #28,57247,S028G,PV,SUN,,2018,S028G,0,OP,PV,SUN,0.5,1,1780
+4255,CA,Solar Photovoltaic Project #28,57247,S028H,PV,SUN,,2018,S028H,0,CN,PV,SUN,0.5,1,1780
+4256,CA,Solar Photovoltaic Project #30,57532,S30A,PV,SUN,,2018,S30A,0,CN,PV,SUN,0.5,1,1781
+4257,CA,Solar Photovoltaic Project #30,57532,S30B,PV,SUN,,2018,S30B,0,CN,PV,SUN,0.5,1,1781
+4258,CA,Solar Photovoltaic Project #30,57532,S30C,PV,SUN,,2018,S30C,0,CN,PV,SUN,0.5,1,1781
+4259,CA,Solar Photovoltaic Project #31,57533,S31A,PV,SUN,,2018,S31A,0,CN,PV,SUN,0.5,1,1782
+4260,CA,Solar Photovoltaic Project #31,57533,S31B,PV,SUN,,2018,S31B,0,CN,PV,SUN,0.5,1,1782
+4261,CA,Solar Photovoltaic Project #32,57534,S32A,PV,SUN,,2018,S32A,0,OP,PV,SUN,0.5,1,1783
+4262,CA,Solar Photovoltaic Project #32,57534,S32B,PV,SUN,,2018,S32B,0,OP,PV,SUN,0.5,1,1783
+4263,CA,Solar Photovoltaic Project #32,57534,S32C,PV,SUN,,2018,S32C,0,OP,PV,SUN,0.5,1,1783
+4264,CA,Solar Photovoltaic Project #33,57535,S33A,PV,SUN,,2018,S33A,0,OP,PV,SUN,0.5,1,1784
+4265,CA,Solar Photovoltaic Project #33,57535,S33B,PV,SUN,,2018,S33B,0,OP,PV,SUN,0.5,1,1784
+4266,CA,Solar Photovoltaic Project #40,57538,S40A,PV,SUN,,2018,S40A,0,CN,PV,SUN,0.5,1,1785
+4267,CA,Solar Photovoltaic Project #40,57538,S40B,PV,SUN,,2018,S40B,0,CN,PV,SUN,0.5,1,1785
+4268,CA,Solar Photovoltaic Project #40,57538,S40C,PV,SUN,,2018,S40C,0,CN,PV,SUN,0.5,1,1785
+4269,CA,Solar Photovoltaic Project #40,57538,S40D,PV,SUN,,2018,S40D,0,CN,PV,SUN,0.5,1,1785
+4270,CA,Solar Photovoltaic Project #40,57538,S40E,PV,SUN,,2018,S40E,0,CN,PV,SUN,0.5,1,1785
+4271,CA,Solar Photovoltaic Project #40,57538,S40F,PV,SUN,,2018,S40F,0,CN,PV,SUN,0.5,1,1785
+4272,CA,Solar Photovoltaic Project #40,57538,S40G,PV,SUN,,2018,S40G,0,CN,PV,SUN,0.5,1,1785
+4273,CA,Solar Photovoltaic Project #40,57538,S40H,PV,SUN,,2018,S40H,0,CN,PV,SUN,0.5,1,1785
+4274,CA,Solar Photovoltaic Project #40,57538,S40I,PV,SUN,,2018,S40I,0,CN,PV,SUN,0.5,1,1785
+4275,CA,Solar Photovoltaic Project #40,57538,S40J,PV,SUN,,2018,S40J,0,CN,PV,SUN,0.5,1,1785
+4276,CA,Solar Photovoltaic Project #40,57538,S40K,PV,SUN,,2018,S40K,0,CN,PV,SUN,0.5,1,1785
+4277,CA,Solar Photovoltaic Project #40,57538,S40L,PV,SUN,,2018,S40L,0,CN,PV,SUN,0.5,1,1785
+4278,CA,Solar Photovoltaic Project #40,57538,S40M,PV,SUN,,2018,S40M,0,CN,PV,SUN,0.5,1,1785
+4279,CA,Solar Photovoltaic Project #40,57538,S40N,PV,SUN,,2018,S40N,0,CN,PV,SUN,0.5,1,1785
+4280,CA,Solar Photovoltaic Project #40,57538,S40O,PV,SUN,,2018,S40O,0,CN,PV,SUN,0.5,1,1785
+4281,CA,Solar Photovoltaic Project #40,57538,S40P,PV,SUN,,2018,S40P,0,CN,PV,SUN,0.5,1,1785
+4282,CA,Solar Photovoltaic Project #40,57538,S40Q,PV,SUN,,2018,S40Q,0,CN,PV,SUN,0.5,1,1785
+4283,CA,Solar Photovoltaic Project #40,57538,S40R,PV,SUN,,2018,S40R,0,CN,PV,SUN,0.5,1,1785
+4284,CA,Solar Photovoltaic Project #40,57538,S40S,PV,SUN,,2018,S40S,0,CN,PV,SUN,0.5,1,1785
+4285,CA,Solar Photovoltaic Project #40,57538,S40T,PV,SUN,,2018,S40T,0,CN,PV,SUN,0.5,1,1785
+4286,CA,Solar Photovoltaic Project #41,57539,S41A,PV,SUN,,2018,S41A,0,CN,PV,SUN,0.5,1,1786
+4287,CA,Solar Photovoltaic Project #41,57539,S41B,PV,SUN,,2018,S41B,0,CN,PV,SUN,0.5,1,1786
+4288,CA,Solar Photovoltaic Project #41,57539,S41C,PV,SUN,,2018,S41C,0,CN,PV,SUN,0.5,1,1786
+4289,CA,Solar Photovoltaic Project #41,57539,S41D,PV,SUN,,2018,S41D,0,CN,PV,SUN,0.5,1,1786
+4290,CA,Solar Photovoltaic Project #41,57539,S41E,PV,SUN,,2018,S41E,0,CN,PV,SUN,0.5,1,1786
+4291,CA,Solar Photovoltaic Project #41,57539,S41F,PV,SUN,,2018,S41F,0,CN,PV,SUN,0.5,1,1786
+4292,CA,Solar Photovoltaic Project #41,57539,S41G,PV,SUN,,2018,S41G,0,CN,PV,SUN,0.5,1,1786
+4293,CA,Solar Photovoltaic Project #41,57539,S41H,PV,SUN,,2018,S41H,0,CN,PV,SUN,0.5,1,1786
+4294,CA,Solar Photovoltaic Project #41,57539,S41I,PV,SUN,,2018,S41I,0,CN,PV,SUN,0.5,1,1786
+4295,CA,Solar Photovoltaic Project #41,57539,S41J,PV,SUN,,2018,S41J,0,CN,PV,SUN,0.5,1,1786
+4296,CA,Solar Photovoltaic Project #41,57539,S41K,PV,SUN,,2018,S41K,0,CN,PV,SUN,0.5,1,1786
+4297,CA,Solar Photovoltaic Project #41,57539,S41L,PV,SUN,,2018,S41L,0,CN,PV,SUN,0.5,1,1786
+4298,CA,Solar Photovoltaic Project #41,57539,S41M,PV,SUN,,2018,S41M,0,CN,PV,SUN,0.5,1,1786
 ,FL,,7846,2,CT,NG,,,2,,,CT,NG,,0.75,2476
-4299,CA,Solar Photovoltaic Project 
-4300,CA,Solar Photovoltaic Project 
-4301,CA,Solar Photovoltaic Project 
-4302,CA,Solar Photovoltaic Project 
-4303,CA,Solar Photovoltaic Project 
-4304,CA,Solar Photovoltaic Project 
-4305,CA,Solar Photovoltaic Project 
-4306,CA,Solar Photovoltaic Project 
-4307,CA,Solar Photovoltaic Project 
-4308,CA,Solar Photovoltaic Project 
-4309,CA,Solar Photovoltaic Project 
-4310,CA,Solar Photovoltaic Project 
-4311,CA,Solar Photovoltaic Project 
-4312,CA,Solar Photovoltaic Project 
-4313,CA,Solar Photovoltaic Project 
-4314,CA,Solar Photovoltaic Project 
-4315,CA,Solar Photovoltaic Project 
-4316,CA,Solar Photovoltaic Project 
-4317,CA,Solar Photovoltaic Project 
-4318,CA,Solar Photovoltaic Project 
-4319,CA,Solar Photovoltaic Project 
-4320,CA,Solar Photovoltaic Project 
-4321,CA,Solar Photovoltaic Project 
-4322,CA,Solar Photovoltaic Project 
-4323,CA,Solar Photovoltaic Project 
-4324,CA,Solar Photovoltaic Project 
-4325,CA,Solar Photovoltaic Project 
-4326,CA,Solar Photovoltaic Project 
-4327,CA,Solar Photovoltaic Project 
-4328,CA,Solar Photovoltaic Project 
-4329,CA,Solar Photovoltaic Project 
-4330,CA,Solar Photovoltaic Project 
-4331,CA,Solar Photovoltaic Project 
-4332,CA,Solar Photovoltaic Project 
-4333,CA,Solar Photovoltaic Project 
-4334,CA,Solar Photovoltaic Project 
-4335,CA,Solar Photovoltaic Project 
-4336,CA,Solar Photovoltaic Project 
-4337,CA,Solar Photovoltaic Project 
-4338,CA,Solar Photovoltaic Project 
-4339,CA,Solar Photovoltaic Project 
-4340,CA,Solar Photovoltaic Project 
-4341,CA,Solar Photovoltaic Project 
-4342,CA,Solar Photovoltaic Project 
-4343,CA,Solar Photovoltaic Project 
-4344,CA,Solar Photovoltaic Project 
-4345,CA,Solar Photovoltaic Project 
-4346,CA,Solar Photovoltaic Project 
-4347,CA,Solar Photovoltaic Project 
-4348,CA,Solar Photovoltaic Project 
-4349,CA,Solar Photovoltaic Project 
-4350,CA,Solar Photovoltaic Project 
-4351,CA,Solar Photovoltaic Project 
-4352,CA,Solar Photovoltaic Project 
-4353,CA,Solar Photovoltaic Project 
-4354,CA,Solar Photovoltaic Project 
-4355,CA,Solar Photovoltaic Project 
+4299,CA,Solar Photovoltaic Project #41,57539,S41N,PV,SUN,,2018,S41N,0,CN,PV,SUN,0.5,1,1786
+4300,CA,Solar Photovoltaic Project #41,57539,S41O,PV,SUN,,2018,S41O,0,CN,PV,SUN,0.5,1,1786
+4301,CA,Solar Photovoltaic Project #41,57539,S41P,PV,SUN,,2018,S41P,0,CN,PV,SUN,0.5,1,1786
+4302,CA,Solar Photovoltaic Project #41,57539,S41Q,PV,SUN,,2018,S41Q,0,CN,PV,SUN,0.5,1,1786
+4303,CA,Solar Photovoltaic Project #41,57539,S41R,PV,SUN,,2018,S41R,0,CN,PV,SUN,0.5,1,1786
+4304,CA,Solar Photovoltaic Project #41,57539,S41S,PV,SUN,,2018,S41S,0,CN,PV,SUN,0.5,1,1786
+4305,CA,Solar Photovoltaic Project #41,57539,S41T,PV,SUN,,2018,S41T,0,CN,PV,SUN,0.5,1,1786
+4306,CA,Solar Photovoltaic Project #42,57441,S42A,PV,SUN,,2018,S42A,0,OP,PV,SUN,0.5,1,1787
+4307,CA,Solar Photovoltaic Project #42,57441,S42B,PV,SUN,,2018,S42B,0,OP,PV,SUN,0.5,1,1787
+4308,CA,Solar Photovoltaic Project #42,57441,S42C,PV,SUN,,2018,S42C,0,OP,PV,SUN,0.5,1,1787
+4309,CA,Solar Photovoltaic Project #42,57441,S42D,PV,SUN,,2018,S42D,0,OP,PV,SUN,0.5,1,1787
+4310,CA,Solar Photovoltaic Project #42,57441,S42E,PV,SUN,,2018,S42E,0,OP,PV,SUN,0.5,1,1787
+4311,CA,Solar Photovoltaic Project #42,57441,S42F,PV,SUN,,2018,S42F,0,OP,PV,SUN,0.5,1,1787
+4312,CA,Solar Photovoltaic Project #42,57441,S42G,PV,SUN,,2018,S42G,0,OP,PV,SUN,0.5,1,1787
+4313,CA,Solar Photovoltaic Project #42,57441,S42H,PV,SUN,,2018,S42H,0,OP,PV,SUN,0.5,1,1787
+4314,CA,Solar Photovoltaic Project #42,57441,S42I,PV,SUN,,2018,S42I,0,OP,PV,SUN,0.5,1,1787
+4315,CA,Solar Photovoltaic Project #42,57441,S42J,PV,SUN,,2018,S42J,0,OP,PV,SUN,0.5,1,1787
+4316,CA,Solar Photovoltaic Project #44,57540,S44A,PV,SUN,,2018,S44A,0,OP,PV,SUN,0.5,1,1788
+4317,CA,Solar Photovoltaic Project #44,57540,S44B,PV,SUN,,2018,S44B,0,OP,PV,SUN,0.5,1,1788
+4318,CA,Solar Photovoltaic Project #44,57540,S44C,PV,SUN,,2018,S44C,0,OP,PV,SUN,0.5,1,1788
+4319,CA,Solar Photovoltaic Project #44,57540,S44D,PV,SUN,,2018,S44D,0,OP,PV,SUN,0.5,1,1788
+4320,CA,Solar Photovoltaic Project #44,57540,S44E,PV,SUN,,2018,S44E,0,OP,PV,SUN,0.5,1,1788
+4321,CA,Solar Photovoltaic Project #44,57540,S44F,PV,SUN,,2018,S44F,0,OP,PV,SUN,0.5,1,1788
+4322,CA,Solar Photovoltaic Project #44,57540,S44G,PV,SUN,,2018,S44G,0,OP,PV,SUN,0.5,1,1788
+4323,CA,Solar Photovoltaic Project #44,57540,S44H,PV,SUN,,2018,S44H,0,OP,PV,SUN,0.5,1,1788
+4324,CA,Solar Photovoltaic Project #44,57540,S44I,PV,SUN,,2018,S44I,0,OP,PV,SUN,0.5,1,1788
+4325,CA,Solar Photovoltaic Project #44,57540,S44J,PV,SUN,,2018,S44J,0,OP,PV,SUN,0.5,1,1788
+4326,CA,Solar Photovoltaic Project #44,57540,S44K,PV,SUN,,2018,S44K,0,OP,PV,SUN,0.5,1,1788
+4327,CA,Solar Photovoltaic Project #44,57540,S44L,PV,SUN,,2018,S44L,0,OP,PV,SUN,0.5,1,1788
+4328,CA,Solar Photovoltaic Project #44,57540,S44M,PV,SUN,,2018,S44M,0,OP,PV,SUN,0.5,1,1788
+4329,CA,Solar Photovoltaic Project #44,57540,S44N,PV,SUN,,2018,S44N,0,OP,PV,SUN,0.5,1,1788
+4330,CA,Solar Photovoltaic Project #44,57540,S44O,PV,SUN,,2018,S44O,0,OP,PV,SUN,0.5,1,1788
+4331,CA,Solar Photovoltaic Project #44,57540,S44P,PV,SUN,,2018,S44P,0,OP,PV,SUN,0.5,1,1788
+4332,CA,Solar Photovoltaic Project #45,57541,S45A,PV,SUN,,2018,S45A,0,CN,PV,SUN,0.5,1,1789
+4333,CA,Solar Photovoltaic Project #45,57541,S45B,PV,SUN,,2018,S45B,0,CN,PV,SUN,0.5,1,1789
+4334,CA,Solar Photovoltaic Project #45,57541,S45C,PV,SUN,,2018,S45C,0,CN,PV,SUN,0.5,1,1789
+4335,CA,Solar Photovoltaic Project #45,57541,S45D,PV,SUN,,2018,S45D,0,CN,PV,SUN,0.5,1,1789
+4336,CA,Solar Photovoltaic Project #45,57541,S45E,PV,SUN,,2018,S45E,0,CN,PV,SUN,0.5,1,1789
+4337,CA,Solar Photovoltaic Project #45,57541,S45F,PV,SUN,,2018,S45F,0,CN,PV,SUN,0.5,1,1789
+4338,CA,Solar Photovoltaic Project #45,57541,S45G,PV,SUN,,2018,S45G,0,CN,PV,SUN,0.5,1,1789
+4339,CA,Solar Photovoltaic Project #45,57541,S45H,PV,SUN,,2018,S45H,0,CN,PV,SUN,0.5,1,1789
+4340,CA,Solar Photovoltaic Project #45,57541,S45I,PV,SUN,,2018,S45I,0,CN,PV,SUN,0.5,1,1789
+4341,CA,Solar Photovoltaic Project #45,57541,S45J,PV,SUN,,2018,S45J,0,CN,PV,SUN,0.5,1,1789
+4342,CA,Solar Photovoltaic Project #45,57541,S45K,PV,SUN,,2018,S45K,0,CN,PV,SUN,0.5,1,1789
+4343,CA,Solar Photovoltaic Project #45,57541,S45L,PV,SUN,,2018,S45L,0,CN,PV,SUN,0.5,1,1789
+4344,CA,Solar Photovoltaic Project #47,57543,S47A,PV,SUN,,2018,S47A,0,CN,PV,SUN,0.5,1,1790
+4345,CA,Solar Photovoltaic Project #47,57543,S47B,PV,SUN,,2018,S47B,0,CN,PV,SUN,0.5,1,1790
+4346,CA,Solar Photovoltaic Project #48,57900,S48A,PV,SUN,,2018,S48A,0,OP,PV,SUN,0.5,1,1791
+4347,CA,Solar Photovoltaic Project #48,57900,S48B,PV,SUN,,2018,S48B,0,OP,PV,SUN,0.5,1,1791
+4348,CA,Solar Photovoltaic Project #48,57900,S48C,PV,SUN,,2018,S48C,0,OP,PV,SUN,0.5,1,1791
+4349,CA,Solar Photovoltaic Project #48,57900,S48D,PV,SUN,,2018,S48D,0,OP,PV,SUN,0.5,1,1791
+4350,CA,Solar Photovoltaic Project #48,57900,S48E,PV,SUN,,2018,S48E,0,OP,PV,SUN,0.5,1,1791
+4351,CA,Solar Photovoltaic Project #48,57900,S48F,PV,SUN,,2018,S48F,0,OP,PV,SUN,0.5,1,1791
+4352,CA,Solar Photovoltaic Project #48,57900,S48G,PV,SUN,,2018,S48G,0,OP,PV,SUN,0.5,1,1791
+4353,CA,Solar Photovoltaic Project #48,57900,S48H,PV,SUN,,2018,S48H,0,OP,PV,SUN,0.5,1,1791
+4354,CA,Solar Photovoltaic Project #48,57900,S48I,PV,SUN,,2018,S48I,0,OP,PV,SUN,0.5,1,1791
+4355,CA,Solar Photovoltaic Project #48,57900,S48J,PV,SUN,,2018,S48J,0,OP,PV,SUN,0.5,1,1791
 4356,CA,Solar Star 1,58388,AVS1,PV,SUN,,2018,AVS1,0,OP,PV,SUN,39,1,1792
 4357,CA,Solar Star 1,58388,SS11,PV,SUN,,2018,SS11,0,OP,PV,SUN,54,1,1792
 4358,CA,Solar Star 1,58388,SS12,PV,SUN,,2018,SS12,0,OP,PV,SUN,54,1,1792
@@ -3874,27 +3874,27 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 4416,CA,Springs Generating Station,56144,3,GT,NG,,2018,3,0,OP,GT,NG,10,1,1823
 4417,CA,Springs Generating Station,56144,4,GT,NG,,2018,4,0,OP,GT,NG,10,1,1823
 4418,CA,Springville Hydroelectric,56125,4152,HY,WAT,,2018,4152,0,OP,HY,WAT,1,1,1824
-4419,CA,SPVP 
-4420,CA,SPVP 
-4421,CA,SPVP 
-4422,CA,SPVP 
-4423,CA,SPVP 
-4424,CA,SPVP 
-4425,CA,SPVP 
-4426,CA,SPVP 
-4427,CA,SPVP 
-4428,CA,SPVP 
-4429,CA,SPVP 
-4430,CA,SPVP 
-4431,CA,SPVP 
-4432,CA,SPVP 
-4433,CA,SPVP 
-4434,CA,SPVP 
-4435,CA,SPVP 
-4436,CA,SPVP 
-4437,CA,SPVP 
-4438,CA,SPVP 
-4439,CA,SPVP 
+4419,CA,SPVP #35,57537,35H,PV,SUN,,2018,35H,0,CN,PV,SUN,0.5,1,1825
+4420,CA,SPVP #35,57537,35I,PV,SUN,,2018,35I,0,CN,PV,SUN,0.5,1,1825
+4421,CA,SPVP #35,57537,35J,PV,SUN,,2018,35J,0,CN,PV,SUN,0.5,1,1825
+4422,CA,SPVP #35,57537,35K,PV,SUN,,2018,35K,0,CN,PV,SUN,0.5,1,1825
+4423,CA,SPVP #35,57537,35L,PV,SUN,,2018,35L,0,CN,PV,SUN,0.5,1,1825
+4424,CA,SPVP #35,57537,35M,PV,SUN,,2018,35M,0,CN,PV,SUN,0.5,1,1825
+4425,CA,SPVP #35,57537,35N,PV,SUN,,2018,35N,0,CN,PV,SUN,0.5,1,1825
+4426,CA,SPVP #35,57537,S35A,PV,SUN,,2018,S35A,0,CN,PV,SUN,0.5,1,1825
+4427,CA,SPVP #35,57537,S35B,PV,SUN,,2018,S35B,0,CN,PV,SUN,0.5,1,1825
+4428,CA,SPVP #35,57537,S35C,PV,SUN,,2018,S35C,0,CN,PV,SUN,0.5,1,1825
+4429,CA,SPVP #35,57537,S35D,PV,SUN,,2018,S35D,0,CN,PV,SUN,0.5,1,1825
+4430,CA,SPVP #35,57537,S35E,PV,SUN,,2018,S35E,0,CN,PV,SUN,0.5,1,1825
+4431,CA,SPVP #35,57537,S35F,PV,SUN,,2018,S35F,0,CN,PV,SUN,0.5,1,1825
+4432,CA,SPVP #35,57537,S35G,PV,SUN,,2018,S35G,0,CN,PV,SUN,0.5,1,1825
+4433,CA,SPVP #46,57545,S46A,PV,SUN,,2018,S46A,0,CN,PV,SUN,0.5,1,1826
+4434,CA,SPVP #46,57545,S46B,PV,SUN,,2018,S46B,0,CN,PV,SUN,0.5,1,1826
+4435,CA,SPVP #46,57545,S46C,PV,SUN,,2018,S46C,0,CN,PV,SUN,0.5,1,1826
+4436,CA,SPVP #46,57545,S46D,PV,SUN,,2018,S46D,0,CN,PV,SUN,0.5,1,1826
+4437,CA,SPVP #46,57545,S46E,PV,SUN,,2018,S46E,0,CN,PV,SUN,0.5,1,1826
+4438,CA,SPVP #46,57545,S46F,PV,SUN,,2018,S46F,0,CN,PV,SUN,0.5,1,1826
+4439,CA,SPVP #46,57545,S46G,PV,SUN,,2018,S46G,0,CN,PV,SUN,0.5,1,1826
 4440,CA,SRI International Cogen Project,50537,GEN1,GT,NG,,2018,GEN1,0,OP,GT,NG,6,1,1827
 4441,CA,Stage Gulch Solar,61791,5001,PV,SUN,,2018,5001,0,OP,PV,SUN,1,1,1828
 4442,CA,Stampede,7066,1,HY,WAT,,2018,1,0,OP,HY,WAT,3,1,1829
@@ -4083,9 +4083,9 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 4654,CA,Vernon,7436,JH3,IC,DFO,,2018,JH3,0,OS,IC,DFO,6,1,1962
 4655,CA,Vernon,7436,JH4,IC,DFO,,2018,JH4,0,OS,IC,DFO,6,1,1962
 4656,CA,Vernon,7436,JH5,IC,DFO,,2018,JH5,0,OS,IC,DFO,6,1,1962
-4657,CA,Verwey-Hanford Dairy Digester 
-4658,CA,Verwey-Hanford Dairy Digester 
-4659,CA,Verwey-Hanford Dairy Digester 
+4657,CA,Verwey-Hanford Dairy Digester #1,60918,3,IC,OBG,,2018,3,0,OP,IC,OBG,1,1,1963
+4658,CA,Verwey-Hanford Dairy Digester #2,62418,4,IC,OBG,,2018,4,0,TS,IC,OBG,1,1,1964
+4659,CA,Verwey-Hanford Dairy Digester #3,62419,4,IC,OBG,,2018,4,0,TS,IC,OBG,1,1,1965
 4660,CA,Victor Dry Farm Ranch A,58418,1,PV,SUN,,2018,1,0,OP,PV,SUN,5,1,1966
 4661,CA,Victor Dry Farm Ranch B,58419,1,PV,SUN,,2018,1,0,OP,PV,SUN,5,1,1967
 4662,CA,Victor Mesa Linda B2,59269,VMLB2,PV,SUN,,2018,VMLB2,0,OP,PV,SUN,1.5,1,1968
@@ -4100,9 +4100,9 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 4671,CA,Vinam,58450,1,PV,SUN,,2018,1,0,OP,PV,SUN,1.5,1,1976
 4672,CA,Vintner Solar,58509,PV4,PV,SUN,,2018,PV4,0,OP,PV,SUN,1.5,1,1977
 4673,CA,Vista Energy Storage System,61661,VISTA,BA,MWH,,2018,VISTA,0,OP,BA,MWH,40,1,1978
-4674,CA,Vitro Flat Glass LLC,58053,IG#2,IC,DFO,,2018,IG
-4675,CA,Vitro Flat Glass LLC,58053,OG#1,IC,DFO,,2018,OG
-4676,CA,Vitro Flat Glass LLC,58053,OG#3,IC,DFO,,2018,OG
+4674,CA,Vitro Flat Glass LLC,58053,IG#2,IC,DFO,,2018,IG#2,0,SB,IC,DFO,0.9,1,1979
+4675,CA,Vitro Flat Glass LLC,58053,OG#1,IC,DFO,,2018,OG#1,0,SB,IC,DFO,1.3,1,1979
+4676,CA,Vitro Flat Glass LLC,58053,OG#3,IC,DFO,,2018,OG#3,0,SB,IC,DFO,1.1,1,1979
 4677,CA,Volta 1,290,1,HY,WAT,,2018,1,0,OP,HY,WAT,8.5,1,1980
 4678,CA,Volta 2,180,1,HY,WAT,,2018,1,0,OP,HY,WAT,1,1,1981
 4679,CA,Voyager Wind I,60594,VYGR1,WT,WND,,2018,VYGR1,0,U,WT,WND,131.1,1,1982
@@ -4183,8 +4183,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 4768,CA,Whitewater Hill Wind Partners,56012,1,WT,WND,,2018,1,0,OP,WT,WND,61.5,1,2033
 4769,CA,Whitewater Hydro Plant,10162,WWHI,HY,WAT,,2018,WWHI,0,SB,HY,WAT,1.3,1,2034
 4770,CA,Whitney Point Solar,60975,WS532,PV,SUN,,2018,WS532,0,OP,PV,SUN,20,1,2035
-4771,CA,Whittier LFG Power Plant 
-4772,CA,Whittier LFG Power Plant 
+4771,CA,Whittier LFG Power Plant #1,57102,EN01,IC,LFG,,2018,EN01,0,OP,IC,LFG,1.1,1,2036
+4772,CA,Whittier LFG Power Plant #1,57102,EN02,IC,LFG,,2018,EN02,0,OP,IC,LFG,1.1,1,2036
 4773,CA,Wild Horse Power Plant,57181,1,ST,GEO,,2018,1,0,L,ST,GEO,48,1,2037
 4774,CA,Wildcat I Energy Storage LLC,62875,WILD1,BA,MWH,,2018,WILD1,0,T,BA,MWH,3,1,2038
 4775,CA,"Wildwood Solar I, LLC",59380,WLD1,PV,SUN,,2018,WLD1,0,OP,PV,SUN,19.5,1,2039
@@ -4636,8 +4636,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 5273,CT,Candlewood Solar,61517,CANDL,PV,SUN,,2018,CANDL,0,P,PV,SUN,25,1,2308
 5274,CT,Canis Major Solar Farm,61398,S1980,PV,SUN,,2018,S1980,0,OP,PV,SUN,2,1,2309
 5275,CT,Canis Minor Solar Farm,61408,B1000,PV,SUN,,2018,B1000,0,OP,PV,SUN,1,1,2310
-5277,CT,CCSU Co-Gen-STBY Gen,58224,EC#1,IC,NG,,2018,EC
-5278,CT,CCSU Co-Gen-STBY Gen,58224,EC#2,IC,NG,,2018,EC
+5277,CT,CCSU Co-Gen-STBY Gen,58224,EC#1,IC,NG,,2018,EC#1,0,OP,IC,NG,1.3,1,2312
+5278,CT,CCSU Co-Gen-STBY Gen,58224,EC#2,IC,NG,,2018,EC#2,0,OP,IC,NG,1.3,1,2312
 5279,CT,CCSU Co-Gen-STBY Gen,58224,GRND,IC,DFO,,2018,GRND,0,SB,IC,DFO,0.3,1,2312
 5280,CT,CCSU Co-Gen-STBY Gen,58224,MEMH,IC,DFO,,2018,MEMH,0,SB,IC,DFO,0.7,1,2312
 5281,CT,CCSU Fuel Cell Project,58237,CCSU,FC,NG,,2018,CCSU,0,OP,FC,NG,1.4,1,2313
@@ -8265,9 +8265,9 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 9679,IN,Worthington Generation,55148,2,GT,NG,2000,2018,2,0,OP,GT,NG,60.5,1,3867
 9680,IN,Worthington Generation,55148,3,GT,NG,2000,2018,3,0,OP,GT,NG,60.5,1,3867
 9681,IN,Worthington Generation,55148,4,GT,NG,2000,2018,4,0,OP,GT,NG,60.5,1,3867
-9682,IN,Zimmerman Energy,59425,ZE-#1,IC,LFG,,2018,ZE-
-9683,IN,Zimmerman Energy,59425,ZE-#2,IC,LFG,,2018,ZE-
-9684,IN,Zimmerman Energy,59425,ZE-#3,IC,LFG,,2018,ZE-
+9682,IN,Zimmerman Energy,59425,ZE-#1,IC,LFG,,2018,ZE-#1,0,OP,IC,LFG,2,1,3868
+9683,IN,Zimmerman Energy,59425,ZE-#2,IC,LFG,,2018,ZE-#2,0,OP,IC,LFG,2,1,3868
+9684,IN,Zimmerman Energy,59425,ZE-#3,IC,LFG,,2018,ZE-#3,0,OP,IC,LFG,2,1,3868
 9685,KS,Abilene Energy Center Combustion Turbine,1251,GT1,GT,NG,,2018,GT1,0,RE,GT,NG,77,1,3869
 9686,KS,Alexander Wind Farm LLC,58666,1,WT,WND,,2018,1,0,OP,WT,WND,50.7,1,3870
 9687,KS,Anthony,1258,IC1,IC,NG,,2018,IC1,0,OP,IC,NG,4.1,1,3871
@@ -8596,7 +8596,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 10020,KS,McPherson 2,1305,GT1,GT,NG,1973,2018,GT1,0,OP,GT,NG,72.4,1,3962
 10021,KS,McPherson 2,1305,GT2,GT,DFO,1976,2018,GT2,0,OP,GT,DFO,71.2,1,3962
 10022,KS,McPherson 2,1305,GT3,GT,NG,1979,2018,GT3,0,OP,GT,NG,71.2,1,3962
-10023,KS,McPherson Municipal Power Plant 
+10023,KS,McPherson Municipal Power Plant #3,7515,1,GT,NG,1998,2018,NA1,0,OP,GT,NG,115.6,0.75,3963
 10024,KS,Meade,1306,2,IC,NG,,2018,2,0,OP,IC,NG,0.9,1,3964
 10025,KS,Meade,1306,3,IC,NG,,2018,3,0,OP,IC,NG,1.1,1,3964
 10026,KS,Meade,1306,4,IC,NG,,2018,4,0,OP,IC,NG,1.4,1,3964
@@ -10893,9 +10893,9 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 12783,MI,Oakwood Hospital & Medical Center,50260,300KW,IC,DFO,,2018,300KW,0,RE,IC,DFO,0.3,1,5075
 12784,MI,Oakwood Hospital & Medical Center,50260,500A,IC,DFO,,2018,500A,0,SB,IC,DFO,0.5,1,5075
 12785,MI,Oakwood Hospital & Medical Center,50260,500KW,IC,DFO,,2018,500KW,0,SB,IC,DFO,0.5,1,5075
-12786,MI,Oakwood Hospital & Medical Center,50260,EG#1,IC,NG,,2018,EG
-12787,MI,Oakwood Hospital & Medical Center,50260,EG#2,IC,NG,,2018,EG
-12788,MI,Oakwood Hospital & Medical Center,50260,EG#3,IC,NG,,2018,EG
+12786,MI,Oakwood Hospital & Medical Center,50260,EG#1,IC,NG,,2018,EG#1,0,RE,IC,NG,0.5,1,5075
+12787,MI,Oakwood Hospital & Medical Center,50260,EG#2,IC,NG,,2018,EG#2,0,RE,IC,NG,0.5,1,5075
+12788,MI,Oakwood Hospital & Medical Center,50260,EG#3,IC,NG,,2018,EG#3,0,RE,IC,NG,0.5,1,5075
 12789,MI,Oliver,1735,1,IC,DFO,,2018,1,0,OP,IC,DFO,2.7,1,5076
 12790,MI,Oliver,1735,2,IC,DFO,,2018,2,0,OP,IC,DFO,2.7,1,5076
 12791,MI,Oliver,1735,3,IC,DFO,,2018,3,0,OP,IC,DFO,2.7,1,5076
@@ -12326,8 +12326,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 14331,MO,Fulton (MO),2126,IC1,IC,DFO,,2018,IC1,0,OP,IC,DFO,5,1,5732
 14332,MO,Fulton (MO),2126,IC2,IC,DFO,,2018,IC2,0,RE,IC,DFO,5,1,5732
 14333,MO,Fulton (MO),2126,IC3,IC,DFO,,2018,IC3,0,OP,IC,DFO,7,1,5732
-14334,MO,Gallatin 
-14335,MO,Gallatin 
+14334,MO,Gallatin #2,8017,7,IC,DFO,,2018,7,0,RE,IC,DFO,1.8,1,5733
+14335,MO,Gallatin #2,8017,8,IC,DFO,,2018,8,0,RE,IC,DFO,1.8,1,5733
 14336,MO,Gallatin (MO),2127,2A,IC,DFO,,2018,2A,0,SB,IC,DFO,1.1,1,5734
 14337,MO,Gallatin (MO),2127,3A,IC,DFO,,2018,3A,0,SB,IC,DFO,1.1,1,5734
 14338,MO,Gallatin (MO),2127,IC4,IC,DFO,,2018,IC4,0,SB,IC,DFO,2.5,1,5734
@@ -12461,7 +12461,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 14500,MO,Missouri City,2171,2,ST,BIT,,2018,2,1,RE,ST,BIT,23,1,5780
 14501,MO,Missouri S&T - Power Plant,58923,1000,IC,DFO,,2018,1000,0,RE,IC,DFO,1,1,5781
 14502,MO,Missouri S&T - Power Plant,58923,500K,ST,BIT,,2018,500K,0,RE,ST,BIT,0.5,1,5781
-14503,MO,MJMEUC Generating Station 
+14503,MO,MJMEUC Generating Station #1,56478,1,GT,NG,,2018,1,0,OP,GT,NG,13.3,1,5782
 14504,MO,Moberly,6651,CT01,GT,DFO,1977,2018,1,0,OP,GT,DFO,60.6,0.727272727,5783
 14505,MO,Monroe (MO),2146,1,IC,DFO,,2018,1,0,RE,IC,DFO,0.7,1,5784
 14506,MO,Monroe (MO),2146,10,IC,DFO,,2018,10,0,OP,IC,DFO,1.6,1,5784
@@ -12529,15 +12529,15 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 14588,MO,Salisbury City of,7400,2,IC,DFO,,2018,2,0,OP,IC,DFO,1,1,5807
 14589,MO,Salisbury City of,7400,3,IC,DFO,,2018,3,0,OP,IC,DFO,2.2,1,5807
 14590,MO,Salisbury City of,7400,4,IC,DFO,,2018,4,0,OP,IC,DFO,2.2,1,5807
-14591,MO,Shelbina Power 
-14592,MO,Shelbina Power 
-14593,MO,Shelbina Power 
-14594,MO,Shelbina Power 
+14591,MO,Shelbina Power #1,7405,G1,IC,DFO,,2018,G1,0,OP,IC,DFO,3,1,5808
+14592,MO,Shelbina Power #1,7405,G2,IC,DFO,,2018,G2,0,OP,IC,DFO,1.6,1,5808
+14593,MO,Shelbina Power #2,7406,G3,IC,DFO,,2018,G3,0,OP,IC,DFO,1.6,1,5809
+14594,MO,Shelbina Power #2,7406,G4,IC,DFO,,2018,G4,0,OP,IC,DFO,1.6,1,5809
 ,FL,,55412,CT2,CT,NG,,,OEC2,,,CT,NG,,0.727272727,2612
-14595,MO,Shelbina Power 
-14596,MO,Shelbina Power 
-14597,MO,Shelbina Power 
-14598,MO,Shelbina Power 
+14595,MO,Shelbina Power #2,7406,G5,IC,DFO,,2018,G5,0,OP,IC,DFO,1.6,1,5809
+14596,MO,Shelbina Power #2,7406,G6,IC,DFO,,2018,G6,0,OP,IC,DFO,1.8,1,5809
+14597,MO,Shelbina Power #3,7860,G7,IC,DFO,,2018,G7,0,OP,IC,DFO,1.8,1,5810
+14598,MO,Shelbina Power #3,7860,G8,IC,DFO,,2018,G8,0,OP,IC,DFO,1.8,1,5810
 14599,MO,Sibley,2094,1,ST,SUB,1960,2018,1,1,RE,ST,SUB,55,1,5811
 14600,MO,Sibley,2094,2,ST,SUB,1962,2018,2,1,RE,ST,SUB,50,1,5811
 14601,MO,Sibley,2094,3,ST,SUB,1969,2018,3,1,RE,ST,SUB,419,1,5811
@@ -13891,8 +13891,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 16188,NC,Waste Management Piedmont LFGTE Project,57169,GEN1,IC,LFG,,2018,GEN1,0,OP,IC,LFG,0.8,1,6755
 16189,NC,Waste Management Piedmont LFGTE Project,57169,GEN2,IC,LFG,,2018,GEN2,0,OP,IC,LFG,0.8,1,6755
 16190,NC,Waste Management Piedmont LFGTE Project,57169,GEN3,IC,LFG,,2018,GEN3,0,OP,IC,LFG,0.8,1,6755
-16191,NC,Water Filter Plant 
-16192,NC,Water Filter Plant 
+16191,NC,Water Filter Plant #2,55534,1299,IC,DFO,,2018,1299,0,OP,IC,DFO,1.8,1,6756
+16192,NC,Water Filter Plant #2,55534,3516,IC,DFO,,2018,3516,0,RE,IC,DFO,1.6,1,6756
 16193,NC,Watson Seed Farm PV1,59153,WAT1,PV,SUN,,2018,WAT1,0,OP,PV,SUN,20,1,6757
 16194,NC,Watts Farm,58317,1,PV,SUN,,2018,1,0,OP,PV,SUN,5,1,6758
 16195,NC,Wayne County,7538,1,GT,NG,,2018,1,0,OP,GT,NG,195.2,1,6759
@@ -14232,16 +14232,16 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 16541,NE,Monroe (NE),2273,2,HY,WAT,,2018,2,0,OP,HY,WAT,2.8,1,6944
 16542,NE,Monroe (NE),2273,3,HY,WAT,,2018,3,0,OP,HY,WAT,2.8,1,6944
 16543,NE,Monument Road,61033,MR001,WT,WND,,2018,MR001,0,L,WT,WND,66,1,6945
-16544,NE,Nebraska City 
-16545,NE,Nebraska City 
-16546,NE,Nebraska City 
-16547,NE,Nebraska City 
-16548,NE,Nebraska City 
-16549,NE,Nebraska City 
-16550,NE,Nebraska City 
-16551,NE,Nebraska City 
-16552,NE,Nebraska City 
-16553,NE,Nebraska City 
+16544,NE,Nebraska City # 1,2255,10,IC,NG,,2018,10,0,OP,IC,NG,6.5,1,6946
+16545,NE,Nebraska City # 1,2255,2,IC,DFO,,2018,2,0,OP,IC,DFO,1.5,1,6946
+16546,NE,Nebraska City # 1,2255,3,IC,NG,,2018,3,0,OP,IC,NG,2.5,1,6946
+16547,NE,Nebraska City # 1,2255,4,IC,NG,,2018,4,0,OP,IC,NG,3.1,1,6946
+16548,NE,Nebraska City # 1,2255,5,IC,NG,,2018,5,0,OP,IC,NG,2,1,6946
+16549,NE,Nebraska City # 1,2255,8,IC,NG,,2018,8,0,OP,IC,NG,4.1,1,6946
+16550,NE,Nebraska City # 1,2255,9,IC,NG,,2018,9,0,OP,IC,NG,6.4,1,6946
+16551,NE,Nebraska City # 2,7555,11,IC,NG,,2018,11,0,OP,IC,NG,4.5,1,6947
+16552,NE,Nebraska City # 2,7555,12,IC,NG,,2018,12,0,OP,IC,NG,4.5,1,6947
+16553,NE,Nebraska City # 2,7555,13,IC,DFO,,2018,13,0,OP,IC,DFO,4.5,1,6947
 16554,NE,Nebraska City Station,6096,1,ST,SUB,1979,2018,1,1,OP,ST,SUB,651.6,1,6948
 16555,NE,Nebraska City Station,6096,2,ST,SUB,2008,2018,2,1,OP,ST,SUB,738,1,6948
 16556,NE,North Denver,2244,4,ST,NG,,2018,4,1,SB,ST,NG,17,1,6949
@@ -14323,8 +14323,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 16639,NE,Stuart (NE),2305,2,IC,DFO,,2018,2,0,SB,IC,DFO,0.2,1,6979
 16640,NE,Stuart (NE),2305,3,IC,DFO,,2018,3,0,SB,IC,DFO,0.2,1,6979
 16641,NE,Stuart (NE),2305,5,IC,DFO,,2018,5,0,OP,IC,DFO,0.8,1,6979
-16642,NE,Syracuse 
-16643,NE,Syracuse 
+16642,NE,Syracuse # 2,2256,6,IC,NG,,2018,6,0,OP,IC,NG,2,1,6980
+16643,NE,Syracuse # 2,2256,7,IC,NG,,2018,7,0,OP,IC,NG,2,1,6980
 16644,NE,Tecumseh,2308,1,IC,DFO,,2018,1,0,OP,IC,DFO,0.7,1,6981
 16645,NE,Tecumseh,2308,2,IC,DFO,,2018,2,0,OP,IC,DFO,1.5,1,6981
 16646,NE,Tecumseh,2308,3,IC,DFO,,2018,3,0,OP,IC,DFO,1.1,1,6981
@@ -15154,7 +15154,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 17596,NM,Texico Wind Ranch LP,57258,1,WT,WND,,2018,1,0,OP,WT,WND,0.7,1,7492
 17597,NM,Texico Wind Ranch LP,57258,2,WT,WND,,2018,2,0,OP,WT,WND,0.6,1,7492
 17598,NM,Texico Wind Ranch LP,57258,3,WT,WND,,2018,3,0,OA,WT,WND,0.6,1,7492
-17599,NM,TSGT Mobile Generator 
+17599,NM,TSGT Mobile Generator #15,57476,M15G,IC,DFO,,2018,M15G,0,OS,IC,DFO,2,1,7493
 17600,NM,Tucumcari,2469,3,IC,DFO,,2018,3,0,RE,IC,DFO,1,1,7494
 17601,NM,Tucumcari,2469,4,IC,DFO,,2018,4,0,RE,IC,DFO,2.2,1,7494
 17602,NM,Tucumcari,2469,5,IC,DFO,,2018,5,0,RE,IC,DFO,1,1,7494
@@ -15493,10 +15493,10 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 18065,NY,Blenheim Gilboa,2691,3,PS,WAT,,2018,3,0,OP,PS,WAT,250,1,7661
 18066,NY,Blenheim Gilboa,2691,4,PS,WAT,,2018,4,0,OP,PS,WAT,250,1,7661
 18067,NY,Blydenburgh Solar Project,61900,BLYD,PV,SUN,,2018,BLYD,0,OP,PV,SUN,1.5,1,7662
-18068,NY,Boas Rd 
-18069,NY,Boas Rd 
-18070,NY,Boas Rd 
-18071,NY,Boas Rd 
+18068,NY,Boas Rd #1 Community Solar Farm,62530,496,PV,SUN,,2018,496,0,V,PV,SUN,2,1,7663
+18069,NY,Boas Rd #2 Community Solar Farm,62531,1010,PV,SUN,,2018,1010,0,V,PV,SUN,2,1,7664
+18070,NY,Boas Rd #3 Community Solar Farm,62532,1011,PV,SUN,,2018,1011,0,V,PV,SUN,2,1,7665
+18071,NY,Boas Rd #4 Community Solar Farm,62533,1023,PV,SUN,,2018,1023,0,L,PV,SUN,2,1,7666
 18072,NY,Bowline Generating Station,2625,1,ST,NG,1972,2018,1,1,OP,ST,NG,621,1,7667
 18073,NY,Bowline Generating Station,2625,2,ST,NG,1974,2018,2,1,OP,ST,NG,621,1,7667
 18074,NY,Breesport Road Community Solar Farm,62157,235,PV,SUN,,2018,235,0,V,PV,SUN,2,1,7668
@@ -15579,8 +15579,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 18158,NY,City of Rochester Solar,61804,ROC01,PV,SUN,,2018,ROC01,0,OP,PV,SUN,1.8,1,7708
 18159,NY,"CJ Solar I, LLC",61719,LWCJ1,PV,SUN,,2018,LWCJ1,0,OP,PV,SUN,2,1,7709
 18160,NY,Clarkson Solar,59623,CSPV,PV,SUN,,2018,CSPV,0,OP,PV,SUN,2,1,7710
-18161,NY,Clarkstown Landfill Solar Facility,60004,INV#1,PV,SUN,,2018,INV
-18162,NY,Clarkstown Landfill Solar Facility,60004,INV#2,PV,SUN,,2018,INV
+18161,NY,Clarkstown Landfill Solar Facility,60004,INV#1,PV,SUN,,2018,INV#1,0,OP,PV,SUN,1,1,7711
+18162,NY,Clarkstown Landfill Solar Facility,60004,INV#2,PV,SUN,,2018,INV#2,0,OP,PV,SUN,1,1,7711
 18163,NY,Clinton LFGTE Facility,56986,GEN1,IC,LFG,,2018,GEN1,0,OP,IC,LFG,1.6,1,7712
 18164,NY,Clinton LFGTE Facility,56986,GEN2,IC,LFG,,2018,GEN2,0,OP,IC,LFG,1.6,1,7712
 18165,NY,Clinton LFGTE Facility,56986,GEN3,IC,LFG,,2018,GEN3,0,OP,IC,LFG,1.6,1,7712
@@ -15654,7 +15654,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 18251,NY,Diamond Island Plant,10540,GEN3,HY,WAT,,2018,GEN3,0,OP,HY,WAT,0.4,1,7745
 18252,NY,Diana Hydroelectric,10237,GEN1,HY,WAT,,2018,GEN1,0,OP,HY,WAT,1.8,1,7746
 18253,NY,Dolgeville Hydro,10238,GEN1,HY,WAT,,2018,GEN1,0,OP,HY,WAT,5,1,7747
-18254,NY,Dryden Rd 
+18254,NY,Dryden Rd #2 Community Solar Farm,62477,372,PV,SUN,,2018,372,0,T,PV,SUN,2,1,7748
 18255,NY,Duanesburg,61863,10048,PV,SUN,,2018,10048,0,OP,PV,SUN,2,1,7749
 18256,NY,Dunn Paper,54878,1,HY,WAT,,2018,1,0,OP,HY,WAT,0.4,1,7750
 18257,NY,Dunn Paper,54878,2,HY,WAT,,2018,2,0,OP,HY,WAT,0.3,1,7750
@@ -15714,8 +15714,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 18337,NY,Franklin (NY),2564,2,HY,WAT,,2018,2,0,OP,HY,WAT,1,1,7783
 18338,NY,Franklin Solar Site,62784,FRANK,PV,SUN,,2018,FRANK,0,OP,PV,SUN,1.6,1,7784
 18339,NY,Freeport Power Plant No. 2,2679,5,GT,NG,2004,2018,CT5,0,OP,GT,NG,60.5,0.75,7785
-18340,NY,Frey Rd 
-18341,NY,Frey Rd 
+18340,NY,Frey Rd #1 Community Solar Farm,62504,1159,PV,SUN,,2018,1159,0,L,PV,SUN,2,1,7786
+18341,NY,Frey Rd #2 Community Solar Farm,62521,1442,PV,SUN,,2018,1442,0,L,PV,SUN,1.4,1,7787
 18342,NY,Fulton Hydro,2566,1,HY,WAT,,2018,1,0,OP,HY,WAT,0.8,1,7788
 18343,NY,Fulton Hydro,2566,2,HY,WAT,,2018,2,0,OP,HY,WAT,0.5,1,7788
 18344,NY,Fulton LFGTE Facility,57003,GEN1,IC,LFG,,2018,GEN1,0,OP,IC,LFG,1.6,1,7789
@@ -15746,7 +15746,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 ,CA,,55518,CTG2,CT,NG,,,CTG2,,,CT,NG,,1,1090
 18406,NY,Green Island Hydroelectric Station,61207,UNIT3,HY,WAT,,2018,UNIT3,0,OP,HY,WAT,1.5,1,7806
 18407,NY,Green Island Hydroelectric Station,61207,UNIT4,HY,WAT,,2018,UNIT4,0,OP,HY,WAT,1.5,1,7806
-18408,NY,Greene County Meter 
+18408,NY,Greene County Meter #1,60463,PV1,PV,SUN,,2018,PV1,0,OP,PV,SUN,1.6,1,7807
 18409,NY,Greenidge Generation LLC,2527,6,ST,NG,1953,2018,4,1,OP,ST,NG,112,0.666666667,7808
 18410,NY,Greenport,2681,2,IC,DFO,,2018,2,0,OS,IC,DFO,1.7,1,7809
 18411,NY,Greenport,2681,4,IC,DFO,,2018,4,0,OP,IC,DFO,1.2,1,7809
@@ -15785,8 +15785,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 18444,NY,Heuvelton,2573,2,HY,WAT,,2018,2,0,OP,HY,WAT,0.5,1,7825
 18445,NY,Hewittville Hydroelectric,50268,HY1,HY,WAT,,2018,HY1,0,OP,HY,WAT,3,1,7826
 18446,NY,HGS Solar I,61765,SNWH1,PV,SUN,,2018,SNWH1,0,OP,PV,SUN,2,1,7827
-18447,NY,Hickory Grove 
-18448,NY,Hickory Grove 
+18447,NY,Hickory Grove #1,62831,25,PV,SUN,,2018,25,0,L,PV,SUN,2,1,7828
+18448,NY,Hickory Grove #2,62832,309,PV,SUN,,2018,309,0,L,PV,SUN,1.7,1,7829
 18449,NY,High Acres Gas Recovery,50568,GEN1,IC,LFG,,2018,GEN1,0,OP,IC,LFG,0.8,1,7830
 18450,NY,High Acres Gas Recovery,50568,GEN2,IC,LFG,,2018,GEN2,0,OP,IC,LFG,0.8,1,7830
 18451,NY,High Acres Gas Recovery,50568,GEN3,IC,LFG,,2018,GEN3,0,OP,IC,LFG,0.8,1,7830
@@ -16347,12 +16347,12 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 19102,NY,Roseton Generating LLC,8006,1,ST,RFO,1974,2018,1,1,OP,ST,NG,621,0.285714286,8061
 19103,NY,Roseton Generating LLC,8006,2,ST,RFO,1974,2018,2,1,OP,ST,NG,621,0.285714286,8061
 19104,NY,Route 14A CDG Solar North and South LLC,62580,6081,PV,SUN,,2018,6081,0,OP,PV,SUN,4,1,8062
-19105,NY,Route 19 
-19106,NY,Route 19 
+19105,NY,Route 19 #1 Community Solar Farm,62500,1258,PV,SUN,,2018,1258,0,L,PV,SUN,2,1,8063
+19106,NY,Route 19 #2 Community Solar Farm,62502,1415,PV,SUN,,2018,1415,0,L,PV,SUN,5,1,8064
 19107,NY,Route 22 Community Solar Farm,62524,1444,PV,SUN,,2018,1444,0,L,PV,SUN,3.7,1,8065
 19108,NY,Route 5 & 20 Community Solar Farm,62523,1093,PV,SUN,,2018,1093,0,L,PV,SUN,2.3,1,8066
-19112,NY,Sacket Lake Rd 
-19113,NY,Sacket Lake Rd 
+19112,NY,Sacket Lake Rd #1 Community Solar Farm,62158,11,PV,SUN,,2018,11,0,V,PV,SUN,2,1,8068
+19113,NY,Sacket Lake Rd #2 Community Solar Farm,62159,20,PV,SUN,,2018,20,0,V,PV,SUN,1.7,1,8069
 19114,NY,Saint Catherine of Siena Medical Center,62003,5FPX4,IC,DFO,,2018,5FPX4,0,SB,IC,DFO,0.8,1,8070
 19115,NY,Saint Catherine of Siena Medical Center,62003,855G3,IC,DFO,,2018,855G3,0,SB,IC,DFO,0.4,1,8070
 19116,NY,Saint Catherine of Siena Medical Center,62003,D400F,IC,DFO,,2018,D400F,0,SB,IC,DFO,0.4,1,8070
@@ -16500,8 +16500,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 19272,NY,Taylorville,2617,2,HY,WAT,,2018,2,0,OP,HY,WAT,1,1,8143
 19273,NY,Taylorville,2617,3,HY,WAT,,2018,3,0,OP,HY,WAT,1,1,8143
 19274,NY,Taylorville,2617,4,HY,WAT,,2018,4,0,OP,HY,WAT,1,1,8143
-19277,NY,Telegraph Rd 
-19278,NY,Telegraph Rd 
+19277,NY,Telegraph Rd #1 Community Solar Farm,62496,1268,PV,SUN,,2018,1268,0,L,PV,SUN,3.8,1,8145
+19278,NY,Telegraph Rd #2 Community Solar Farm,62498,1413,PV,SUN,,2018,1413,0,L,PV,SUN,2,1,8146
 19279,NY,The Allen Hospital,61568,EGEN1,IC,DFO,,2018,EGEN1,0,SB,IC,DFO,1,1,8147
 19280,NY,The Bank of New York,62001,6087K,IC,DFO,,2018,6087K,0,SB,IC,DFO,1.2,1,8148
 19281,NY,The Bank of New York,62001,6187H,IC,DFO,,2018,6187H,0,SB,IC,DFO,1.2,1,8148
@@ -16538,10 +16538,10 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 19319,NY,Varick,2621,4,HY,WAT,,2018,4,0,OP,HY,WAT,2,1,8168
 19320,NY,Varick,2621,5,HY,WAT,,2018,5,0,OP,HY,WAT,2,1,8168
 19323,NY,Victory Mills,10902,GEN1,HY,WAT,,2018,GEN1,0,OP,HY,WAT,1.7,1,8170
-19324,NY,Villa Roma Rd 
-19325,NY,Villa Roma Rd 
-19326,NY,Villa Roma Rd 
-19327,NY,Villa Roma Rd 
+19324,NY,Villa Roma Rd #1,62525,40,PV,SUN,,2018,40,0,L,PV,SUN,2,1,8171
+19325,NY,Villa Roma Rd #2,62526,41,PV,SUN,,2018,41,0,L,PV,SUN,2,1,8172
+19326,NY,Villa Roma Rd #3,62527,390,PV,SUN,,2018,390,0,L,PV,SUN,2,1,8173
+19327,NY,Villa Roma Rd #4,62528,391,PV,SUN,,2018,391,0,L,PV,SUN,2,1,8174
 19328,NY,Vischer Ferry,2686,1,HY,WAT,,2018,1,0,OP,HY,WAT,2.8,1,8175
 19329,NY,Vischer Ferry,2686,2,HY,WAT,,2018,2,0,OP,HY,WAT,2.8,1,8175
 19330,NY,Vischer Ferry,2686,3,HY,WAT,,2018,3,0,OP,HY,WAT,3,1,8175
@@ -16553,9 +16553,9 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 19341,NY,Wappinger Falls Hydroelectric,54573,1,HY,WAT,,2018,1,0,OP,HY,WAT,1,1,8179
 19342,NY,Wappinger Falls Hydroelectric,54573,2,HY,WAT,,2018,2,0,SB,HY,WAT,1,1,8179
 19343,NY,Warrensburg Hydroelectric,10218,HY1,HY,WAT,,2018,HY1,0,OP,HY,WAT,2.9,1,8180
-19344,NY,Washington St Community Solar Farm 
-19345,NY,Washington St Community Solar Farm 
-19346,NY,Washington St Community Solar Farm 
+19344,NY,Washington St Community Solar Farm #1,62472,617,PV,SUN,,2018,617,0,L,PV,SUN,2.2,1,8181
+19345,NY,Washington St Community Solar Farm #3,62473,1035,PV,SUN,,2018,1035,0,L,PV,SUN,2.5,1,8182
+19346,NY,Washington St Community Solar Farm #4,62471,1034,PV,SUN,,2018,1034,0,L,PV,SUN,2.5,1,8183
 19347,NY,Waste Management Madison County LFGTE,57021,GEN1,IC,LFG,,2018,GEN1,0,OP,IC,LFG,1.6,1,8184
 19348,NY,Watchtower Educational Center,55619,GEN1,IC,NG,,2018,GEN1,0,SB,IC,NG,0.7,1,8185
 19349,NY,Watchtower Educational Center,55619,GEN2,IC,DFO,,2018,GEN2,0,SB,IC,DFO,0.7,1,8185
@@ -16606,9 +16606,9 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 19398,NY,Woodoak Drive Community Solar Farm,62479,175,PV,SUN,,2018,175,0,T,PV,SUN,2,1,8204
 19399,NY,Yaleville,2624,1,HY,WAT,,2018,1,0,OP,HY,WAT,1,1,8205
 19400,NY,Yaleville,2624,2,HY,WAT,,2018,2,0,OP,HY,WAT,1,1,8205
-19401,NY,Yellow Mills Rd 
-19402,NY,Yellow Mills Rd 
-19403,NY,Yellow Mills Rd 
+19401,NY,Yellow Mills Rd #1 Community Solar Farm,62517,1142,PV,SUN,,2018,1142,0,L,PV,SUN,2.3,1,8206
+19402,NY,Yellow Mills Rd #2 Community Solar Farm,62518,1181,PV,SUN,,2018,1181,0,L,PV,SUN,2.3,1,8207
+19403,NY,Yellow Mills Rd #3 Community Solar Farm,62519,1244,PV,SUN,,2018,1244,0,L,PV,SUN,2.3,1,8208
 19404,NY,Zotos International WPGF,57648,WT1,WT,WND,,2018,WT1,0,OP,WT,WND,1.7,1,8209
 19405,NY,Zotos International WPGF,57648,WT2,WT,WND,,2018,WT2,0,OP,WT,WND,1.7,1,8209
 19406,OH,AEP Bluffton NaS,60618,1,BA,MWH,,2018,1,0,OP,BA,MWH,2,1,8210
@@ -16628,7 +16628,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 19420,OH,Anadarko,2945,7,IC,DFO,,2018,7,0,SB,IC,DFO,1.2,1,8218
 19421,OH,Anadarko,2945,8,IC,DFO,,2018,8,0,SB,IC,DFO,1.5,1,8218
 19422,OH,Anadarko,2945,9,IC,DFO,,2018,9,0,SB,IC,DFO,2.1,1,8218
-19423,OH,Anthony Wayne Solar 
+19423,OH,Anthony Wayne Solar #1,59489,AWS1,PV,SUN,,2018,AWS1,0,OP,PV,SUN,1.7,1,8219
 19424,OH,Arcanum,2902,1,IC,DFO,,2018,1,0,OP,IC,DFO,0.7,1,8220
 19425,OH,Arcanum,2902,2,IC,DFO,,2018,2,0,OP,IC,DFO,0.5,1,8220
 19426,OH,Arcanum Peaking,7781,1,IC,DFO,,2018,1,0,OP,IC,DFO,1.8,1,8221
@@ -16702,7 +16702,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 19516,OH,Carbon Limestone,56868,7,IC,LFG,,2018,7,0,OP,IC,LFG,1.4,1,8245
 19517,OH,Carbon Limestone,56868,8,IC,LFG,,2018,8,0,OP,IC,LFG,1.4,1,8245
 19518,OH,Carbon Limestone,56868,9,IC,LFG,,2018,9,0,OP,IC,LFG,1.4,1,8245
-19526,OH,"Celina Solar Project 
+19526,OH,"Celina Solar Project #1, LLC",58665,CSP1,PV,SUN,,2018,CSP1,0,OP,PV,SUN,4,1,8248
 19532,OH,City of Shelby Electric Distribution,61076,PSG1,IC,DFO,,2018,PSG1,0,OP,IC,DFO,1.8,1,8250
 19535,OH,Cleveland Peaking,7774,1,IC,DFO,,2018,1,0,OP,IC,DFO,1.8,1,8252
 19536,OH,Cleveland Peaking,7774,2,IC,DFO,,2018,2,0,OP,IC,DFO,1.8,1,8252
@@ -20179,8 +20179,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 23896,UT,"Escalante Solar I, LLC",59387,ESCS1,PV,SUN,,2018,ESCS1,0,OP,PV,SUN,80,1,10092
 23897,UT,"Escalante Solar II, LLC",59388,ESCS2,PV,SUN,,2018,ESCS2,0,OP,PV,SUN,80,1,10093
 23898,UT,"Escalante Solar III, LLC",59389,ESCS3,PV,SUN,,2018,ESCS3,0,OP,PV,SUN,80,1,10094
-23899,UT,Fiddler's Canyon 
-23900,UT,Fiddler's Canyon 
+23899,UT,Fiddler's Canyon #1,59787,FID1,PV,SUN,,2018,FID1,0,OP,PV,SUN,3,1,10095
+23900,UT,Fiddler's Canyon #2,59786,FID2,PV,SUN,,2018,FID2,0,OP,PV,SUN,3,1,10096
 23901,UT,Fiddler's Canyon 3,59932,FID3,PV,SUN,,2018,FID3,0,OP,PV,SUN,3,1,10097
 23902,UT,Flaming Gorge,6405,1,HY,WAT,,2018,1,0,OP,HY,WAT,50.6,1,10098
 23903,UT,Flaming Gorge,6405,2,HY,WAT,,2018,2,0,OP,HY,WAT,50.6,1,10098
@@ -20210,9 +20210,9 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 23930,UT,Heber City,7111,NA7,IC,DFO,,2018,NA7,0,RE,IC,DFO,1.5,1,10106
 23931,UT,Heber City,7111,NA8,IC,DFO,,2018,NA8,0,RE,IC,DFO,1.6,1,10106
 23932,UT,Heber City,7111,NA9,IC,NG,,2018,NA9,0,OP,IC,NG,1.9,1,10106
-23933,UT,"Hill AFB LFG Facility, Bldg 
-23934,UT,"Hill AFB LFG Facility, Bldg 
-23935,UT,"Hill AFB LFG Facility, Bldg 
+23933,UT,"Hill AFB LFG Facility, Bldg #737",60349,LFGG1,IC,LFG,,2018,LFGG1,0,OP,IC,LFG,0.6,1,10107
+23934,UT,"Hill AFB LFG Facility, Bldg #737",60349,LFGG2,IC,LFG,,2018,LFGG2,0,OP,IC,LFG,0.7,1,10107
+23935,UT,"Hill AFB LFG Facility, Bldg #737",60349,LFGG3,IC,LFG,,2018,LFGG3,0,OP,IC,LFG,1,1,10107
 23936,UT,HTW Plant 303 COGEN,58597,CGN1,GT,NG,,2018,CGN1,0,OP,GT,NG,7.4,1,10108
 23937,UT,Hunter,6165,1,ST,BIT,1978,2018,1,1,OP,ST,BIT,525,1,10109
 23938,UT,Hunter,6165,2,ST,BIT,1980,2018,2,1,OP,ST,BIT,525,1,10109
@@ -20302,7 +20302,7 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 24035,UT,Provo Power Plant,61508,3,IC,NG,,2018,3,0,OP,IC,NG,2.4,1,10149
 24036,UT,Provo Power Plant,61508,4,IC,NG,,2018,4,0,OP,IC,NG,2.4,1,10149
 24037,UT,Provo Power Plant,61508,5,IC,NG,,2018,5,0,OP,IC,NG,2.4,1,10149
-24038,UT,Quail Creek Hydro Plant 
+24038,UT,Quail Creek Hydro Plant #1,52039,1,HY,WAT,,2018,1,0,OP,HY,WAT,2.3,1,10150
 24039,UT,Quichapa 1,61119,W5519,PV,SUN,,2018,W5519,0,OP,PV,SUN,3,1,10151
 24040,UT,Quichapa 2,61120,W5520,PV,SUN,,2018,W5520,0,OP,PV,SUN,3,1,10152
 24041,UT,Quichapa 3,61121,W5521,PV,SUN,,2018,W5521,0,OP,PV,SUN,3,1,10153
@@ -21399,8 +21399,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 25263,WA,Condit,3846,1,HY,WAT,,2018,1,0,RE,HY,WAT,7,1,10487
 25264,WA,Condit,3846,2,HY,WAT,,2018,2,0,RE,HY,WAT,6.7,1,10487
 25272,WA,Cowiche,50423,983,HY,WAT,,2018,983,0,OP,HY,WAT,1.7,1,10490
-25273,WA,Cowlitz Falls,7427,U#1,HY,WAT,,2018,U
-25274,WA,Cowlitz Falls,7427,U#2,HY,WAT,,2018,U
+25273,WA,Cowlitz Falls,7427,U#1,HY,WAT,,2018,U#1,0,OP,HY,WAT,35,1,10491
+25274,WA,Cowlitz Falls,7427,U#2,HY,WAT,,2018,U#2,0,OP,HY,WAT,35,1,10491
 25275,WA,Coyote Crest Wind Farm,58778,1,WT,WND,,2018,1,0,L,WT,WND,127.5,1,10492
 25276,WA,Crystal Mountain,3853,1,IC,DFO,,2018,1,0,SB,IC,DFO,2.7,1,10493
 25277,WA,Cushman 1,3914,21,HY,WAT,,2018,21,0,OP,HY,WAT,21.6,1,10494
@@ -21885,8 +21885,8 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 25810,WI,Clam River Dam,4018,1,HY,WAT,,2018,1,0,OP,HY,WAT,0.4,1,10658
 25811,WI,Clam River Dam,4018,2,HY,WAT,,2018,2,0,OP,HY,WAT,0.4,1,10658
 25812,WI,Clam River Dam,4018,3,HY,WAT,,2018,3,0,OP,HY,WAT,0.4,1,10658
-25813,WI,Clean Fuel Dane Community Digester,59559,GEN#1,IC,OBG,,2018,GEN
-25814,WI,Clean Fuel Dane Community Digester,59559,GEN#2,IC,OBG,,2018,GEN
+25813,WI,Clean Fuel Dane Community Digester,59559,GEN#1,IC,OBG,,2018,GEN#1,0,OP,IC,OBG,1,1,10659
+25814,WI,Clean Fuel Dane Community Digester,59559,GEN#2,IC,OBG,,2018,GEN#2,0,OP,IC,OBG,1,1,10659
 25815,WI,Columbia,8023,1,ST,SUB,1975,2018,1,1,OP,ST,SUB,556,1,10660
 25816,WI,Columbia,8023,2,ST,SUB,1978,2018,2,1,OP,ST,SUB,556,1,10660
 25817,WI,Combined Locks,4201,HC1,HY,WAT,,2018,HC1,0,OP,HY,WAT,3.1,1,10661
@@ -21918,13 +21918,13 @@ Seqno,state,plant_name,orispl,unit,prime_mover,fuel,online_year,egrid_year,gen,n
 25852,WI,Danbury Diesel,55998,GT1,GT,DFO,,2018,GT1,0,OP,GT,DFO,6.7,1,10671
 25853,WI,Danbury Diesel,55998,IC1,IC,DFO,,2018,IC1,0,OP,IC,DFO,0.5,1,10671
 25854,WI,Danbury Diesel,55998,IC2,IC,DFO,,2018,IC2,0,OP,IC,DFO,0.6,1,10671
-25855,WI,Dane County Landfill 
-25856,WI,Dane County Landfill 
-25857,WI,Dane County Landfill 
-25858,WI,Dane County Landfill 
-25859,WI,Dane County Landfill 
-25860,WI,Dane County Landfill 
-25861,WI,Dane County Landfill 
+25855,WI,Dane County Landfill #2 Rodefeld,55770,GEN1,IC,LFG,,2018,GEN1,0,OP,IC,LFG,0.8,1,10672
+25856,WI,Dane County Landfill #2 Rodefeld,55770,GEN2,IC,LFG,,2018,GEN2,0,OP,IC,LFG,0.8,1,10672
+25857,WI,Dane County Landfill #2 Rodefeld,55770,GEN3,IC,LFG,,2018,GEN3,0,OP,IC,LFG,0.8,1,10672
+25858,WI,Dane County Landfill #2 Rodefeld,55770,GEN4,IC,LFG,,2018,GEN4,0,OP,IC,LFG,1.6,1,10672
+25859,WI,Dane County Landfill #2 Rodefeld,55770,GEN5,IC,LFG,,2018,GEN5,0,OP,IC,LFG,0.8,1,10672
+25860,WI,Dane County Landfill #2 Rodefeld,55770,GEN6,IC,LFG,,2018,GEN6,0,OP,IC,LFG,0.8,1,10672
+25861,WI,Dane County Landfill #2 Rodefeld,55770,GEN7,IC,LFG,,2018,GEN7,0,OP,IC,LFG,0.8,1,10672
 25862,WI,Deertrack Park Gas Recovery,56520,GEN1,IC,LFG,,2018,GEN1,0,OP,IC,LFG,0.8,1,10673
 25863,WI,Deertrack Park Gas Recovery,56520,GEN2,IC,LFG,,2018,GEN2,0,OP,IC,LFG,0.8,1,10673
 25864,WI,Deertrack Park Gas Recovery,56520,GEN3,IC,LFG,,2018,GEN3,0,OP,IC,LFG,0.8,1,10673

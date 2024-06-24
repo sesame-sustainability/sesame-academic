@@ -449,11 +449,11 @@ Year,State,Generation Region,Price,value,source,unit of Price,unit of value
 2017,NV,WECC,3.51,3.384763742,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
 2018,NV,WECC,3.28,3.162970106,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
 2019,NV,WECC,3.2,3.085824494,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
-1997,NH,
-1999,NH,
-2000,NH,
-2001,NH,
-2002,NH,
+1997,NH,#N/A,2.71,2.613307618,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+1999,NH,#N/A,2.67,2.574734812,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2000,NH,#N/A,3.37,3.24975892,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2001,NH,#N/A,2.56,2.468659595,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2002,NH,#N/A,4.08,3.93442623,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
 1997,NJ,RFC,3.06,2.950819672,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
 1998,NJ,RFC,2.74,2.642237223,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
 1999,NJ,RFC,3.08,2.970106075,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
@@ -524,25 +524,25 @@ Year,State,Generation Region,Price,value,source,unit of Price,unit of value
 2004,NC,SERC,6.82,6.576663452,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
 2008,NC,SERC,11.13,10.73288332,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
 2018,NC,SERC,4.43,4.271938284,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
-1997,ND,
-2001,ND,
-2002,ND,
-2003,ND,
-2004,ND,
-2005,ND,
-2006,ND,
-2007,ND,
-2009,ND,
-2010,ND,
-2011,ND,
-2012,ND,
-2013,ND,
-2014,ND,
-2015,ND,
-2016,ND,
-2017,ND,
-2018,ND,
-2019,ND,
+1997,ND,#N/A,3.43,3.307618129,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2001,ND,#N/A,7.08,6.827386692,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2002,ND,#N/A,2.54,2.449373192,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2003,ND,#N/A,7.66,7.386692382,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2004,ND,#N/A,8.05,7.762777242,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2005,ND,#N/A,10.23,9.864995178,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2006,ND,#N/A,10.93,10.54001929,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2007,ND,#N/A,6.41,6.181292189,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2009,ND,#N/A,6.14,5.920925747,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2010,ND,#N/A,6.51,6.277724204,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2011,ND,#N/A,8.66,8.351012536,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2012,ND,#N/A,6.44,6.210221794,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2013,ND,#N/A,6.14,5.920925747,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2014,ND,#N/A,4.09,3.944069431,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2015,ND,#N/A,8.39,8.090646095,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2016,ND,#N/A,2.69,2.594021215,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2017,ND,#N/A,4,3.857280617,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2018,ND,#N/A,3.02,2.912246866,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
+2019,ND,#N/A,3.5,3.37512054,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
 1997,OH,RFC,3.72,3.587270974,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
 1998,OH,RFC,3.24,3.1243973,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu
 1999,OH,RFC,3.15,3.037608486,EIA NG Electric Power Prices : https://www.eia.gov/dnav/ng/NG_SUM_LSUM_A_EPG0_PEU_DMCF_A.html,dollars per thousand cubic feet,$/MMBtu

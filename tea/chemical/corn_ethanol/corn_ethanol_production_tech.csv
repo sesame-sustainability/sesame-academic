@@ -16,5 +16,5 @@ Notes: ,,,,
 "1- Most of the data are based on the NREL study ""Determining the Cost of Producing Ethanol from Corn Starch and Lignocellulosic Feedstocks"", 1999,  https://www.nrel.gov/docs/fy01osti/28893.pdf",,,,
 "2- The range for the user-input ""Yearly Ethanol Production Rate"" is taken from: https://www.eia.gov/petroleum/ethanolcapacity/  ",,,,
 "3- The user-input ""Capex_adjust_factor"" is used to adjust the Capex relative to NREL base case",,,,
-4- The feedstock cost range is taken from: https://pubs.rsc.org/en/content/articlelanding/2015/ee/c5ee00153f
+4- The feedstock cost range is taken from: https://pubs.rsc.org/en/content/articlelanding/2015/ee/c5ee00153f#!divAbstract ,,,,
 "5- This analysis is ""no incentive cot-analysis"" type, meaning no tax credit for biofuel is considered ",,,,
